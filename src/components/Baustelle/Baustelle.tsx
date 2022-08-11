@@ -1,7 +1,7 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
-export default () => {
+export const Baustelle = () => {
   return (
     <div className="flex min-h-full flex-col bg-white lg:relative">
       <div className="flex flex-grow flex-col">
