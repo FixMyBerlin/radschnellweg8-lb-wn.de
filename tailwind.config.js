@@ -5,11 +5,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-
+        'rsv-pink': '#e6007d',
+        'rsv-blau': '#0f65af',
       },
     },
-    fontFamily: {
-    },
+    fontFamily: { sans: ['Overpass', 'sans-serif'] },
   },
   plugins: [
     require('@tailwindcss/typography'),
