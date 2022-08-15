@@ -63,14 +63,14 @@ export const Baustelle = () => {
                   Bald stehen Ihnen hier Informationen über den neuen
                   Radschnellweg 8 von Ludwigsburg nach Waiblingen zur Verfügung.
                 </p>
-                <div className="mt-6">
+                {/* <div className="mt-6">
                   <a
                     href="/"
                     className="hover:text-blau text-base font-semibold text-rsv-blau"
                   >
                     Zurück zur Startseite<span aria-hidden="true"> &rarr;</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
