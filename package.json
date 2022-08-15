@@ -7,6 +7,7 @@
   "keywords": [],
   "scripts": {
     "start": "gatsby develop --open",
+    "mobile": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "build-serve": "npm run build && npm run serve",
