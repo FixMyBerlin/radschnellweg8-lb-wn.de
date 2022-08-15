@@ -5,27 +5,53 @@ export const Baustelle = () => {
   return (
     <div className="flex min-h-full flex-col bg-white lg:relative">
       <div className="flex flex-grow flex-col">
-        <main className="flex bg-white">
+        <main className="flex flex-grow flex-col bg-white lg:flex-row">
           <div className="mx-auto flex w-full max-w-7xl flex-grow flex-col px-4 sm:px-6 lg:px-8">
-            <div className="flex-shrink-0 pt-10 sm:pt-16">
+            <div className="h-36 pt-10 sm:pt-16">
               <StaticImage
-                src="../images/remseck-logo.jpg"
+                src="../../images/rems-murr-kreis-logo.jpg"
                 alt=""
-                className="h-20 w-auto object-contain"
+                className="mx-3"
+                objectFit="contain"
+                height={80}
               />
               <StaticImage
-                src="../images/stadt-waiblingen-logo.png"
+                src="../../images/landkreis-ludwigsburg-logo.jpg"
                 alt=""
-                className="h-20 w-auto object-contain"
+                className="mx-3"
+                objectFit="contain"
+                height={80}
+              />
+              <StaticImage
+                src="../../images/ludwigsburg-logo.png"
+                alt=""
+                className="mx-3"
+                objectFit="contain"
+                height={80}
+              />
+              <StaticImage
+                src="../../images/stadt-waiblingen-logo.png"
+                alt=""
+                className="mx-3"
+                objectFit="contain"
+                height={80}
+              />
+              <StaticImage
+                src="../../images/remseck-logo.jpg"
+                alt=""
+                objectFit="contain"
+                height={80}
+                className="mx-3"
               />
             </div>
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row">
               <StaticImage
-                src="../images/rsv8-logo.png"
+                src="../../images/rsv8-logo.png"
                 alt="Logo des Radschnellweg 8"
-                className="my-auto h-20 w-20 flex-grow py-16 sm:py-32"
+                className="m-auto mx-auto h-20 w-20 flex-shrink-0 object-contain py-16 sm:my-10 sm:mx-12 sm:py-32"
+                objectFit="contain"
               />
-              <div className="my-auto flex-shrink-0 py-16 sm:py-32">
+              <div className="my-auto pb-20 sm:py-32">
                 <p className="text-sm font-semibold uppercase tracking-wide text-rsv-pink">
                   Baustelle
                 </p>
@@ -48,7 +74,7 @@ export const Baustelle = () => {
             </div>
           </div>
           <StaticImage
-            src="../images/symbolbild.jpg"
+            src="../../images/symbolbild.jpg"
             alt="Beispielbild eines Radschnellweges, auf dem ein Rennradfahrer fährt"
             className="inset-0  object-cover"
           />
