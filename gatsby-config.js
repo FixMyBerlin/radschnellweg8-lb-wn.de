@@ -36,18 +36,20 @@ module.exports = {
         },
       },
     },
-    // {
-    //   // Docs https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
-    //   resolve: 'gatsby-plugin-manifest',
-    //   options: {
-    //     name: 'Radschnellweg 8 | Ludwigsburg - Waiblingen',
-    //     short_name: 'RSV 8',
-    //     start_url: '/',
-    //     background_color: 'white',
-    //     display: 'minimal-ui', // https://developer.mozilla.org/en-US/docs/Web/Manifest/display#values
-    //     legacy: false,
-    //     lang: 'de-DE', // https://developer.mozilla.org/en-US/docs/Web/Manifest/lang
-    //   },
-    // },
+    {
+      // Docs https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Radschnellweg 8 | Der neue Radschnellweg von Ludwigsburg nach Waiblingen',
+        short_name: 'RS 8',
+        start_url: '/',
+        background_color: 'white',
+        display: 'minimal-ui', // https://developer.mozilla.org/en-US/docs/Web/Manifest/display#values
+        legacy: false,
+        theme_color: '#e6007e',
+        icon: 'src/images/rsv8-logo.png',
+        lang: 'de-DE', // https://developer.mozilla.org/en-US/docs/Web/Manifest/lang
+      },
+    },
   ],
 }
