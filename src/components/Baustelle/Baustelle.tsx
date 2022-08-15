@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 
 export const Baustelle = () => {
+  const stakeholderLogoHeight = 55
   return (
     <div className="flex min-h-full flex-col bg-white lg:relative">
       <div className="flex flex-grow flex-col">
@@ -13,42 +14,42 @@ export const Baustelle = () => {
                 alt=""
                 className="mx-3"
                 objectFit="contain"
-                height={80}
+                height={stakeholderLogoHeight}
               />
               <StaticImage
                 src="../../images/landkreis-ludwigsburg-logo.jpg"
                 alt=""
                 className="mx-3"
                 objectFit="contain"
-                height={80}
+                height={stakeholderLogoHeight}
               />
               <StaticImage
                 src="../../images/ludwigsburg-logo.png"
                 alt=""
                 className="mx-3"
                 objectFit="contain"
-                height={80}
+                height={stakeholderLogoHeight}
               />
               <StaticImage
                 src="../../images/stadt-waiblingen-logo.png"
                 alt=""
                 className="mx-3"
                 objectFit="contain"
-                height={80}
+                height={stakeholderLogoHeight}
               />
               <StaticImage
                 src="../../images/remseck-logo.jpg"
                 alt=""
                 objectFit="contain"
-                height={80}
+                height={stakeholderLogoHeight}
                 className="mx-3"
               />
             </div>
-            <div className="flex flex-col py-12 sm:flex-row">
+            <div className="align-center flex flex-col py-12 sm:flex-row">
               <StaticImage
                 src="../../images/rsv8-logo.png"
                 alt="Logo des Radschnellweg 8"
-                className="m-auto mx-auto h-20 w-20 flex-shrink-0 object-contain py-16 sm:my-10 sm:mx-12 sm:py-32"
+                className="m-auto mx-auto h-32 w-32 flex-shrink-0 object-contain py-16  sm:mx-12"
                 objectFit="contain"
               />
               <div className="my-auto sm:py-32">
@@ -76,7 +77,7 @@ export const Baustelle = () => {
           <StaticImage
             src="../../images/symbolbild.jpg"
             alt="Beispielbild eines Radschnellweges, auf dem ein Rennradfahrer fährt"
-            className="inset-0  object-cover"
+            className="inset-0 object-cover"
           />
         </main>
         <footer className="flex-shrink-0 bg-gray-50">
