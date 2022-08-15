@@ -17,7 +17,7 @@ export const NavigationMenuItemMobile: React.FC<Props> = ({
       as="a"
       href={to}
       className={classNames(
-        { 'border-rsv-blau bg-emerald-50 text-rsv-blau': active },
+        { 'border-rsv-blau bg-rsv-blau-light text-rsv-blau': active },
         {
           'border-transparent text-slate-500 hover:border-gray-300 hover:bg-gray-50 hover:text-slate-700':
             !active,
