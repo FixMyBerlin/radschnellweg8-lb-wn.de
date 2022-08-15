@@ -1,9 +1,9 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { Baustelle } from '~/components/Baustelle'
+import { Layout } from '~/components/Layout'
 
-const IndexPage: React.FC<PageProps> = () => {
-  return <Baustelle />
+const IndexPage: React.FC<PageProps> = ({ location }) => {
+  return <Layout location={location} />
 }
 
 export default IndexPage
