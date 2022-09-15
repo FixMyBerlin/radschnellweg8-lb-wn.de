@@ -8,6 +8,7 @@ import { ZoomableImage } from '~/components/ZoomableImage'
 import { Facts } from '~/components/Facts'
 import { FAQ, FAQItem } from '~/components/FAQ'
 import { MileStones } from '~/components/MileStones'
+import BaukostenImage from '~/images/baukosten-radverkehrsanlagen.jpg'
 import RadkulturLogo from '~/images/bw-radschnellweg-logo.jpg'
 import BMDVLogo from '~/images/bmdv-foerderung-logo.png'
 import VMBWLogo from '~/images/vm-bw-foerderung-logo.png'
@@ -316,6 +317,10 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             In der Gegenüberstellung der unterschiedlichen Infrastrukturarten
             zeigt sich, dass auch die Baukosten für Radschnellwege
             vergleichsweise gering sind:
+            <img
+              src={BaukostenImage}
+              alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
+            />
           </p>
         </FAQItem>
         <FAQItem title="Wie viele Radfahrende fahren denn da später?">
