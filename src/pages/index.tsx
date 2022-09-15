@@ -16,7 +16,7 @@ import VMBWLogo from '~/images/vm-bw-foerderung-logo.png'
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location} navigation={false}>
-      <HelmetSeo title="Radschnellweg 8 | Der neue Radschnellweg non Ludwigsburg nach Waiblingen" />
+      <HelmetSeo title="Radschnellweg 8 | Der neue Radschnellweg von Waiblingen nach Ludwigsburg" />
 
       <div className="flex w-full items-center">
         <Logo />
