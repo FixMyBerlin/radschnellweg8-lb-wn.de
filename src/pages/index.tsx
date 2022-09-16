@@ -74,9 +74,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             },
             {
               image: (
-                <StaticImage src="../images/portraits/knecht.jpeg" alt="" />
+                <StaticImage src="../images/portraits/hermann.jpeg" alt="" />
               ),
-              quote: `FOTO FEHLT Es freut mich sehr, dass der Rems-Murr-Kreis, der Kreis Ludwigsburg
+              quote: `Es freut mich sehr, dass der Rems-Murr-Kreis, der Kreis Ludwigsburg
     und alle beteiligten Kommunen eine leistungsstarke und schnelle
     Radverbindung für Pendlerinnen und Pendler zwischen Waiblingen und
     Ludwigsburg realisieren möchten.`,
