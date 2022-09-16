@@ -18,7 +18,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
 
       <Logo className="absolute" />
 
-      <Container className="mt-12">
+      <Container className="mt-5 pl-[40px] sm:mt-12 sm:pl-[140px] lg:pl-[180px] xl:pl-0">
         <H1>Radschnellverbindung zwischen Waiblingen und Ludwigsburg</H1>
       </Container>
 
@@ -112,7 +112,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <H2>Wo soll der Radschnellweg entlang führen?</H2>
 
         <ZoomableImage
-          className="float-left mr-10 mb-4 h-[350px] w-[350px] overflow-hidden rounded-lg"
+          className="mb-4 h-[350px] w-[350px] overflow-hidden rounded-lg md:float-left md:mr-10"
           image={
             <StaticImage
               src="../images/rsv8-map.png"
@@ -436,7 +436,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           Gefördert durch:
         </H2>
 
-        <ul className="columns-3 gap-24">
+        <ul className="gap-24 sm:columns-3">
           {[
             <StaticImage
               src="../images/bw-radschnellweg-logo.jpg"
@@ -451,7 +451,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
               alt="Ministerium für Verkehr Baden-Württemberg"
             />,
           ].map((img) => (
-            <li key={img.props.src} className="">
+            <li key={img.props.src} className="m-auto mb-10 w-3/5 sm:w-full">
               {img}
             </li>
           ))}

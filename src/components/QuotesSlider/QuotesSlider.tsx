@@ -33,9 +33,9 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
           )
         }}
         className={classNames(
-          'absolute top-[138px] block h-14 w-14 text-gray-400 hover:text-rs8-blue',
+          'absolute top-0 block h-14 w-14 text-gray-400 hover:text-rs8-blue lg:top-[138px]',
           {
-            'left-0': !right,
+            'right-[60px] lg:left-0': !right,
             'right-0': right,
           }
         )}
@@ -45,16 +45,19 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
     )
   }
   return (
-    <div className="relative mt-10 mb-[110px] h-[20em] px-[70px]">
+    <div className="relative mt-10 mb-[110px] lg:h-[20em] lg:px-[70px]">
       {arrow(<ArrowCircleLeftIcon />)}
       {items.map((item, index) => (
         <figure
-          className={`absolute left-[70px] right-[70px] flex transition-opacity duration-500 ${
-            index === active ? 'opacity-100' : 'opacity-0'
+          key={item.person}
+          className={`transition-opacity duration-500 lg:absolute lg:left-[70px] lg:right-[70px] lg:flex ${
+            index === active
+              ? 'visible lg:opacity-100'
+              : 'hidden lg:visible lg:opacity-0'
           }`}
         >
           <div>
-            <div className="h-[320px] w-[320px] overflow-hidden rounded-full">
+            <div className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]">
               {item.image}
             </div>
           </div>

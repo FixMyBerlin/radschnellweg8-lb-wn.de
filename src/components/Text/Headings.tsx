@@ -10,7 +10,7 @@ export const H1: React.FC<Props> = ({ className, children }) => {
   return (
     <h1
       className={classNames(
-        'font-serif mb-10 text-[60px] font-extrabold leading-[66px]',
+        'font-serif mb-10 text-xl font-extrabold lg:text-[60px] lg:leading-[66px]',
         className
       )}
     >
@@ -23,7 +23,7 @@ export const H2: React.FC<Props> = ({ className, children }) => {
   return (
     <h2
       className={classNames(
-        'font-serif text-dark-gray leading-40 mt-16 mb-10 text-[36px] font-extrabold',
+        'font-serif text-dark-gray lg:leading-40 mt-16 mb-10 text-lg font-extrabold  lg:text-[36px]',
         className
       )}
     >
