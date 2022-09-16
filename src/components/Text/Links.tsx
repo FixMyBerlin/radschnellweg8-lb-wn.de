@@ -5,9 +5,10 @@ type Props = {
   children: ReactNode
   href: string
   className?: string
+  target?: string
 }
 
-export const A: React.FC<Props> = ({ className, href, children }) => {
+export const A: React.FC<Props> = ({ className, href, children, ...props }) => {
   return (
     <a
       href={href}
@@ -15,6 +16,7 @@ export const A: React.FC<Props> = ({ className, href, children }) => {
         'text-rs8-pink underline hover:text-rs8-blue',
         className
       )}
+      {...props}
     >
       {children}
     </a>

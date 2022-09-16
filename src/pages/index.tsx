@@ -1,6 +1,7 @@
 import React from 'react'
 import { PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import { PlayIcon } from '@heroicons/react/outline'
 import { Button, A, P, H1, H2, UL, LI } from '~/components/Text'
 import { Logo, Layout, Container } from '~/components/Layout'
 import { HelmetSeo } from '~/components/HelmetSeo'
@@ -372,8 +373,21 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
               von Schlothauer & Wauer im Auftrag des Landratsamts Ludwigsburg.
               <br />
               <br />
-              <A href="https://www.landkreis-ludwigsburg.de/fileadmin/user_upload/seiteninhalte/verkehr-sicherheit/Radverkehr/Visualisierung-RSV-Potenzial-2.000-Radelnde_Kurzversion.mp4">
-                Video: Radschnellweg mit 2.000 Radfahrenden pro Tag
+              <A
+                className="relative block text-rs8-pink/60 hover:text-rs8-pink/80"
+                target="_blank"
+                href="https://www.landkreis-ludwigsburg.de/fileadmin/user_upload/seiteninhalte/verkehr-sicherheit/Radverkehr/Visualisierung-RSV-Potenzial-2.000-Radelnde_Kurzversion.mp4"
+              >
+                <StaticImage
+                  src="../images/radschnellweg-simulation.png"
+                  alt=""
+                />
+                <span className="sr-only">
+                  Video: Radschnellweg mit 2.000 Radfahrenden pro Tag
+                </span>
+                <div className="align-center absolute top-0 left-0 bottom-0 right-0 flex justify-center">
+                  <PlayIcon className="w-[150px]" />
+                </div>
               </A>
               <br />
               (Simulation eines Radschnellwegs mit einem Potenzial von 2.000
