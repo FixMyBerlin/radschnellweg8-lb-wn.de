@@ -53,10 +53,10 @@ export const Baustelle = () => {
                 objectFit="contain"
               />
               <div className="my-auto sm:py-32">
-                <p className="text-sm font-semibold uppercase tracking-wide text-rsv-pink">
+                <p className="text-rsv-pink text-sm font-semibold uppercase tracking-wide">
                   Baustelle
                 </p>
-                <h1 className="mt-2 text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                <h1 className="text-4xl sm:text-5xl mt-2 font-extrabold tracking-tight text-gray-900">
                   Diese Website ist derzeit im Aufbau.
                 </h1>
                 <p className="mt-2 text-base text-gray-500">
@@ -66,7 +66,7 @@ export const Baustelle = () => {
                 <div className="mt-6">
                   <a
                     href="/"
-                    className="hover:text-blau text-base font-semibold text-rsv-blau"
+                    className="hover:text-blau text-rsv-blau text-base font-semibold"
                   >
                     Zurück zur Startseite<span aria-hidden="true"> &rarr;</span>
                   </a>

@@ -3,14 +3,12 @@ import React from 'react'
 
 export const ZoomableImage: React.FC<{
   className?: string
-  src: string
-  alt: string
-}> = ({ className, src, alt }) => {
+  image: React.ReactNode
+}> = ({ className, image }) => {
   return (
-    <img
-      className={classNames('h-12 w-auto sm:h-16', className)}
-      src={src}
-      alt={alt}
-    />
+    <div className={classNames('relative', className)}>
+      {image}
+      <div className="absolute bottom-0 z-10 h-[20px] w-full bg-gradient-to-t from-[rgba(0,0,0,0.1)]" />
+    </div>
   )
 }

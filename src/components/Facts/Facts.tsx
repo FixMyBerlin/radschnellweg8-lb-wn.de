@@ -12,16 +12,21 @@ type Props = {
 
 export const Facts: React.FC<Props> = ({ items }) => {
   return (
-    <div>
+    <>
       {items.map((item) => (
-        <div key={item.value}>
-          <div>
-            <div>{item.value}</div>
-            <div>{item.description}</div>
+        <div
+          className="my-14 flex items-center justify-between first:mt-0 last:mb-0"
+          key={item.value}
+        >
+          <div className="w-[35%] rounded-md bg-white py-4 px-6 text-center drop-shadow">
+            <div className="text-[32px] font-extrabold leading-[48px] text-rs8-pink">
+              {item.value}
+            </div>
+            <div className="text-[ text-rs8-blue">{item.description}</div>
           </div>
-          <div>{item.longDescription}</div>
+          <div className="w-[55%]">{item.longDescription}</div>
         </div>
       ))}
-    </div>
+    </>
   )
 }

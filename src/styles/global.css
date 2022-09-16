@@ -11,7 +11,7 @@
   }
 
   body {
-    @apply text-slate-800;
+    @apply text-base;
   }
 }
 
