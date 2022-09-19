@@ -1,6 +1,7 @@
 export * from './PageHomeAboutVideo'
 export * from './PageHomeFacts'
 export * from './PageHomeFaqs'
+export * from './PageHomeFunding'
 export * from './PageHomeIntro'
 export * from './PageHomeLinks'
 export * from './PageHomeLocation'
