@@ -14,7 +14,7 @@ import BaukostenImage from '~/images/baukosten-radverkehrsanlagen.jpg'
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
-    <Layout location={location} navigation={false}>
+    <Layout location={location}>
       <HelmetSeo title="Radschnellweg 8 | Der neue Radschnellweg von Waiblingen nach Ludwigsburg" />
 
       <Logo className="absolute" />

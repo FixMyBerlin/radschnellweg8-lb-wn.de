@@ -11,6 +11,9 @@ import { Logo } from '../Logo'
 import { navigationLinks } from './navigationLinks.const'
 
 export const Navigation = ({ location }) => {
+  // We don't use the navigation ATM
+  return null
+
   return (
     // https://tailwindui.com/components/application-ui/navigation/navbars
     <Disclosure
