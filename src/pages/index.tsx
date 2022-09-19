@@ -5,10 +5,11 @@ import React from 'react'
 import { Facts } from '~/components/Facts'
 import { FAQ, FAQItem } from '~/components/FAQ'
 import { HelmetSeo } from '~/components/HelmetSeo'
-import { Container, Layout, Logo } from '~/components/Layout'
+import { Container, Layout } from '~/components/Layout'
 import { MileStones } from '~/components/MileStones'
+import { Intro } from '~/components/PageHome'
 import { QuotesSlider } from '~/components/QuotesSlider'
-import { Button, H1, H2, LinkExternal, P } from '~/components/Text'
+import { Button, H2, LinkExternal, P } from '~/components/Text'
 import { ZoomableImage } from '~/components/ZoomableImage'
 import BaukostenImage from '~/images/baukosten-radverkehrsanlagen.jpg'
 
@@ -17,31 +18,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
     <Layout location={location}>
       <HelmetSeo title="Radschnellweg 8 | Der neue Radschnellweg von Waiblingen nach Ludwigsburg" />
 
-      <Logo className="absolute" />
-
-      <Container className="mt-5 pl-[40px] sm:mt-12 sm:pl-[140px] lg:pl-[180px] xl:pl-0">
-        <H1>Radschnellverbindung zwischen Waiblingen und Ludwigsburg</H1>
-      </Container>
+      <Intro />
 
       <Container className="pb-10">
-        <P>
-          Direkt – schnell – sicher: Lange zusammenhängende Strecken zwischen
-          wichtigen Pendlerzielen, möglichst wenig Kreuzungen, die zum Bremsen
-          oder gar Absteigen zwingen, mit gutem Belag und breit genug, dass man
-          sicher überholen kann – so sollen sie aussehen, diese attraktiven
-          Radrouten, die insbesondere Pendlerinnen und Pendler zum
-          klimafreundlichen und gesunden Umstieg aufs Rad animieren sollen.
-        </P>
-
-        <P>
-          Der Radschnellweg RS 8 verbindet die Städte Ludwigsburg, Remseck und
-          Waiblingen. Auf diesen Seiten erhalten Sie Informationen zu
-          Anforderungen, Planungsstand und Beteiligungsmöglichkeiten dieses
-          Gemeinschaftsprojekts des Rems-Murr-Kreises mit dem Landkreis
-          Ludwigsburg, der Stadt Ludwigsburg, der Stadt Waiblingen und der Stadt
-          Remseck am Neckar.
-        </P>
-
         <QuotesSlider
           items={[
             {
