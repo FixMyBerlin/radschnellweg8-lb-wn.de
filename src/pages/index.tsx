@@ -5,11 +5,11 @@ import React from 'react'
 import { FAQ, FAQItem } from '~/components/FAQ'
 import { HelmetSeo } from '~/components/HelmetSeo'
 import { Layout, Section } from '~/components/Layout'
-import { MileStones } from '~/components/MileStones'
 import {
   PageHomeFacts,
   PageHomeIntro,
   PageHomeLocation,
+  PageHomeMilestones,
   PageHomeQuotes,
 } from '~/components/PageHome'
 import { Button, H2, LinkExternal, P } from '~/components/Text'
@@ -24,56 +24,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <PageHomeQuotes />
       <PageHomeLocation />
       <PageHomeFacts />
+      <PageHomeMilestones />
 
-      <Section className="py-12">
-        <H2>Die Meilensteine</H2>
-
-        <MileStones
-          items={[
-            {
-              name: 'Idee',
-              description:
-                'Bildung einer Projektgruppe aus Verantwortlichen der Kreise und Städte, Organisation von Workshops mit niederländischen Radverkehrsplanern (ab 2017)',
-            },
-            {
-              name: 'Machbarkeitsanalyse',
-              description:
-                'Zwei Planungsbüros prüfen die Trassenvarianten auf Herz und Nieren, ermitteln Potenziale und wägen Nutzen und Kosten gegeneinander ab (ab 2018)',
-            },
-            {
-              name: 'Förderung',
-              description:
-                'Für die geplante Strecke wird eine Förderung bei Bund und Land beantragt. Erfolgreich! (2020)',
-            },
-            {
-              name: 'Benennung',
-              description:
-                'Mit der Förderung bekommt das Projekt einen Namen „Radschnellweg RS 85“ (2020)',
-            },
-            {
-              name: 'Vorplanung',
-              description:
-                'Nach Rückversicherung bei den politischen Gremien beginnt jeder Projektträger im Rahmen seiner Zuständigkeit mit der Vorplanung. Hier werden die Vorarbeiten aus der Machbarkeitsstudie konkretisiert und eine Trasse festgelegt. (2020–2022)',
-            },
-            {
-              name: 'Bürgerbeteiligung',
-              description: '(geplant Q4 2022)',
-              comingUp: true,
-            },
-            {
-              name: 'Entwurfsplanung',
-              description: '(geplant 2022–23)',
-              comingUp: true,
-            },
-            {
-              name: 'Politische Beschlüsse',
-              description: '(geplant 2023)',
-              comingUp: true,
-            },
-            { name: 'Bau', description: '(geplant ab 2023)', comingUp: true },
-          ]}
-        />
-
+      <Section>
         <H2>Was ist eine Radschnellverbindung?</H2>
         <iframe
           width="560"
@@ -192,7 +145,8 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             </P>
           </FAQItem>
         </FAQ>
-
+      </Section>
+      <Section>
         <H2>Links</H2>
 
         <ul>
@@ -212,7 +166,8 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             </LinkExternal>
           </li>
         </ul>
-
+      </Section>
+      <Section>
         <H2>Pressemitteilungen</H2>
 
         <ul>
@@ -231,7 +186,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             </LinkExternal>
           </li>
         </ul>
+      </Section>
 
+      <Section>
         <H2>Informiert bleiben</H2>
         <P>
           Tragen Sie sich gerne in unseren kostenlosen Newsletter ein und wir
@@ -241,7 +198,8 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         </P>
 
         <Button className="mt-4">Newsletter abonnieren</Button>
-
+      </Section>
+      <Section className="pb-12">
         <H2 className="mt-[150px] text-center !text-base !font-normal text-[#959595]">
           Gefördert durch:
         </H2>
