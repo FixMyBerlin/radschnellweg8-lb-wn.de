@@ -9,14 +9,13 @@ module.exports = {
         'rs8-pink': '#d22d7c',
       },
     },
-    fontFamily: { sans: ['Overpass', 'sans-serif'] },
+    fontFamily: { sans: ['OverpassVariable', 'sans-serif'] },
     fontSize: {
       sm: ['14px', '20px'],
       base: ['18px', '32px'],
       lg: ['20px', '28px'],
       xl: ['24px', '32px'],
-    }
-
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
