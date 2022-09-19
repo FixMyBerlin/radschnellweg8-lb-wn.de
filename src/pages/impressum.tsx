@@ -11,7 +11,7 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
       <HelmetSeo noindex title="404 | Seite nicht gefunden." />
 
       <Section>
-        <h1>Impressum</h1>
+        <h1>Impressum & Kontakt</h1>
         <h2>Im Auftrag folgender Städte und Landkreise</h2>
         <p>
           Stadtverwaltung Ludwigsburg Fachbereich Nachhaltige Mobilität
