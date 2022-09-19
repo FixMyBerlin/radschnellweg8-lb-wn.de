@@ -1,4 +1,4 @@
-export * from './Container'
+export * from './Section'
 export * from './Navigation'
 export * from './Layout'
 export * from './LayoutArticle'

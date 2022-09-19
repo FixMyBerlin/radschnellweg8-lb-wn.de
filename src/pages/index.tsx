@@ -5,7 +5,7 @@ import React from 'react'
 import { Facts } from '~/components/Facts'
 import { FAQ, FAQItem } from '~/components/FAQ'
 import { HelmetSeo } from '~/components/HelmetSeo'
-import { Container, Layout } from '~/components/Layout'
+import { Layout, Section } from '~/components/Layout'
 import { MileStones } from '~/components/MileStones'
 import { Intro } from '~/components/PageHome'
 import { QuotesSlider } from '~/components/QuotesSlider'
@@ -110,6 +110,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           ]}
         />
 
+      <Section className="pb-10">
         <H2>Wo soll der Radschnellweg entlang führen?</H2>
 
         <ZoomableImage
@@ -183,9 +184,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           Wenn die fertige Entwurfsplanung anschließend die politischen Gremien
           passiert hat, kann der Bau endlich starten.
         </P>
-      </Container>
+      </Section>
 
-      <Container className="bg-rs8-blue py-12 text-white">
+      <Section className="bg-rs8-blue py-12 text-white">
         <Facts
           items={[
             {
@@ -226,9 +227,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             },
           ]}
         />
-      </Container>
+      </Section>
 
-      <Container className="py-12">
+      <Section className="py-12">
         <H2>Die Meilensteine</H2>
 
         <MileStones
@@ -469,7 +470,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             </li>
           ))}
         </ul>
-      </Container>
+      </Section>
     </Layout>
   )
 }
