@@ -1,19 +1,19 @@
 import React from 'react'
-import { Container, Logo } from '../Layout'
+import { Section, Logo } from '../Layout'
 import { P } from '../Text'
 
-export const Intro: React.FC = () => {
+export const PageHomeIntro: React.FC = () => {
   return (
     <>
       <Logo className="absolute" />
 
-      <Container className="mt-5 pl-[40px] sm:mt-12 sm:pl-[140px] lg:pl-[180px] xl:pl-0">
+      <Section className="mt-5 pl-[40px] sm:mt-12 sm:pl-[140px] lg:pl-[180px] xl:pl-0">
         <h1 className="font-serif mb-10 text-xl font-extrabold lg:text-[60px] lg:leading-[66px]">
           Radschnellverbindung zwischen Waiblingen und Ludwigsburg
         </h1>
-      </Container>
+      </Section>
 
-      <Container>
+      <Section>
         <P>
           Direkt – schnell – sicher: Lange zusammenhängende Strecken zwischen
           wichtigen Pendlerzielen, möglichst wenig Kreuzungen, die zum Bremsen
@@ -31,7 +31,7 @@ export const Intro: React.FC = () => {
           Ludwigsburg, der Stadt Ludwigsburg, der Stadt Waiblingen und der Stadt
           Remseck am Neckar.
         </P>
-      </Container>
+      </Section>
     </>
   )
 }
