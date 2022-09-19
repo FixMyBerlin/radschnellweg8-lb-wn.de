@@ -46,7 +46,11 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           items={[
             {
               image: (
-                <StaticImage src="../images/portraits/sigel.jpeg" alt="" />
+                <StaticImage
+                  src="../images/portraits/sigel.jpeg"
+                  alt=""
+                  className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
+                />
               ),
               quote: `Radschnellverbindungen ebnen den Weg für nachhaltige
     Mobilität und können gerade beim RS8 die Hauptverkehrsachsen zwischen
@@ -56,7 +60,11 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             },
             {
               image: (
-                <StaticImage src="../images/portraits/allgaier.jpeg" alt="" />
+                <StaticImage
+                  src="../images/portraits/allgaier.jpeg"
+                  alt=""
+                  className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
+                />
               ),
               quote: `Wir freuen uns, dass wir gemeinsam an der Realisierung einer der
   ersten Radschnellwege im Land beteiligt sind.`,
@@ -65,7 +73,11 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             },
             {
               image: (
-                <StaticImage src="../images/portraits/hesky.jpeg" alt="" />
+                <StaticImage
+                  src="../images/portraits/hesky.jpeg"
+                  alt=""
+                  className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
+                />
               ),
               quote: `Die Verbindung der Wirtschaftsräume Ludwigsburg/Waiblingen ist
     wichtig und ein zentrales Anliegen nicht nur der Unternehmen, sondern auch
@@ -75,7 +87,11 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             },
             {
               image: (
-                <StaticImage src="../images/portraits/hermann.jpeg" alt="" />
+                <StaticImage
+                  src="../images/portraits/hermann.jpeg"
+                  alt=""
+                  className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
+                />
               ),
               quote: `Es freut mich sehr, dass der Rems-Murr-Kreis, der Kreis Ludwigsburg
     und alle beteiligten Kommunen eine leistungsstarke und schnelle
@@ -86,7 +102,11 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             },
             {
               image: (
-                <StaticImage src="../images/portraits/knecht.jpeg" alt="" />
+                <StaticImage
+                  src="../images/portraits/knecht.jpeg"
+                  alt=""
+                  className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
+                />
               ),
               quote: `Der Ausbau des Radschnellwegs ist ein hervorragendes Beispiel für
     nachhaltige Mobilität über Stadt- und Kreisgrenzen hinweg.`,
@@ -98,6 +118,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
                 <StaticImage
                   src="../images/portraits/schoenberger.jpeg"
                   alt=""
+                  className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
                 />
               ),
               quote: `Wir freuen uns sehr, dass mit dem Radschnellweg eine Ergänzung zu
