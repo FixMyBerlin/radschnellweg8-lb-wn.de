@@ -1,3 +1,4 @@
+export * from './PageHomeAboutVideo'
 export * from './PageHomeFacts'
 export * from './PageHomeIntro'
 export * from './PageHomeLocation'

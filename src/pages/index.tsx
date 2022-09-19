@@ -6,6 +6,7 @@ import { FAQ, FAQItem } from '~/components/FAQ'
 import { HelmetSeo } from '~/components/HelmetSeo'
 import { Layout, Section } from '~/components/Layout'
 import {
+  PageHomeAboutVideo,
   PageHomeFacts,
   PageHomeIntro,
   PageHomeLocation,
@@ -25,19 +26,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <PageHomeLocation />
       <PageHomeFacts />
       <PageHomeMilestones />
+      <PageHomeAboutVideo />
 
       <Section>
-        <H2>Was ist eine Radschnellverbindung?</H2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/t9GxxxYse_8"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        />
-
         <H2 className="text-center">Häufig gestellte Fragen</H2>
 
         <FAQ>
