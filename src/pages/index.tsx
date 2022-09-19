@@ -2,7 +2,7 @@ import React from 'react'
 import { PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { PlayIcon } from '@heroicons/react/outline'
-import { Button, A, P, H1, H2, UL, LI } from '~/components/Text'
+import { Button, LinkExternal, P, H1, H2, UL, li } from '~/components/Text'
 import { Logo, Layout, Container } from '~/components/Layout'
 import { HelmetSeo } from '~/components/HelmetSeo'
 import { QuotesSlider } from '~/components/QuotesSlider'
@@ -342,10 +342,10 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             </UL>
             <P>
               In den{' '}
-              <A href="https://www.aktivmobil-bw.de/radverkehr/radschnellverbindungen/qualitaetsstandards-und-musterloesungen/">
+              <LinkExternal href="https://www.aktivmobil-bw.de/radverkehr/radschnellverbindungen/qualitaetsstandards-und-musterloesungen/">
                 Qualitätsstandards für Radschnellverbindungen in
                 Baden-Württemberg
-              </A>{' '}
+              </LinkExternal>{' '}
               werden für unterschiedliche Führungsformen verbindliche Standards
               festgelegt.
             </P>
@@ -394,9 +394,8 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
               von Schlothauer & Wauer im Auftrag des Landratsamts Ludwigsburg.
               <br />
               <br />
-              <A
+              <LinkExternal
                 className="relative block text-rs8-pink/60 hover:text-rs8-pink/80"
-                target="_blank"
                 href="https://www.landkreis-ludwigsburg.de/fileadmin/user_upload/seiteninhalte/verkehr-sicherheit/Radverkehr/Visualisierung-RSV-Potenzial-2.000-Radelnde_Kurzversion.mp4"
               >
                 <StaticImage
@@ -409,7 +408,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
                 <div className="align-center absolute top-0 left-0 bottom-0 right-0 flex justify-center">
                   <PlayIcon className="w-[150px]" />
                 </div>
-              </A>
+              </LinkExternal>
               <br />
               (Simulation eines Radschnellwegs mit einem Potenzial von 2.000
               Radfahrenden/Tag. © Visualisierung durch Schlothauer & Wauer im
@@ -422,19 +421,19 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
 
         <ul>
           <li>
-            <A href="https://www.rems-murr-kreis.de/fileadmin/Dateien/Bilder/3.39002_Stabsstelle_Radwege/191029_Abschlussbericht_MBS_RSV_Ludwigsburg_Waiblingen.pdf">
+            <LinkExternal href="https://www.rems-murr-kreis.de/fileadmin/Dateien/Bilder/3.39002_Stabsstelle_Radwege/191029_Abschlussbericht_MBS_RSV_Ludwigsburg_Waiblingen.pdf">
               Machbarkeitsstudie Hauptdokument
-            </A>
+            </LinkExternal>
           </li>
           <li>
-            <A href="https://www.rems-murr-kreis.de/fileadmin/Dateien/Bilder/3.39002_Stabsstelle_Radwege/191029_Anlage_1_und_2_MBS_RSV_Ludwigsburg_Waiblingen.pdf">
+            <LinkExternal href="https://www.rems-murr-kreis.de/fileadmin/Dateien/Bilder/3.39002_Stabsstelle_Radwege/191029_Anlage_1_und_2_MBS_RSV_Ludwigsburg_Waiblingen.pdf">
               Machbarkeitsstudie Anlagen 1+2
-            </A>
+            </LinkExternal>
           </li>
           <li>
-            <A href="https://www.rems-murr-kreis.de/fileadmin/Dateien/Bilder/3.39002_Stabsstelle_Radwege/191029_Anlage_3_und_4_MBS_RSV_Ludwigsburg_Waiblingen.pdf">
+            <LinkExternal href="https://www.rems-murr-kreis.de/fileadmin/Dateien/Bilder/3.39002_Stabsstelle_Radwege/191029_Anlage_3_und_4_MBS_RSV_Ludwigsburg_Waiblingen.pdf">
               Machbarkeitsstudie Anlagen 3+4
-            </A>
+            </LinkExternal>
           </li>
         </ul>
 
@@ -443,17 +442,17 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <ul>
           <li>
             <span className="font-bold">7.5.2019 | </span>
-            <A href="https://www.rems-murr-kreis.de/bauen-umwelt-und-verkehr/aktuelles/?tx_hwnews_hwnews%5BnewsartikelId%5D=1043&tx_hwnews_hwnews%5BcurrentPage%5D=2&tx_hwnews_hwnews%5Baction%5D=show&tx_hwnews_hwnews%5Bcontroller%5D=Newsartikel&cHash=2eb7bb05a868847505a7b59090e3f7dc">
+            <LinkExternal href="https://www.rems-murr-kreis.de/bauen-umwelt-und-verkehr/aktuelles/?tx_hwnews_hwnews%5BnewsartikelId%5D=1043&tx_hwnews_hwnews%5BcurrentPage%5D=2&tx_hwnews_hwnews%5Baction%5D=show&tx_hwnews_hwnews%5Bcontroller%5D=Newsartikel&cHash=2eb7bb05a868847505a7b59090e3f7dc">
               Grünes Licht für Radschnellverbindung im Rems-Murr-Kreis:
               Rems-Murr-Kreis
-            </A>
+            </LinkExternal>
           </li>
           <li>
             <span className="font-bold">25.05.2020 | </span>
-            <A href="https://www.landkreis-ludwigsburg.de/de/landratsamt-landkreis/aktuelles/pressemitteilungen/detail/nachhaltige-mobilitaet-zwischen-den-landkreisen/">
+            <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/landratsamt-landkreis/aktuelles/pressemitteilungen/detail/nachhaltige-mobilitaet-zwischen-den-landkreisen/">
               Nachhaltige Mobilität zwischen den Landkreisen - Landratsamt
               Ludwigsburg
-            </A>
+            </LinkExternal>
           </li>
         </ul>
 
