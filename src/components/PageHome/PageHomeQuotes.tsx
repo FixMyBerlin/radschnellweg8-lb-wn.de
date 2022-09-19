@@ -8,7 +8,7 @@ export const PageHomeQuotes: React.FC = () => {
     {
       image: (
         <StaticImage
-          src="../images/portraits/sigel.jpeg"
+          src="../../images/portraits/sigel.jpeg"
           alt=""
           className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
         />
@@ -22,7 +22,7 @@ export const PageHomeQuotes: React.FC = () => {
     {
       image: (
         <StaticImage
-          src="../images/portraits/allgaier.jpeg"
+          src="../../images/portraits/allgaier.jpeg"
           alt=""
           className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
         />
@@ -35,7 +35,7 @@ export const PageHomeQuotes: React.FC = () => {
     {
       image: (
         <StaticImage
-          src="../images/portraits/hesky.jpeg"
+          src="../../images/portraits/hesky.jpeg"
           alt=""
           className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
         />
@@ -49,7 +49,7 @@ export const PageHomeQuotes: React.FC = () => {
     {
       image: (
         <StaticImage
-          src="../images/portraits/hermann.jpeg"
+          src="../../images/portraits/hermann.jpeg"
           alt=""
           className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
         />
@@ -64,7 +64,7 @@ export const PageHomeQuotes: React.FC = () => {
     {
       image: (
         <StaticImage
-          src="../images/portraits/knecht.jpeg"
+          src="../../images/portraits/knecht.jpeg"
           alt=""
           className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
         />
@@ -77,7 +77,7 @@ export const PageHomeQuotes: React.FC = () => {
     {
       image: (
         <StaticImage
-          src="../images/portraits/schoenberger.jpeg"
+          src="../../images/portraits/schoenberger.jpeg"
           alt=""
           className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
         />

@@ -13,15 +13,15 @@ export const PageHomeFunding: React.FC = () => {
       <ul className="gap-24 sm:columns-3">
         {[
           <StaticImage
-            src="../images/bw-radschnellweg-logo.jpg"
+            src="../../images/bw-radschnellweg-logo.jpg"
             alt="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
           />,
           <StaticImage
-            src="../images/bmdv-foerderung-logo.png"
+            src="../../images/bmdv-foerderung-logo.png"
             alt="Bundesministerium für Digitales und Verkehr; aufgrund eines Beschlusses des Deutschen Bundestages"
           />,
           <StaticImage
-            src="../images/vm-bw-foerderung-logo.png"
+            src="../../images/vm-bw-foerderung-logo.png"
             alt="Ministerium für Verkehr Baden-Württemberg"
           />,
         ].map((img) => (

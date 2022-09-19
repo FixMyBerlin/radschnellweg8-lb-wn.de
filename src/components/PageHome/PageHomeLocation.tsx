@@ -13,7 +13,7 @@ export const PageHomeLocation: React.FC = () => {
         className="mb-4 h-[350px] w-[350px] overflow-hidden rounded-lg md:float-left md:mr-10"
         image={
           <StaticImage
-            src="../images/rsv8-map.png"
+            src="../../images/rsv8-map.png"
             alt="Radschnellweg 8 Übersichtskarte"
           />
         }

@@ -98,7 +98,7 @@ export const PageHomeFaqs: React.FC = () => {
               href="https://www.landkreis-ludwigsburg.de/fileadmin/user_upload/seiteninhalte/verkehr-sicherheit/Radverkehr/Visualisierung-RSV-Potenzial-2.000-Radelnde_Kurzversion.mp4"
             >
               <StaticImage
-                src="../images/radschnellweg-simulation.png"
+                src="../../images/radschnellweg-simulation.png"
                 alt=""
               />
               <span className="sr-only">
