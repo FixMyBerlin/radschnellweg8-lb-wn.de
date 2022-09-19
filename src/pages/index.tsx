@@ -1,6 +1,6 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { HelmetSeo } from '~/components/HelmetSeo'
+import { HelmetSeo } from '~/components/HelmetSeo/HelmetSeo'
 import { Layout } from '~/components/Layout'
 import {
   PageHomeAboutVideo,

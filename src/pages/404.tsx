@@ -1,6 +1,6 @@
 import { Link, PageProps } from 'gatsby'
 import React from 'react'
-import { HelmetSeo } from '~/components/HelmetSeo'
+import { HelmetSeo } from '~/components/HelmetSeo/HelmetSeo'
 import { LayoutArticle } from '~/components/Layout'
 
 const NotFound: React.FC<PageProps> = ({ location }) => {
