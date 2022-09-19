@@ -2,7 +2,6 @@ import React from 'react'
 import { PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import { PlayIcon } from '@heroicons/react/outline'
-import { Button, LinkExternal, P, H1, H2, UL, li } from '~/components/Text'
 import { Logo, Layout, Container } from '~/components/Layout'
 import { HelmetSeo } from '~/components/HelmetSeo'
 import { QuotesSlider } from '~/components/QuotesSlider'
@@ -10,6 +9,7 @@ import { ZoomableImage } from '~/components/ZoomableImage'
 import { Facts } from '~/components/Facts'
 import { FAQ, FAQItem } from '~/components/FAQ'
 import { MileStones } from '~/components/MileStones'
+import { Button, H1, H2, LinkExternal, P } from '~/components/Text'
 import BaukostenImage from '~/images/baukosten-radverkehrsanlagen.jpg'
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
@@ -326,20 +326,20 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             </P>
           </FAQItem>
           <FAQItem title="Was zeichnet einen Radschnellweg aus?">
-            <UL>
-              <LI>Gesamtstrecke mindestens fünf Kilometer</LI>
-              <LI>Potenzial von mindestens 2.000 Fahrradfahrten täglich</LI>
-              <LI>
+            <ul className="list-disc pl-5">
+              <li>Gesamtstrecke mindestens fünf Kilometer</li>
+              <li>Potenzial von mindestens 2.000 Fahrradfahrten täglich</li>
+              <li>
                 Breite mindestens zwischen drei Metern (Richtungsverkehr) und
                 vier Metern (Zweirichtungsverkehr)
-              </LI>
-              <LI>In der Regel von anderen Verkehrsmitteln getrennt</LI>
-              <LI>
+              </li>
+              <li>In der Regel von anderen Verkehrsmitteln getrennt</li>
+              <li>
                 Routen möglichst kreuzungsfrei oder mit minimalen Wartezeiten an
                 Kreuzungen
-              </LI>
-              <LI>Hohe Belagsqualität und eine möglichst geringe Steigung</LI>
-            </UL>
+              </li>
+              <li>Hohe Belagsqualität und eine möglichst geringe Steigung</li>
+            </ul>
             <P>
               In den{' '}
               <LinkExternal href="https://www.aktivmobil-bw.de/radverkehr/radschnellverbindungen/qualitaetsstandards-und-musterloesungen/">
