@@ -11,10 +11,11 @@ import {
   PageHomeLinks,
   PageHomeLocation,
   PageHomeMilestones,
+  PageHomeNewsletter,
   PageHomePress,
   PageHomeQuotes,
 } from '~/components/PageHome'
-import { Button, H2, P } from '~/components/Text'
+import { H2 } from '~/components/Text'
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
@@ -30,18 +31,8 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <PageHomeFaqs />
       <PageHomeLinks />
       <PageHomePress />
+      <PageHomeNewsletter />
 
-      <Section>
-        <H2>Informiert bleiben</H2>
-        <P>
-          Tragen Sie sich gerne in unseren kostenlosen Newsletter ein und wir
-          informieren Sie rechtzeitig, sobald es Neuigkeiten gibt und die
-          Online-Beteiligung zur Radschnellverbindung startet. Sie können den
-          Newsletter jederzeit ganz einfach kündigen.
-        </P>
-
-        <Button className="mt-4">Newsletter abonnieren</Button>
-      </Section>
       <Section className="pb-12">
         <H2 className="mt-[150px] text-center !text-base !font-normal text-[#959595]">
           Gefördert durch:
