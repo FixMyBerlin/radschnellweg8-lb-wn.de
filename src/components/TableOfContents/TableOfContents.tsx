@@ -26,7 +26,7 @@ export const TableOfContents: React.FC<Props> = ({ items }) => {
   return (
     <nav
       arial-title="Table of contents"
-      className="not-prose absolute top-40 z-10 hidden w-44 rounded bg-white py-3 px-4 lg:left-0 lg:block lg:rounded-l-none xl:fixed xl:shadow-lg 2xl:left-8"
+      className="not-prose absolute top-72 z-10 hidden w-44 rounded bg-white py-3 px-4 lg:right-0 lg:block lg:rounded-r-none xl:fixed xl:shadow-lg 2xl:left-8"
     >
       <ul>
         {items.map(([itemHash, itemlink]) => (
