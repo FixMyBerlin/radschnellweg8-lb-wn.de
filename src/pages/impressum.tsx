@@ -8,46 +8,52 @@ import { LinkExternal, LinkMail } from '~/components/Text'
 const Impressum: React.FC<PageProps> = ({ location }) => {
   return (
     <LayoutArticle location={location}>
-      <HelmetSeo noindex title="404 | Seite nicht gefunden." />
+      <HelmetSeo noindex title="Impressum & Kontakt" />
 
       <Section>
         <h1>Impressum & Kontakt</h1>
         <h2>Im Auftrag folgender Städte und Landkreise</h2>
         <p>
-          Stadtverwaltung Ludwigsburg Fachbereich Nachhaltige Mobilität
+          <strong>Stadtverwaltung Ludwigsburg</strong>
+          <br />
+          Fachbereich Nachhaltige Mobilität
           <br />
           Wilhelmstraße 5 <br />
           71638 Ludwigsburg <br />
           <LinkMail>mobilität@ludwigsburg.de</LinkMail>
         </p>
         <p>
-          Landratsamt Kreis Ludwigsburg Fachbereich Straßen <br />
+          <strong>Landratsamt Kreis Ludwigsburg</strong> <br />
+          Fachbereich Straßen <br />
           Hindenburgstraße 40 <br />
           70638 Ludwigsburg <br />
           <LinkMail>radverkehr@landkreis-ludwigsburg.de</LinkMail>
         </p>
         <p>
-          Stadtverwaltung Remseck Fachbereich Städtische Infrastruktur
+          <strong>Stadtverwaltung Remseck</strong> <br />
+          Fachbereich Städtische Infrastruktur
           <br />
           Marktplatz 1 <br />
           71686 Remseck am Neckar <br />
           <LinkMail>a.abel@remseck.de</LinkMail>
         </p>
         <p>
-          Landratsamt Rems-Murr-Kreis Stabstelle Radwege <br />
+          <strong>Landratsamt Rems-Murr-Kreis</strong> <br />
+          Stabstelle Radwege <br />
           Stuttgarter Straße 110 <br />
           71332 Waiblingen <br />
           <LinkMail>radwege@rems-murr-kreis.de</LinkMail>
         </p>
         <p>
-          Stadtverwaltung Waiblingen Fachbereich Stadtplanung <br />
+          <strong>Stadtverwaltung Waiblingen</strong> <br />
+          Fachbereich Stadtplanung <br />
           Kurze Straße 24 <br />
           71332 Waiblingen <br />
           <LinkMail>susanne.keil@waiblingen.de</LinkMail>
         </p>
         <h2>Verantwortlich für technische Umsetzung</h2>
         <p>
-          FixMyCity GmbH <br />
+          <strong>FixMyCity GmbH</strong> <br />
           Karlsgartenstraße 12 <br />
           12049 Berlin <br />
           <LinkMail>hello@fixmycity.de</LinkMail> <br />
