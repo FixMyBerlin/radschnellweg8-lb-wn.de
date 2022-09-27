@@ -65,21 +65,6 @@ export const PageHomeLocation: React.FC = () => {
         gerne in unsere Kontaktliste ein, dann informieren wir Sie per E-Mail,
         sobald es losgeht. Wir freuen uns auf Ihr Mitwirken!
       </P>
-
-      <H2>Wie geht es danach weiter?</H2>
-
-      <P>
-        Die Anregungen aus der Bürgerbeteiligung fließen in die dann
-        anschließende Entwurfsplanung ein. Hier finden zudem weitere
-        Untersuchungen statt, wie etwa zum Baugrund oder zur Statik. Und auch
-        die Ökologischen Untersuchungen folgen jetzt. Zwar ist die Förderung des
-        Radverkehrs letztlich auch eine Maßnahme, die Umwelt und Klima schützen
-        soll - dennoch greift auch der Bau eines Radweges zunächst in die Natur
-        ein. Dafür werden Ausgleichsmaßnahmen erforderlich.
-        <br />
-        Wenn die fertige Entwurfsplanung anschließend die politischen Gremien
-        passiert hat, kann der Bau endlich starten.
-      </P>
     </Section>
   )
 }
