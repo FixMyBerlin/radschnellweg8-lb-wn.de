@@ -12,11 +12,9 @@ type Props = {
   children: React.ReactNode
 }
 
-export const Layout: React.FC<Props> = ({
-  className = '',
-  location = '',
-  children,
-}) => {
+export const Layout: React.FC<Props> = ({ className, location, children }) => {
+  const isHome = location.pathname === '/'
+
   return (
     <div className="flex h-full flex-col text-[#1e293b]">
       <div className="z-[1] w-full py-4 px-2 shadow-sm sm:p-8">
@@ -58,7 +56,7 @@ export const Layout: React.FC<Props> = ({
       </div>
       <Navigation location={location} />
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
-        <LogoAndHeadline />
+        <LogoAndHeadline isHome={isHome} />
         {children}
       </main>
       <Footer />
