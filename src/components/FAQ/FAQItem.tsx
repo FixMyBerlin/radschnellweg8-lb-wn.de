@@ -27,7 +27,7 @@ export const FAQItem: React.FC<Props> = ({ title, children }) => {
               </span>
             </Disclosure.Button>
           </dt>
-          <Disclosure.Panel as="dd" className="mt-2 pr-12">
+          <Disclosure.Panel as="dd" className="mt-2 lg:pr-12">
             <p className="text-[16px] leading-[24px] text-gray-500">
               {children}
             </p>

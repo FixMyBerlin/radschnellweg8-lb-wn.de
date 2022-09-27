@@ -1,10 +1,10 @@
-import { PlayIcon } from '@heroicons/react/outline'
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import BaukostenImage from '~/images/baukosten-radverkehrsanlagen.jpg'
 import { FAQ, FAQItem } from '../FAQ'
 import { Section } from '../Layout'
 import { H2, LinkExternal, P } from '../Text'
+import { YouTubePreview } from '../YouTubePreview'
 
 export const PageHomeFaqs: React.FC = () => {
   return (
@@ -92,23 +92,16 @@ export const PageHomeFaqs: React.FC = () => {
             täglichen Verkehrsmenge (DTV). Die Simulationen wurden erstellt von
             Schlothauer & Wauer im Auftrag des Landratsamts Ludwigsburg.
             <br />
-            <br />
-            <LinkExternal
-              className="relative block text-rs8-pink/60 hover:text-rs8-pink/80"
-              href="https://www.landkreis-ludwigsburg.de/fileadmin/user_upload/seiteninhalte/verkehr-sicherheit/Radverkehr/Visualisierung-RSV-Potenzial-2.000-Radelnde_Kurzversion.mp4"
-            >
-              <StaticImage
-                src="../../images/radschnellweg-simulation.png"
-                alt=""
-              />
-              <span className="sr-only">
-                Video: Radschnellweg mit 2.000 Radfahrenden pro Tag
-              </span>
-              <div className="align-center absolute top-0 left-0 bottom-0 right-0 flex justify-center">
-                <PlayIcon className="w-[150px]" />
-              </div>
-            </LinkExternal>
-            <br />
+            <YouTubePreview
+              link="https://www.landkreis-ludwigsburg.de/fileadmin/user_upload/seiteninhalte/verkehr-sicherheit/Radverkehr/Visualisierung-RSV-Potenzial-2.000-Radelnde_Kurzversion.mp4"
+              image={
+                <StaticImage
+                  src="../../images/radschnellweg-simulation.png"
+                  alt="Video: Radschnellweg mit 2.000 Radfahrenden pro Tag"
+                  className="aspect-video"
+                />
+              }
+            />
             (Simulation eines Radschnellwegs mit einem Potenzial von 2.000
             Radfahrenden/Tag. © Visualisierung durch Schlothauer & Wauer im
             Auftrag des Landratsamts Ludwigsburg)
