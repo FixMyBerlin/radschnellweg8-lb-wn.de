@@ -1,9 +1,10 @@
 {
   "name": "rsv8-lb-wn",
-  "description": "",
-  "version": "0.1.0",
+  "description": "Public page build using Gatsby for Radschnellweg 8 between Ludwigsburg and Waiblingen",
+  "version": "1.0.0",
   "author": "FixMyCity <hello@fixmycity.de>",
-  "license": "COPYRIGHT",
+  "license": "AGPL-3.0",
+  "private": true,
   "keywords": [],
   "scripts": {
     "start": "gatsby develop --open",
