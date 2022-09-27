@@ -8,7 +8,6 @@ import {
   PageHomeFaqs,
   PageHomeFunding,
   PageHomeIntro,
-  PageHomeLinks,
   PageHomeLocation,
   PageHomeMilestones,
   PageHomeNewsletter,
@@ -28,7 +27,6 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <PageHomeMilestones />
       <PageHomeAboutVideo />
       <PageHomeFaqs />
-      <PageHomeLinks />
       <PageHomePress />
       <PageHomeNewsletter />
       <PageHomeFunding />
