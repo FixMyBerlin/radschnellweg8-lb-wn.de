@@ -32,11 +32,11 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
       <p>
         Mit den nachfolgenden Informationen wollen wir Ihnen einen Überblick
         über die Verarbeitung Ihrer personenbezogenen Daten auf unserer Website
-        radwege-check.de (nachfolgend „Website“ genannt) geben. Wir wollen Ihnen
-        ebenfalls über eure Rechte aus dem Datenschutzrecht informieren. Die
-        Verarbeitung Ihrer personenbezogenen Daten durch uns erfolgt stets im
-        Einklang mit der Datenschutzgrundverordnung (nachfolgend „DSGVO“
-        genannt) sowie allen geltenden landesspezifischen
+        radschnellweg8-lb-wn.de (nachfolgend „Website“ genannt) geben. Wir
+        wollen Ihnen ebenfalls über eure Rechte aus dem Datenschutzrecht
+        informieren. Die Verarbeitung Ihrer personenbezogenen Daten durch uns
+        erfolgt stets im Einklang mit der Datenschutzgrundverordnung
+        (nachfolgend „DSGVO“ genannt) sowie allen geltenden landesspezifischen
         Datenschutzbestimmungen.
       </p>
       <h2 id="thirdparty">Verantwortlichkeit</h2>
