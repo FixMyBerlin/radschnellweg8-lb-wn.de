@@ -2,34 +2,35 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Section } from '../Layout'
 import { H2 } from '../Text'
+import BmdvFoerderungLogo from '../../images/bmdv-foerderung-logo.svg'
 
 export const PageHomeFunding: React.FC = () => {
+  const images = [
+    <StaticImage
+      src="../../images/bw-radschnellweg-logo.jpg"
+      alt="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
+      className="w-32 lg:w-[70%]"
+    />,
+    <BmdvFoerderungLogo
+      title="Bundesministerium für Digitales und Verkehr; aufgrund eines Beschlusses des Deutschen Bundestages"
+      className="w-40 lg:w-full"
+    />,
+    <StaticImage
+      src="../../images/vm-bw-foerderung-logo.png"
+      alt="Ministerium für Verkehr Baden-Württemberg"
+      className="w-40 lg:w-full"
+    />,
+  ]
+
   return (
     <Section className="pb-12">
-      <H2 className="mt-[150px] text-center !text-base !font-normal text-[#959595]">
+      <H2 className="mt-[150px] mb-5 text-center !text-base !font-normal text-[#959595]">
         Gefördert durch:
       </H2>
 
-      <ul className="gap-24 sm:columns-3">
-        {[
-          <StaticImage
-            src="../../images/bw-radschnellweg-logo.jpg"
-            alt="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
-          />,
-          <StaticImage
-            src="../../images/bmdv-foerderung-logo.png"
-            alt="Bundesministerium für Digitales und Verkehr; aufgrund eines Beschlusses des Deutschen Bundestages"
-          />,
-          <StaticImage
-            src="../../images/vm-bw-foerderung-logo.png"
-            alt="Ministerium für Verkehr Baden-Württemberg"
-          />,
-        ].map((img) => (
-          <li key={img.props.src} className="m-auto mb-10 w-3/5 sm:w-full">
-            {img}
-          </li>
-        ))}
-      </ul>
+      <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-20">
+        {images.map((img) => img)}
+      </div>
     </Section>
   )
 }
