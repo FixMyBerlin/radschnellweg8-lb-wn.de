@@ -1,10 +1,10 @@
 import React, { useMemo, useState } from 'react'
 import classNames from 'classnames'
 import {
-  AnnotationIcon,
   ArrowCircleLeftIcon,
   ArrowCircleRightIcon,
 } from '@heroicons/react/outline'
+import QuoteIcon from './assets/quote-icon.svg'
 
 type Slide = {
   quote: string
@@ -61,6 +61,7 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
   return (
     <div className="relative mt-10 mb-[110px] lg:h-[20em] lg:px-[70px]">
       {arrow(<ArrowCircleLeftIcon />)}
+      <QuoteIcon className="absolute top-[8.25rem] left-2 z-[-1] w-10 stroke-[6px] object-cover text-slate-400 lg:left-[24.5rem] lg:-top-10 lg:w-40 lg:stroke-2" />
       {randomItems.map((item, index) => (
         <figure
           key={item.person}
@@ -71,15 +72,14 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
           }`}
         >
           <div>{item.image}</div>
-          <div className="relative pl-10 pt-12">
-            <AnnotationIcon className="absolute top-[-30px] left-0 z-[-1] w-[200px] text-gray-100" />
+          <div className="pl-10 pt-6 lg:pt-12">
             <blockquote className="text-[24px] font-medium leading-[32px]">
               {item.quote}
             </blockquote>
             <figcaption className="text-[16px] leading-[24px]">
-              <span className="mt-8 block font-extrabold text-rs8-blue">
+              <strong className="mt-8 block font-extrabold text-rs8-blue">
                 {item.person}
-              </span>
+              </strong>
               <span className="block text-rs8-pink">{item.position}</span>
             </figcaption>
           </div>
