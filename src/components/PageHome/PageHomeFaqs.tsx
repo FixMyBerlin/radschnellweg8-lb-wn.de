@@ -24,6 +24,15 @@ export const PageHomeFaqs: React.FC = () => {
             sich die Fahrtzeit aufgrund der wenigen Stopps erheblich. Dadurch
             wird das Radfahren auch auf längeren Strecken attraktiv.
           </P>
+          <YouTubePreview
+            link="https://www.youtube.com/watch?v=t9GxxxYse_8"
+            image={
+              <StaticImage
+                src="./assets/youtube-preview-radschnellwege.jpeg"
+                alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
+              />
+            }
+          />
         </FAQItem>
         <FAQItem title="Was zeichnet einen Radschnellweg aus?">
           <ul className="list-disc pl-5">

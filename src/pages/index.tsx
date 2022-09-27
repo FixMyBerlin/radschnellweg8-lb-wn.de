@@ -3,7 +3,6 @@ import React from 'react'
 import { HelmetSeo } from '~/components/HelmetSeo/HelmetSeo'
 import { Layout } from '~/components/Layout'
 import {
-  PageHomeAboutVideo,
   PageHomeFacts,
   PageHomeFaqs,
   PageHomeFunding,
@@ -24,7 +23,6 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <PageHomeLocation />
       <PageHomeFacts />
       <PageHomeMilestones />
-      <PageHomeAboutVideo />
       <PageHomeFaqs />
       <PageHomePress />
       <PageHomeFunding />
