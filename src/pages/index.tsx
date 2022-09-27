@@ -10,7 +10,6 @@ import {
   PageHomeIntro,
   PageHomeLocation,
   PageHomeMilestones,
-  PageHomeNewsletter,
   PageHomePress,
   PageHomeQuotes,
 } from '~/components/PageHome'
@@ -28,7 +27,6 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <PageHomeAboutVideo />
       <PageHomeFaqs />
       <PageHomePress />
-      <PageHomeNewsletter />
       <PageHomeFunding />
     </Layout>
   )
