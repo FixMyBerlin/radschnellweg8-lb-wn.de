@@ -9,9 +9,7 @@ const NotFound: React.FC<PageProps> = ({ location }) => {
       <HelmetSeo noindex title="404 | Seite nicht gefunden." />
 
       <div className="sm:flex">
-        <p className="text-4xl sm:text-5xl font-extrabold text-orange-400">
-          404
-        </p>
+        <p className="text-4xl sm:text-5xl font-extrabold text-rs8-pink">404</p>
         <div className="sm:ml-6">
           <div className="sm:border-l sm:border-gray-200 sm:pl-6">
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">
@@ -22,7 +20,10 @@ const NotFound: React.FC<PageProps> = ({ location }) => {
             </p>
           </div>
           <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
-            <Link className="btn btn-brand" to="/">
+            <Link
+              className="rounded-full border border-rs8-pink px-6 pt-3 pb-2.5 no-underline hover:bg-gray-100"
+              to="/"
+            >
               Zur Startseite
             </Link>
           </div>
