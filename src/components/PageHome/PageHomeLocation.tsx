@@ -10,7 +10,7 @@ export const PageHomeLocation: React.FC = () => {
       <H2>Wo soll der Radschnellweg entlang führen?</H2>
 
       <ZoomableImage
-        className="mb-4 h-[350px] w-[350px] overflow-hidden rounded-lg md:float-left md:mr-10"
+        className="mb-4 h-auto w-full overflow-hidden rounded-lg md:float-left md:mr-10 lg:h-[350px] lg:w-[350px]"
         image={
           <StaticImage
             src="../../images/rsv8-map.png"
