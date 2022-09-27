@@ -64,7 +64,7 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
           <LinkExternal href="https://twitter.com/fixmyberlin">
             Twitter
           </LinkExternal>{' '}
-          und
+          und{' '}
           <LinkExternal href="https://www.linkedin.com/company/fixmycity">
             LinkedIn
           </LinkExternal>
@@ -72,13 +72,13 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
         <h2>Feedback & Impressum</h2>
         <p>
           Fragen zum RS8 können Sie gerne an{' '}
-          <LinkMail>Radverkehr@landkreis-ludwigsburg.de</LinkMail>
-          senden. Wenn Sie sich als Bürger:innen gerne beteiligen wollen, können
-          Sie dies unter diesem Link tun (in Arbeit).
+          <LinkMail>Radverkehr@landkreis-ludwigsburg.de</LinkMail> senden. Wenn
+          Sie sich als Bürger:innen gerne beteiligen wollen, können Sie dies
+          unter diesem Link tun (in Arbeit).
         </p>
         <p>
           Wir freuen uns über Kommentare Anregungen und Unterstützung zur
-          Website an <LinkMail>feedback@fixmycity.de</LinkMail>
+          Website an <LinkMail>feedback@fixmycity.de</LinkMail>.
         </p>
         <p>
           Sofern du Bugs oder Verbesserungsvorschläge hast, gib uns gerne{' '}
