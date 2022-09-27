@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import classNames from 'classnames'
 import {
   AnnotationIcon,
@@ -19,17 +19,30 @@ type Props = {
 
 export const QuotesSlider: React.FC<Props> = ({ items }) => {
   const [active, setActive] = useState<number>(0)
+
+  const randomItems = useMemo(
+    () => items.sort(() => Math.random() - 0.5),
+    [items]
+  )
+
   const arrow = (icon, right = false) => {
-    if ((right && active === items.length - 1) || (!right && active === 0)) {
+    if (
+      (right && active === randomItems.length - 1) ||
+      (!right && active === 0)
+    ) {
       return null
     }
+
     return (
       <button
         type="button"
         onClick={(e) => {
           e.preventDefault()
           setActive(
-            Math.min(items.length - 1, Math.max(0, active + (right ? 1 : -1)))
+            Math.min(
+              randomItems.length - 1,
+              Math.max(0, active + (right ? 1 : -1))
+            )
           )
         }}
         className={classNames(
@@ -44,10 +57,11 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
       </button>
     )
   }
+
   return (
     <div className="relative mt-10 mb-[110px] lg:h-[20em] lg:px-[70px]">
       {arrow(<ArrowCircleLeftIcon />)}
-      {items.map((item, index) => (
+      {randomItems.map((item, index) => (
         <figure
           key={item.person}
           className={`transition-opacity duration-500 lg:absolute lg:left-[70px] lg:right-[70px] lg:flex ${
