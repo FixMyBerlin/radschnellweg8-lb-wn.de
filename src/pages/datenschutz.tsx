@@ -23,7 +23,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
 
   return (
     <LayoutArticle location={location}>
-      <HelmetSeo noindex title="Radwege-Check | Datenschutz" />
+      <HelmetSeo noindex title="Datenschutz" />
 
       <h1>Datenschutzerklärung</h1>
       <TableOfContents items={tocItems} />
