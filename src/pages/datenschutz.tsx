@@ -149,9 +149,9 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
             <td>Hosting der Website und Bereitstellung der Inhalte</td>
           </tr>
           <tr>
-            <td>Amazon Web Services, Inc.</td>
-            <td>410 Terry Avenue North, Seattle, WA 98109-5210</td>
-            <td>USA</td>
+            <td>Amazon Web Services EMEA SARL</td>
+            <td>38 Avenue John F. Kennedy, L-1855 Luxembourg</td>
+            <td>Luxemburg</td>
             <td>Standarddatenschutzklauseln</td>
             <td>Hosting der Website und Bereitstellung der Inhalte</td>
           </tr>
