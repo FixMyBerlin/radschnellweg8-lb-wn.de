@@ -72,12 +72,12 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
         <h2>Feedback & Impressum</h2>
         <p>
           Fragen zum RS8 können Sie gerne an{' '}
-          <LinkMail>Radverkehr@landkreis-ludwigsburg.de</LinkMail> senden. Wenn
-          Sie sich als Bürger:innen gerne beteiligen wollen, können Sie dies
-          unter diesem Link tun (in Arbeit).
+          <LinkMail>info@radschnellweg8-lb-wn.de</LinkMail> senden. Wenn Sie
+          sich als Bürger:innen gerne beteiligen wollen, können Sie dies unter
+          diesem Link tun (in Arbeit).
         </p>
         <p>
-          Wir freuen uns über Kommentare Anregungen und Unterstützung zur
+          Wir freuen uns über Kommentare, Anregungen und Unterstützung zur
           Website an <LinkMail>feedback@fixmycity.de</LinkMail>.
         </p>
         <p>
