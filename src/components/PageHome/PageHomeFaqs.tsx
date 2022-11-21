@@ -81,7 +81,7 @@ export const PageHomeFaqs: React.FC = () => {
             In der Gegenüberstellung der unterschiedlichen Infrastrukturarten
             zeigt sich, dass auch die Baukosten für Radschnellwege
             vergleichsweise gering sind:
-            <img
+            <StaticImage
               className="mt-4"
               src={BaukostenImage}
               alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."

@@ -43,7 +43,7 @@ export const PageHomeMilestones: React.FC = () => {
           werden die Vorarbeiten aus{' '}
           <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
             der Machbarkeitsstudie
-          </LinkExternal>
+          </LinkExternal>{' '}
           konkretisiert und eine Trasse festgelegt. (2020–2022)
         </>
       ),

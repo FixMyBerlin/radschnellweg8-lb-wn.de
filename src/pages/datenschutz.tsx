@@ -3,7 +3,7 @@ import React from 'react'
 import { MetaTags } from '~/components/MetaTags'
 import { LayoutArticle } from '~/components/Layout'
 import { TableOfContents, TocHashLink } from '~/components/TableOfContents'
-import { LinkMail } from '~/components/Text'
+import { H1, LinkMail } from '~/components/Text'
 
 /*
 Links
@@ -25,7 +25,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
 
   return (
     <LayoutArticle location={location}>
-      <h1>Datenschutzerklärung</h1>
+      <H1 showTopline>Datenschutzerklärung</H1>
       <TableOfContents items={tocItems} />
 
       <h2 id="responsible">Einleitung</h2>

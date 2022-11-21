@@ -1,8 +1,7 @@
 import classNames from 'classnames'
 import React from 'react'
 import { Footer } from './Footer'
-import { LogoAndHeadline } from './LogoAndHeadline'
-import { LogoBar } from './LogoBar'
+import { LogoHomeLink } from './LogoHomeLink'
 import { Navigation } from './Navigation'
 
 type Props = {
@@ -16,10 +15,9 @@ export const Layout: React.FC<Props> = ({ className, location, children }) => {
 
   return (
     <div className="flex h-full flex-col text-[#1e293b]">
-      <LogoBar />
       <Navigation location={location} />
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
-        <LogoAndHeadline isHome={isHome} />
+        <LogoHomeLink isHome={isHome} />
         {children}
       </main>
       <Footer />
