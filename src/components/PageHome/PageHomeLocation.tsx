@@ -1,13 +1,13 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Section } from '../Layout'
-import { H2, P } from '../Text'
+import { H2, LinkExternal, LinkMail, P } from '../Text'
 import { ZoomableImage } from '../ZoomableImage'
 
 export const PageHomeLocation: React.FC = () => {
   return (
     <Section className="pb-10">
-      <H2>Wo soll der Radschnellweg entlang führen?</H2>
+      <H2>Wo soll der Radschnellweg entlangführen?</H2>
 
       <ZoomableImage
         className="mb-4 h-auto w-full overflow-hidden rounded-lg md:float-left md:mr-10 lg:h-[350px] lg:w-[350px]"
@@ -25,28 +25,32 @@ export const PageHomeLocation: React.FC = () => {
         Mittelzentren Ludwigsburg und Waiblingen verbinden. Vom Ludwigsburger
         Zentrum aus führt die Strecke über Oßweil entlang der Landesstraße 1140
         nach Remseck am Neckar, führt dort durch Neckargröningen und Neckarrems
-        und dann über Hegnach nach Waiblingen. (Diese Streckenführung ist noch
-        nicht final beschlossen.)
+        und dann über Hegnach nach Waiblingen.
       </P>
 
       <P>
         Grundlage für diese Linienführung sind umfangreiche Voruntersuchungen im
-        Rahmen einer Machbarkeitsstudie, die anschließend von
-        Verkehrsplanerinnen und -planern der beteiligten Kreisen und Städten vor
-        Ort in der sogenannten Vorplanung konkretisiert wurden. In die
-        Entscheidungen eingeflossen sind verkehrliche Kriterien (Potenziale,
-        Zeitverluste und Einbindung im Gesamtnetz), Belange des Umweltschutzes
-        und die Kosten.
+        Rahmen{' '}
+        <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+          einer Machbarkeitsstudie
+        </LinkExternal>
+        , die anschließend von Verkehrsplanerinnen und -planern der beteiligten
+        Kreise und Städten vor Ort in der sogenannten Vorplanung konkretisiert
+        wurden. In die Entscheidungen eingeflossen sind verkehrliche Kriterien
+        (Potenziale, Zeitverluste und Einbindung im Gesamtnetz), Belange des
+        Umweltschutzes und die Kosten.
       </P>
 
       <P>
-        Parallel wurden auch schon erste Interessengruppen eingebunden, so z.B.
-        die ansässigen landwirtschaftlichen Betriebe, die teilweise Flächen für
-        den Radschnellweg bereitstellen und später die Wege mit Radfahrenden
-        teilen werden, sowie die “Alltagsexperten” des ADFC Kreisverband
-        Ludwigsburg, die gut abschätzen können, wo WEge lang führen und wie sie
-        beschaffen sein müssen, damit sie von Radfahrenden gut angenommen
-        werden.
+        Die auf dieser Website gezeigte Vorplanung wurde bereits in den
+        Gemeinderäten der beteiligten Städte präsentiert – die Streckenführung
+        dort aber noch nicht beschlossen. Parallel wurden auch schon erste
+        Interessengruppen eingebunden, so z. B. ansässige landwirtschaftlichen
+        Betriebe, die teilweise Flächen für den Radschnellweg bereitstellen und
+        später die Wege mit Radfahrenden teilen werden, sowie die
+        “Alltagsexperten” des ADFC Kreisverband Ludwigsburg, die gut abschätzen
+        können, wo Wege lang führen und wie sie beschaffen sein müssen, damit
+        sie von Radfahrenden gut angenommen werden.
       </P>
 
       <H2>Herzliche Einladung zur Beteiligung!</H2>
@@ -61,9 +65,10 @@ export const PageHomeLocation: React.FC = () => {
         Sobald die Bürgerbeteiligung startet, finden Sie hier auf dieser Seite
         eine digitale Karte. Dort können Sie die aktuelle Streckenführung im
         Detail ansehen und finden zu jedem Abschnitt erklärende Hinweise. Der
-        Start der Bürgerbeteiligung ist Mitte November geplant. Tragen Sie sich
-        gerne in unsere Kontaktliste ein, dann informieren wir Sie per E-Mail,
-        sobald es losgeht. Wir freuen uns auf Ihr Mitwirken!
+        Start der Bürgerbeteiligung ist Mitte November geplant. Melden Sie sich
+        unter <LinkMail>info@radschnellweg8-lb-wn.de</LinkMail>, dann
+        informieren wir Sie per Mail, sobald es losgeht. Wir freuen uns auf Ihr
+        Mitwirken!
       </P>
     </Section>
   )

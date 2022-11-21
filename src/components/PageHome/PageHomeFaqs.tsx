@@ -94,12 +94,16 @@ export const PageHomeFaqs: React.FC = () => {
             viele Leute fahren denn da, kommt man da zu Fuß überhaupt noch
             drüber? Damit man sich davon ein besseres Bild machen kann, haben
             wir die Radschnellverbindung Ludwigsburg&lt;&gt;Waiblingen
-            visualisiern lassen. Die Machbarkeitsstudie prognostiziert 2.100
-            Radfahrende pro Tag, wir zeigen der Einfachheit halber das Potenzial
-            von 2.000 Radfahrenden. Dargestellt ist die sogenannte
-            &quot;Spitzenstunde&quot;. Diese ist definiert als ein Zehntel der
-            täglichen Verkehrsmenge (DTV). Die Simulationen wurden erstellt von
-            Schlothauer & Wauer im Auftrag des Landratsamts Ludwigsburg.
+            visualisiern lassen.{' '}
+            <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+              Die Machbarkeitsstudie
+            </LinkExternal>
+            prognostiziert 2.100 Radfahrende pro Tag, wir zeigen der Einfachheit
+            halber das Potenzial von 2.000 Radfahrenden. Dargestellt ist die
+            sogenannte &quot;Spitzenstunde&quot;. Diese ist definiert als ein
+            Zehntel der täglichen Verkehrsmenge (DTV). Die Simulationen wurden
+            erstellt von Schlothauer & Wauer im Auftrag des Landratsamts
+            Ludwigsburg.
             <br />
             <YouTubePreview
               link="https://www.youtube.com/watch?v=pqtAmXkCeEU"
