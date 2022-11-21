@@ -102,7 +102,7 @@ export const PageHomeFaqs: React.FC = () => {
             Schlothauer & Wauer im Auftrag des Landratsamts Ludwigsburg.
             <br />
             <YouTubePreview
-              link="https://www.landkreis-ludwigsburg.de/fileadmin/user_upload/seiteninhalte/verkehr-sicherheit/Radverkehr/Visualisierung-RSV-Potenzial-2.000-Radelnde_Kurzversion.mp4"
+              link="https://www.youtube.com/watch?v=pqtAmXkCeEU"
               image={
                 <StaticImage
                   src="../../images/radschnellweg-simulation.png"
