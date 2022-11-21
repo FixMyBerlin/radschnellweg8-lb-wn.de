@@ -1,4 +1,4 @@
-import { PlayIcon } from '@heroicons/react/solid'
+import { PlayIcon } from '@heroicons/react/24/solid'
 import classNames from 'classnames'
 import React from 'react'
 import { LinkExternal } from '../Text'
@@ -24,7 +24,7 @@ export const YouTubePreview: React.FC<Props> = ({
       )}
     >
       <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white/70 shadow backdrop-blur-md transition-all duration-300 group-hover:h-24 group-hover:w-24">
-        <PlayIcon className="h-20 w-20" />
+        <PlayIcon className="h-14 w-14 transition-all group-hover:h-20 group-hover:w-20" />
       </div>
       <picture className="absolute inset-0 -z-10">{image}</picture>
     </LinkExternal>
