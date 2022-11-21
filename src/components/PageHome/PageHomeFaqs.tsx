@@ -1,6 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import BaukostenImage from '~/images/baukosten-radverkehrsanlagen.jpg'
 import { FAQ, FAQItem } from '../FAQ'
 import { Section } from '../Layout'
 import { H2, LinkExternal, P } from '../Text'
@@ -83,7 +82,7 @@ export const PageHomeFaqs: React.FC = () => {
             vergleichsweise gering sind:
             <StaticImage
               className="mt-4"
-              src={BaukostenImage}
+              src="../../images/baukosten-radverkehrsanlagen.jpg"
               alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
             />
           </P>
