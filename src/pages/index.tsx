@@ -13,9 +13,7 @@ import {
   PageHomeQuotes,
 } from '~/components/PageHome'
 
-export const Head = () => (
-  <MetaTags title="Radschnellweg 8 | Der neue Radschnellweg von Waiblingen nach Ludwigsburg" />
-)
+export const Head = () => <MetaTags />
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
