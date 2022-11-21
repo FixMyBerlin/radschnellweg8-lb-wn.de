@@ -5,6 +5,9 @@ module.exports = {
     siteUrl: 'https://radschnellweg8-lb-wb.de',
   },
 
+  // https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v4-to-v5/#trailingslash-is-set-to-always
+  trailingSlash: `always`,
+
   // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
   // don't need to define it here (just if you need to change the options)
 
@@ -18,8 +21,8 @@ module.exports = {
     // TailwindCSS needs PostCSS, https://tailwindcss.com/docs/guides/gatsby
     {
       // Docs https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/
-      // https://radschnellweg8-lb-wb.de/sitemap/sitemap-index.xml // only links
-      // https://radschnellweg8-lb-wb.de/sitemap/sitemap-0.xml // content
+      // https://radschnellweg8-lb-wb.de/sitemap-index.xml // only links
+      // https://radschnellweg8-lb-wb.de/sitemap-0.xml // content
       resolve: 'gatsby-plugin-sitemap',
       options: {
         excludes: ['/impressum/', '/datenschutz/'],
