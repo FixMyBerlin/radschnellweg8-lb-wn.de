@@ -1,7 +1,7 @@
 import React from 'react'
 import { Section } from '../Layout'
 import { MileStones } from '../MileStones'
-import { H2 } from '../Text'
+import { H2, LinkExternal } from '../Text'
 
 export const PageHomeMilestones: React.FC = () => {
   const milestones = [
@@ -12,8 +12,17 @@ export const PageHomeMilestones: React.FC = () => {
     },
     {
       name: 'Machbarkeitsanalyse',
-      description:
-        'Zwei Planungsbüros prüfen die Trassenvarianten auf Herz und Nieren, ermitteln Potenziale und wägen Nutzen und Kosten gegeneinander ab (ab 2018)',
+      description: (
+        <>
+          Zwei Planungsbüros prüfen die Trassenvarianten auf Herz und Nieren,
+          ermitteln Potenziale und wägen Nutzen und Kosten gegeneinander ab (ab
+          2018).{' '}
+          <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+            Zur Machbarkeitsanalyse
+          </LinkExternal>
+          .
+        </>
+      ),
     },
     {
       name: 'Förderung',
@@ -27,8 +36,17 @@ export const PageHomeMilestones: React.FC = () => {
     },
     {
       name: 'Vorplanung',
-      description:
-        'Nach Rückversicherung bei den politischen Gremien beginnt jeder Projektträger im Rahmen seiner Zuständigkeit mit der Vorplanung. Hier werden die Vorarbeiten aus der Machbarkeitsstudie konkretisiert und eine Trasse festgelegt. (2020–2022)',
+      description: (
+        <>
+          Nach Rückversicherung bei den politischen Gremien beginnt jeder
+          Projektträger im Rahmen seiner Zuständigkeit mit der Vorplanung. Hier
+          werden die Vorarbeiten aus{' '}
+          <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+            der Machbarkeitsstudie
+          </LinkExternal>
+          konkretisiert und eine Trasse festgelegt. (2020–2022)
+        </>
+      ),
     },
     {
       name: 'Bürgerbeteiligung',
@@ -49,10 +67,11 @@ export const PageHomeMilestones: React.FC = () => {
   ]
 
   return (
-    <Section>
-      <H2>Die Meilensteine</H2>
-
-      <MileStones items={milestones} />
-    </Section>
+    <span>
+      <Section>
+        <H2>Die Meilensteine</H2>
+        <MileStones items={milestones} />
+      </Section>
+    </span>
   )
 }

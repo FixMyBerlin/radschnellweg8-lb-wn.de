@@ -2,7 +2,7 @@ import React from 'react'
 
 type MileStone = {
   name: string
-  description: string
+  description: string | React.ReactNode
   comingUp?: boolean
 }
 
