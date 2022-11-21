@@ -6,7 +6,7 @@ const seoDefaultValues = {
   defaultTitle:
     'Radschnellweg 8 | Der neue Radschnellweg von Ludwigsburg nach Waiblingen',
   defaultDescription:
-    'Informationen über Planungen des RS 8 von Ludwigsburg nach Waiblingen.',
+    'Zwischen Waiblingen und Ludwigsburg entsteht der Radschnellweg RS8. Informiere dich jetzt und hilf mit bei der Planung für einen besseren (Radschnell-)Weg in die Zukunft!',
 }
 
 type SeoProps = {
@@ -29,7 +29,7 @@ export const MetaTags: React.FC<SeoProps> = ({
   const seo = {
     title: (title && `${title} | ${defaultTitle}`) || defaultTitle,
     description: description || defaultDescription,
-    image: image || `${domain() || ''}/social-sharing/default.png`,
+    image: image || `${domain() || ''}/social-sharing/default.jpg`,
   }
 
   if (noindex === true) {
