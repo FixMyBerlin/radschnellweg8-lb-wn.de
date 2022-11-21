@@ -1,9 +1,9 @@
-import React, { useMemo, useState } from 'react'
-import classNames from 'classnames'
 import {
-  ArrowCircleLeftIcon,
-  ArrowCircleRightIcon,
-} from '@heroicons/react/outline'
+  ArrowLeftCircleIcon,
+  ArrowRightCircleIcon,
+} from '@heroicons/react/24/outline'
+import classNames from 'classnames'
+import React, { useMemo, useState } from 'react'
 import QuoteIcon from './assets/quote-icon.svg'
 
 type Slide = {
@@ -60,7 +60,7 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
 
   return (
     <div className="relative mt-10 mb-[110px] lg:h-[20em] lg:px-[70px]">
-      {arrow(<ArrowCircleLeftIcon />)}
+      {arrow(<ArrowLeftCircleIcon />)}
       <QuoteIcon className="absolute top-[8.25rem] left-2 z-[-1] w-10 stroke-[6px] object-cover text-slate-400 lg:left-[24.5rem] lg:-top-10 lg:w-40 lg:stroke-2" />
       {randomItems.map((item, index) => (
         <figure
@@ -85,7 +85,7 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
           </div>
         </figure>
       ))}
-      {arrow(<ArrowCircleRightIcon />, true)}
+      {arrow(<ArrowRightCircleIcon />, true)}
     </div>
   )
 }
