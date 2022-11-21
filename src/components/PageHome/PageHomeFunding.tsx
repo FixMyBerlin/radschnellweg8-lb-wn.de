@@ -2,13 +2,13 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Section } from '../Layout'
 import { H2 } from '../Text'
+import RadschnellwegeLogo from '../../images/bw-radschnellweg-logo.svg'
 import BmdvFoerderungLogo from '../../images/bmdv-foerderung-logo.svg'
 
 export const PageHomeFunding: React.FC = () => {
   const images = [
-    <StaticImage
-      src="../../images/bw-radschnellweg-logo.jpg"
-      alt="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
+    <RadschnellwegeLogo
+      title="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
       className="w-32 lg:w-[70%]"
     />,
     <BmdvFoerderungLogo
