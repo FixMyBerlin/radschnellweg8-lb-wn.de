@@ -33,7 +33,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
         Mit den nachfolgenden Informationen wollen wir Ihnen einen Überblick
         über die Verarbeitung Ihrer personenbezogenen Daten auf unserer Website
         radschnellweg8-lb-wn.de (nachfolgend „Website“ genannt) geben. Wir
-        wollen Ihnen ebenfalls über eure Rechte aus dem Datenschutzrecht
+        wollen Sie ebenfalls über Ihre Rechte aus dem Datenschutzrecht
         informieren. Die Verarbeitung Ihrer personenbezogenen Daten durch uns
         erfolgt stets im Einklang mit der Datenschutzgrundverordnung
         (nachfolgend „DSGVO“ genannt) sowie allen geltenden landesspezifischen
@@ -52,7 +52,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
       <h3>Datenschutzbeauftragter</h3>
       <p>
         Unseren Datenschutzbeauftragten erreichen Sie unter{' '}
-        <LinkMail>Datenschutz@Landkreis-Ludwigsburg.de</LinkMail> und Tel. +40
+        <LinkMail>datenschutz@landkreis-ludwigsburg.de</LinkMail> und Tel. +40
         7141 144-0
       </p>
       <p>
@@ -113,10 +113,11 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
 
       <h3>Rechtsgrundlage</h3>
       <p>
-        Die Rechtsgrundlage für die Datenverarbeitung ist unser berechtigtes
-        Interesse im Sinne des Art. 6 Abs. 1 S. 1 lit. f DSGVO. Wir haben ein
-        überwiegendes berechtigtes Interesse daran, unser Angebot technisch
-        einwandfrei anbieten zu können.
+        Wir verarbeiten Ihre Daten zur Wahrnehmung einer Aufgabe, die im
+        öffentlichen Interesse liegt (Art. 6 Abs. 1 lit. e) DSGVO i. V. m. §17
+        LDSG BW). Die Weitergabe von Informationen über die
+        Verkehrsinfrastruktur in unserem Bundesland ist Teil unserer
+        Öffentlichkeitsarbeit.
       </p>
 
       <h3>Speicherdauer</h3>
@@ -129,7 +130,12 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
       </p>
 
       <h3>Empfänger personenbezogener Daten</h3>
-      <p>Wir setzen folgende Dienstleister ein:</p>
+      <p>
+        Unsere Website wird nicht von uns selbst gehostet, sondern bei einem
+        Dienstleister, der für den Zweck der Bereitstellung der Website die
+        zuvor genannten Daten in unserem Auftrag gem. Art. 28 DSGVO verarbeitet.
+        Wir setzen dazu folgende Dienstleister ein:
+      </p>
       <table>
         <thead>
           <tr>
@@ -252,7 +258,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
         automatisierter Verfahren erfolgt, sofern die Verarbeitung nicht für die
         Wahrnehmung einer Aufgabe erforderlich ist, die im öffentlichen
         Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, welche uns
-        übertragen wurde.Zudem haben Sie bei der Ausübung Ihres Rechts auf
+        übertragen wurde. Zudem haben Sie bei der Ausübung Ihres Rechts auf
         Datenübertragbarkeit gem. Art. 20 Abs. 1 DSGVO das Recht, zu erwirken,
         dass die personenbezogenen Daten direkt von einem Verantwortlichen an
         einen anderen Verantwortlichen übermittelt werden, soweit dies technisch
@@ -268,11 +274,11 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
           personenbezogener Daten, die aufgrund einer Datenverarbeitung im
           öffentlichen Interesse gem. Art. 6 Abs. 1 S. 1 lit. e DSGVO oder auf
           Grundlage unseres berechtigten Interesses gem. Art. 6 Abs. 1 S. 1 lit.
-          f DSGVO erfolgt, Widerspruch einzulegen
+          f DSGVO erfolgt, Widerspruch einzulegen.
         </strong>
-        . Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten
-        nicht mehr verarbeiten, es sei denn, wir können zwingende berechtigte
-        Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und
+        Legen Sie Widerspruch ein, werden wir Ihre personenbezogenen Daten nicht
+        mehr verarbeiten, es sei denn, wir können zwingende berechtigte Gründe
+        für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und
         Freiheiten überwiegen, oder die Verarbeitung dient der Geltendmachung,
         Ausübung oder Verteidigung von Rechtsansprüchen.
       </p>
@@ -294,7 +300,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
       <h2 id="updates">Aktualität und Änderungen der Datenschutzhinweise</h2>
       <p>
         Diese Datenschutzhinweise sind aktuell gültig und hat den folgenden
-        Stand: Juni 2022.
+        Stand: November 2022.
       </p>
       <p>
         Wenn wir unsere Website und unsere Angebote weiterentwickeln oder sich
