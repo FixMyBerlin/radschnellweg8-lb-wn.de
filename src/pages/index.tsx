@@ -1,6 +1,6 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { HelmetSeo } from '~/components/HelmetSeo/HelmetSeo'
+import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { Layout } from '~/components/Layout'
 import {
   PageHomeFacts,
@@ -13,11 +13,13 @@ import {
   PageHomeQuotes,
 } from '~/components/PageHome'
 
+export const Head = () => (
+  <MetaTags title="Radschnellweg 8 | Der neue Radschnellweg von Waiblingen nach Ludwigsburg" />
+)
+
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location}>
-      <HelmetSeo title="Radschnellweg 8 | Der neue Radschnellweg von Waiblingen nach Ludwigsburg" />
-
       <PageHomeIntro />
       <PageHomeQuotes />
       <PageHomeLocation />

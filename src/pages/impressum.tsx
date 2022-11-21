@@ -1,15 +1,15 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { HelmetSeo } from '~/components/HelmetSeo/HelmetSeo'
+import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { LayoutArticle, Section } from '~/components/Layout'
 
 import { LinkExternal, LinkMail } from '~/components/Text'
 
+export const Head = () => <MetaTags noindex title="Impressum & Kontakt" />
+
 const Impressum: React.FC<PageProps> = ({ location }) => {
   return (
     <LayoutArticle location={location}>
-      <HelmetSeo noindex title="Impressum & Kontakt" />
-
       <Section>
         <h1>Impressum & Kontakt</h1>
         <h2>Im Auftrag folgender Städte und Landkreise</h2>

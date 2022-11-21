@@ -1,6 +1,6 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { HelmetSeo } from '~/components/HelmetSeo'
+import { MetaTags } from '~/components/MetaTags'
 import { LayoutArticle } from '~/components/Layout'
 import { TableOfContents, TocHashLink } from '~/components/TableOfContents'
 import { LinkMail } from '~/components/Text'
@@ -10,6 +10,8 @@ Links
 - Google Docs to HTML: https://www.gdoctohtml.com/
 - Original Dokument https://docs.google.com/document/d/1Ntx2z3UxRxuXf12HSTpBPj27vFTkzjbP2G9ayNUFj0I/edit
 */
+
+export const Head = () => <MetaTags noindex title="Datenschutz" />
 
 const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
   const tocItems: TocHashLink = [
@@ -23,8 +25,6 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
 
   return (
     <LayoutArticle location={location}>
-      <HelmetSeo noindex title="Datenschutz" />
-
       <h1>Datenschutzerklärung</h1>
       <TableOfContents items={tocItems} />
 

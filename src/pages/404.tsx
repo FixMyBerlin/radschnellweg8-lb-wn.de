@@ -1,13 +1,15 @@
 import { Link, PageProps } from 'gatsby'
 import React from 'react'
-import { HelmetSeo } from '~/components/HelmetSeo/HelmetSeo'
+import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { LayoutArticle } from '~/components/Layout'
+
+export const Head = () => (
+  <MetaTags noindex title="404 | Seite nicht gefunden." />
+)
 
 const NotFound: React.FC<PageProps> = ({ location }) => {
   return (
     <LayoutArticle location={location}>
-      <HelmetSeo noindex title="404 | Seite nicht gefunden." />
-
       <div className="sm:flex">
         <p className="text-4xl sm:text-5xl font-extrabold text-rs8-pink">404</p>
         <div className="sm:ml-6">
