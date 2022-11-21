@@ -6,7 +6,7 @@ import classNames from 'classnames'
 import React, { useMemo, useState } from 'react'
 import QuoteIcon from './assets/quote-icon.svg'
 
-type Slide = {
+export type QuoteSlide = {
   quote: string
   person: string
   position: string
@@ -14,7 +14,7 @@ type Slide = {
 }
 
 type Props = {
-  items: Slide[]
+  items: QuoteSlide[]
 }
 
 export const QuotesSlider: React.FC<Props> = ({ items }) => {
