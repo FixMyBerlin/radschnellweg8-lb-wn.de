@@ -14,7 +14,7 @@ export const PageHomeQuotes: React.FC = () => {
         />
       ),
       quote:
-        'Die bessere Verknüpfungder Wirtschaftsräume Waiblingen/Ludwigsburg ist uns ein wichtiges Anliegen. Der Radschnellweg verbindet dieses Vorhaben hervorragend mit dem Ziel einer nachhaltigeren Mobilität.',
+        'Die bessere Verknüpfung der Wirtschaftsräume Waiblingen/Ludwigsburg ist uns ein wichtiges Anliegen. Der Radschnellweg verbindet dieses Vorhaben hervorragend mit dem Ziel einer nachhaltigeren Mobilität.',
       person: 'Sebastian Wolf',
       position: 'Oberbürgermeister Waiblingen',
     },

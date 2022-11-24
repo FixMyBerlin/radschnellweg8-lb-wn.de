@@ -3,7 +3,7 @@ import {
   ArrowRightCircleIcon,
 } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, { useMemo, useState } from 'react'
 import QuoteIcon from './assets/quote-icon.svg'
 
 export type QuoteSlide = {
@@ -20,12 +20,10 @@ type Props = {
 export const QuotesSlider: React.FC<Props> = ({ items }) => {
   const [active, setActive] = useState<number>(0)
 
-  // TODO: Double check if randomness is still a thing
-  const randomItems = items
-  // const randomItems = useMemo(
-  //   () => items.sort(() => Math.random() - 0.5),
-  //   [items]
-  // )
+  const randomItems = useMemo(
+    () => items.sort(() => Math.random() - 0.5),
+    [items]
+  )
 
   const arrow = (icon, right = false) => {
     if (
