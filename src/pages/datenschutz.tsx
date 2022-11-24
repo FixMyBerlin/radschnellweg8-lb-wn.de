@@ -16,7 +16,6 @@ export const Head = () => <MetaTags noindex title="Datenschutz" />
 const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
   const tocItems: TocHashLink = [
     ['#responsible', 'Verantwortlichkeit'],
-    ['#thirdparty', 'Drittdienste'],
     ['#hosting', 'Bereitstellung'],
     ['#contact', 'Kontaktmöglichkeit'],
     ['#rights', 'Ihre Rechte'],
@@ -28,7 +27,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
       <H1 showTopline>Datenschutzerklärung</H1>
       <TableOfContents items={tocItems} />
 
-      <h2 id="responsible">Einleitung</h2>
+      <h2>Einleitung</h2>
       <p>
         Mit den nachfolgenden Informationen wollen wir Ihnen einen Überblick
         über die Verarbeitung Ihrer personenbezogenen Daten auf unserer Website
@@ -39,7 +38,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
         (nachfolgend „DSGVO“ genannt) sowie allen geltenden landesspezifischen
         Datenschutzbestimmungen.
       </p>
-      <h2 id="thirdparty">Verantwortlichkeit</h2>
+      <h2 id="responsible">Verantwortlichkeit</h2>
       <h3>Verantwortlich im Sinne der DSGVO</h3>
       <p>
         <strong>Landratsamt Ludwigsburg</strong>
@@ -47,12 +46,12 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
         Hindenburgstraße 40 <br />
         71638 Ludwigsburg <br />
         E-Mail: <LinkMail>radverkehr@landkreis-ludwigsurg.de</LinkMail> <br />
-        Telefon: +49 7141 144-44700
+        Telefon: +49 7141 144-0
       </p>
       <h3>Datenschutzbeauftragter</h3>
       <p>
         Unseren Datenschutzbeauftragten erreichen Sie unter{' '}
-        <LinkMail>datenschutz@landkreis-ludwigsburg.de</LinkMail> und Tel. +40
+        <LinkMail>datenschutz@landkreis-ludwigsburg.de</LinkMail> und Tel. +49
         7141 144-0
       </p>
       <p>
