@@ -4,17 +4,11 @@ import {
 } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import React, { useState } from 'react'
+import { Quote } from '../PageHome'
 import QuoteIcon from './assets/quote-icon.svg'
 
-export type QuoteSlide = {
-  quote: string
-  person: string
-  position: string
-  image: React.ReactNode
-}
-
 type Props = {
-  items: QuoteSlide[]
+  items: Quote[]
 }
 
 export const QuotesSlider: React.FC<Props> = ({ items }) => {

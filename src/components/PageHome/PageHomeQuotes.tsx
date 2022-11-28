@@ -1,9 +1,16 @@
 import { StaticImage } from 'gatsby-plugin-image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Section } from '../Layout'
 import { QuotesSlider } from '../QuotesSlider'
 
-const quotes = [
+export type Quote = {
+  image: React.ReactNode
+  quote: string
+  person: string
+  position: string
+}
+
+const quotes: Quote[] = [
   {
     image: (
       <StaticImage
@@ -84,12 +91,33 @@ const quotes = [
   },
 ]
 
-const randomQuotes = quotes.sort(() => Math.random() - 0.5)
-
 export const PageHomeQuotes: React.FC = () => {
+  const ssrItem: Quote[] = [
+    {
+      image: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 320"
+          className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
+        >
+          <circle cx="50%" cy="50%" r="160" fill="rgb(248 250 252)" />
+        </svg>
+      ),
+      quote: '',
+      person: '',
+      position: '',
+    },
+  ]
+
+  const [items, setItems] = useState(ssrItem)
+
+  useEffect(() => {
+    setItems(quotes.sort(() => Math.random() - 0.5))
+  }, [])
+
   return (
     <Section>
-      <QuotesSlider items={randomQuotes} />
+      <QuotesSlider items={items} />
     </Section>
   )
 }
