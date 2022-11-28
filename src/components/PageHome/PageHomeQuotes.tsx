@@ -85,9 +85,11 @@ export const PageHomeQuotes: React.FC = () => {
     },
   ]
 
+  const randomQuotes = quotes.sort(() => Math.random() - 0.5)
+
   return (
     <Section>
-      <QuotesSlider items={quotes} />
+      <QuotesSlider items={randomQuotes} />
     </Section>
   )
 }
