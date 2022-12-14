@@ -1,8 +1,6 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Section } from '../Layout'
 import { H2, LinkExternal, LinkMail, P } from '../Text'
-import { ZoomableImage } from '../ZoomableImage'
 
 export const PageHomeLocation: React.FC = () => {
   return (
