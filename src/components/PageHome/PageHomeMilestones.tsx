@@ -32,7 +32,7 @@ export const PageHomeMilestones: React.FC = () => {
     {
       name: 'Benennung',
       description:
-        'Mit der Förderung bekommt das Projekt einen Namen „Radschnellweg RS 85“ (2020)',
+        'Mit der Förderung bekommt das Projekt einen Namen „Radschnellweg RS 8“ (2020)',
     },
     {
       name: 'Vorplanung',
@@ -50,7 +50,7 @@ export const PageHomeMilestones: React.FC = () => {
     },
     {
       name: 'Bürgerbeteiligung',
-      description: '(geplant Q4 2022)',
+      description: '(geplant Q1 2023)',
       comingUp: true,
     },
     {
@@ -63,7 +63,7 @@ export const PageHomeMilestones: React.FC = () => {
       description: '(geplant 2023)',
       comingUp: true,
     },
-    { name: 'Bau', description: '(geplant ab 2023)', comingUp: true },
+    { name: 'Bau', description: '(geplant ab 2024)', comingUp: true },
   ]
 
   return (

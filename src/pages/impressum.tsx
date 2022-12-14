@@ -69,9 +69,9 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
             LinkedIn
           </LinkExternal>
         </p>
-        <h2>Feedback & Impressum</h2>
+        <h2>Feedback</h2>
         <p>
-          Fragen zum RS8 können Sie gerne an{' '}
+          Fragen zum RS 8 können Sie gerne an{' '}
           <LinkMail>info@radschnellweg8-lb-wn.de</LinkMail> senden. Wenn Sie
           sich als Bürger:innen gerne beteiligen wollen, können Sie dies unter
           diesem Link tun (in Arbeit).
@@ -81,9 +81,10 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
           Website an <LinkMail>feedback@fixmycity.de</LinkMail>.
         </p>
         <p>
-          Sofern du Bugs oder Verbesserungsvorschläge hast, gib uns gerne{' '}
+          Sofern Sie Bugs oder Verbesserungsvorschläge haben, geben Sie uns
+          gerne{' '}
           <LinkExternal href="https://github.com/FixMyBerlin/fixmy.rsv/issues/new/choose">
-            auf GitHub Feedback
+            Feedback auf GitHub
           </LinkExternal>
           .
         </p>

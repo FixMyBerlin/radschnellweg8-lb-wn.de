@@ -185,6 +185,12 @@ export const categoizedFaqs = {
               T&uuml;bingen &ndash; Reutlingen
             </LinkExternal>
           </li>
+          <li>
+            <strong>RS 21</strong>{' '}
+            <LinkExternal href="https://rp.baden-wuerttemberg.de/rps/presse/artikel/radschnellverbindung-stuttgart-bietigheim-bissingen-foerderzusage-des-bundes/">
+              Bietigheim-Bissingen &ndash; Stuttgart
+            </LinkExternal>
+          </li>
         </ul>
         <h3>&Uuml;bersicht Radschnellwege deutschlandweit</h3>
         <p>
@@ -235,7 +241,7 @@ export const categoizedFaqs = {
 
         <p>
           Die prognostizierten Baukosten für die Radschnellverbindung
-          Ludwigsburg–Waiblingen (RS8) liegen bei: 31 Mio. Euro. Bei einer
+          Ludwigsburg–Waiblingen (RS 8) liegen bei: 31 Mio. Euro. Bei einer
           Strecke von ca. 15 Kilometern sind dies etwa 2,1 Mio. Euro/Kilometer.
         </p>
 
@@ -308,12 +314,12 @@ export const categoizedFaqs = {
         </ul>
 
         <p>
-          Auch Verbände, wie z.B. Naturschutzverbände oder Bauernverbände sowie
+          Auch Verbände, wie z. B. Naturschutzverbände oder Bauernverbände sowie
           betroffene Grundstückseigentümer/-innen sollten angehört werden.
         </p>
 
         <p>
-          Darüber hinaus können Bürgerinitiativen, Aktivenverbände wie z.B. der
+          Darüber hinaus können Bürgerinitiativen, Aktivenverbände wie z. B. der
           ADFC oder auch die breite Bürgerschaft miteingebunden werden. Eine
           solche Bürgerbeteiligung besteht aus Informationen und der Möglichkeit
           zur Kommentierung der vorgestellten Pläne.
@@ -335,7 +341,7 @@ export const categoizedFaqs = {
     ),
   },
   Nutzung: {
-    'Wieviele Radfahrende fahren denn da später?': (
+    'Wie viele Radfahrende fahren denn da später?': (
       <>
         <p>
           Wie kann man sich so einen Radschnellweg eigentlich vorstellen? Wie
@@ -345,9 +351,7 @@ export const categoizedFaqs = {
           Machbarkeitsstudie prognostiziert 2.100 Radfahrende pro Tag, wir
           zeigen der Einfachheit halber das Potenzial von 2.000 Radfahrenden.
           Dargestellt ist die sogenannte „Spitzenstunde“. Diese ist definiert
-          als ein Zehntel der täglichen Verkehrsmenge (DTV). Die Simulationen
-          wurden erstellt von Schlothauer & Wauer im Auftrag des Landratsamts
-          Ludwigsburg.
+          als ein Zehntel der täglichen Verkehrsmenge (DTV).
         </p>
         <YouTubePreview
           link="https://www.youtube.com/watch?v=pqtAmXkCeEU"
@@ -496,7 +500,7 @@ export const categoizedFaqs = {
 
         <p>
           Es sind daher verschiedene Zubringer zur Anbindung der Kommunen an den
-          Radschnellweg nötig. Da aber die Planungen beim RS8 erst in der
+          Radschnellweg nötig. Da aber die Planungen beim RS 8 erst in der
           Anfangsphase sind, und daher auch die exakte Routenführung noch nicht
           feststeht, gibt es für die Zubringer bisher nur erste Überlegungen.
           Diese können dann im weiteren Planungsverlauf konkretisiert werden.

@@ -52,7 +52,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
       <p>
         Unseren Datenschutzbeauftragten erreichen Sie unter{' '}
         <LinkMail>datenschutz@landkreis-ludwigsburg.de</LinkMail> und Tel. +49
-        7141 144-0
+        7141 144-44700
       </p>
       <p>
         Sie können sich jederzeit bei allen Fragen und Anregungen zum

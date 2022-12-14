@@ -13,8 +13,7 @@ export const PageHomePress: React.FC = () => {
             25.05.2020
           </strong>
           <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/landratsamt-landkreis/aktuelles/pressemitteilungen/detail/nachhaltige-mobilitaet-zwischen-den-landkreisen/">
-            Nachhaltige Mobilität zwischen den Landkreisen - Landratsamt
-            Ludwigsburg
+            Nachhaltige Mobilität zwischen den Landkreisen
           </LinkExternal>
         </li>
         <li className="flex">
@@ -31,8 +30,7 @@ export const PageHomePress: React.FC = () => {
             07.05.2019
           </strong>
           <LinkExternal href="https://www.rems-murr-kreis.de/bauen-umwelt-und-verkehr/aktuelles/?tx_hwnews_hwnews%5BnewsartikelId%5D=1043&tx_hwnews_hwnews%5BcurrentPage%5D=2&tx_hwnews_hwnews%5Baction%5D=show&tx_hwnews_hwnews%5Bcontroller%5D=Newsartikel">
-            Grünes Licht für Radschnellverbindung im Rems-Murr-Kreis:
-            Rems-Murr-Kreis
+            Grünes Licht für Radschnellverbindung im Rems-Murr-Kreis
           </LinkExternal>
         </li>
       </ul>
