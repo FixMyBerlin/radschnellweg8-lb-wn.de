@@ -1,6 +1,6 @@
 import React from 'react'
 import { Section } from '../Layout'
-import { H2, LinkExternal, LinkMail, P } from '../Text'
+import { H2, Link, LinkExternal, LinkMail, P } from '../Text'
 
 export const PageHomeLocation: React.FC = () => {
   return (
@@ -42,9 +42,7 @@ export const PageHomeLocation: React.FC = () => {
       </P>
 
       <P>
-        <LinkExternal href="/route">
-          Hier finden Sie Details zur geplanten Streckenführung
-        </LinkExternal>
+        <Link to="/route">Details zur geplanten Streckenführung…</Link>
       </P>
 
       <H2>Herzliche Einladung zur Beteiligung!</H2>

@@ -1,30 +1,33 @@
 import React from 'react'
 import classNames from 'classnames'
+import { Link as GatsbyLink } from 'gatsby'
 
 type Props = {
+  to: string
   className?: string
-  /** @desc Default: `true` */
+  /** @desc Default: `false` */
   blank?: boolean
   children: React.ReactNode
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const LinkExternal: React.FC<Props> = ({
+export const Link: React.FC<Props> = ({
+  to,
   className,
   children,
-  blank = true,
+  blank = false,
   ...props
 }) => {
   return (
-    <a
+    <GatsbyLink
+      to={to}
       className={classNames(
         'text-rs8-pink underline hover:text-rs8-blue',
         className
       )}
-      rel="noopener noreferrer"
       {...{ target: blank ? '_blank' : undefined }}
       {...props}
     >
       {children}
-    </a>
+    </GatsbyLink>
   )
 }
