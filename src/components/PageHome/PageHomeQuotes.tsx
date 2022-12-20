@@ -5,6 +5,7 @@ import { QuotesSlider } from '../QuotesSlider'
 
 export type Quote = {
   image: React.ReactNode
+  source: string
   quote: string
   person: string
   position: string
@@ -15,10 +16,11 @@ const quotes: Quote[] = [
     image: (
       <StaticImage
         src="./assets/portraits/wolf.jpeg"
-        alt="Sebastian Wolf; Bild: © Stadt Waiblingen"
+        alt="Sebastian Wolf"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
+    source: 'Bild: © Stadt Waiblingen',
     quote:
       'Die bessere Verknüpfung der Wirtschaftsräume Waiblingen/Ludwigsburg ist uns ein wichtiges Anliegen. Der Radschnellweg verbindet dieses Vorhaben hervorragend mit dem Ziel einer nachhaltigeren Mobilität.',
     person: 'Sebastian Wolf',
@@ -28,10 +30,11 @@ const quotes: Quote[] = [
     image: (
       <StaticImage
         src="./assets/portraits/sigel.jpeg"
-        alt="Dr. Richard Sigel; Bild: © Rems-Murr-Kreis"
+        alt="Dr. Richard Sigel"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
+    source: 'Bild: © Rems-Murr-Kreis',
     quote:
       'Radschnellverbindungen ebnen den Weg für nachhaltige Mobilität und können gerade beim RS8 die Hauptverkehrsachsen zwischen unseren beiden Landkreisen entlasten.',
     person: 'Dr. Richard Sigel',
@@ -41,10 +44,11 @@ const quotes: Quote[] = [
     image: (
       <StaticImage
         src="./assets/portraits/allgaier.jpeg"
-        alt="Dietmar Allgaier; Bild: © Landkreis Ludwigsburg"
+        alt="Dietmar Allgaier"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
+    source: 'Bild: © Landkreis Ludwigsburg',
     quote:
       'Wir freuen uns, dass wir gemeinsam an der Realisierung einer der ersten Radschnellwege im Land beteiligt sind.',
     person: 'Dietmar Allgaier',
@@ -54,10 +58,11 @@ const quotes: Quote[] = [
     image: (
       <StaticImage
         src="./assets/portraits/hermann.jpeg"
-        alt="Winfried Hermann; Bild: ©  Ministerium für Verkehr BW, Daniel Mühlebach"
+        alt="Winfried Hermann"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
+    source: 'Bild: ©  Ministerium für Verkehr BW, Daniel Mühlebach',
     quote:
       'Es freut mich sehr, dass der Rems-Murr-Kreis, der Kreis Ludwigsburg und alle beteiligten Kommunen eine leistungsstarke und schnelle Radverbindung für Pendlerinnen und Pendler zwischen Waiblingen und Ludwigsburg realisieren möchten.',
     person: 'Winfried Hermann',
@@ -67,10 +72,11 @@ const quotes: Quote[] = [
     image: (
       <StaticImage
         src="./assets/portraits/knecht.jpeg"
-        alt="Dr. Matthias Knecht; Bild: © Stadt Ludwigsburg"
+        alt="Dr. Matthias Knecht"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
+    source: 'Bild: © Stadt Ludwigsburg',
     quote:
       'Der Ausbau des Radschnellwegs ist ein hervorragendes Beispiel für nachhaltige Mobilität über Stadt- und Kreisgrenzen hinweg.',
     person: 'Dr. Matthias Knecht',
@@ -80,10 +86,11 @@ const quotes: Quote[] = [
     image: (
       <StaticImage
         src="./assets/portraits/schoenberger.jpeg"
-        alt="Dirk Schönberger; Bild: © Stadt Remseck am Neckar"
+        alt="Dirk Schönberger"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
+    source: 'Bild: © Stadt Remseck am Neckar',
     quote:
       'Wir freuen uns sehr, dass mit dem Radschnellweg eine Ergänzung zu dem eher touristisch orientierten Rems-Radweg, der den Schleifen der Rems folgt, nun eine direkte Radverbindung erstellt wird, die insbesondere von den Pendlern und Rennradfahren genutzt werden kann.',
     person: 'Dirk Schönberger',
@@ -103,6 +110,7 @@ export const PageHomeQuotes: React.FC = () => {
           <circle cx="50%" cy="50%" r="160" fill="rgb(248 250 252)" />
         </svg>
       ),
+      source: '',
       quote: '',
       person: '',
       position: '',
