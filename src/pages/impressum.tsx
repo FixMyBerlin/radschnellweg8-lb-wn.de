@@ -2,8 +2,7 @@ import { PageProps } from 'gatsby'
 import React from 'react'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { LayoutArticle, Section } from '~/components/Layout'
-
-import { H1, LinkExternal, LinkMail } from '~/components/Text'
+import { HeadingContentPage, LinkExternal, LinkMail } from '~/components/Text'
 
 export const Head = () => <MetaTags noindex title="Impressum & Kontakt" />
 
@@ -11,7 +10,7 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
   return (
     <LayoutArticle location={location}>
       <Section>
-        <H1 showTopline>Impressum & Kontakt</H1>
+        <HeadingContentPage>Impressum & Kontakt</HeadingContentPage>
         <h2>Im Auftrag folgender Städte und Landkreise</h2>
         <p>
           <strong>Stadtverwaltung Ludwigsburg</strong>

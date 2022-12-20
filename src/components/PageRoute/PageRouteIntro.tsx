@@ -6,14 +6,15 @@ export const PageRouteIntro: React.FC = () => {
   return (
     <Section>
       <P>
-        Radschnellverbindungen sind besondere Routen für den Radverkehr, die
-        sich deutlich von gewöhnlichen Radwegen unterscheiden. Sie sind in
-        Deutschland noch relativ neu – daher gibt es viel Informationsbedarf.
-        Hier finden Sie eine Sammlung von Fragen und Antworten, die im Rahmen
-        der Machbarkeitsstudien und Vorplanungen bereits thematisiert wurden. Im
-        Prozess der Öffentlichkeitsbeteiligung werden möglicherweise noch
-        weitere Fragen hinzukommen, wir werden die Liste daher laufend
-        aktualisieren.
+        Der Radschnellweg RS 8 verbindet die Städte Ludwigsburg, Remseck und
+        Waiblingen. Auf diesen Seiten erhalten Sie Information zu Anforderungen,
+        Planungsstand und Beteiligungsmöglichkeiten dieses Gemeinschaftsprojekts
+        des Rems-Murr-Kreises mit dem Landkreis Ludwigsburg, der Stadt
+        Ludwigsburg, der Stadt Waiblingen und der Stadt Remseck am Neckar.
+      </P>
+      <P>
+        Unten finden Sie jeweils eine Beschreibung der aktuell geplanten
+        Routenführung sowie Detailhinweise zu jeder Teilstrecke.
       </P>
     </Section>
   )
