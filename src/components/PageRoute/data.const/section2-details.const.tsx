@@ -1,5 +1,5 @@
-import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from '../../Text/Link'
 import { TSectionDetails } from './types'
 
 export const section2Details: TSectionDetails[] = [
@@ -16,7 +16,10 @@ export const section2Details: TSectionDetails[] = [
         Landesstraße ist der landwirtschaftliche Verkehr deutlich geringer als
         auf den Wegen südlich davon. Daher wurde, auch nach Rücksprache mit dem
         Bauernverband, diese Variante für die weitere Planung gewählt. Im
-        Vorfeld wurden Gespräche mit ansässigen Bauern und dem ADFC Kreisverband
+        Vorfeld wurden{' '}
+        <strong>
+          Gespräche mit ansässigen Bauern und dem ADFC Kreisverband
+        </strong>{' '}
         geführt.
       </p>
     ),
@@ -40,13 +43,13 @@ export const section2Details: TSectionDetails[] = [
           Neckargröninger Straße anzuschließen. Für die Herstellung der
           notwendigen Radschnellwegsbreite müssen einzelne Wege verbreitert
           werden. Diesen Eingriff in die Natur (Neuversiegelung) kompensieren
-          wir wie nach Bundesnaturschutzgesetz vorgesehen durch
-          Ausgleichsmaßnahmen. Als Ausgleich für den RS 8 sollen streifenförmige
-          Blühstreifen entlang des Radschnellweges und/oder zwischen
-          Ackerflächen angelegt werden.
+          wir wie nach Bundesnaturschutzgesetz vorgesehen durch{' '}
+          <strong>Ausgleichsmaßnahmen</strong> . Als Ausgleich für den RS 8
+          sollen streifenförmige Blühstreifen entlang des Radschnellweges
+          und/oder zwischen Ackerflächen angelegt werden.
         </p>
         <StaticImage
-          src="../assets/demonstrations-teilstueck.jpg"
+          src="../assets/TS2Detailpkt2-Bluehstreifen-PIXABAY-LEVKE-HANNEMANN.jpg"
           alt="Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten und andere Kleintiere dar. © Pixabay, Levke Hannemann"
         />
         <p>
@@ -100,7 +103,7 @@ export const section2Details: TSectionDetails[] = [
           auf die andere Seite der Straße gelangen.
         </p>
         <StaticImage
-          src="../assets/demonstrations-teilstueck.jpg"
+          src="../assets/TS2Detailpkt4.1-Unterfuehrung_K1666_LRA-LB.PNG"
           alt="Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB / Landratsamt Ludwigsburg"
         />
         <p>
@@ -116,7 +119,7 @@ export const section2Details: TSectionDetails[] = [
           etwas unübersichtliche Situation direkt am Bauwerk verbessern ließe.
         </p>
         <StaticImage
-          src="../assets/demonstrations-teilstueck.jpg"
+          src="../assets/TS2Detailpkt4.2-Unterfuehrung_L1140_LRA-LB.PNG"
           alt="Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB / Landratsamt Ludwigsburg"
         />
         <p>
@@ -141,10 +144,18 @@ export const section2Details: TSectionDetails[] = [
         </p>
         <p>
           Mehr Informationen gibt’s hier:{' '}
-          <Link to="https://www.stadt-remseck.de/de/Die-Stadt/Buergerbeteiligung/Neue-Mitte">
+          <Link
+            blank
+            to="https://www.stadt-remseck.de/de/Die-Stadt/Buergerbeteiligung/Neue-Mitte"
+          >
             https://www.stadt-remseck.de/de/Die-Stadt/Buergerbeteiligung/Neue-Mitte
           </Link>
         </p>
+        <StaticImage
+          src="../assets/TS2Detailpkt5-Neue-Mitte-Remseck_STADT-REMSECK.jpg"
+          alt="Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB / Landratsamt Ludwigsburg"
+        />
+        <p>Planungsskizze „Neue Mitte“. © Stadt Remseck</p>
       </>
     ),
   },
@@ -159,19 +170,22 @@ export const section2Details: TSectionDetails[] = [
           Varianten einer möglichen Querung bis zur Realisierung des
           Städtebauprojekts überlegt und gegeneinander abgewogen. Letztendlich
           hat sich aber die kürzeste Version, mit „Variante 1.0“ gekennzeichnet,
-          als die beste und kostengünstigste Möglichkeit für die provisorische
-          Führung erwiesen. Nach dem Busbahnhof / Endhaltestelle entsteht eine
-          planerische Lücke für die Führung des Radschnellwegs durch
-          Neckargröningen/Neckarrems. Radfahrer haben die Möglichkeit, auf den
-          bisher bekannten Wegführungen über den Neckarsteg am Rathaus vorbei
-          die Innenstadt zu durchqueren. Auf der Remstalstraße wird dann wieder
-          nach Radschnellwegstandards ausgebaut. Auch hierbei handelt es sich um
-          eine vorläufige Lösung, mit dem Bau der „Neuen Mitte“ soll der
-          Radschnellweg perspektivisch über die Neckarbrücke (derzeit L 1140)
-          geführt werden.
+          als die beste und kostengünstigste Möglichkeit für die{' '}
+          <strong>provisorische Führung</strong> erwiesen. Nach dem Busbahnhof /
+          Endhaltestelle entsteht eine planerische Lücke für die Führung des
+          Radschnellwegs durch Neckargröningen/Neckarrems. Radfahrer haben die
+          Möglichkeit, auf den bisher bekannten Wegführungen über den Neckarsteg
+          am Rathaus vorbei die Innenstadt zu durchqueren. Auf der Remstalstraße
+          wird dann wieder nach Radschnellwegstandards ausgebaut. Auch hierbei
+          handelt es sich um eine vorläufige Lösung, mit dem Bau der „Neuen
+          Mitte“ soll der Radschnellweg perspektivisch über die Neckarbrücke
+          (derzeit L 1140) geführt werden.
         </p>
         <p>
-          <StaticImage src="../assets/demonstrations-teilstueck.jpg" alt="" />
+          <StaticImage
+            src="../assets/TS2Detailpkt6-Remseck-Varianten-Busbahnhof_LRA-RMK.PNG"
+            alt=""
+          />
         </p>
         <p>
           Aus den Vorplanungs-Unterlagen: Varianten Busbahnhof Remseck. © KMB /
@@ -193,13 +207,16 @@ export const section2Details: TSectionDetails[] = [
           „Linienverkehr frei“. Auf einer 550 Meter langen Strecke würden dann
           Rad und Bus (nur talwärts) zusammengeführt. Diese jetzige Busspur
           verfügt aber noch nicht über die benötigten Breiten von 5 Metern.
-          Daher soll die Fahrbahn mit Hilfe von Tragbauwerken (Auskragung)
-          verbreitert werden. Betonschutzwände zu beiden Seiten sorgen für eine
-          Absturzsicherung talwärts und trennen Rad- und Kfz-Verkehr
-          voneinander.
+          Daher soll die Fahrbahn mit Hilfe von{' '}
+          <strong>Tragbauwerken (Auskragung)</strong> verbreitert werden.
+          Betonschutzwände zu beiden Seiten sorgen für eine Absturzsicherung
+          talwärts und trennen Rad- und Kfz-Verkehr voneinander.
         </p>
         <p>
-          <StaticImage src="../assets/demonstrations-teilstueck.jpg" alt="" />
+          <StaticImage
+            src="../assets/TS2Detailpkt7-L1142-Strassenquerschnitt_LRALB.PNG"
+            alt=""
+          />
         </p>
         <p>
           Ausschnitt aus den Vorplanungs-Unterlagen: Straßenquerschnitt L 1142.
@@ -209,7 +226,7 @@ export const section2Details: TSectionDetails[] = [
     ),
   },
   {
-    id: 'tragbauwerke',
+    id: 'fahrradspur-mit-linienverkehr-frei',
     title: 'Fahrradspur mit „Linienverkehr frei”',
     body: (
       <>
@@ -234,7 +251,10 @@ export const section2Details: TSectionDetails[] = [
           Fahrradspur mit geringen Fußgängerverkehr werden.
         </p>
         <p>
-          <StaticImage src="../assets/demonstrations-teilstueck.jpg" alt="" />
+          <StaticImage
+            src="../assets/TS2Detailpkt8-L1142-Busschleuse_LRALB.PNG"
+            alt=""
+          />
         </p>
         <p>
           Detail aus den Vorplanungs-Unterlagen: Einfädelmöglichkeit für

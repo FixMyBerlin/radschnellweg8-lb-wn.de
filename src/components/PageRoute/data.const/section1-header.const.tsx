@@ -26,9 +26,8 @@ export const section1Header: TSectionHeader = {
   ),
   image: (
     <StaticImage
-      src="../../components/PageRoute/assets/demonstrations-teilstueck.jpg"
-      alt="Nach aktueller Planung soll die Alleenstraße zur Fahrradstraße werden. Hier ein Beispielbild aus Stuttgart 
-  ©AGFK-BW, Marcus Gloger"
+      src="../assets/Teilstrecke-1.svg"
+      alt="Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten und andere Kleintiere dar. © Pixabay, Levke Hannemann"
     />
   ),
 }

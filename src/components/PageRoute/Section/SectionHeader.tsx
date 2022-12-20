@@ -11,6 +11,7 @@ export const SectionHeader: React.FC<Props> = ({ header }) => {
       <h2>{header.title}</h2>
       <p>{header.owner}</p>
       <p>{header.intro}</p>
+      {header.image}
     </header>
   )
 }

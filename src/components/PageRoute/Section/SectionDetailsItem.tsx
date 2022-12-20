@@ -11,7 +11,7 @@ type Props = {
 
 export const SectionDetailsItem: React.FC<Props> = ({ detail, mapNumber }) => {
   return (
-    <Disclosure as="div" key={detail.id} className="pt-6">
+    <Disclosure as="article" key={detail.id} id={detail.id} className="pt-6">
       {({ open }) => (
         <>
           <Disclosure.Button className="flex w-full items-center justify-start gap-4 text-left text-lg text-gray-400">
