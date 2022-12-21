@@ -6,7 +6,7 @@ const seoDefaultValues = {
   defaultTitle:
     'Radschnellweg 8 | Der neue Radschnellweg von Ludwigsburg nach Waiblingen',
   defaultDescription:
-    'Zwischen Waiblingen und Ludwigsburg entsteht der Radschnellweg RS8. Informiere dich jetzt und hilf mit bei der Planung für einen besseren (Radschnell-)Weg in die Zukunft!',
+    'Zwischen Waiblingen und Ludwigsburg entsteht der Radschnellweg RS 8. Informiere dich jetzt und hilf mit bei der Planung für einen besseren (Radschnell-)Weg in die Zukunft!',
 }
 
 type SeoProps = {

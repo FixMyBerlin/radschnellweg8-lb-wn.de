@@ -36,13 +36,13 @@ export const PageHomeLocation: React.FC = () => {
         Interessengruppen eingebunden, so z. B. ansässige landwirtschaftlichen
         Betriebe, die teilweise Flächen für den Radschnellweg bereitstellen und
         später die Wege mit Radfahrenden teilen werden, sowie die
-        “Alltagsexperten” des ADFC, die gut abschätzen können, wo Wege lang
+        „Alltagsexperten“ des ADFC, die gut abschätzen können, wo Wege lang
         führen und wie sie beschaffen sein müssen, damit sie von Radfahrenden
         gut angenommen werden.
       </P>
 
       <P>
-        <Link to="/route">Details zur geplanten Streckenführung…</Link>
+        <Link to="/route">Details zur geplanten Streckenführung.</Link>
       </P>
 
       <H2>Herzliche Einladung zur Beteiligung!</H2>
