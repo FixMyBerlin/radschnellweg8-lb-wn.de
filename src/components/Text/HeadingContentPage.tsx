@@ -13,7 +13,7 @@ export const HeadingContentPage: React.FC<Props> = ({
   children,
 }) => {
   return (
-    <Section className="mt-5 w-full sm:mt-32 lg:pl-0">
+    <Section className="mt-8 w-full md:mt-5 md:pl-[140px] lg:pl-24 xl:pl-0">
       <p className="mt-0 mb-4 text-neutral-400">
         Radschnellverbindung zwischen Waiblingen und Ludwigsburg
       </p>
