@@ -96,7 +96,7 @@ export const PageHomeFaqs: React.FC = () => {
             visualisiern lassen.{' '}
             <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
               Die Machbarkeitsstudie
-            </LinkExternal>
+            </LinkExternal>{' '}
             prognostiziert 2.100 Radfahrende pro Tag, wir zeigen der Einfachheit
             halber das Potenzial von 2.000 Radfahrenden. Dargestellt ist die
             sogenannte &quot;Spitzenstunde&quot;. Diese ist definiert als ein
@@ -114,9 +114,9 @@ export const PageHomeFaqs: React.FC = () => {
                 />
               }
             />
-            (Simulation eines Radschnellwegs mit einem Potenzial von 2.000
+            Simulation eines Radschnellwegs mit einem Potenzial von 2.000
             Radfahrenden/Tag. © Visualisierung durch Schlothauer & Wauer im
-            Auftrag des Landratsamts Ludwigsburg)
+            Auftrag des Landratsamts Ludwigsburg
           </P>
         </FAQItem>
       </FAQ>

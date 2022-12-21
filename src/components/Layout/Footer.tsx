@@ -1,7 +1,7 @@
 import React from 'react'
 
 const links = [
-  { name: 'Impressum', href: '/impressum' },
+  { name: 'Impressum & Kontakt', href: '/impressum' },
   { name: 'Datenschutz', href: '/datenschutz' },
 ]
 

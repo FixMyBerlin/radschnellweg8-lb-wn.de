@@ -78,13 +78,13 @@ export const categoizedFaqs = {
           </li>
           <li>
             <strong>RS 3</strong>{' '}
-            <LinkExternal href="https://rp.baden-wuerttemberg.de/rps/abt4/ref44/seiten/radschnellweg/">
+            <LinkExternal href="https://rp.baden-wuerttemberg.de/rps/abt4/ref44/rs-3-radschnellverbindung-bad-wimpfen-neckarsulm-heilbronn-1-bauabschnitt/">
               Heilbronn&ndash;Bad Wimpfen
             </LinkExternal>
           </li>
           <li>
             <strong>RS 4</strong>{' '}
-            <LinkExternal href="https://rp.baden-wuerttemberg.de/rps/abt4/ref44/radschnellweg-esslingen-reichenbach/">
+            <LinkExternal href="https://rp.baden-wuerttemberg.de/rps/abt4/ref44/rs-4-radschnellverbindung-neckartal-esslingen-reichenbach/">
               Esslingen&ndash;Reichenbach
             </LinkExternal>
           </li>
@@ -128,13 +128,13 @@ export const categoizedFaqs = {
           </li>
           <li>
             <strong>RS 10</strong>{' '}
-            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpk/abt4/ref44/radschnellverbindung-karlsruhe-ettlingen/">
+            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpk/abt4/ref44/radschnellwege/rs10-karlsruhe-ettlingen">
               Karlsruhe&ndash;Ettlingen
             </LinkExternal>
           </li>
           <li>
             <strong>RS 11</strong>{' '}
-            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpt/abt4/radwegeplanung/rs-l-tuebingen-rottenburg/">
+            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpt/abt4/rs11-tuebingen-rottenburg">
               Rottenburg&ndash;T&uuml;bingen
             </LinkExternal>
           </li>
@@ -165,7 +165,7 @@ export const categoizedFaqs = {
           </li>
           <li>
             <strong>RS 16</strong>{' '}
-            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpk/abt4/seiten/strassenplanungen/rs16-radschnellweg-heidelberg-schwetzingen/">
+            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpk/abt4/ref44/radschnellwege/rs16-heidelberg-schwetzingen">
               Heidelberg &ndash; Schwetzingen
             </LinkExternal>
           </li>
@@ -181,7 +181,7 @@ export const categoizedFaqs = {
           </li>
           <li>
             <strong>RS 19</strong>{' '}
-            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpt/abt4/radwegeplanung/rs-l-tuebingen-reutlingen/">
+            <LinkExternal href="https://rp.baden-wuerttemberg.de/rpt/abt4/rs19-tuebingen-reutlingen">
               T&uuml;bingen &ndash; Reutlingen
             </LinkExternal>
           </li>
@@ -268,11 +268,14 @@ export const categoizedFaqs = {
         <>
           <p>
             Der RS 8 befindet sich aktuell in der <strong>Vorplanung</strong>,
-            das bedeutet: Die umfangreichen Voruntersuchungen im Rahmen der
-            Machbarkeitsstudie werden von den Verkehrsplanerinnen und -planern
-            der beteiligten Kreise und Städte vor Ort konkretisiert. Dabei
-            werden bereits erste Interessengruppen einbezogen. Vorrangig geht es
-            hier um die Linienbestimmung.{' '}
+            das bedeutet: Die umfangreichen Voruntersuchungen im Rahmen der{' '}
+            <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+              Machbarkeitsstudie
+            </LinkExternal>{' '}
+            werden von den Verkehrsplanerinnen und -planern der beteiligten
+            Kreise und Städte vor Ort konkretisiert. Dabei werden bereits erste
+            Interessengruppen einbezogen. Vorrangig geht es hier um die
+            Linienbestimmung.{' '}
           </p>
 
           <p>
@@ -294,13 +297,22 @@ export const categoizedFaqs = {
             <strong>politischen Gremien</strong> passiert hat, kann der{' '}
             <strong>Bau</strong> endlich starten.
           </p>
+          <p>
+            Wann der Bau der Radschnellwege abgeschlossen sein wird, hängt von
+            vielen verschiedenen Faktoren ab, z.B. der Fertigstellung der
+            finalen Planung, der Verhandlung mit Grundstückseigentümer/innen bei
+            möglichem Grunderwerb, der Verfügbarkeit von Baufirmen etc.
+            Natürlich streben alle Beteiligten eine{' '}
+            <strong>schnelle Umsetzung der Radschnellwege</strong> an.
+          </p>
           <PageHomeMilestones />
         </>
       ),
     'Wer wird in die Planungen mit eingebunden?': (
       <>
         <p>
-          Einige Akteure, die sogenannten TÖB (Träger öffentlicher Belange)
+          Einige Akteure, die sogenannten{' '}
+          <strong>TÖB (Träger öffentlicher Belange)</strong>
           müssen zwingend in die Planung miteinbezogen werden. Hierzu gehören
           unter anderem:
         </p>
@@ -314,29 +326,36 @@ export const categoizedFaqs = {
         </ul>
 
         <p>
-          Auch Verbände, wie z. B. Naturschutzverbände oder Bauernverbände sowie
-          betroffene Grundstückseigentümer/-innen sollten angehört werden.
+          Auch <strong>Verbände</strong>, wie z. B. Naturschutzverbände oder
+          Bauernverbände sowie betroffene Grundstückseigentümer/-innen sollten
+          angehört werden.
         </p>
 
         <p>
-          Darüber hinaus können Bürgerinitiativen, Aktivenverbände wie z. B. der
-          ADFC oder auch die breite Bürgerschaft miteingebunden werden. Eine
-          solche Bürgerbeteiligung besteht aus Informationen und der Möglichkeit
-          zur Kommentierung der vorgestellten Pläne.
+          Darüber hinaus wird es – im Rahmen einer{' '}
+          <strong>digitalen Öffentlichkeitsbeteiligung</strong> – die
+          Möglichkeit geben, dass sich Anwohnerinnen und Anwohner,
+          Aktivenverbände, Initiativen, Pendelnde, kurzum: alle betroffenen
+          Bürgerinnen und Bürger zum aktuellen Planungsstand äußern können.
         </p>
+        <p>Hinweise dazu finden Sie auf dieser Website.</p>
       </>
     ),
     'Wie sieht es mit dem Naturschutz aus?': (
       <p>
         Gut ausgebaute Radwege tragen dazu bei, dass mehr Menschen auf
-        Autofahrten verzichten – und sind insofern gut für Umwelt und Klima.
-        Dennoch gilt: Wie bei jedem anderen Bauvorhaben auch sollen die
-        Auswirkungen auf Natur, Tiere und Umwelt so gering wie möglich gehalten
-        werden. Dazu finden im Rahmen der Planungen einige Untersuchungen statt
-        und – wo eine Beeinträchtigung unabdingbar ist – werden Eingriffe in die
-        Natur durch Ausgleichsmaßnahmen kompensiert. Das bedeutet, dass an
-        anderer Stelle Verbesserungen vorgenommen werden, z. B. Entsiegelung,
-        Baumneupflanzung oder die Anlage von Blühstreifen.
+        Autofahrten verzichten – und sind insofern{' '}
+        <strong>gut für Umwelt und Klima</strong>. Dennoch gilt: Wie bei jedem
+        anderen Bauvorhaben auch sollen die{' '}
+        <strong>
+          Auswirkungen auf Natur, Tiere und Umwelt so gering wie möglich
+        </strong>{' '}
+        gehalten werden. Dazu finden im Rahmen der Planungen einige
+        Untersuchungen statt und – wo eine Beeinträchtigung unabdingbar ist –
+        werden Eingriffe in die Natur durch <strong>Ausgleichsmaßnahmen</strong>{' '}
+        kompensiert. Das bedeutet, dass an anderer Stelle Verbesserungen
+        vorgenommen werden, z. B. Entsiegelung, Baumneupflanzung oder die Anlage
+        von Blühstreifen.
       </p>
     ),
   },
@@ -347,11 +366,14 @@ export const categoizedFaqs = {
           Wie kann man sich so einen Radschnellweg eigentlich vorstellen? Wie
           viele Leute fahren denn da, kommt man da zu Fuß überhaupt noch drüber?
           Damit man sich davon ein besseres Bild machen kann, haben wir die
-          Radschnellverbindung Ludwigsburg–Waiblingen visualisieren lassen. Die
-          Machbarkeitsstudie prognostiziert 2.100 Radfahrende pro Tag, wir
-          zeigen der Einfachheit halber das Potenzial von 2.000 Radfahrenden.
-          Dargestellt ist die sogenannte „Spitzenstunde“. Diese ist definiert
-          als ein Zehntel der täglichen Verkehrsmenge (DTV).
+          Radschnellverbindung Ludwigsburg–Waiblingen visualisieren lassen. Die{' '}
+          <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+            Machbarkeitsstudie
+          </LinkExternal>{' '}
+          prognostiziert 2.100 Radfahrende pro Tag, wir zeigen der Einfachheit
+          halber das Potenzial von 2.000 Radfahrenden. Dargestellt ist die
+          sogenannte „Spitzenstunde“. Diese ist definiert als ein Zehntel der
+          täglichen Verkehrsmenge (DTV).
         </p>
         <YouTubePreview
           link="https://www.youtube.com/watch?v=pqtAmXkCeEU"
@@ -444,8 +466,11 @@ export const categoizedFaqs = {
         </p>
 
         <p>
-          Im Zuge der durchgeführten Machbarkeitsstudie wurden das jeweils
-          mögliche Radverkehrsaufkommen prognostiziert,
+          Im Zuge der durchgeführten{' '}
+          <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+            Machbarkeitsstudie
+          </LinkExternal>{' '}
+          wurden das jeweils mögliche Radverkehrsaufkommen prognostiziert,
           TrassenvariantenBeschluss der politischen Entscheidungsträger
           untersucht und – in enger Abstimmung mit den beteiligten Kommunen –
           eine sogenannte Vorzugsvariante definiert. In die Bewertung der
@@ -488,22 +513,29 @@ export const categoizedFaqs = {
           src="./assets/demonstrations-teilstueck.jpg"
           alt="Das bereits fertiggestellte Teilstück des RS4 im Filstal demonstriert, wie Radschnellwege später aussehen werden. Foto: Christian Kuhn"
         />
+        Das bereits fertiggestellte Teilstück des RS 4 im Filstal demonstriert,
+        wie Radschnellwege später aussehen werden. Foto: Christian Kuhn
       </>
     ),
     'Wie komme ich überhaupt auf den Radschnellweg?': (
       <>
         <p>
           Damit Radschnellwege auch wirklich genutzt werden und viele Menschen
-          aufs Rad umsteigen, müssen die Radschnellwege an möglichst viele Wohn-
-          und Gewerbegebiete und auch andere Radrouten angeschlossen werden.
+          aufs Rad umsteigen, müssen die Radschnellwege{' '}
+          <strong>
+            an möglichst viele Wohn- und Gewerbegebiete und auch andere
+            Radrouten
+          </strong>{' '}
+          angeschlossen werden.
         </p>
 
         <p>
-          Es sind daher verschiedene Zubringer zur Anbindung der Kommunen an den
-          Radschnellweg nötig. Da aber die Planungen beim RS 8 erst in der
-          Anfangsphase sind, und daher auch die exakte Routenführung noch nicht
-          feststeht, gibt es für die Zubringer bisher nur erste Überlegungen.
-          Diese können dann im weiteren Planungsverlauf konkretisiert werden.
+          Es sind daher <strong>verschiedene Zubringer</strong> zur Anbindung
+          der Kommunen an den Radschnellweg nötig. Da aber die Planungen beim RS
+          8 erst in der Anfangsphase sind, und daher auch die exakte
+          Routenführung noch nicht feststeht, gibt es für die Zubringer bisher
+          nur erste Überlegungen. Diese können dann im weiteren Planungsverlauf
+          konkretisiert werden.
         </p>
 
         <p>
@@ -516,30 +548,31 @@ export const categoizedFaqs = {
       (
         <>
           <p>
-            Radschnellwege sind längere durchgehende Routen, die wichtige Ziele
-            und Zentren miteinander verbinden. Sie sind in der Region Stuttgart
-            auch mit anderen Routen vernetzt, sodass sich auch vom Start- bzw.
-            Endpunkt unserer Radschnellwege weitere Ziele erreichen lassen.
-            Teilweise sind das anschließende Radschnellwege oder andere
-            hochwertige Radinfrastruktur.
+            Radschnellwege sind <strong>längere durchgehende Routen</strong>,
+            die wichtige Ziele und Zentren miteinander verbinden. Sie sind in
+            der Region Stuttgart auch <strong>mit anderen Routen</strong>{' '}
+            vernetzt, sodass sich auch vom Start- bzw. Endpunkt unserer
+            Radschnellwege weitere Ziele erreichen lassen. Teilweise sind das
+            anschließende Radschnellwege oder andere hochwertige
+            Radinfrastruktur.
           </p>
 
           <p>
-            Der RS 8 wird über Waiblingen hinaus nach Backnang sowie Schorndorf
-            und Fellbach (RS 5) weitergeführt. Von Remseck aus soll es später
-            eine Direktverbindung nach Stuttgart geben.
+            Der RS 8 wird über Waiblingen hinaus nach <strong>Backnang</strong>{' '}
+            sowie <strong>Schorndorf</strong> und <strong>Fellbach</strong> (RS
+            5) weitergeführt. Von Remseck aus soll es später eine
+            Direktverbindung nach <strong>Stuttgart</strong> geben.
           </p>
           <p>
-            Von Ludwigsburg wird man auf einem Radschnellweg nach
-            Bietigheim-Bissingen sowie in Richtung Kornwestheim weiterradeln
-            können.
+            Von Ludwigsburg wird man auf einem Radschnellweg nach{' '}
+            <strong>Bietigheim-Bissingen</strong> sowie in Richtung{' '}
+            <strong>Kornwestheim</strong> (RS 21) weiterradeln können.
           </p>
           <LinkExternal href="https://www.aktivmobil-bw.de/fileadmin/user_upload_fahrradlandbw/1_Radverkehr_in_BW/i_Radschnellverbindungen/BaWue_Ausbaustand_der_Radschnellwege_Stand_Mai_2022.pdf">
             <StaticImage
               src="./assets/BaWue_Ausbaustand_der_Radschnellwege_Stand_Mai_2022.jpg"
               alt="Karte der Radschnellwege"
-            />{' '}
-            (PDF)
+            />
           </LinkExternal>
         </>
       ),
@@ -570,7 +603,7 @@ export const categoizedFaqs = {
         </p>
       </>
     ),
-    'Und was ist mit den Fußgänger*innen?': (
+    'Und was ist mit den Fußgänger/innen?': (
       <>
         <p>
           Grundsätzlich soll der{' '}
