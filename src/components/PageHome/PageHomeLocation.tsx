@@ -1,6 +1,7 @@
 import React from 'react'
 import { Section } from '../Layout'
 import { H2, Link, LinkExternal, LinkMail, P } from '../Text'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export const PageHomeLocation: React.FC = () => {
   return (
@@ -28,7 +29,20 @@ export const PageHomeLocation: React.FC = () => {
         (Potenziale, Zeitverluste und Einbindung im Gesamtnetz), Belange des
         Umweltschutzes und die Kosten.
       </P>
-
+      <P>
+        {' '}
+        <div className="my-10 md:grid-cols-2 md:gap-4">
+          <Link to="/route">
+            <StaticImage
+              src="./../../components/PageRoute/assets/Gesamtstrecke.svg"
+              alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
+            />
+          </Link>
+        </div>
+      </P>
+      <P>
+        <Link to="/route">Details zur geplanten Streckenführung.</Link>
+      </P>
       <P>
         Die auf dieser Website gezeigte Vorplanung wurde bereits in den
         Gemeinderäten der beteiligten Städte präsentiert – die Streckenführung
@@ -39,10 +53,6 @@ export const PageHomeLocation: React.FC = () => {
         „Alltagsexperten“ des ADFC, die gut abschätzen können, wo Wege lang
         führen und wie sie beschaffen sein müssen, damit sie von Radfahrenden
         gut angenommen werden.
-      </P>
-
-      <P>
-        <Link to="/route">Details zur geplanten Streckenführung.</Link>
       </P>
 
       <H2>Herzliche Einladung zur Beteiligung!</H2>
