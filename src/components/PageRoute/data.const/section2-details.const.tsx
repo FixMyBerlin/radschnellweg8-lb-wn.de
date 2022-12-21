@@ -53,9 +53,11 @@ export const section2Details: TSectionDetails[] = [
           alt="Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten und andere Kleintiere dar. © Pixabay, Levke Hannemann"
         />
         <p>
-          Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen
-          wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten
-          und andere Kleintiere dar. © Pixabay, Levke Hannemann
+          <i>
+            Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen
+            wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten
+            und andere Kleintiere dar. © Pixabay, Levke Hannemann
+          </i>
         </p>
       </>
     ),
@@ -107,8 +109,10 @@ export const section2Details: TSectionDetails[] = [
           alt="Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB / Landratsamt Ludwigsburg"
         />
         <p>
-          Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB /
-          Landratsamt Ludwigsburg
+          <i>
+            Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB /
+            Landratsamt Ludwigsburg
+          </i>
         </p>
         <p>
           Im Verlauf der Strecke wird der neue Radschnellweg auch die
@@ -123,8 +127,10 @@ export const section2Details: TSectionDetails[] = [
           alt="Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB / Landratsamt Ludwigsburg"
         />
         <p>
-          Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB /
-          Landratsamt Ludwigsburg
+          <i>
+            Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB /
+            Landratsamt Ludwigsburg
+          </i>
         </p>
       </>
     ),
@@ -155,7 +161,9 @@ export const section2Details: TSectionDetails[] = [
           src="../assets/TS2Detailpkt5-Neue-Mitte-Remseck_STADT-REMSECK.jpg"
           alt="Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB / Landratsamt Ludwigsburg"
         />
-        <p>Planungsskizze „Neue Mitte“. © Stadt Remseck</p>
+        <p>
+          <i>Planungsskizze „Neue Mitte“. © Stadt Remseck</i>
+        </p>
       </>
     ),
   },
@@ -188,8 +196,10 @@ export const section2Details: TSectionDetails[] = [
           />
         </p>
         <p>
-          Aus den Vorplanungs-Unterlagen: Varianten Busbahnhof Remseck. © KMB /
-          Landratsamt Ludwigsburg
+          <i>
+            Aus den Vorplanungs-Unterlagen: Varianten Busbahnhof Remseck. © KMB
+            / Landratsamt Ludwigsburg
+          </i>
         </p>
       </>
     ),
@@ -219,8 +229,10 @@ export const section2Details: TSectionDetails[] = [
           />
         </p>
         <p>
-          Ausschnitt aus den Vorplanungs-Unterlagen: Straßenquerschnitt L 1142.
-          © Landkreis Ludwigsburg
+          <i>
+            Ausschnitt aus den Vorplanungs-Unterlagen: Straßenquerschnitt L
+            1142. © Landkreis Ludwigsburg
+          </i>
         </p>
       </>
     ),
@@ -257,8 +269,10 @@ export const section2Details: TSectionDetails[] = [
           />
         </p>
         <p>
-          Detail aus den Vorplanungs-Unterlagen: Einfädelmöglichkeit für
-          Linienbus am Kriegerdenkmal. © KMB / Landratsamt Ludwigsburg
+          <i>
+            Detail aus den Vorplanungs-Unterlagen: Einfädelmöglichkeit für
+            Linienbus am Kriegerdenkmal. © KMB / Landratsamt Ludwigsburg
+          </i>
         </p>
       </>
     ),

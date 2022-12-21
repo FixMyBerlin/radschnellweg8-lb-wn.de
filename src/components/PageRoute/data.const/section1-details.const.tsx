@@ -14,11 +14,13 @@ export const section1Details: TSectionDetails[] = [
           ausgewiesen. Die Fußwege werden verbreitert. Zwischen Myliusstraße und
           Solitudestraße sowie zwischen Seestraße und B 27 wird der Kfz-Verkehr
           weiterhin als Einbahnstraße mit geringen Verkehrsmengen geführt. Hier
-          wurde durch Provisorien bereits Vorarbeit geleistet. Der Abschnitt
-          gehört mit mehr als 4.000 Fahrrädern pro Tag zu den am stärksten
-          befahrenen Abschnitten in Ludwigsburg. Die Vorplanung wurde hier
-          bereits Teilabschnitten politisch beschlossen und eng mit Verbänden
-          abgestimmt.
+          wurde durch Provisorien bereits Vorarbeit geleistet.
+        </p>
+        <p>
+          Der Abschnitt gehört mit mehr als 4.000 Fahrrädern pro Tag zu den am
+          stärksten befahrenen Abschnitten in Ludwigsburg. Die Vorplanung wurde
+          hier bereits Teilabschnitten politisch beschlossen und eng mit
+          Verbänden abgestimmt.
         </p>
 
         <StaticImage
@@ -27,8 +29,10 @@ export const section1Details: TSectionDetails[] = [
           ©AGFK-BW, Marcus Gloger"
         />
         <p>
-          Nach aktueller Planung soll die Alleenstraße zur Fahrradstraße werden.
-          Hier ein Beispielbild aus Stuttgart ©AGFK-BW, Marcus Gloger
+          <i>
+            Nach aktueller Planung soll die Alleenstraße zur Fahrradstraße
+            werden. Hier ein Beispielbild aus Stuttgart ©AGFK-BW, Marcus Gloger
+          </i>
         </p>
       </>
     ),
@@ -56,7 +60,9 @@ export const section1Details: TSectionDetails[] = [
           alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
         />
         <p>
-          Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+          <i>
+            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+          </i>
         </p>
       </>
     ),
@@ -87,9 +93,11 @@ export const section1Details: TSectionDetails[] = [
           © Stadt Ludwigsburg"
         />
         <p>
-          Grünquartiere entlang der Wege erhöhen nicht nur die
-          Aufenthaltsqualität, sie sind auch wichtig fürs Stadtklima. © Stadt
-          Ludwigsburg
+          <i>
+            Grünquartiere entlang der Wege erhöhen nicht nur die
+            Aufenthaltsqualität, sie sind auch wichtig fürs Stadtklima. © Stadt
+            Ludwigsburg
+          </i>
         </p>
       </>
     ),
@@ -121,9 +129,11 @@ export const section1Details: TSectionDetails[] = [
           © AGFK-BW, Marcus Gloger"
         />
         <p>
-          Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist
-          ein wichtiges Ziel einer Radschnellverbindung. © AGFK-BW, Marcus
-          Gloger
+          <i>
+            Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist
+            ein wichtiges Ziel einer Radschnellverbindung. © AGFK-BW, Marcus
+            Gloger
+          </i>
         </p>
       </>
     ),
@@ -142,8 +152,10 @@ export const section1Details: TSectionDetails[] = [
           Gewerbegebiete sollen attraktiv angebunden werden.
         </p>
         <p>
-          Am Ortsausgang bei der Schmidener/Neckargröninger Straße schließt der
-          Ludwigsburger Abschnitt an den Folgeabschnitt an.
+          <i>
+            Am Ortsausgang bei der Schmidener/Neckargröninger Straße schließt
+            der Ludwigsburger Abschnitt an den Folgeabschnitt an.
+          </i>
         </p>
       </>
     ),

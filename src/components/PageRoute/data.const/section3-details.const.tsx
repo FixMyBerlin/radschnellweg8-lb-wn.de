@@ -38,16 +38,20 @@ export const section3Details: TSectionDetails[] = [
           alt=""
         />
         <p>
-          Aus den Vorplanungs-Unterlagen: Varianten Ortsdurchfahrt Hegnach. ©
-          BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
+          <i>
+            Aus den Vorplanungs-Unterlagen: Varianten Ortsdurchfahrt Hegnach. ©
+            BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
+          </i>
         </p>
         <StaticImage
           src="../assets/TS3Detailpkt1.2-Hegnach-Vorzugstrasse_LRA-RMK.PNG"
           alt=""
         />
         <p>
-          Aus den Vorplanungs-Unterlagen: Vorzugstrasse durch Hegnach nach
-          Variantenprüfung. © BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
+          <i>
+            Aus den Vorplanungs-Unterlagen: Vorzugstrasse durch Hegnach nach
+            Variantenprüfung. © BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
+          </i>
         </p>
       </>
     ),
@@ -75,8 +79,10 @@ export const section3Details: TSectionDetails[] = [
           alt=""
         />
         <p>
-          Beispiel für eine Radwegunterführung, diese hier ist in
-          Leutkirch-Haselburg © Verkehrsministerium Baden-Württemberg
+          <i>
+            Beispiel für eine Radwegunterführung, diese hier ist in
+            Leutkirch-Haselburg © Verkehrsministerium Baden-Württemberg
+          </i>
         </p>
       </>
     ),
@@ -106,8 +112,10 @@ export const section3Details: TSectionDetails[] = [
           alt=""
         />
         <p>
-          Bestandsweg am Lärmschutzwall der Landesstraße L 1142 © Landratsamt
-          Rems-Murr-Kreis
+          <i>
+            Bestandsweg am Lärmschutzwall der Landesstraße L 1142 © Landratsamt
+            Rems-Murr-Kreis
+          </i>
         </p>
       </>
     ),
@@ -136,8 +144,10 @@ export const section3Details: TSectionDetails[] = [
           alt=""
         />
         <p>
-          Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
-          Fußgängersteg bei TRUMPF in Ditzingen. © sbp/Andreas Schnubel
+          <i>
+            Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
+            Fußgängersteg bei TRUMPF in Ditzingen. © sbp/Andreas Schnubel
+          </i>
         </p>
       </>
     ),

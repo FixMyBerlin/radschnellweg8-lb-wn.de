@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.section-details i {
+  font-size: 14px;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;

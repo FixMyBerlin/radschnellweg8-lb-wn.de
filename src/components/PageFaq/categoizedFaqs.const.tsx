@@ -651,8 +651,13 @@ export const categoizedFaqs = {
           src="./assets/demonstrations-teilstueck.jpg"
           alt="Das bereits fertiggestellte Teilstück des RS4 im Filstal demonstriert, wie Radschnellwege später aussehen werden. Foto: Christian Kuhn"
         />
-        Das bereits fertiggestellte Teilstück des RS 4 im Filstal demonstriert,
-        wie Radschnellwege später aussehen werden. Foto: Christian Kuhn
+        <p>
+          <i>
+            Das bereits fertiggestellte Teilstück des RS 4 im Filstal
+            demonstriert, wie Radschnellwege später aussehen werden. Foto:
+            Christian Kuhn
+          </i>
+        </p>
       </>
     ),
     'Wie komme ich überhaupt auf den Radschnellweg?': (
@@ -743,7 +748,7 @@ export const categoizedFaqs = {
           <p>
             Die konkrete Vorgabe lautet: „Die mittleren Zeitverluste pro
             Kilometer durch Anhalten und Warten sollen nicht größer als 15
-            Sekunden (außerorts) und 30 Sekunden (innerorts) sein.“ In den
+            Sekunden (außerorts) und 30 Sekunden (innerorts) sein.“ In den{' '}
             <LinkExternal href="https://www.google.com/url?q=https://www.aktivmobil-bw.de/radverkehr/radschnellverbindungen/qualitaetsstandards-und-musterloesungen/&sa=D&source=docs&ust=1671631626951292&usg=AOvVaw0NUvpyI9FE_whUmsfLDx4W">
               Qualitätsstandards und Musterlösungen für Radschnellverbindungen
               in Baden-Württemberg

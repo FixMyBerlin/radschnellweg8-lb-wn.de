@@ -20,8 +20,10 @@ export const section4Details: TSectionDetails[] = [
           alt=""
         />
         <p>
-          Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
-          Fußgängersteg bei Trumpf in Ditzingen. © sbp/Andreas Schnubel
+          <i>
+            Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
+            Fußgängersteg bei Trumpf in Ditzingen. © sbp/Andreas Schnubel
+          </i>
         </p>
       </>
     ),
@@ -56,7 +58,9 @@ export const section4Details: TSectionDetails[] = [
           src="../assets/TS4Detailpkt3-Bahnunterfuehrung_Dammstr_STADT-WAIBLINGEN.png"
           alt=""
         />
-        <p>So sieht die Stelle aktuell aus. © Stadt Waiblingen</p>
+        <p>
+          <i>So sieht die Stelle aktuell aus. © Stadt Waiblingen</i>
+        </p>
       </>
     ),
   },
