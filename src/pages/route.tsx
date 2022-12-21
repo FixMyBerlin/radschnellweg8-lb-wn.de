@@ -17,7 +17,7 @@ import {
 } from '~/components/PageRoute/data.const'
 import { Section } from '~/components/PageRoute/Section'
 
-export const Head = () => <MetaTags noindex title="Route TODO" />
+export const Head = () => <MetaTags noindex title="Route" />
 
 const Route: React.FC<PageProps> = ({ location }) => {
   const menu = [section1Header, section2Header, section3Header, section4Header]
