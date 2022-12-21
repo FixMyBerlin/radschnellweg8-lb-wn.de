@@ -26,7 +26,7 @@ export const PageHomeFacts: React.FC = () => {
       value: '31 Millionen €',
       description: 'Gesamtkosten',
       longDescription:
-        'Ca. 2 Mio. € Baukosten pro Kilometer klingen zunächst viel, sind aber tatsächlich nur ein Bruchteil dessen, was z.B. Kreis- oder Landesstraßen kosten.',
+        'Ca. 2 Mio. € Baukosten pro Kilometer klingen zunächst viel, sind aber tatsächlich nur ein Bruchteil dessen, was z. B. Kreis- oder Landesstraßen kosten.',
     },
     {
       value: '87,5 %',
