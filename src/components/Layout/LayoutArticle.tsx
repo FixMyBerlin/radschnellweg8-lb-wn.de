@@ -9,7 +9,9 @@ type Props = {
 export const LayoutArticle: React.FC<Props> = ({ location, children }) => {
   return (
     <Layout location={location}>
-      <article className="prose mx-auto px-3 pt-10">{children}</article>
+      <article className="prose mx-auto max-w-[960px] px-3 pt-10">
+        {children}
+      </article>
     </Layout>
   )
 }

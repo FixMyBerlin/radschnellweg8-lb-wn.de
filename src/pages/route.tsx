@@ -26,13 +26,13 @@ const Route: React.FC<PageProps> = ({ location }) => {
     <LayoutArticle location={location}>
       <HeadingContentPage>Route</HeadingContentPage>
       <PageRouteIntro />
-      <div className="my-10 md:-ml-10 md:-mr-10 md:grid-cols-2 md:gap-4 lg:-ml-48 lg:-mr-48">
+      <div className="my-10 md:grid-cols-2 md:gap-4">
         <StaticImage
           src="./../components/PageRoute/assets/Gesamtstrecke.svg"
           alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
         />
       </div>
-      <ul className="">
+      <ul className="marker:text-pink-500">
         {menu.map(({ id, title }) => {
           return (
             <li>
