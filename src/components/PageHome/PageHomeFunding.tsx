@@ -4,6 +4,7 @@ import { Section } from '../Layout'
 import { H2 } from '../Text'
 import RadschnellwegeLogo from '../../images/bw-radschnellweg-logo.svg'
 import BmdvFoerderungLogo from '../../images/bmdv-foerderung-logo.svg'
+import { LinkExternal } from '../Text/LinkExternal'
 
 export const PageHomeFunding: React.FC = () => {
   return (
@@ -13,19 +14,34 @@ export const PageHomeFunding: React.FC = () => {
       </H2>
 
       <div className="flex flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-20">
-        <RadschnellwegeLogo
-          title="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
-          className="w-32 lg:w-[70%]"
-        />
-        <BmdvFoerderungLogo
-          title="Bundesministerium für Digitales und Verkehr; aufgrund eines Beschlusses des Deutschen Bundestages"
+        <LinkExternal
           className="w-40 lg:w-full"
-        />
-        <StaticImage
-          src="../../images/vm-bw-foerderung-logo.png"
-          alt="Ministerium für Verkehr Baden-Württemberg"
+          href="https://www.aktivmobil-bw.de/radverkehr/radschnellverbindungen/radschnellverbindungen-in-bw/"
+        >
+          <RadschnellwegeLogo
+            title="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
+            className="w-32 lg:w-[70%]"
+          />
+        </LinkExternal>
+        <LinkExternal
           className="w-40 lg:w-full"
-        />
+          href="https://bmdv.bund.de/DE/Themen/Mobilitaet/Fahrradverkehr/fahrradverkehr.html"
+        >
+          <BmdvFoerderungLogo
+            title="Bundesministerium für Digitales und Verkehr; aufgrund eines Beschlusses des Deutschen Bundestages"
+            className="w-40 lg:w-full"
+          />
+        </LinkExternal>
+        <LinkExternal
+          className="w-40 lg:w-full"
+          href="https://vm.baden-wuerttemberg.de/de/mobilitaet-verkehr/radverkehr"
+        >
+          <StaticImage
+            src="../../images/vm-bw-foerderung-logo.png"
+            alt="Ministerium für Verkehr Baden-Württemberg"
+            className="w-40 lg:w-full"
+          />
+        </LinkExternal>
       </div>
     </Section>
   )
