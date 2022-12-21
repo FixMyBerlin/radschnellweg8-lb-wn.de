@@ -152,10 +152,8 @@ export const section1Details: TSectionDetails[] = [
           Gewerbegebiete sollen attraktiv angebunden werden.
         </p>
         <p>
-          <i>
-            Am Ortsausgang bei der Schmidener/Neckargröninger Straße schließt
-            der Ludwigsburger Abschnitt an den Folgeabschnitt an.
-          </i>
+          Am Ortsausgang bei der Schmidener/Neckargröninger Straße schließt der
+          Ludwigsburger Abschnitt an den Folgeabschnitt an.
         </p>
       </>
     ),
