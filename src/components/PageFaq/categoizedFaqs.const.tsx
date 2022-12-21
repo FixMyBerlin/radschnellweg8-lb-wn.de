@@ -231,6 +231,123 @@ export const categoizedFaqs = {
     ),
   },
   'Bau & Planung': {
+    'Wer ist für Planung und Bau von Radschnellwegen zuständig?': (
+      <>
+        <p>
+          Das{' '}
+          <LinkExternal href="https://www.bmvi.de/SharedDocs/DE/Anlage/StV/verwaltungsvereinbarung-radschnellwege.html">
+            Straßengesetz Baden-Württemberg
+          </LinkExternal>{' '}
+          regelt die Einteilung von Straßen, welche nach ihrer Verkehrsbedeutung
+          in verschiedene Gruppen eingeteilt werden. Seit Kurzem gilt diese
+          Einstufung auch für Radschnellwege. Diese werden, ebenso wie Straßen,
+          als Landes-, Kreis- oder Gemeindestraße gewidmet werden.
+        </p>
+
+        <p>
+          Aus dieser Einstufung ergibt sich auch die{' '}
+          <strong>Baulastträgerschaft</strong>.
+        </p>
+
+        <p>
+          Als Baulastträger bezeichnet man diejenige Verwaltungseinheit, welche
+          für die Planung, den Bau und die Erhaltung der Straße (bzw. in unserem
+          Fall des Radschnellweges) zuständig ist.
+        </p>
+
+        <p>
+          Ob ein Radschnellweg als Landes-, Kreis- oder Gemeinderadschnellweg
+          eingestuft wird, hängt von seiner Verbindungsfunktion und den
+          ermittelten täglichen Potenzialen an Radfahrenden ab. Strecken mit
+          überregionaler Verbindungsfunktion und Potenzialen von mehr als 2.500
+          Radfahrenden pro Tag werden als <strong>Landesradschnellweg</strong>{' '}
+          eingestuft, Strecken mit einer nahräumigen Verbindungsfunktion und
+          Potenzialen ab 2.000 Radfahrern pro Tag als{' '}
+          <strong>Kreisradschnellweg</strong>. Bei geringeren Potenzialen kann
+          ein Radschnellweg auch als <strong>Gemeinderadschnellweg</strong>{' '}
+          ausgebaut werden.
+        </p>
+        <p>
+          Die Entscheidung trifft das Regierungspräsidium nach Rücksprache mit
+          dem Verkehrsministerium auf Grundlage von Machbarkeitsstudien, die von
+          den Land- oder Stadtkreisen in Auftrag gegeben werden.
+        </p>
+        <p>
+          <u>Landesradschnellweg:</u> Baulastträger ist das Land. Bei Gemeinden
+          ab 30.000 Einwohner/innen gilt: innerhalb der Gemarkung ist die
+          Kommune Baulastträger.
+        </p>
+        <p>
+          <u>Kreisradschnellweg:</u> Baulastträger ist der Landkreis. Bei
+          Gemeinden ab 30.000 Einwohner/-innen gilt: innerhalb der
+          Ortsdurchfahrten ist die Kommune Baulastträger.
+        </p>
+        <p>
+          <u>Gemeinderadschnellweg:</u> Baulastträger sind die Gemeinden.
+        </p>
+        <p>
+          <strong>
+            Der Radschnellweg Ludwigsburg-Waiblingen (RS 8) wurde als
+            Kreisradschnellweg eingestuft.
+          </strong>
+        </p>
+      </>
+    ),
+    'Wer bezahlt die Planung und den Bau von Radschnellwegen?': (
+      <>
+        <p>
+          Die Verantwortung der Finanzierung liegt bei den{' '}
+          <strong>Baulastträgern</strong>.
+        </p>
+
+        <p>
+          Radschnellwege verursachen zunächst einmal hohe Investitionskosten, es
+          gibt aber <strong>sehr gute Fördermöglichkeiten</strong>. So stellt
+          der Bund den Ländern im Rahmen des Programms{' '}
+          <LinkExternal href="https://www.bmvi.de/SharedDocs/DE/Anlage/StV/verwaltungsvereinbarung-radschnellwege.html">
+            „Radschnellwege 2017–2030“
+          </LinkExternal>{' '}
+          Finanzhilfen für die Planung und den Bau zur Verfügung. Die
+          Förderquote liegt, in Kombination mit der{' '}
+          <strong>Förderung durch das Land</strong>, bei{' '}
+          <strong>bis zu 90% Prozent der zuwendungsfähigen Kosten</strong>.
+        </p>
+      </>
+    ),
+    'Müssen neue Flächen versiegelt werden?': (
+      <>
+        <p>
+          Wie bei jedem anderen Bauvorhaben, sollen auch beim Bau von
+          Radschnellwegen die{' '}
+          <strong>
+            Auswirkungen auf Natur, Tiere und Umwelt so gering wie möglich{' '}
+          </strong>{' '}
+          gehalten werden. Dazu finden im Rahmen der Planungen einige
+          Untersuchungen statt und – wo eine Beeinträchtigung unabdingbar ist –
+          werden Eingriffe in die Natur durch{' '}
+          <strong>Ausgleichsmaßnahmen</strong> kompensiert. Das bedeutet, dass
+          an anderer Stelle Verbesserungen vorgenommen werden, z. B.
+          Entsiegelung, Baumneupflanzung oder die Anlage von Blühstreifen.
+        </p>
+
+        <p>
+          Um den Eingriff in die Natur möglichst gering zu halten, werden
+          Radschnellwege{' '}
+          <strong>
+            überwiegend auf bestehenden und bereits asphaltierten Wegen
+          </strong>{' '}
+          geplant. Teilweise müssen diese aber verbreitert werden, um auf die
+          geforderten Mindestbreiten von ca. 4–5 Metern zu kommen. Diese
+          Versiegelung muss an anderer Stelle mit Ausgleichsmaßnahmen
+          kompensiert werden (siehe auch die Frage „Wie sieht es mit dem
+          Naturschutz aus?“). Tatsächlich muss man sich aber auch das größere
+          Ziel vor Augen halten: Je attraktiver die Radschnellwege werden, umso
+          mehr Pendlerinnen und Pendler können zum Umstieg vom Auto aufs Rad
+          bewegt werden. Dadurch verringert sich das Aufkommen des motorisierten
+          Individualverkehrs – ein <strong>Gewinn für Umwelt und Klima</strong>.
+        </p>
+      </>
+    ),
     'Was kostet ein Radschnellweg?': (
       <>
         <p>
@@ -360,6 +477,27 @@ export const categoizedFaqs = {
     ),
   },
   Nutzung: {
+    'Wie wird der hohe Ausbaustandard aufrechterhalten?': (
+      <>
+        <p>
+          Wie auch bei Straßen wird dies vor allem durch eine{' '}
+          <strong>regelmäßige Kontrolle und Unterhaltung</strong> gewährleistet.
+          Die Kontrollhäufigkeit ist hierbei analog zu den Hauptverkehrsstraßen.
+          Hierzu gehört mindestens einmal wöchentlich eine Sichtkontrolle der
+          Oberflächen (Ebenheit, Griffigkeit, Schlaglöcher, Risse etc.) zur
+          Aufrechterhaltung der Verkehrssicherheit. Zweimal jährlich wird die{' '}
+          <strong>Wegweisung kontrolliert</strong>.
+        </p>
+        <p>
+          Zusätzlich soll alle 5 Jahre eine{' '}
+          <strong>
+            standardisierte Zustandserfassung und -bewertung (ZEB)
+          </strong>{' '}
+          erfolgen. So wird sichergestellt, dass der Radschnellweg jederzeit gut
+          befahren werden kann.
+        </p>
+      </>
+    ),
     'Wie viele Radfahrende fahren denn da später?': (
       <>
         <p>
@@ -578,6 +716,43 @@ export const categoizedFaqs = {
       ),
   },
   'Andere Verkehrsteilnehmende': {
+    'Radfahrer/-innen sollen auf Radschnellwegen „bevorrechtigt“ unterwegs sein – was heißt das?':
+      (
+        <>
+          <p>
+            Die konsequente Bevorrechtigung von Radschnellverbindungen hat einen
+            wichtigen Grund: Gemeinsam mit der Minimierung von Kreuzungspunkten
+            sorgt sie für die hohen Reisegeschwindigkeiten, die den{' '}
+            <strong>Umstieg aufs Rad attraktiv</strong> machen und so die
+            Radschnellwege zum wichtigen Baustein in der Verkehrswende machen.
+            Das bedeutet aber nicht, dass der Radverkehr an jeder Kreuzung freie
+            Bahn hat und alle anderen Verkehrsteilnehmer/-innen ständig
+            ausgebremst werden.
+          </p>
+          <p>
+            Bevorrechtigung kann auf verschiedene Arten erreicht werden und ist
+            immer von der jeweiligen Situation vor Ort abhängig. Neben einer
+            durch Beschilderung angeordneten Vorfahrt können z.B. auch{' '}
+            <strong>Ampeln radverkehrsfreundlich</strong> Ampeln
+            radverkehrsfreundlich geschaltet oder <strong>Mittelinseln</strong>{' '}
+            gebaut werden. Eine sehr attraktive aber zugleich auch teurere
+            Alternative sind sogenannte planfreie Lösungen, also{' '}
+            <strong>Brücken</strong> oder <strong>Unterführungen</strong>. Beim
+            RS 8 sind an mehreren Stellen solche Bauwerke geplant.
+          </p>
+          <p>
+            Die konkrete Vorgabe lautet: „Die mittleren Zeitverluste pro
+            Kilometer durch Anhalten und Warten sollen nicht größer als 15
+            Sekunden (außerorts) und 30 Sekunden (innerorts) sein.“ In den
+            <LinkExternal href="https://www.google.com/url?q=https://www.aktivmobil-bw.de/radverkehr/radschnellverbindungen/qualitaetsstandards-und-musterloesungen/&sa=D&source=docs&ust=1671631626951292&usg=AOvVaw0NUvpyI9FE_whUmsfLDx4W">
+              Qualitätsstandards und Musterlösungen für Radschnellverbindungen
+              in Baden-Württemberg
+            </LinkExternal>{' '}
+            werden die Verlustzeiten der unterschiedlichen Lösungen (Ampeln,
+            Kreisverkehre, Brücken etc.) berechnet
+          </p>
+        </>
+      ),
     'Werden (Auto-)Parkplätze wegfallen?': (
       <>
         <p>
