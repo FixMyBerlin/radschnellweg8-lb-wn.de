@@ -12,13 +12,15 @@ import {
   section2Details,
   section3Header,
   section3Details,
+  section4Header,
+  section4Details,
 } from '~/components/PageRoute/data.const'
 import { Section } from '~/components/PageRoute/Section'
 
 export const Head = () => <MetaTags noindex title="Route TODO" />
 
 const Route: React.FC<PageProps> = ({ location }) => {
-  const menu = [section1Header, section2Header]
+  const menu = [section1Header, section2Header, section3Header, section4Header]
 
   return (
     <LayoutArticle location={location}>
@@ -42,7 +44,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
       <Section header={section1Header} details={section1Details} />
       <Section header={section2Header} details={section2Details} />
       <Section header={section3Header} details={section3Details} />
-
+      <Section header={section4Header} details={section4Details} />
       {/* <PageRouteItems /> */}
     </LayoutArticle>
   )
