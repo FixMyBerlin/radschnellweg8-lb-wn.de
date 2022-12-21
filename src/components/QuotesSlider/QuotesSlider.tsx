@@ -54,7 +54,12 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
               : 'hidden lg:visible lg:opacity-0'
           }`}
         >
-          <div>{item.image}</div>
+          <div className="flex flex-col justify-between space-y-6">
+            {item.image}
+            <p className="max-w-[300px] text-center text-[16px] leading-5 text-gray-400">
+              {item.source}
+            </p>
+          </div>
           <div className="pl-10 pt-6 lg:pt-12">
             <blockquote className="text-[24px] font-medium leading-[32px]">
               {item.quote}

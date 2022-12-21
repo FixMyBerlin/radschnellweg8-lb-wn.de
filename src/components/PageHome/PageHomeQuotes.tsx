@@ -20,7 +20,7 @@ const quotes: Quote[] = [
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
-    source: 'Bild: © Stadt Waiblingen',
+    source: 'Foto: © Stadt Waiblingen',
     quote:
       'Die bessere Verknüpfung der Wirtschaftsräume Waiblingen/Ludwigsburg ist uns ein wichtiges Anliegen. Der Radschnellweg verbindet dieses Vorhaben hervorragend mit dem Ziel einer nachhaltigeren Mobilität.',
     person: 'Sebastian Wolf',
@@ -34,7 +34,7 @@ const quotes: Quote[] = [
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
-    source: 'Bild: © Rems-Murr-Kreis',
+    source: 'Foto: © Rems-Murr-Kreis',
     quote:
       'Radschnellverbindungen ebnen den Weg für nachhaltige Mobilität und können gerade beim RS8 die Hauptverkehrsachsen zwischen unseren beiden Landkreisen entlasten.',
     person: 'Dr. Richard Sigel',
@@ -48,7 +48,7 @@ const quotes: Quote[] = [
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
-    source: 'Bild: © Landkreis Ludwigsburg',
+    source: 'Foto: © Landkreis Ludwigsburg',
     quote:
       'Wir freuen uns, dass wir gemeinsam an der Realisierung einer der ersten Radschnellwege im Land beteiligt sind.',
     person: 'Dietmar Allgaier',
@@ -62,7 +62,7 @@ const quotes: Quote[] = [
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
-    source: 'Bild: ©  Ministerium für Verkehr BW, Daniel Mühlebach',
+    source: `Foto: ©  Ministerium für Verkehr BW, Daniel Mühlebach`,
     quote:
       'Es freut mich sehr, dass der Rems-Murr-Kreis, der Kreis Ludwigsburg und alle beteiligten Kommunen eine leistungsstarke und schnelle Radverbindung für Pendlerinnen und Pendler zwischen Waiblingen und Ludwigsburg realisieren möchten.',
     person: 'Winfried Hermann',
@@ -76,7 +76,7 @@ const quotes: Quote[] = [
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
-    source: 'Bild: © Stadt Ludwigsburg',
+    source: 'Foto: © Stadt Ludwigsburg',
     quote:
       'Der Ausbau des Radschnellwegs ist ein hervorragendes Beispiel für nachhaltige Mobilität über Stadt- und Kreisgrenzen hinweg.',
     person: 'Dr. Matthias Knecht',
@@ -90,7 +90,7 @@ const quotes: Quote[] = [
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
-    source: 'Bild: © Stadt Remseck am Neckar',
+    source: 'Foto: © Stadt Remseck am Neckar',
     quote:
       'Wir freuen uns sehr, dass mit dem Radschnellweg eine Ergänzung zu dem eher touristisch orientierten Rems-Radweg, der den Schleifen der Rems folgt, nun eine direkte Radverbindung erstellt wird, die insbesondere von den Pendlern und Rennradfahren genutzt werden kann.',
     person: 'Dirk Schönberger',
