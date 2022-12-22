@@ -24,11 +24,11 @@ type Props = { items: TocHashLink }
 
 export const TableOfContents: React.FC<Props> = ({ items }) => {
   return (
-    <nav className="not-prose absolute top-72 z-10 hidden w-44 rounded bg-white py-3 px-4 lg:right-0 lg:block lg:rounded-r-none xl:fixed xl:shadow-lg 2xl:left-8">
+    <nav className="marker:text-rs8-pink">
       <ul>
         {items.map(([itemHash, itemlink]) => (
           <li key={itemHash}>
-            <Link to={itemHash} className="block w-full py-1.5 leading-5">
+            <Link to={itemHash} className="text-rs8-pink">
               {itemlink}
             </Link>
           </li>
