@@ -1,5 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from '../../Link'
+import { ImageWithCaption } from '../ImageWIthCaption'
 import { TSectionDetails } from './types'
 
 export const section2Details: TSectionDetails[] = [
@@ -48,17 +49,18 @@ export const section2Details: TSectionDetails[] = [
           sollen streifenförmige Blühstreifen entlang des Radschnellweges
           und/oder zwischen Ackerflächen angelegt werden.
         </p>
-        <StaticImage
-          src="../assets/TS2Detailpkt2-Bluehstreifen-PIXABAY-LEVKE-HANNEMANN.jpg"
-          alt="Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten und andere Kleintiere dar. © Pixabay, Levke Hannemann"
-        />
-        <p>
-          <i>
-            Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen
-            wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten
-            und andere Kleintiere dar. © Pixabay, Levke Hannemann
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS2Detailpkt2-Bluehstreifen-PIXABAY-LEVKE-HANNEMANN.jpg"
+              alt="Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten und andere Kleintiere dar. © Pixabay, Levke Hannemann"
+            />
+          }
+        >
+          Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen
+          wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten
+          und andere Kleintiere dar. © Pixabay, Levke Hannemann
+        </ImageWithCaption>
       </>
     ),
   },
@@ -104,16 +106,17 @@ export const section2Details: TSectionDetails[] = [
           sorgt dafür, dass Radfahrende hier schnell, bequem und konfliktfrei
           auf die andere Seite der Straße gelangen.
         </p>
-        <StaticImage
-          src="../assets/TS2Detailpkt4.1-Unterfuehrung_K1666_LRA-LB.PNG"
-          alt="Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB / Landratsamt Ludwigsburg"
-        />
-        <p>
-          <i>
-            Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB /
-            Landratsamt Ludwigsburg
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS2Detailpkt4.1-Unterfuehrung_K1666_LRA-LB.PNG"
+              alt="Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB / Landratsamt Ludwigsburg"
+            />
+          }
+        >
+          Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB /
+          Landratsamt Ludwigsburg
+        </ImageWithCaption>
         <p>
           Im Verlauf der Strecke wird der neue Radschnellweg auch die
           Landesstraße 1140 queren müssen. Dort gibt es bereits eine
@@ -122,16 +125,17 @@ export const section2Details: TSectionDetails[] = [
           wird noch untersucht, mit welchen Maßnahmen sich die momentan noch
           etwas unübersichtliche Situation direkt am Bauwerk verbessern ließe.
         </p>
-        <StaticImage
-          src="../assets/TS2Detailpkt4.2-Unterfuehrung_L1140_LRA-LB.PNG"
-          alt="Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB / Landratsamt Ludwigsburg"
-        />
-        <p>
-          <i>
-            Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB /
-            Landratsamt Ludwigsburg
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS2Detailpkt4.2-Unterfuehrung_L1140_LRA-LB.PNG"
+              alt="Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB / Landratsamt Ludwigsburg"
+            />
+          }
+        >
+          Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB /
+          Landratsamt Ludwigsburg
+        </ImageWithCaption>
       </>
     ),
   },
@@ -157,13 +161,16 @@ export const section2Details: TSectionDetails[] = [
             https://www.stadt-remseck.de/de/Die-Stadt/Buergerbeteiligung/Neue-Mitte
           </Link>
         </p>
-        <StaticImage
-          src="../assets/TS2Detailpkt5-Neue-Mitte-Remseck_STADT-REMSECK.jpg"
-          alt="Aus den Vorplanungs-Unterlagen: Unterführung L 1140. © KMB / Landratsamt Ludwigsburg"
-        />
-        <p>
-          <i>Planungsskizze „Neue Mitte“. © Stadt Remseck</i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS2Detailpkt5-Neue-Mitte-Remseck_STADT-REMSECK.jpg"
+              alt=""
+            />
+          }
+        >
+          Planungsskizze „Neue Mitte“. © Stadt Remseck
+        </ImageWithCaption>
       </>
     ),
   },
@@ -189,18 +196,17 @@ export const section2Details: TSectionDetails[] = [
           Mitte“ soll der Radschnellweg perspektivisch über die Neckarbrücke
           (derzeit L 1140) geführt werden.
         </p>
-        <p>
-          <StaticImage
-            src="../assets/TS2Detailpkt6-Remseck-Varianten-Busbahnhof_LRA-RMK.PNG"
-            alt=""
-          />
-        </p>
-        <p>
-          <i>
-            Aus den Vorplanungs-Unterlagen: Varianten Busbahnhof Remseck. © KMB
-            / Landratsamt Ludwigsburg
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS2Detailpkt6-Remseck-Varianten-Busbahnhof_LRA-RMK.PNG"
+              alt=""
+            />
+          }
+        >
+          Aus den Vorplanungs-Unterlagen: Varianten Busbahnhof Remseck. © KMB /
+          Landratsamt Ludwigsburg
+        </ImageWithCaption>
       </>
     ),
   },
@@ -222,18 +228,17 @@ export const section2Details: TSectionDetails[] = [
           Betonschutzwände zu beiden Seiten sorgen für eine Absturzsicherung
           talwärts und trennen Rad- und Kfz-Verkehr voneinander.
         </p>
-        <p>
-          <StaticImage
-            src="../assets/TS2Detailpkt7-L1142-Strassenquerschnitt_LRALB.PNG"
-            alt=""
-          />
-        </p>
-        <p>
-          <i>
-            Ausschnitt aus den Vorplanungs-Unterlagen: Straßenquerschnitt L
-            1142. © Landkreis Ludwigsburg
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS2Detailpkt7-L1142-Strassenquerschnitt_LRALB.PNG"
+              alt=""
+            />
+          }
+        >
+          Ausschnitt aus den Vorplanungs-Unterlagen: Straßenquerschnitt L 1142.
+          © Landkreis Ludwigsburg
+        </ImageWithCaption>
       </>
     ),
   },
@@ -262,18 +267,17 @@ export const section2Details: TSectionDetails[] = [
           Busspur nicht mehr nötig sein wird. Der Radschnellweg kann dann zur
           Fahrradspur mit geringen Fußgängerverkehr werden.
         </p>
-        <p>
-          <StaticImage
-            src="../assets/TS2Detailpkt8-L1142-Busschleuse_LRALB.PNG"
-            alt=""
-          />
-        </p>
-        <p>
-          <i>
-            Detail aus den Vorplanungs-Unterlagen: Einfädelmöglichkeit für
-            Linienbus am Kriegerdenkmal. © KMB / Landratsamt Ludwigsburg
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS2Detailpkt8-L1142-Busschleuse_LRALB.PNG"
+              alt=""
+            />
+          }
+        >
+          Detail aus den Vorplanungs-Unterlagen: Einfädelmöglichkeit für
+          Linienbus am Kriegerdenkmal. © KMB / Landratsamt Ludwigsburg
+        </ImageWithCaption>
       </>
     ),
   },

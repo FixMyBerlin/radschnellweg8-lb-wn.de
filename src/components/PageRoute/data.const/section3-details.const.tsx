@@ -1,4 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image'
+import { ImageWithCaption } from '../ImageWIthCaption'
 import { TSectionDetails } from './types'
 
 export const section3Details: TSectionDetails[] = [
@@ -33,26 +34,28 @@ export const section3Details: TSectionDetails[] = [
           überall die geforderten Mindeststandards für einen Radschnellweg
           untergebracht werden können.
         </p>
-        <StaticImage
-          src="../assets/TS3Detailpkt1.1-Hegnach-Varianten_LRA-RMK.PNG"
-          alt=""
-        />
-        <p>
-          <i>
-            Aus den Vorplanungs-Unterlagen: Varianten Ortsdurchfahrt Hegnach. ©
-            BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
-          </i>
-        </p>
-        <StaticImage
-          src="../assets/TS3Detailpkt1.2-Hegnach-Vorzugstrasse_LRA-RMK.PNG"
-          alt=""
-        />
-        <p>
-          <i>
-            Aus den Vorplanungs-Unterlagen: Vorzugstrasse durch Hegnach nach
-            Variantenprüfung. © BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS3Detailpkt1.1-Hegnach-Varianten_LRA-RMK.PNG"
+              alt=""
+            />
+          }
+        >
+          Aus den Vorplanungs-Unterlagen: Varianten Ortsdurchfahrt Hegnach. ©
+          BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
+        </ImageWithCaption>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS3Detailpkt1.2-Hegnach-Vorzugstrasse_LRA-RMK.PNG"
+              alt=""
+            />
+          }
+        >
+          Aus den Vorplanungs-Unterlagen: Vorzugstrasse durch Hegnach nach
+          Variantenprüfung. © BIT-Ingenieure / Landratsamt Rems-Murr-Kreis
+        </ImageWithCaption>
       </>
     ),
   },
@@ -74,16 +77,17 @@ export const section3Details: TSectionDetails[] = [
           <strong>kreuzungsfreie und vom Kfz-Verkehr getrennte Führung</strong>{' '}
           gewährleistet werden.
         </p>
-        <StaticImage
-          src="../assets/TS3Detailpkt2-Radwegeunterfuehrung_Leutkirch_VM-BW.jpg"
-          alt=""
-        />
-        <p>
-          <i>
-            Beispiel für eine Radwegunterführung, diese hier ist in
-            Leutkirch-Haselburg © Verkehrsministerium Baden-Württemberg
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS3Detailpkt2-Radwegeunterfuehrung_Leutkirch_VM-BW.jpg"
+              alt=""
+            />
+          }
+        >
+          Beispiel für eine Radwegunterführung, diese hier ist in
+          Leutkirch-Haselburg © Verkehrsministerium Baden-Württemberg
+        </ImageWithCaption>
       </>
     ),
   },
@@ -107,16 +111,17 @@ export const section3Details: TSectionDetails[] = [
           sichergestellt, den die Radfahrenden dann ganz für sich hätten, hier
           soll kein Fußverkehr entlangführen.
         </p>
-        <StaticImage
-          src="../assets/TS3Detailpkt3-Vorhandener-Weg-Waiblingen_LRA-RMK.png"
-          alt=""
-        />
-        <p>
-          <i>
-            Bestandsweg am Lärmschutzwall der Landesstraße L 1142 © Landratsamt
-            Rems-Murr-Kreis
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS3Detailpkt3-Vorhandener-Weg-Waiblingen_LRA-RMK.png"
+              alt=""
+            />
+          }
+        >
+          Bestandsweg am Lärmschutzwall der Landesstraße L 1142 © Landratsamt
+          Rems-Murr-Kreis
+        </ImageWithCaption>
       </>
     ),
   },
@@ -139,16 +144,17 @@ export const section3Details: TSectionDetails[] = [
           Radweg + 2 m Gehweg). Dieser Weg verläuft dann bis zum Übergabepunkt
           an die Stadt Waiblingen an der Schmidener Straße.
         </p>
-        <StaticImage
-          src="../assets/TS3Detailpkt4-sbp-TRUMPF_Bruecke_Ditzingen.jpg"
-          alt=""
-        />
-        <p>
-          <i>
-            Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
-            Fußgängersteg bei TRUMPF in Ditzingen. © sbp/Andreas Schnubel
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS3Detailpkt4-sbp-TRUMPF_Bruecke_Ditzingen.jpg"
+              alt=""
+            />
+          }
+        >
+          Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
+          Fußgängersteg bei TRUMPF in Ditzingen. © sbp/Andreas Schnubel
+        </ImageWithCaption>
       </>
     ),
   },

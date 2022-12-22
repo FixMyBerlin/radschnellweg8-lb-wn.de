@@ -1,4 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image'
+import { ImageWithCaption } from '../ImageWIthCaption'
 import { TSectionDetails } from './types'
 
 export const section1Details: TSectionDetails[] = [
@@ -23,17 +24,18 @@ export const section1Details: TSectionDetails[] = [
           Verbänden abgestimmt.
         </p>
 
-        <StaticImage
-          src="../assets/TS1Detailpkt1-AGFK_Fuehrungsformen_Radverkehr_05_MarcusGloger.jpg"
-          alt="Nach aktueller Planung soll die Alleenstraße zur Fahrradstraße werden. Hier ein Beispielbild aus Stuttgart 
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS1Detailpkt1-AGFK_Fuehrungsformen_Radverkehr_05_MarcusGloger.jpg"
+              alt="Nach aktueller Planung soll die Alleenstraße zur Fahrradstraße werden. Hier ein Beispielbild aus Stuttgart
           ©AGFK-BW, Marcus Gloger"
-        />
-        <p>
-          <i>
-            Nach aktueller Planung soll die Alleenstraße zur Fahrradstraße
-            werden. Hier ein Beispielbild aus Stuttgart ©AGFK-BW, Marcus Gloger
-          </i>
-        </p>
+            />
+          }
+        >
+          Nach aktueller Planung soll die Alleenstraße zur Fahrradstraße werden.
+          Hier ein Beispielbild aus Stuttgart ©AGFK-BW, Marcus Gloger
+        </ImageWithCaption>
       </>
     ),
   },
@@ -55,15 +57,16 @@ export const section1Details: TSectionDetails[] = [
           Verbänden. Der Radschnellweg hat die höchste Priorität und soll so
           rasch wie möglich gebaut werden.
         </p>
-        <StaticImage
-          src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
-          alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
-        />
-        <p>
-          <i>
-            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
+              alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
+            />
+          }
+        >
+          Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+        </ImageWithCaption>
       </>
     ),
   },
@@ -87,18 +90,19 @@ export const section1Details: TSectionDetails[] = [
           Verkehrsführung soll so gestaltet sein, dass Durchgangsverkehr noch
           weiter reduziert wird.
         </p>
-        <StaticImage
-          src="../assets/TS1Detailpkt3-Fahrrad_Gruenstreifen_Gruen_in_Stadt_STADT-LUDWIGSBURG.jpg"
-          alt="Grünquartiere entlang der Wege erhöhen nicht nur die Aufenthaltsqualität, sie sind auch wichtig fürs Stadtklima. 
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS1Detailpkt3-Fahrrad_Gruenstreifen_Gruen_in_Stadt_STADT-LUDWIGSBURG.jpg"
+              alt="Grünquartiere entlang der Wege erhöhen nicht nur die Aufenthaltsqualität, sie sind auch wichtig fürs Stadtklima.
           © Stadt Ludwigsburg"
-        />
-        <p>
-          <i>
-            Grünquartiere entlang der Wege erhöhen nicht nur die
-            Aufenthaltsqualität, sie sind auch wichtig fürs Stadtklima. © Stadt
-            Ludwigsburg
-          </i>
-        </p>
+            />
+          }
+        >
+          Grünquartiere entlang der Wege erhöhen nicht nur die
+          Aufenthaltsqualität, sie sind auch wichtig fürs Stadtklima. © Stadt
+          Ludwigsburg
+        </ImageWithCaption>
       </>
     ),
   },
@@ -123,18 +127,19 @@ export const section1Details: TSectionDetails[] = [
           </strong>{' '}
           an den RS 8.
         </p>
-        <StaticImage
-          src="../assets/TS1Detailpkt4-AGFK_Sportplatz_05_MarcusGloger.jpg"
-          alt="Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist ein wichtiges Ziel einer Radschnellverbindung. 
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS1Detailpkt4-AGFK_Sportplatz_05_MarcusGloger.jpg"
+              alt="Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist ein wichtiges Ziel einer Radschnellverbindung.
           © AGFK-BW, Marcus Gloger"
-        />
-        <p>
-          <i>
-            Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist
-            ein wichtiges Ziel einer Radschnellverbindung. © AGFK-BW, Marcus
-            Gloger
-          </i>
-        </p>
+            />
+          }
+        >
+          Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist
+          ein wichtiges Ziel einer Radschnellverbindung. © AGFK-BW, Marcus
+          Gloger
+        </ImageWithCaption>
       </>
     ),
   },

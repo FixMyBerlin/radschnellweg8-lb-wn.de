@@ -1,4 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image'
+import { ImageWithCaption } from '../ImageWIthCaption'
 import { TSectionDetails } from './types'
 
 export const section4Details: TSectionDetails[] = [
@@ -15,16 +16,17 @@ export const section4Details: TSectionDetails[] = [
           Überführung vorgesehen. Dadurch können Radfahrende an dieser Stelle
           zügig und sicher vorankommen.
         </p>
-        <StaticImage
-          src="../assets/TS4Detailpkt1-sbp-TRUMPF_Bruecke_Ditzingen.jpg"
-          alt=""
-        />
-        <p>
-          <i>
-            Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
-            Fußgängersteg bei Trumpf in Ditzingen. © sbp/Andreas Schnubel
-          </i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS4Detailpkt1-sbp-TRUMPF_Bruecke_Ditzingen.jpg"
+              alt=""
+            />
+          }
+        >
+          Beispiel für ein mögliches Brückenbauwerk über eine Straße, hier der
+          Fußgängersteg bei Trumpf in Ditzingen. © sbp/Andreas Schnubel
+        </ImageWithCaption>
       </>
     ),
   },
@@ -54,13 +56,16 @@ export const section4Details: TSectionDetails[] = [
           zugehörige Genehmigungsprozesse erforderlich, um den bestehenden
           Radweg im Bereich der Bahnbrücke aufweiten zu können.
         </p>
-        <StaticImage
-          src="../assets/TS4Detailpkt3-Bahnunterfuehrung_Dammstr_STADT-WAIBLINGEN.png"
-          alt=""
-        />
-        <p>
-          <i>So sieht die Stelle aktuell aus. © Stadt Waiblingen</i>
-        </p>
+        <ImageWithCaption
+          image={
+            <StaticImage
+              src="../assets/TS4Detailpkt3-Bahnunterfuehrung_Dammstr_STADT-WAIBLINGEN.png"
+              alt=""
+            />
+          }
+        >
+          So sieht die Stelle aktuell aus. © Stadt Waiblingen
+        </ImageWithCaption>
       </>
     ),
   },
