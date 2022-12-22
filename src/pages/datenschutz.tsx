@@ -1,6 +1,5 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { AnchorLink } from '~/components/AnchorLink'
 import { LayoutArticle } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags'
 import { TableOfContents, TocHashLink } from '~/components/TableOfContents'
@@ -25,7 +24,6 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
 
   return (
     <LayoutArticle location={location}>
-      <AnchorLink path="/datenschutz" />
       <HeadingContentPage>Datenschutzerklärung</HeadingContentPage>
       <TableOfContents items={tocItems} />
 

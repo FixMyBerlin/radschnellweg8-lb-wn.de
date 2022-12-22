@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import React from 'react'
+import { ScrollTopLink } from './ScrollTopLink'
 import { Footer } from './Footer'
 import { LogoHomeLink } from './LogoHomeLink'
 import { Navigation } from './Navigation'
@@ -16,6 +17,7 @@ export const Layout: React.FC<Props> = ({ className, location, children }) => {
   return (
     <div id="top" className="flex h-full flex-col text-[#1e293b]">
       <Navigation location={location} />
+      <ScrollTopLink />
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
         <LogoHomeLink isHome={isHome} />
         {children}

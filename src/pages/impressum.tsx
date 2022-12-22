@@ -1,6 +1,5 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { AnchorLink } from '~/components/AnchorLink'
 import { LayoutArticle, Section } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { HeadingContentPage, LinkExternal, LinkMail } from '~/components/Text'
@@ -10,7 +9,6 @@ export const Head = () => <MetaTags noindex title="Impressum & Kontakt" />
 const Impressum: React.FC<PageProps> = ({ location }) => {
   return (
     <LayoutArticle location={location}>
-      <AnchorLink path="/impressum" />
       <Section>
         <HeadingContentPage>Impressum & Kontakt</HeadingContentPage>
         <h2>Im Auftrag folgender Städte und Landkreise</h2>

@@ -1,13 +1,8 @@
 import { Transition } from '@headlessui/react'
 import { ArrowUpCircleIcon } from '@heroicons/react/24/outline'
 import React, { useEffect, useState } from 'react'
-import { Link } from '../Text'
 
-type Props = {
-  path?: string
-}
-
-export const AnchorLink: React.FC<Props> = ({ path = '' }) => {
+export const ScrollTopLink: React.FC = () => {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -28,9 +23,13 @@ export const AnchorLink: React.FC<Props> = ({ path = '' }) => {
       leaveFrom="opacity-100"
       leaveTo="opacity-0"
     >
-      <Link to={`${path}/#top`} className="mt-10 flex no-underline">
+      <button
+        type="button"
+        onClick={() => window.scrollTo(0, 0)}
+        className="mt-10 flex no-underline"
+      >
         <ArrowUpCircleIcon className="fixed bottom-16 right-8 z-50 w-14 rounded-full bg-white hover:text-rs8-pink" />
-      </Link>
+      </button>
     </Transition>
   )
 }

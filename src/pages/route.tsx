@@ -1,7 +1,6 @@
 import { PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import { AnchorLink } from '~/components/AnchorLink'
 import { LayoutArticle } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { PageRouteIntro } from '~/components/PageRoute'
@@ -25,7 +24,6 @@ const Route: React.FC<PageProps> = ({ location }) => {
 
   return (
     <LayoutArticle location={location}>
-      <AnchorLink path="/route" />
       <HeadingContentPage>Route</HeadingContentPage>
 
       <PageRouteIntro />
