@@ -1,5 +1,6 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
+import { AnchorLink } from '~/components/AnchorLink'
 import { Layout } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import {
@@ -19,6 +20,7 @@ export const Head = () => <MetaTags />
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location}>
+      <AnchorLink />
       <H1>Radschnellverbindung zwischen Waiblingen und Ludwigsburg</H1>
       <PageHomeIntro />
       <PageHomeQuotes />

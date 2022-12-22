@@ -1,21 +1,22 @@
 import { PageProps } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import { AnchorLink } from '~/components/AnchorLink'
 import { LayoutArticle } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { PageRouteIntro } from '~/components/PageRoute'
-import { HeadingContentPage, Link } from '~/components/Text'
-import { StaticImage } from 'gatsby-plugin-image'
 import {
-  section1Header,
   section1Details,
-  section2Header,
+  section1Header,
   section2Details,
-  section3Header,
+  section2Header,
   section3Details,
-  section4Header,
+  section3Header,
   section4Details,
+  section4Header,
 } from '~/components/PageRoute/data.const'
 import { Section } from '~/components/PageRoute/Section'
+import { HeadingContentPage, Link } from '~/components/Text'
 
 export const Head = () => <MetaTags />
 
@@ -24,7 +25,9 @@ const Route: React.FC<PageProps> = ({ location }) => {
 
   return (
     <LayoutArticle location={location}>
+      <AnchorLink path="/route" />
       <HeadingContentPage>Route</HeadingContentPage>
+
       <PageRouteIntro />
       <div className="my-10 md:grid-cols-2 md:gap-4">
         <StaticImage
@@ -32,6 +35,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
           alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
         />
       </div>
+
       <ul className="marker:text-pink-500">
         {menu.map(({ id, title }) => {
           return (
