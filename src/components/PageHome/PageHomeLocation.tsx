@@ -30,10 +30,12 @@ export const PageHomeLocation: React.FC = () => {
         (Potenziale, Zeitverluste und Einbindung im Gesamtnetz), Belange des
         Umweltschutzes und die Kosten.
       </P>
-      <StaticImage
-        src="./assets/Gesamtstrecke.svg"
-        alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
-      />
+      <Link to="/route">
+        <StaticImage
+          src="./assets/Gesamtstrecke.svg"
+          alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
+        />
+      </Link>
 
       <P>
         Die auf dieser Website gezeigte Vorplanung wurde bereits in den
