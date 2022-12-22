@@ -20,8 +20,11 @@ export const PageHomeLocation: React.FC = () => {
 
       <P>
         Grundlage für diese Linienführung sind umfangreiche Voruntersuchungen im
-        Rahmen <LinkExternal href="">einer Machbarkeitsstudie</LinkExternal>,
-        die anschließend von Verkehrsplanerinnen und -planern der beteiligten
+        Rahmen{' '}
+        <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
+          einer Machbarkeitsstudie
+        </LinkExternal>
+        , die anschließend von Verkehrsplanerinnen und -planern der beteiligten
         Kreise und Städten vor Ort in der sogenannten Vorplanung konkretisiert
         wurden. In die Entscheidungen eingeflossen sind verkehrliche Kriterien
         (Potenziale, Zeitverluste und Einbindung im Gesamtnetz), Belange des
