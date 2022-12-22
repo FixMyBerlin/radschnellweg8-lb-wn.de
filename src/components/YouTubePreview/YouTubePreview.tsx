@@ -1,7 +1,7 @@
 import { PlayIcon } from '@heroicons/react/24/solid'
 import classNames from 'classnames'
 import React from 'react'
-import { LinkExternal } from '../Text'
+import { LinkExternal } from '../Link'
 
 type Props = {
   link: string

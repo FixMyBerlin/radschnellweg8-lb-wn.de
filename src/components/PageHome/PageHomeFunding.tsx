@@ -4,7 +4,7 @@ import { Section } from '../Layout'
 import { H2 } from '../Text'
 import RadschnellwegeLogo from '../../images/bw-radschnellweg-logo.svg'
 import BmdvFoerderungLogo from '../../images/bmdv-foerderung-logo.svg'
-import { LinkExternal } from '../Text/LinkExternal'
+import { LinkExternal } from '../Link'
 
 export const PageHomeFunding: React.FC = () => {
   return (

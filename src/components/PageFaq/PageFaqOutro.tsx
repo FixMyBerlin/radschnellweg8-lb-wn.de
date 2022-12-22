@@ -1,6 +1,7 @@
 import React from 'react'
 import { Section } from '../Layout'
-import { LinkMail, P } from '../Text'
+import { LinkMail } from '../Link'
+import { P } from '../Text'
 
 export const PageFaqOutro: React.FC = () => {
   return (

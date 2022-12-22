@@ -1,7 +1,8 @@
 import React from 'react'
 import { Section } from '../Layout'
+import { LinkExternal } from '../Link'
 import { MileStones } from '../MileStones'
-import { H2, LinkExternal } from '../Text'
+import { H2 } from '../Text'
 
 export const PageHomeMilestones: React.FC = () => {
   const milestones = [

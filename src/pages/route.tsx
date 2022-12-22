@@ -15,7 +15,8 @@ import {
   section4Header,
 } from '~/components/PageRoute/data.const'
 import { Section } from '~/components/PageRoute/Section'
-import { HeadingContentPage, Link } from '~/components/Text'
+import { HeadingContentPage } from '~/components/Text'
+import { Link } from '~/components/Link'
 
 export const Head = () => <MetaTags />
 

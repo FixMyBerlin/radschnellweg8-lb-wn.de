@@ -1,7 +1,8 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Section } from '../Layout'
-import { H2, Link, LinkExternal, LinkMail, P } from '../Text'
+import { Link, LinkExternal, LinkMail } from '../Link'
+import { H2, P } from '../Text'
 
 export const PageHomeLocation: React.FC = () => {
   return (

@@ -2,6 +2,10 @@ import React from 'react'
 import classNames from 'classnames'
 import { Link as GatsbyLink } from 'gatsby'
 
+const baseStyles = 'text-rs8-pink hover:text-rs8-blue'
+export const linkStyles = `${baseStyles} underline`
+export const buttonStyles = `${baseStyles} rounded-full border border-rs8-pink px-6 pt-4 pb-3`
+
 type Props = {
   to: string
   className?: string
@@ -17,18 +21,13 @@ export const Link: React.FC<Props> = ({
   className,
   children,
   blank = false,
-  button = false,
+  button,
   ...props
 }) => {
   return (
     <GatsbyLink
       to={to}
-      className={classNames(
-        'text-rs8-pink hover:text-rs8-blue',
-        { 'rounded-full border border-rs8-pink px-6 pt-4 pb-3': button },
-        { underline: !button },
-        className
-      )}
+      className={classNames(button ? buttonStyles : linkStyles, className)}
       {...{ target: blank ? '_blank' : undefined }}
       {...props}
     >

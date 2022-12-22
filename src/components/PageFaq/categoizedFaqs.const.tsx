@@ -1,6 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import { PageHomeMilestones } from '../PageHome'
-import { LinkExternal } from '../Text'
+import { LinkExternal } from '../Link'
 import { YouTubePreview } from '../YouTubePreview'
 
 export const categoizedFaqs = {

@@ -3,7 +3,8 @@ import React from 'react'
 import { LayoutArticle } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags'
 import { TableOfContents, TocHashLink } from '~/components/TableOfContents'
-import { HeadingContentPage, LinkMail } from '~/components/Text'
+import { HeadingContentPage } from '~/components/Text'
+import { LinkMail } from '~/components/Link'
 
 /*
 Links

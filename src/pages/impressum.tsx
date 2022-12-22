@@ -2,7 +2,8 @@ import { PageProps } from 'gatsby'
 import React from 'react'
 import { LayoutArticle, Section } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
-import { HeadingContentPage, LinkExternal, LinkMail } from '~/components/Text'
+import { HeadingContentPage } from '~/components/Text'
+import { LinkExternal, LinkMail } from '~/components/Link'
 
 export const Head = () => <MetaTags noindex title="Impressum & Kontakt" />
 

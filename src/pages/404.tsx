@@ -1,7 +1,8 @@
-import { Link, PageProps } from 'gatsby'
+import { PageProps } from 'gatsby'
 import React from 'react'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { LayoutArticle } from '~/components/Layout'
+import { Link } from '~/components/Link'
 
 export const Head = () => (
   <MetaTags noindex title="404 | Seite nicht gefunden." />

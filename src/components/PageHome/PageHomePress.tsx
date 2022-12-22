@@ -1,6 +1,7 @@
 import React from 'react'
 import { Section } from '../Layout'
-import { H2, LinkExternal } from '../Text'
+import { LinkExternal } from '../Link'
+import { H2 } from '../Text'
 
 export const PageHomePress: React.FC = () => {
   return (
