@@ -15,7 +15,7 @@ export const SectionDetailsItem: React.FC<Props> = ({ detail, mapNumber }) => {
       {({ open }) => (
         <>
           <Disclosure.Button className="flex w-full items-center justify-start gap-4 text-left text-lg text-gray-400">
-            <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-pink-500 pt-1 text-white shadow-lg">
+            <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-rs8-pink pt-1 text-white shadow-lg">
               {mapNumber}
             </span>
             <span className="flex w-full items-center justify-between">

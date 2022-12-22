@@ -36,7 +36,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
         />
       </div>
 
-      <ul className="marker:text-pink-500">
+      <ul className="marker:text-rs8-pink">
         {menu.map(({ id, title }) => {
           return (
             <li>
