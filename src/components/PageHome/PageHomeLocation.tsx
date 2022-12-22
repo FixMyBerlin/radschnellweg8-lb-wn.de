@@ -1,3 +1,4 @@
+import { Link as UnstyledLink } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Section } from '../Layout'
@@ -30,12 +31,12 @@ export const PageHomeLocation: React.FC = () => {
         (Potenziale, Zeitverluste und Einbindung im Gesamtnetz), Belange des
         Umweltschutzes und die Kosten.
       </P>
-      <Link to="/route">
+      <UnstyledLink to="/route">
         <StaticImage
           src="./assets/Gesamtstrecke.svg"
           alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
         />
-      </Link>
+      </UnstyledLink>
 
       <P>
         Die auf dieser Website gezeigte Vorplanung wurde bereits in den
