@@ -15,7 +15,7 @@ export const Layout: React.FC<Props> = ({ className, location, children }) => {
   const isHome = location.pathname === '/'
 
   return (
-    <div id="top" className="flex h-full flex-col text-[#1e293b]">
+    <div className="flex h-full flex-col text-[#1e293b]">
       <Navigation location={location} />
       <ScrollTopLink />
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
