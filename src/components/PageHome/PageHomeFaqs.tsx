@@ -2,7 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { FAQ, FAQItem } from '../FAQ'
 import { Section } from '../Layout'
-import { Button, H2, Link, LinkExternal, P } from '../Text'
+import { H2, Link, LinkExternal, P } from '../Text'
 import { YouTubePreview } from '../YouTubePreview'
 
 export const PageHomeFaqs: React.FC = () => {
@@ -120,9 +120,11 @@ export const PageHomeFaqs: React.FC = () => {
           </P>
         </FAQItem>
       </FAQ>
-      <Link to="/faq" className="mt-10 flex no-underline">
-        <Button className="mx-auto">Mehr unter FAQs</Button>
-      </Link>
+      <div className="mt-10 text-center">
+        <Link to="/faq" button>
+          Mehr unter FAQs
+        </Link>
+      </div>
     </Section>
   )
 }

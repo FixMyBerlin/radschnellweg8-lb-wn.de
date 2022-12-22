@@ -1,4 +1,3 @@
-export * from './Button'
 export * from './Headings'
 export * from './Link'
 export * from './LinkExternal'
