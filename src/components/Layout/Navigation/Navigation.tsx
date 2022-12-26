@@ -7,7 +7,9 @@ import {
 import { LogoBar } from './LogoBar'
 import { navigationLinks } from './navigationLinks.const'
 
-export const Navigation = ({ location }) => {
+type Props = { currentPage: string }
+
+export const Navigation = ({ currentPage }: Props) => {
   return (
     // https://tailwindui.com/components/application-ui/navigation/navbars
     <Disclosure as="nav" className="z-20 bg-white shadow-md shadow-gray-400/5">
@@ -23,7 +25,7 @@ export const Navigation = ({ location }) => {
                   <NavigationMenuItemDesktop
                     name={link.name}
                     to={link.to}
-                    currentPage={location?.pathname}
+                    currentPage={currentPage}
                     key={link.to}
                   />
                 ))}
@@ -39,7 +41,7 @@ export const Navigation = ({ location }) => {
                 <NavigationMenuItemMobile
                   name={link.name}
                   to={link.to}
-                  currentPage={location?.pathname}
+                  currentPage={currentPage}
                   key={link.to}
                 />
               ))}

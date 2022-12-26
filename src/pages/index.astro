@@ -1,0 +1,31 @@
+---
+import { Section } from '@components/Layout/Section'
+import PageHomeFacts from '@components/PageHome/PageHomeFacts.astro'
+import { PageHomeFaqs } from '@components/PageHome/PageHomeFaqs'
+import PageHomeFunding from '@components/PageHome/PageHomeFunding.astro'
+import PageHomeIntro from '@components/PageHome/PageHomeIntro.astro'
+import PageHomeLocation from '@components/PageHome/PageHomeLocation.astro'
+import PageHomeMilestones from '@components/PageHome/PageHomeMilestones.astro'
+import PageHomePress from '@components/PageHome/PageHomePress.astro'
+import { PageHomeQuotes } from '@components/PageHome/PageHomeQuotes'
+import Layout from '@layouts/Layout.astro'
+---
+
+<Layout title="Radschnellverbindung zwischen Waiblingen und Ludwigsburg">
+  <Section className="mt-16">
+    <h1
+      class="font-serif mb-10 text-xl font-extrabold lg:text-[60px] lg:leading-[66px]"
+    >
+      Radschnellverbindung zwischen Waiblingen und Ludwigsburg
+    </h1>
+  </Section>
+
+  <PageHomeIntro />
+  <PageHomeQuotes client:visible />
+  <PageHomeLocation />
+  <PageHomeFacts />
+  <PageHomeMilestones />
+  <PageHomeFaqs client:visible />
+  <PageHomePress />
+  <PageHomeFunding />
+</Layout>

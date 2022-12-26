@@ -1,6 +1,5 @@
 import { Disclosure } from '@headlessui/react'
 import classNames from 'classnames'
-import React from 'react'
 
 type Props = { currentPage: string; name: string; to: string }
 
@@ -11,7 +10,6 @@ export const NavigationMenuItemMobile: React.FC<Props> = ({
 }) => {
   const active = currentPage === to
 
-  // TODO: Find a way to use the Gatsby <Link to={to}> component here; or onClick={navigate(to)} so we take advantage of Gatsby's internal preloading.
   return (
     <Disclosure.Button
       as="a"

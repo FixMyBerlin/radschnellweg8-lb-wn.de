@@ -1,0 +1,49 @@
+---
+import { Section } from '@components/Layout/Section'
+import { H2 } from '@components/Text'
+
+const milestonesFile = await Astro.glob('./milestones/*.mdx')
+---
+
+<Section>
+  <H2>Die Meilensteine</H2>
+  {
+    milestonesFile.map((milestone) => {
+      const { Content } = milestone
+      return (
+        <div class="group relative pl-[54px]">
+          <div
+            class={
+              milestone.frontmatter?.comingUp
+                ? 'text-gray-400'
+                : 'text-rs8-blue'
+            }
+          >
+            <div
+              class={`absolute left-[17px] top-0 bottom-0 w-1 border-l-2 group-last:hidden ${
+                milestone.frontmatter?.comingUp
+                  ? 'border-dashed border-[#f2f2f2] '
+                  : 'border-rs8-pink'
+              }`}
+            />
+            <div
+              class={`${
+                milestone.frontmatter?.comingUp ? 'bg-[#f2f2f2]' : 'bg-rs8-pink'
+              } absolute left-0 h-[37px] w-[37px] rounded-full`}
+            />
+            <div class="pt-0.5 font-semibold">
+              {milestone.frontmatter.title}
+            </div>
+          </div>
+          <div
+            class={`pb-10 ${
+              milestone.frontmatter?.comingUp ? 'text-gray-400' : 'inherit'
+            }`}
+          >
+            <Content />
+          </div>
+        </div>
+      )
+    })
+  }
+</Section>

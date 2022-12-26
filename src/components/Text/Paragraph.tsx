@@ -1,9 +1,8 @@
-import React, { ReactNode } from 'react'
 import classNames from 'classnames'
 
 type Props = {
-  children: ReactNode
   className?: string
+  children: React.ReactNode
 }
 
 export const P: React.FC<Props> = ({ className, children }) => {

@@ -1,10 +1,8 @@
-import { StaticImage } from 'gatsby-plugin-image'
-import React from 'react'
-import { FAQ, FAQItem } from '../FAQ'
-import { Section } from '../Layout'
-import { Link, LinkExternal } from '../Link'
-import { H2, P } from '../Text'
-import { YouTubePreview } from '../YouTubePreview'
+import { Section } from '@components/Layout/Section'
+import { Link, LinkExternal } from '@components/Link'
+import { H2, P } from '@components/Text'
+import { YouTubePreview } from '@components/YouTubePreview'
+import { FAQ, FAQItem } from './FAQ'
 
 export const PageHomeFaqs: React.FC = () => {
   return (
@@ -27,8 +25,8 @@ export const PageHomeFaqs: React.FC = () => {
           <YouTubePreview
             link="https://www.youtube.com/watch?v=t9GxxxYse_8"
             image={
-              <StaticImage
-                src="./assets/youtube-preview-radschnellwege.jpeg"
+              <img
+                src="/src/assets/home/youtube-preview-radschnellwege.jpeg"
                 alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
               />
             }
@@ -81,9 +79,9 @@ export const PageHomeFaqs: React.FC = () => {
             In der Gegenüberstellung der unterschiedlichen Infrastrukturarten
             zeigt sich, dass auch die Baukosten für Radschnellwege
             vergleichsweise gering sind:
-            <StaticImage
+            <img
               className="mt-4"
-              src="../../images/baukosten-radverkehrsanlagen.jpg"
+              src="/src/assets/home/baukosten-radverkehrsanlagen.jpg"
               alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
             />
           </P>
@@ -108,8 +106,8 @@ export const PageHomeFaqs: React.FC = () => {
             <YouTubePreview
               link="https://www.youtube.com/watch?v=pqtAmXkCeEU"
               image={
-                <StaticImage
-                  src="../../images/radschnellweg-simulation.png"
+                <img
+                  src="src/assets/home/radschnellweg-simulation.png"
                   alt="Video: Radschnellweg mit 2.000 Radfahrenden pro Tag"
                   className="aspect-video"
                 />

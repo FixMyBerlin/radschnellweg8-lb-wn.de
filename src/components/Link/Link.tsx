@@ -1,6 +1,4 @@
-import React from 'react'
 import classNames from 'classnames'
-import { Link as GatsbyLink } from 'gatsby'
 
 const baseStyles = 'text-rs8-pink hover:text-rs8-blue'
 export const linkStyles = `${baseStyles} underline`
@@ -25,13 +23,13 @@ export const Link: React.FC<Props> = ({
   ...props
 }) => {
   return (
-    <GatsbyLink
-      to={to}
+    <a
+      href={to}
       className={classNames(button ? buttonStyles : linkStyles, className)}
       {...{ target: blank ? '_blank' : undefined }}
       {...props}
     >
       {children}
-    </GatsbyLink>
+    </a>
   )
 }

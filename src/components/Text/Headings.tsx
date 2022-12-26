@@ -1,10 +1,9 @@
-import React, { ReactNode } from 'react'
+import { Section } from '@components/Layout/Section'
 import classNames from 'classnames'
-import { Section } from '../Layout'
 
 type Props = {
-  children: ReactNode
   className?: string
+  children: React.ReactNode
 }
 
 // Designed to be positioned right next to the <LogoHomeLink>

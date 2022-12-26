@@ -1,0 +1,15 @@
+---
+import Logo from './Logo.astro'
+
+type Props = { isHome: boolean }
+const { isHome } = Astro.props
+---
+
+{isHome && <Logo className="absolute" />}
+{
+  !isHome && (
+    <a href="/">
+      <Logo className="absolute" />
+    </a>
+  )
+}

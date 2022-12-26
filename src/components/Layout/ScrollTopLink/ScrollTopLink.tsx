@@ -1,13 +1,13 @@
 import { Transition } from '@headlessui/react'
 import { ArrowUpCircleIcon } from '@heroicons/react/24/outline'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const ScrollTopLink: React.FC = () => {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const onScroll = (e) => {
-      setVisible(e.target.documentElement.scrollTop >= 150)
+    const onScroll = (event: any) => {
+      setVisible(event.target.documentElement.scrollTop >= 150)
     }
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)

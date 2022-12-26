@@ -1,0 +1,53 @@
+---
+import svgRadschnellwegeLogo from '@assets/home/bw-radschnellweg-logo.svg'
+import svgBmdvFoerderungLogo from '@assets/home/bmdv-foerderung-logo.svg'
+import { Section } from '@components/Layout/Section'
+import { H2 } from '@components/Text'
+import { LinkExternal } from '@components/Link'
+---
+
+<Section className="pb-12">
+  <H2
+    className="mt-[150px] mb-5 text-center !text-base !font-normal text-[#959595]"
+  >
+    Gefördert durch:
+  </H2>
+
+  <div
+    class="flex flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-20"
+  >
+    <LinkExternal
+      className="w-40 lg:w-full"
+      href="https://www.aktivmobil-bw.de/radverkehr/radschnellverbindungen/radschnellverbindungen-in-bw/"
+    >
+      <img
+        src={svgRadschnellwegeLogo}
+        alt="RadKULTUR Baden-Württemberg; RadSCHNELLWEG"
+        class="w-32 lg:w-[70%]"
+        loading="lazy"
+      />
+    </LinkExternal>
+    <LinkExternal
+      className="w-40 lg:w-full"
+      href="https://bmdv.bund.de/DE/Themen/Mobilitaet/Fahrradverkehr/fahrradverkehr.html"
+    >
+      <img
+        src={svgBmdvFoerderungLogo}
+        alt="Bundesministerium für Digitales und Verkehr; aufgrund eines Beschlusses des Deutschen Bundestages"
+        class="w-40 lg:w-full"
+        loading="lazy"
+      />
+    </LinkExternal>
+    <LinkExternal
+      className="w-40 lg:w-full"
+      href="https://vm.baden-wuerttemberg.de/de/mobilitaet-verkehr/radverkehr"
+    >
+      <img
+        src="/src/assets/home/vm-bw-foerderung-logo.png"
+        alt="Ministerium für Verkehr Baden-Württemberg"
+        class="w-40 lg:w-full"
+        loading="lazy"
+      />
+    </LinkExternal>
+  </div>
+</Section>
