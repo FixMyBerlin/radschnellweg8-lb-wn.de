@@ -1,5 +1,5 @@
 import { LinkExternal } from '@components/Link'
-import { PlayIcon } from '@heroicons/react/24/solid'
+import { PlayIcon } from '@heroicons/react/24/solid/esm/index.js'
 import classNames from 'classnames'
 
 type Props = {
