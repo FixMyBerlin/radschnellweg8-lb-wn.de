@@ -1,7 +1,7 @@
 import {
   ArrowLeftCircleIcon,
   ArrowRightCircleIcon,
-} from '@heroicons/react/24/outline'
+} from '@heroicons/react/24/outline/esm/index.js'
 import classNames from 'classnames'
 import { useState } from 'react'
 import type { Quote } from '@components/PageHome/PageHomeQuotes'

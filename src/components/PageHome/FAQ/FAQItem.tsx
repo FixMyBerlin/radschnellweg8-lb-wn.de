@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import { Disclosure } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/24/outline'
+import { ChevronDownIcon } from '@heroicons/react/24/outline/esm/index.js'
 
 type Props = {
   title: string

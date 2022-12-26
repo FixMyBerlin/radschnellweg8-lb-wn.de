@@ -1,5 +1,5 @@
 import { Transition } from '@headlessui/react'
-import { ArrowUpCircleIcon } from '@heroicons/react/24/outline'
+import { ArrowUpCircleIcon } from '@heroicons/react/24/outline/esm/index.js'
 import { useEffect, useState } from 'react'
 
 export const ScrollTopLink: React.FC = () => {
