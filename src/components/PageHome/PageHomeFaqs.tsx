@@ -66,7 +66,7 @@ export const PageHomeFaqs: React.FC = () => {
           </P>
           <P>
             Die prognostizierten Baukosten für die Radschnellverbindung
-            Ludwigsburg&lt;&gt;Waiblingen (RS8) liegen bei: 31 Mio. Euro. Bei
+            Ludwigsburg&lt;&gt;Waiblingen (RS 8) liegen bei: 31 Mio. Euro. Bei
             einer Strecke von ca. 15 Kilometern sind dies etwa 2,1 Mio.
             Euro/Kilometer.
           </P>
@@ -115,9 +115,6 @@ export const PageHomeFaqs: React.FC = () => {
                 />
               }
             />
-            Simulation eines Radschnellwegs mit einem Potenzial von 2.000
-            Radfahrenden/Tag. © Visualisierung durch Schlothauer & Wauer im
-            Auftrag des Landratsamts Ludwigsburg
           </P>
         </FAQItem>
       </FAQ>

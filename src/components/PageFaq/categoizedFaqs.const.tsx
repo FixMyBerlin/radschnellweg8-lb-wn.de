@@ -235,7 +235,7 @@ export const categoizedFaqs = {
       <>
         <p>
           Das{' '}
-          <LinkExternal href="https://www.bmvi.de/SharedDocs/DE/Anlage/StV/verwaltungsvereinbarung-radschnellwege.html">
+          <LinkExternal href="https://www.landesrecht-bw.de/jportal/?quelle=jlink&query=StrG+BW&psml=bsbawueprod.psml&max=true&aiz=true">
             Straßengesetz Baden-Württemberg
           </LinkExternal>{' '}
           regelt die Einteilung von Straßen, welche nach ihrer Verkehrsbedeutung
@@ -416,7 +416,7 @@ export const categoizedFaqs = {
           </p>
           <p>
             Wann der Bau der Radschnellwege abgeschlossen sein wird, hängt von
-            vielen verschiedenen Faktoren ab, z.B. der Fertigstellung der
+            vielen verschiedenen Faktoren ab, z. B. der Fertigstellung der
             finalen Planung, der Verhandlung mit Grundstückseigentümer/innen bei
             möglichem Grunderwerb, der Verfügbarkeit von Baufirmen etc.
             Natürlich streben alle Beteiligten eine{' '}
@@ -512,6 +512,10 @@ export const categoizedFaqs = {
           halber das Potenzial von 2.000 Radfahrenden. Dargestellt ist die
           sogenannte „Spitzenstunde“. Diese ist definiert als ein Zehntel der
           täglichen Verkehrsmenge (DTV).
+        </p>
+        <p>
+          Die Simulationen wurden erstellt von Schlothauer & Wauer im Auftrag
+          des Landratsamts Ludwigsburg.
         </p>
         <YouTubePreview
           link="https://www.youtube.com/watch?v=pqtAmXkCeEU"
@@ -737,7 +741,7 @@ export const categoizedFaqs = {
           <p>
             Bevorrechtigung kann auf verschiedene Arten erreicht werden und ist
             immer von der jeweiligen Situation vor Ort abhängig. Neben einer
-            durch Beschilderung angeordneten Vorfahrt können z.B. auch{' '}
+            durch Beschilderung angeordneten Vorfahrt können z. B. auch{' '}
             <strong>Ampeln radverkehrsfreundlich</strong> Ampeln
             radverkehrsfreundlich geschaltet oder <strong>Mittelinseln</strong>{' '}
             gebaut werden. Eine sehr attraktive aber zugleich auch teurere
@@ -783,7 +787,7 @@ export const categoizedFaqs = {
         </p>
       </>
     ),
-    'Und was ist mit den Fußgänger/innen?': (
+    'Und was ist mit den Fußgänger/-innen?': (
       <>
         <p>
           Grundsätzlich soll der{' '}

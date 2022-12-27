@@ -47,7 +47,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
         Hindenburgstraße 40 <br />
         71638 Ludwigsburg <br />
         E-Mail: <LinkMail>radverkehr@landkreis-ludwigsurg.de</LinkMail> <br />
-        Telefon: +49 7141 144-0
+        Telefon: +49 7141 144-44700
       </p>
       <h3>Datenschutzbeauftragter</h3>
       <p>
