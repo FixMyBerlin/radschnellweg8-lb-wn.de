@@ -51,9 +51,9 @@ export const Lightbox: React.FC<Props> = ({ image, children }) => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="z-50 w-[90%] max-w-[960px] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="z-50 w-[90%] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   {image}
-                  <div className="mt-2 flex justify-between space-x-4 leading-5">
+                  <div className="mt-2 flex items-center justify-between space-x-4 leading-5">
                     <p className="text-[0.85rem] italic">{children}</p>
                     <button type="button" className="" onClick={closeModal}>
                       <XMarkIcon className="w-8" />

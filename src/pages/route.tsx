@@ -17,6 +17,7 @@ import {
 import { Section } from '~/components/PageRoute/Section'
 import { HeadingContentPage } from '~/components/Text'
 import { Link } from '~/components/Link'
+import { Lightbox } from '~/components/PageRoute/Lightbox'
 
 export const Head = () => <MetaTags />
 
@@ -28,7 +29,20 @@ const Route: React.FC<PageProps> = ({ location }) => {
       <HeadingContentPage>Route</HeadingContentPage>
 
       <PageRouteIntro />
-      <div className="my-10 md:grid-cols-2 md:gap-4">
+      <div className="my-10 hidden md:grid-cols-2 md:gap-4 lg:block">
+        <Lightbox
+          image={
+            <StaticImage
+              src="./../components/PageRoute/assets/Gesamtstrecke.svg"
+              alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
+            />
+          }
+        >
+          Radschnellweg RS 8: Gesamtstrecke
+        </Lightbox>
+      </div>
+
+      <div className="lg:hidden">
         <StaticImage
           src="./../components/PageRoute/assets/Gesamtstrecke.svg"
           alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"

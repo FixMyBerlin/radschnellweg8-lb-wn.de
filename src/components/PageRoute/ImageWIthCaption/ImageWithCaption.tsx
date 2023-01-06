@@ -1,5 +1,4 @@
 import React from 'react'
-import { Lightbox } from '../Lightbox'
 
 type Props = {
   image: React.ReactNode
@@ -9,7 +8,7 @@ type Props = {
 export const ImageWithCaption: React.FC<Props> = ({ image, children }) => {
   return (
     <figure>
-      <Lightbox image={image}>{children}</Lightbox>
+      {image}
       <figcaption className="text-[0.85rem] italic">{children}</figcaption>
     </figure>
   )
