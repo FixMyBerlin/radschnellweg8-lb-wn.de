@@ -6,6 +6,11 @@
   "license": "AGPL-3.0",
   "private": true,
   "keywords": [],
+  "browserslist": [
+    ">0.25%",
+    "not dead",
+    "edge 18"
+  ],
   "scripts": {
     "start": "gatsby develop --open",
     "mobile": "gatsby develop -H 0.0.0.0",
