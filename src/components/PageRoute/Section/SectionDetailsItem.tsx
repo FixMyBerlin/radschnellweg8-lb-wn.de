@@ -1,7 +1,7 @@
+import React from 'react'
 import classNames from 'classnames'
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/24/outline'
-import React from 'react'
 import { TSectionDetails } from '../data.const/types'
 
 type Props = {

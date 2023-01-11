@@ -1,6 +1,6 @@
+import React from 'react'
 import { PageProps } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-import React from 'react'
 import { LayoutArticle } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { PageRouteIntro } from '~/components/PageRoute'

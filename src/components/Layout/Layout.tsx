@@ -1,5 +1,5 @@
-import classNames from 'classnames'
 import React from 'react'
+import classNames from 'classnames'
 import { ScrollTopLink } from './ScrollTopLink'
 import { Footer } from './Footer'
 import { LogoHomeLink } from './LogoHomeLink'

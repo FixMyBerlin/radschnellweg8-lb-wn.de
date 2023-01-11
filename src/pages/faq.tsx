@@ -1,5 +1,5 @@
-import { PageProps } from 'gatsby'
 import React from 'react'
+import { PageProps } from 'gatsby'
 import { LayoutArticle } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { PageFaqFaqs, PageFaqIntro } from '~/components/PageFaq'

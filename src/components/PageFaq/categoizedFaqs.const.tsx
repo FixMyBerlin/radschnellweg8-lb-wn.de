@@ -1,3 +1,4 @@
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import { PageHomeMilestones } from '../PageHome'
 import { LinkExternal } from '../Link'
