@@ -8,7 +8,7 @@ type Props = {
 }
 
 export const Lightbox: React.FC<Props> = ({ image }) => {
-  let [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   function closeModal() {
     setIsOpen(false)
