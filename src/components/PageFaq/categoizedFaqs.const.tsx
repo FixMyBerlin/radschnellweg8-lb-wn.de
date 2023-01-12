@@ -2,6 +2,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { PageHomeMilestones } from '../PageHome'
 import { LinkExternal } from '../Link'
 import { YouTubePreview } from '../YouTubePreview'
+import { Lightbox } from '../PageRoute/Lightbox'
 
 export const categoizedFaqs = {
   Allgemein: {
@@ -374,10 +375,26 @@ export const categoizedFaqs = {
           zeigt sich, dass auch die Baukosten für Radschnellwege vergleichsweise
           gering sind:
         </p>
-        <StaticImage
-          src="../../images/baukosten-radverkehrsanlagen.jpg"
-          alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
-        />
+        <div className="hidden lg:block">
+          <Lightbox
+            image={
+              <StaticImage
+                className="mt-4"
+                src="../../images/baukosten-radverkehrsanlagen.jpg"
+                alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
+              />
+            }
+          >
+            Was kosten Radschnellwege?
+          </Lightbox>
+        </div>
+        <div className="lg:hidden">
+          <StaticImage
+            className="mt-4"
+            src="../../images/baukosten-radverkehrsanlagen.jpg"
+            alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
+          />
+        </div>
       </>
     ),
     'Wann sind die Planungen abgeschlossen, wann wird der Radschnellweg gebaut?':

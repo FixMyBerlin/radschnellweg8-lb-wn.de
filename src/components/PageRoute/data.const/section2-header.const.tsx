@@ -25,5 +25,5 @@ export const section2Header: TSectionHeader = {
       Kreisgrenze in Richtung Waiblingen-Hegnach.
     </>
   ),
-  image: <StaticImage src="../assets/Teilstrecke-2.svg" alt="" />,
+  image: <StaticImage src="../assets/Teilstrecke2.jpg" alt="" />,
 }

@@ -3,6 +3,7 @@ import React from 'react'
 import { FAQ, FAQItem } from '../FAQ'
 import { Section } from '../Layout'
 import { Link, LinkExternal } from '../Link'
+import { Lightbox } from '../PageRoute/Lightbox'
 import { H2, P } from '../Text'
 import { YouTubePreview } from '../YouTubePreview'
 
@@ -81,12 +82,27 @@ export const PageHomeFaqs: React.FC = () => {
             In der Gegenüberstellung der unterschiedlichen Infrastrukturarten
             zeigt sich, dass auch die Baukosten für Radschnellwege
             vergleichsweise gering sind:
+          </P>
+          <div className="hidden lg:block">
+            <Lightbox
+              image={
+                <StaticImage
+                  className="mt-4"
+                  src="../../images/baukosten-radverkehrsanlagen.jpg"
+                  alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
+                />
+              }
+            >
+              Was kosten Radschnellwege?
+            </Lightbox>
+          </div>
+          <div className="lg:hidden">
             <StaticImage
               className="mt-4"
               src="../../images/baukosten-radverkehrsanlagen.jpg"
               alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
             />
-          </P>
+          </div>
         </FAQItem>
         <FAQItem title="Wie viele Radfahrende fahren denn da später?">
           <P>

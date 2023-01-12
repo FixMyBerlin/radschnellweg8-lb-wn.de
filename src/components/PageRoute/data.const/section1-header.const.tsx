@@ -26,7 +26,7 @@ export const section1Header: TSectionHeader = {
   ),
   image: (
     <StaticImage
-      src="../assets/Teilstrecke-1.svg"
+      src="../assets/Teilstrecke1.jpg"
       alt="Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten und andere Kleintiere dar. © Pixabay, Levke Hannemann"
     />
   ),
