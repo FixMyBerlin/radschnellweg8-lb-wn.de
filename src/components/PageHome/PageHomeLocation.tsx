@@ -33,7 +33,7 @@ export const PageHomeLocation: React.FC = () => {
       </P>
       <UnstyledLink to="/route">
         <StaticImage
-          src="./assets/Gesamtstrecke.svg"
+          src="./assets/Strecke_RS8.jpg"
           alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
         />
       </UnstyledLink>

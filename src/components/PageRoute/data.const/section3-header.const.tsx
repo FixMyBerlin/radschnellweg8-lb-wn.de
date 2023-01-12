@@ -18,5 +18,5 @@ export const section3Header: TSectionHeader = {
       Waiblingen.
     </>
   ),
-  image: <StaticImage src="../assets/Teilstrecke-3.svg" alt="" />,
+  image: <StaticImage src="../assets/Teilstrecke3.jpg" alt="" />,
 }

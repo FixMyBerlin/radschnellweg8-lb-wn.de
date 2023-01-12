@@ -15,5 +15,5 @@ export const section4Header: TSectionHeader = {
       Richtung Bahnhof.
     </>
   ),
-  image: <StaticImage src="../assets/Teilstrecke-4.svg" alt="" />,
+  image: <StaticImage src="../assets/Teilstrecke4.jpg" alt="" />,
 }

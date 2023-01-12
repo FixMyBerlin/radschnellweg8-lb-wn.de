@@ -33,7 +33,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
         <Lightbox
           image={
             <StaticImage
-              src="./../components/PageRoute/assets/Gesamtstrecke.svg"
+              src="./../components/PageRoute/assets/Strecke_RS8.jpg"
               alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
             />
           }
@@ -44,7 +44,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
 
       <div className="my-10 lg:hidden">
         <StaticImage
-          src="./../components/PageRoute/assets/Gesamtstrecke.svg"
+          src="./../components/PageRoute/assets/Strecke_RS8.jpg"
           alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
         />
       </div>
