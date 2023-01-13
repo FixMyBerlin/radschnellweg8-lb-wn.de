@@ -1,6 +1,6 @@
 import { Link as UnstyledLink } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
+import GesamtstreckeImg from './assets/Gesamtstrecke.svg'
 import { Section } from '../Layout'
 import { Link, LinkExternal, LinkMail } from '../Link'
 import { H2, P } from '../Text'
@@ -32,10 +32,7 @@ export const PageHomeLocation: React.FC = () => {
         Umweltschutzes und die Kosten.
       </P>
       <UnstyledLink to="/route">
-        <StaticImage
-          src="./assets/Strecke_RS8.jpg"
-          alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
-        />
+        <GesamtstreckeImg className="h-auto w-full" />
       </UnstyledLink>
 
       <P>

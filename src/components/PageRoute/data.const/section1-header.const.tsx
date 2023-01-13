@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+import Teilstrecke1Img from '../assets/Teilstrecke1.svg'
 import { TSectionHeader } from './types'
 
 export const section1Header: TSectionHeader = {
@@ -24,10 +24,5 @@ export const section1Header: TSectionHeader = {
       8 an den Abschnitt des Landkreises an.
     </>
   ),
-  image: (
-    <StaticImage
-      src="../assets/Teilstrecke1.jpg"
-      alt="Die Blühstreifen werden mit heimischem Saatgut eingesät und stellen wichtige Nahrungs-, Fortpflanzungs- und Rückzugsbiotope für Insekten und andere Kleintiere dar. © Pixabay, Levke Hannemann"
-    />
-  ),
+  image: <Teilstrecke1Img className="h-auto w-full" />,
 }

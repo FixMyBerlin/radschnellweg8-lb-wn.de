@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+import Teilstrecke2Img from '../assets/Teilstrecke2.svg'
 import { TSectionHeader } from './types'
 
 export const section2Header: TSectionHeader = {
@@ -25,5 +25,5 @@ export const section2Header: TSectionHeader = {
       Kreisgrenze in Richtung Waiblingen-Hegnach.
     </>
   ),
-  image: <StaticImage src="../assets/Teilstrecke2.jpg" alt="" />,
+  image: <Teilstrecke2Img className="h-auto w-full" />,
 }

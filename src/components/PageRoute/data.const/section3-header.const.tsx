@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+import Teilstrecke3Img from '../assets/Teilstrecke3.svg'
 import { TSectionHeader } from './types'
 
 export const section3Header: TSectionHeader = {
@@ -18,5 +18,5 @@ export const section3Header: TSectionHeader = {
       Waiblingen.
     </>
   ),
-  image: <StaticImage src="../assets/Teilstrecke3.jpg" alt="" />,
+  image: <Teilstrecke3Img className="h-auto w-full" />,
 }

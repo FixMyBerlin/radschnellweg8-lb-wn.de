@@ -1,7 +1,7 @@
 import { PageProps } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { LayoutArticle } from '~/components/Layout'
+import { Link } from '~/components/Link'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { PageRouteIntro } from '~/components/PageRoute'
 import {
@@ -14,10 +14,10 @@ import {
   section4Details,
   section4Header,
 } from '~/components/PageRoute/data.const'
+import { Lightbox } from '~/components/PageRoute/Lightbox'
 import { Section } from '~/components/PageRoute/Section'
 import { HeadingContentPage } from '~/components/Text'
-import { Link } from '~/components/Link'
-import { Lightbox } from '~/components/PageRoute/Lightbox'
+import GesamtstreckeImg from '../components/PageRoute/assets/Gesamtstrecke.svg'
 
 export const Head = () => <MetaTags />
 
@@ -30,23 +30,13 @@ const Route: React.FC<PageProps> = ({ location }) => {
 
       <PageRouteIntro />
       <div className="hidden lg:block">
-        <Lightbox
-          image={
-            <StaticImage
-              src="./../components/PageRoute/assets/Strecke_RS8.jpg"
-              alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
-            />
-          }
-        >
+        <Lightbox image={<GesamtstreckeImg className="h-auto w-full" />}>
           Radschnellweg RS 8: Gesamtstrecke
         </Lightbox>
       </div>
 
       <div className="my-10 lg:hidden">
-        <StaticImage
-          src="./../components/PageRoute/assets/Strecke_RS8.jpg"
-          alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
-        />
+        <GesamtstreckeImg className="h-auto w-full" />,
       </div>
 
       <ul className="marker:text-rs8-pink">
