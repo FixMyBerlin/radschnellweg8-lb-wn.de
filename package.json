@@ -6,6 +6,10 @@
   "license": "AGPL-3.0",
   "private": true,
   "keywords": [],
+  "browserslist": [
+    "last 2 versions",
+    "ie 11"
+  ],
   "scripts": {
     "start": "gatsby develop --open",
     "mobile": "gatsby develop -H 0.0.0.0",

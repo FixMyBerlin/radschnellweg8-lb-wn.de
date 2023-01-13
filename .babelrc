@@ -4,9 +4,7 @@
     [
       "babel-preset-gatsby",
       {
-        "targets": {
-          "browsers": [">0.25%", "not dead", "edge 18"]
-        }
+        "reactRuntime": "automatic"
       }
     ]
   ]
