@@ -1,9 +1,9 @@
-import { Link as UnstyledLink } from 'gatsby'
 import React from 'react'
-import GesamtstreckeImg from './assets/Gesamtstrecke.svg'
 import { Section } from '../Layout'
 import { Link, LinkExternal, LinkMail } from '../Link'
+import { Lightbox } from '../PageRoute/Lightbox'
 import { H2, P } from '../Text'
+import GesamtstreckeImg from './assets/Gesamtstrecke.svg'
 
 export const PageHomeLocation: React.FC = () => {
   return (
@@ -31,9 +31,15 @@ export const PageHomeLocation: React.FC = () => {
         (Potenziale, Zeitverluste und Einbindung im Gesamtnetz), Belange des
         Umweltschutzes und die Kosten.
       </P>
-      <UnstyledLink to="/route">
+
+      <div className="hidden lg:block">
+        <Lightbox image={<GesamtstreckeImg className="h-auto w-full" />}>
+          Radschnellweg RS 8: Gesamtstrecke
+        </Lightbox>
+      </div>
+      <div className="lg:hidden">
         <GesamtstreckeImg className="h-auto w-full" />
-      </UnstyledLink>
+      </div>
 
       <P>
         Die auf dieser Website gezeigte Vorplanung wurde bereits in den
