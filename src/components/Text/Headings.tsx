@@ -17,7 +17,7 @@ export const H1: React.FC<Props & { showTopline?: boolean }> = ({
     <Section className="mt-16 w-full pl-[40px] md:pl-[140px] lg:pl-[180px] xl:pl-0">
       {showTopline && (
         <p className="mt-0 mb-4 text-neutral-400">
-          Radschnellverbindung zwischen Waiblingen und Ludwigsburg
+          Radschnellweg zwischen Ludwigsburg und Waiblingen
         </p>
       )}
       <h1

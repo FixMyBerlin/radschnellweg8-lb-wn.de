@@ -60,6 +60,11 @@ export const PageHomeMilestones: React.FC = () => {
       comingUp: true,
     },
     {
+      name: 'Anhörung Träger öffentlicher Belange',
+      description: '(geplant 2023)',
+      comingUp: true,
+    },
+    {
       name: 'Politische Beschlüsse',
       description: '(geplant 2023)',
       comingUp: true,

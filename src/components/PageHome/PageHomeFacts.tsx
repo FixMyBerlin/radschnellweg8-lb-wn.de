@@ -8,7 +8,7 @@ export const PageHomeFacts: React.FC = () => {
       value: '15 Kilometer',
       description: 'Gesamtlänge des RS 8',
       longDescription:
-        'Die Radschnellverbindung führt vom Ludwigsburger Zentrum über Oßweil entlang der L 1140 nach Remseck am Neckar, führt dort durch Neckargröningen und Neckarrems und dann über Hegnach nach Waiblingen.',
+        'Der Radschnellweg führt vom Ludwigsburger Zentrum über Oßweil entlang der L 1140 nach Remseck am Neckar, führt dort durch Neckargröningen und Neckarrems und dann über Hegnach nach Waiblingen.',
     },
     {
       value: '4 Baulastträger',
@@ -26,13 +26,13 @@ export const PageHomeFacts: React.FC = () => {
       value: '31 Millionen €',
       description: 'Gesamtkosten',
       longDescription:
-        'Ca. 2 Mio. € Baukosten pro Kilometer klingen zunächst viel, sind aber tatsächlich nur ein Bruchteil dessen, was z. B. Kreis- oder Landesstraßen kosten.',
+        'Ca. 2 Mio. € Baukosten pro Kilometer klingen zunächst viel, sind aber tatsächlich nur ein Bruchteil dessen, was z. B. Kreis- oder Landesstraßen kosten. Bei den Baukosten handelt es sich um eine Abschätzung aus der Machbarkeitsstudie, die tatsächliche Höhe ist abhängig von der konkreten Ausgestaltung der Radschnellverbindung.',
     },
     {
       value: '87,5 %',
       description: 'Förderung von Bund und Land',
       longDescription:
-        'Radschnellverbindungen werden als besonders positives Infrastrukturelement finanziell gefördert.',
+        'Radschnellwege werden als besonders positives Infrastrukturelement finanziell gefördert.',
     },
     {
       value: '1,9',

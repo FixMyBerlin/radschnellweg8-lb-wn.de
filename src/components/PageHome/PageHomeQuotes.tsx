@@ -85,16 +85,30 @@ const quotes: Quote[] = [
   {
     image: (
       <StaticImage
-        src="./assets/portraits/schoenberger.jpeg"
+        src="./assets/portraits/schoenberger.jpg"
         alt="Dirk Schönberger"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
     source: 'Foto: © Stadt Remseck am Neckar',
     quote:
-      'Wir freuen uns sehr, dass mit dem Radschnellweg eine Ergänzung zu dem eher touristisch orientierten Rems-Radweg, der den Schleifen der Rems folgt, nun eine direkte Radverbindung erstellt wird, die insbesondere von den Pendlern und Rennradfahren genutzt werden kann.',
+      'Wir freuen uns sehr, dass mit dem Radschnellweg eine Ergänzung zu dem eher touristisch orientierten Rems-Radweg, der den Schleifen der Rems folgt, nun eine direkte Radverbindung erstellt wird, die insbesondere von den Pendlern genutzt werden kann.',
     person: 'Dirk Schönberger',
     position: 'Oberbürgermeister Remseck am Neckar',
+  },
+  {
+    image: (
+      <StaticImage
+        src="./assets/portraits/bay.jpg"
+        alt="Susanne Bay"
+        className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
+      />
+    ),
+    source: 'Foto: © Regierungspräsidium Stuttgart',
+    quote:
+      'Zeitgemäß, klimafreundlich und für alle nutzbar – diese Ziele für die Mobilität stehen auch beim RS 8 im Fokus unserer Arbeit. Denn: Radschnellwege sind ein zentrales Element der Verkehrswende. Ich freue mich, dass wir den Rems-Murr-Kreis, den Kreis Ludwigsburg sowie alle daran beteiligten Kommunen dabei unterstützen können.',
+    person: 'Susanne Bay',
+    position: 'Regierungspräsidentin Stuttgart',
   },
 ]
 

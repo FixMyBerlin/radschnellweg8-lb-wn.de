@@ -46,10 +46,10 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
         </p>
         <p>
           <strong>Stadtverwaltung Waiblingen</strong> <br />
-          Fachbereich Stadtplanung <br />
+          Abteilung Verkehrsmanagement und nachhaltige Mobilität <br />
           Kurze Straße 24 <br />
           71332 Waiblingen <br />
-          <LinkMail>susanne.keil@waiblingen.de</LinkMail>
+          <LinkMail>mobilitaet@waiblingen.de</LinkMail>
         </p>
         <h2>Verantwortlich für technische Umsetzung</h2>
         <p>

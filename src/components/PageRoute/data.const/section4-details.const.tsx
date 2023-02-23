@@ -74,7 +74,7 @@ export const section4Details: TSectionDetails[] = [
     title: 'Ausbau zum Radschnellweg',
     body: (
       <p>
-        Im letzten Abschnitt bis zum Bahnhof Waiblingen müsste die
+        Im letzten Abschnitt bis zum Bahnhof Waiblingen muss die
         Radinfrastruktur des genannten Knotenpunktes angepasst und der östlich
         der Bahnlinie verlaufende Radweg auf der Dammstraße auf eine Breite von
         4 m erweitert und damit <strong>zum Radschnellweg ausgebaut</strong>{' '}

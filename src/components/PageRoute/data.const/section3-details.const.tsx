@@ -9,7 +9,7 @@ export const section3Details: TSectionDetails[] = [
     body: (
       <>
         <p>
-          Im Bereich des Waiblinger Teilortes Hegnach hat die Stadtverwaltung
+          Im Bereich der Waibliger Ortschaft Hegnach hat die Stadtverwaltung
           Waiblingen zusammen mit dem Landratsamt Rems-Murr-Kreis und dem
           planenden Ingenieurbüro BIT aus Öhringen im Vorfeld zahlreiche
           Varianten (Bild 1) untersucht, bewertet und gegeneinander abgewogen.
@@ -25,11 +25,11 @@ export const section3Details: TSectionDetails[] = [
         <p>
           Eine Führung durch das nördliche Wohngebiet von Hegnach hätte eine
           hohe Anzahl an Kreuzungspunkten, eine anspruchsvolle Topografie sowie
-          eine indirekte und umwegige Führung bedeutet, die sowohl
-          Problemstellen für Radfahrende als auch eine Einschränkung für
-          Gewerbetreibende (z. B. eingeschränkte Möglichkeit fürs Rangieren,
-          Verluste von Kfz-Parkplätzen) zur Folge hätte. Gegen die direkte
-          Führung der Radschnellverbindung über die Neckarstraße (L 1142)
+          eine indirekte und umwegige Führung bedeutet. Dadurch hätten sich
+          sowohl Problemstellen für Radfahrende als auch mögliche
+          Einschränkungen für Gewerbetreibende (z. B. verminderte Möglichkeit
+          fürs Rangieren, Verluste von Kfz-Parkplätzen) ergeben. Gegen die
+          direkte Führung des Radschnellwegs über die Neckarstraße (L 1142)
           spricht, dass dort aufgrund der historisch engen Ortsdurchfahrt nicht
           überall die geforderten Mindeststandards für einen Radschnellweg
           untergebracht werden können.
@@ -80,13 +80,13 @@ export const section3Details: TSectionDetails[] = [
         <ImageWithCaption
           image={
             <StaticImage
-              src="../assets/TS3Detailpkt2-Radwegeunterfuehrung_Leutkirch_VM-BW.jpg"
-              alt=""
+              src="../assets/TS3Detailpkt2-Radunterfuehrung-PIXABAY.jpg"
+              alt="Beispiel für eine Radwegeunterführung. © Pixabay, PublicDomainPictures / 17901 Bilder"
             />
           }
         >
-          Beispiel für eine Radwegunterführung, diese hier ist in
-          Leutkirch-Haselburg © Verkehrsministerium Baden-Württemberg
+          Beispiel für eine Radwegeunterführung. © Pixabay, PublicDomainPictures
+          / 17901 Bilder
         </ImageWithCaption>
       </>
     ),

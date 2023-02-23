@@ -15,7 +15,7 @@ export const HeadingContentPage: React.FC<Props> = ({
   return (
     <Section className="mt-8 w-full md:mt-5 md:pl-[140px] lg:pl-24 xl:pl-0">
       <p className="mt-0 mb-4 text-neutral-400">
-        Radschnellverbindung zwischen Waiblingen und Ludwigsburg
+        Radschnellweg zwischen Ludwigsburg und Waiblingen
       </p>
       <h1
         className={classNames(

@@ -244,7 +244,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'fahrradspur-mit-linienverkehr-frei',
-    title: 'Fahrradspur mit „Linienverkehr frei”',
+    title: 'Fahrradspur mit „Linienverkehr frei“',
     body: (
       <>
         <p>

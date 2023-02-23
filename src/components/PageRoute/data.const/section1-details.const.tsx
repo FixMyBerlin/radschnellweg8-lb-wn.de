@@ -20,7 +20,7 @@ export const section1Details: TSectionDetails[] = [
         <p>
           Der Abschnitt gehört mit mehr als 4.000 Fahrrädern pro Tag zu den am
           stärksten befahrenen Abschnitten in Ludwigsburg. Die Vorplanung wurde
-          hier bereits Teilabschnitten politisch beschlossen und eng mit
+          hier bereits in Teilabschnitten politisch beschlossen und eng mit
           Verbänden abgestimmt.
         </p>
 
@@ -54,8 +54,8 @@ export const section1Details: TSectionDetails[] = [
         </p>
         <p>
           Die Planung befindet sich in einer engen Abstimmung mit Politik und
-          Verbänden. Der Radschnellweg hat die höchste Priorität und soll so
-          rasch wie möglich gebaut werden.
+          Verbänden. Der Abschnitt hat die höchste Priorität und soll so rasch
+          wie möglich gebaut werden.
         </p>
         <ImageWithCaption
           image={
@@ -112,9 +112,9 @@ export const section1Details: TSectionDetails[] = [
     body: (
       <>
         <p>
-          Im Sportpark Ost soll die Radschnellverbindung die heute bereits stark
+          Im Sportpark Ost soll der Radschnellweg die heute bereits stark
           befahrene Hauptradroute in seiner Qualität steigern. Die Fußwege
-          sollen ausgebaut werden, der Radweg verbreitert werden. In der
+          sollen ausgebaut werden und der Radweg verbreitert werden. In der
           Oststraße und im Grünen Ring zwischen Sportpark und Oßweil werden
           wichtige Hauptradrouten und Hauptwegeverbindungen angebunden.
         </p>
@@ -131,14 +131,13 @@ export const section1Details: TSectionDetails[] = [
           image={
             <StaticImage
               src="../assets/TS1Detailpkt4-AGFK_Sportplatz_05_MarcusGloger.jpg"
-              alt="Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist ein wichtiges Ziel einer Radschnellverbindung.
+              alt="Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist ein wichtiges Ziel eines Radschnellwegs.
           © AGFK-BW, Marcus Gloger"
             />
           }
         >
           Die Anbindung beliebter Ziele – wie zum Beispiel Sportstätten – ist
-          ein wichtiges Ziel einer Radschnellverbindung. © AGFK-BW, Marcus
-          Gloger
+          ein wichtiges Ziel eines Radschnellwegs. © AGFK-BW, Marcus Gloger
         </ImageWithCaption>
       </>
     ),
@@ -152,8 +151,8 @@ export const section1Details: TSectionDetails[] = [
           Zwischen Grünem Ring und Ostfriedhof wird noch eine
           Variantendiskussion geführt. Die{' '}
           <strong>genaue Linienführung ist nicht geklärt</strong>. Die Planung
-          muss heute gut besuchte Fußwege stärken, die Kapazität ist für den
-          Radverkehr auszubauen. Die heutigen sowie zukünftigen Wohn- und
+          muss heute gut besuchte Fußwege stärken und zugleich die Kapazität für
+          den Radverkehr ausbauen. Die heutigen sowie zukünftigen Wohn- und
           Gewerbegebiete sollen attraktiv angebunden werden.
         </p>
         <p>

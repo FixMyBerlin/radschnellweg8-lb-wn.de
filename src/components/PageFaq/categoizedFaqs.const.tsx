@@ -9,12 +9,12 @@ export const categoizedFaqs = {
     'Was ist ein Radschnellweg?': (
       <>
         <p>
-          Radschnellwege sind extrabreite, direkte und möglichst kreuzungsfreie
-          Wege, auf denen Radfahrerinnen und Radfahrer jeden Alters im eigenen
-          Tempo direkt und sicher zum Ziel kommen. Eine klare Kennzeichnung und
-          gute Beleuchtung der Fahrspuren erhöhen die Sicherheit und durch die
-          Breite der Wege ist es möglich, problemlos nebeneinander zu fahren
-          oder zu überholen. Obwohl man nicht unbedingt schneller fährt als auf
+          Radschnellwege sind breite, direkte und möglichst kreuzungsfreie Wege,
+          auf denen Radfahrerinnen und Radfahrer jeden Alters im eigenen Tempo
+          direkt und sicher zum Ziel kommen. Eine klare Kennzeichnung und gute
+          Beleuchtung der Fahrspuren erhöhen die Sicherheit und durch die Breite
+          der Wege ist es möglich, problemlos nebeneinander zu fahren oder zu
+          überholen. Obwohl man nicht unbedingt schneller fährt als auf
           herkömmlichen Radwegen, verkürzt sich die Fahrtzeit aufgrund der
           wenigen Stopps erheblich. Dadurch wird das Radfahren auch auf längeren
           Strecken attraktiv.
@@ -230,6 +230,38 @@ export const categoizedFaqs = {
         </p>
       </>
     ),
+    'Was ist der Unterschied zwischen Radschnellverbindungen und Radschnellwegen?':
+      (
+        <>
+          <p>
+            Streng genommen müsste man das Projekt, das auf diesen Seiten
+            beschrieben wird, als „Radschnellverbindung“ bezeichnen. Der Begriff
+            Radschnellverbindung (RSV) bezeichnet eine durchgängige Route für
+            den Radverkehr, die vom Ausgangsort bis zum Zielort aus
+            unterschiedlichen Elementen zusammengestellt ist. Ein Radschnellweg
+            ist eines dieser Elemente: Eine selbständig geführte Radverbindung,
+            unabhängig von Hauptverkehrs- oder Nebenstraßen. Idealerweise
+            besteht eine Radschnellverbindung ausschließlich aus einem
+            Radschnellweg – in der Realität wird das leider selten machbar sein.
+            Bei unserem RS 8 wechseln sich unterschiedliche Führungsformen ab.
+          </p>
+          <p>
+            Ein Radschnellweg ist also meist nur ein Teil einer
+            Radschnellverbindung, in der medialen Berichterstattung und in der
+            Umgangssprache hat sich der Begriff allerdings als Bezeichnung der
+            gesamten Verbindung eingebürgert. Auch die Abkürzung „RS“ steht
+            dafür. Deshalb sprechen wir der Einfachheit halber auch auf dieser
+            Website daher nur vom „Radschnellweg“.
+          </p>
+          <p>
+            Mehr{' '}
+            <LinkExternal href="https://www.aktivmobil-bw.de/fileadmin/user_upload_fahrradlandbw/1_Radverkehr_in_BW/i_Radschnellverbindungen/Faktenblatt_RSV_02_VCD.pdf">
+              Informationen erhalten Sie hier
+            </LinkExternal>
+            .
+          </p>
+        </>
+      ),
   },
   'Bau & Planung': {
     'Wer ist für Planung und Bau von Radschnellwegen zuständig?': (
@@ -358,7 +390,7 @@ export const categoizedFaqs = {
         </p>
 
         <p>
-          Die prognostizierten Baukosten für die Radschnellverbindung
+          Die prognostizierten Baukosten für den Radschnellweg
           Ludwigsburg–Waiblingen (RS 8) liegen bei: 31 Mio. Euro. Bei einer
           Strecke von ca. 15 Kilometern sind dies etwa 2,1 Mio. Euro/Kilometer.
         </p>
@@ -372,8 +404,10 @@ export const categoizedFaqs = {
 
         <p>
           In der Gegenüberstellung der unterschiedlichen Infrastrukturarten
-          zeigt sich, dass auch die Baukosten für Radschnellwege vergleichsweise
-          gering sind:
+          (Grafik) zeigt sich, dass auch die Baukosten für Radschnellwege
+          vergleichsweise gering sind. (Hinweis: Hier sind Medianwerte
+          dargestellt, die Kosten für den RS 8 werden aufgrund der
+          topografischen Bedingungen voraussichtlich ein wenig darüber liegen.)
         </p>
         <div className="hidden lg:block">
           <Lightbox
@@ -427,7 +461,10 @@ export const categoizedFaqs = {
             ist die Förderung des Radverkehrs letztlich auch eine Maßnahme, die
             Umwelt und Klima schützen soll – dennoch greift auch der Bau eines
             Radweges zunächst in die Natur ein. Dafür werden Ausgleichsmaßnahmen
-            erforderlich. Wenn die fertige Entwurfsplanung anschließend die{' '}
+            erforderlich. Auch die <strong>Anhörung der TÖB</strong>, der Träger
+            öffentlicher Belange, findet jetzt statt. (Mehr dazu siehe Frage
+            “Wer wird in die Planungen mit eingebunden?”) Wenn die fertige
+            Entwurfsplanung anschließend die{' '}
             <strong>politischen Gremien</strong> passiert hat, kann der{' '}
             <strong>Bau</strong> endlich starten.
           </p>
@@ -457,12 +494,14 @@ export const categoizedFaqs = {
           <li>Umweltbehörde</li>
           <li>Landwirtschaftsbehörde</li>
           <li>Forstbehörde</li>
+          <li>Leitungsträger</li>
         </ul>
 
         <p>
           Auch <strong>Verbände</strong>, wie z. B. Naturschutzverbände oder
           Bauernverbände sowie betroffene Grundstückseigentümer/-innen sollten
-          angehört werden.
+          angehört werden. Die offizielle Anhörung der TÖB findet nach Abschluss
+          der Entwurfsplanung statt.
         </p>
 
         <p>
@@ -520,8 +559,8 @@ export const categoizedFaqs = {
         <p>
           Wie kann man sich so einen Radschnellweg eigentlich vorstellen? Wie
           viele Leute fahren denn da, kommt man da zu Fuß überhaupt noch drüber?
-          Damit man sich davon ein besseres Bild machen kann, haben wir die
-          Radschnellverbindung Ludwigsburg–Waiblingen visualisieren lassen. Die{' '}
+          Damit man sich davon ein besseres Bild machen kann, haben wir den
+          Radschnellweg Ludwigsburg–Waiblingen visualisieren lassen. Die{' '}
           <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/verkehr-sicherheit-ordnung/radverkehr/radschnellwege/machbarkeitsstudie-radschnellverbindung-ludwigsburg-waiblingen/">
             Machbarkeitsstudie
           </LinkExternal>{' '}
@@ -605,7 +644,7 @@ export const categoizedFaqs = {
     ),
     'Wie werden Radschnellwege gereinigt und geräumt?': (
       <p>
-        Radschnellwege haben <strong>Priorität im „Winternetz“</strong>, sollen
+        Radschnellwege haben <strong>Priorität im Winterdienst</strong>, sollen
         also wie Hauptverkehrsstraßen behandelt werden. Dies bedeutet den
         Abschluss der Räumarbeiten vor der morgendlichen Hauptverkehrszeit bzw.
         vor Schulbeginn. Die einwandfreie Befahrbarkeit soll im Winter zwischen
@@ -662,8 +701,7 @@ export const categoizedFaqs = {
         <p>
           Radschnellwege werden durch ein eigenes StVO-Zeichen (Zeichen 451)
           gekennzeichnet. Zusätzlich werden in regelmäßigen Abständen Tafeln und
-          Stelen angebracht, die Informationen zur Orientierung sowie den
-          gesamten Streckenverlauf der Radschnellverbindung geben.
+          Stelen angebracht, die Orientierung zum Streckenverlauf geben.
           Bodenpiktogramme und doppelte Randmarkierung (weiße
           Fahrstreifenbegrenzungslinie + grüne Begleitlinie) sorgen für gute
           Erkennbarkeit der Wege.
@@ -746,25 +784,24 @@ export const categoizedFaqs = {
       (
         <>
           <p>
-            Die konsequente Bevorrechtigung von Radschnellverbindungen hat einen
+            Die konsequente Bevorrechtigung von Radschnellwegen hat einen
             wichtigen Grund: Gemeinsam mit der Minimierung von Kreuzungspunkten
             sorgt sie für die hohen Reisegeschwindigkeiten, die den{' '}
             <strong>Umstieg aufs Rad attraktiv</strong> machen und so die
             Radschnellwege zum wichtigen Baustein in der Verkehrswende machen.
             Das bedeutet aber nicht, dass der Radverkehr an jeder Kreuzung freie
-            Bahn hat und alle anderen Verkehrsteilnehmer/-innen ständig
-            ausgebremst werden.
+            Bahn hat.
           </p>
           <p>
             Bevorrechtigung kann auf verschiedene Arten erreicht werden und ist
             immer von der jeweiligen Situation vor Ort abhängig. Neben einer
             durch Beschilderung angeordneten Vorfahrt können z. B. auch{' '}
-            <strong>Ampeln radverkehrsfreundlich</strong> Ampeln
-            radverkehrsfreundlich geschaltet oder <strong>Mittelinseln</strong>{' '}
-            gebaut werden. Eine sehr attraktive aber zugleich auch teurere
-            Alternative sind sogenannte planfreie Lösungen, also{' '}
-            <strong>Brücken</strong> oder <strong>Unterführungen</strong>. Beim
-            RS 8 sind an mehreren Stellen solche Bauwerke geplant.
+            <strong>Ampeln radverkehrsfreundlich</strong> geschaltet oder{' '}
+            <strong>Mittelinseln</strong> gebaut werden. Eine sehr attraktive
+            aber zugleich auch teurere Alternative sind sogenannte planfreie
+            Lösungen, also <strong>Brücken</strong> oder{' '}
+            <strong>Unterführungen</strong>. Beim RS 8 sind an mehreren Stellen
+            solche Bauwerke geplant.
           </p>
           <p>
             Die konkrete Vorgabe lautet: „Die mittleren Zeitverluste pro
@@ -857,8 +894,40 @@ export const categoizedFaqs = {
           und landwirtschaftlichen Verkehr vorgesehen ist, mit einer{' '}
           <strong>großzügigen Trassenbreite</strong> von 5 Metern vorgesehen.
           Sind zudem besonders viele Fußgängerinnen und Fußgänger zu erwarten,
-          wird auf 6,50 Meter verbreitert.
+          wird auf 6,50 Meter verbreitert. Zum Vergleich: Üblicherweise sind
+          Wirtschaftswege 3–3,50 Meter breit.
         </p>
       ),
+    'Profitieren auch Autofahrerinnen und Autofahrer vom Radschnellweg?': (
+      <>
+        <p>
+          Ja, in der Tat: Ziel des Radschnellwegs ist es, mehr Menschen zum
+          Umstieg aufs Rad zu bewegen. Darunter selbstverständlich auch solche,
+          die bislang mit dem Auto unterwegs sind. Wenn der Radschnellweg gut
+          angenommen wird, bedeutet das also zugleich, dass insgesamt weniger
+          Autos unterwegs sind und die restlichen besser durchkommen.{' '}
+          <strong>
+            So kann ein Radschnellweg helfen, Staus zu verhindern.
+          </strong>
+        </p>
+
+        <p>
+          In den Niederlanden wurde 2006 deshalb sogar das Projekt{' '}
+          <LinkExternal href="https://www.fietsersbond.nl/nieuws/fiets-filevrij/">
+            “Fiets filevrij”
+          </LinkExternal>{' '}
+          ins Leben gerufen, frei übersetzt etwa “Staufrei durch Radverkehr”. Im
+          Rahmen eines nationalen Anti-Stau-Programms der niederländischen
+          Regierung wurden der Bau und die Benutzung von Radschnellwegen aktiv
+          als Maßnahme im Kampf gegen Staus propagiert. Tatsächlich ließen sich
+          auf diese Weise wohl{' '}
+          <LinkExternal href="https://www.forschungsinformationssystem.de/servlet/is/499248/">
+            5 bis 15 der mit dem Auto Pendelnden vom Umstieg aufs Rad
+          </LinkExternal>{' '}
+          überzeugen. Wenn wir das auch beim RS 8 erreichen, ist viel für die
+          Entlastung der Straßen getan.
+        </p>
+      </>
+    ),
   },
 }

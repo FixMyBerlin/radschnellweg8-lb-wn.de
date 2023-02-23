@@ -19,7 +19,7 @@ export const Head = () => <MetaTags />
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location}>
-      <H1>Radschnellverbindung zwischen Waiblingen und Ludwigsburg</H1>
+      <H1>Radschnellweg zwischen Ludwigsburg und Waiblingen</H1>
       <PageHomeIntro />
       <PageHomeQuotes />
       <PageHomeLocation />

@@ -12,11 +12,11 @@ export const PageHomeLocation: React.FC = () => {
 
       <P>
         So sieht die aktuell angedachte Linienführung der Vorplanung aus: Auf
-        einer Strecke von 15 km soll die Radschnellverbindung die beiden
-        Mittelzentren Ludwigsburg und Waiblingen verbinden. Vom Ludwigsburger
-        Zentrum aus führt die Strecke über Oßweil entlang der Landesstraße 1140
-        nach Remseck am Neckar, führt dort durch Neckargröningen und Neckarrems
-        und dann über Hegnach nach Waiblingen.
+        einer Strecke von 15 km soll der Radschnellweg die beiden Mittelzentren
+        Ludwigsburg und Waiblingen verbinden. Vom Ludwigsburger Zentrum aus
+        führt die Strecke über Oßweil entlang der Landesstraße 1140 nach Remseck
+        am Neckar, führt dort durch Neckargröningen und Neckarrems und dann über
+        Hegnach nach Waiblingen.
       </P>
 
       <P>
@@ -27,9 +27,10 @@ export const PageHomeLocation: React.FC = () => {
         </LinkExternal>
         , die anschließend von Verkehrsplanerinnen und -planern der beteiligten
         Kreise und Städten vor Ort in der sogenannten Vorplanung konkretisiert
-        wurden. In die Entscheidungen eingeflossen sind verkehrliche Kriterien
+        wurden. Ziel des Radweges ist es, wichtige (Pendler-)Ziele zu verbinden.
+        In die Entscheidungen eingeflossen sind zudem verkehrliche Kriterien
         (Potenziale, Zeitverluste und Einbindung im Gesamtnetz), Belange des
-        Umweltschutzes und die Kosten.
+        Umweltschutzes sowie die Kosten.
       </P>
 
       <div className="hidden lg:block">
@@ -48,9 +49,9 @@ export const PageHomeLocation: React.FC = () => {
         Interessengruppen eingebunden, so z. B. ansässige landwirtschaftlichen
         Betriebe, die teilweise Flächen für den Radschnellweg bereitstellen und
         später die Wege mit Radfahrenden teilen werden, sowie die
-        „Alltagsexperten“ des ADFC, die gut abschätzen können, wo Wege lang
-        führen und wie sie beschaffen sein müssen, damit sie von Radfahrenden
-        gut angenommen werden.
+        „Alltagsexperten“ lokaler Radverkehrsverbände, die gut abschätzen
+        können, wo Wege lang führen und wie sie beschaffen sein müssen, damit
+        sie von Radfahrenden gut angenommen werden.
       </P>
 
       <P>
