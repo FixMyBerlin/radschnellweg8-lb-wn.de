@@ -461,12 +461,15 @@ export const categoizedFaqs = {
             ist die Förderung des Radverkehrs letztlich auch eine Maßnahme, die
             Umwelt und Klima schützen soll – dennoch greift auch der Bau eines
             Radweges zunächst in die Natur ein. Dafür werden Ausgleichsmaßnahmen
-            erforderlich. Auch die <strong>Anhörung der TÖB</strong>, der Träger
-            öffentlicher Belange, findet jetzt statt. (Mehr dazu siehe Frage
-            “Wer wird in die Planungen mit eingebunden?”) Wenn die fertige
-            Entwurfsplanung anschließend die{' '}
-            <strong>politischen Gremien</strong> passiert hat, kann der{' '}
-            <strong>Bau</strong> endlich starten.
+            erforderlich.{' '}
+          </p>
+
+          <p>
+            Auch die <strong>Anhörung der TÖB</strong>, der Träger öffentlicher
+            Belange, findet jetzt statt. (Mehr dazu siehe Frage “Wer wird in die
+            Planungen mit eingebunden?”) Wenn die fertige Entwurfsplanung
+            anschließend die <strong>politischen Gremien</strong> passiert hat,
+            kann der <strong>Bau</strong> endlich starten.
           </p>
           <p>
             Wann der Bau der Radschnellwege abgeschlossen sein wird, hängt von
@@ -483,9 +486,8 @@ export const categoizedFaqs = {
       <>
         <p>
           Einige Akteure, die sogenannten{' '}
-          <strong>TÖB (Träger öffentlicher Belange)</strong>
-          müssen zwingend in die Planung miteinbezogen werden. Hierzu gehören
-          unter anderem:
+          <strong>TÖB (Träger öffentlicher Belange)</strong> müssen zwingend in
+          die Planung miteinbezogen werden. Hierzu gehören unter anderem:
         </p>
 
         <ul>
@@ -914,7 +916,7 @@ export const categoizedFaqs = {
         <p>
           In den Niederlanden wurde 2006 deshalb sogar das Projekt{' '}
           <LinkExternal href="https://www.fietsersbond.nl/nieuws/fiets-filevrij/">
-            “Fiets filevrij”
+            „Fiets filevrij“
           </LinkExternal>{' '}
           ins Leben gerufen, frei übersetzt etwa “Staufrei durch Radverkehr”. Im
           Rahmen eines nationalen Anti-Stau-Programms der niederländischen
@@ -922,7 +924,7 @@ export const categoizedFaqs = {
           als Maßnahme im Kampf gegen Staus propagiert. Tatsächlich ließen sich
           auf diese Weise wohl{' '}
           <LinkExternal href="https://www.forschungsinformationssystem.de/servlet/is/499248/">
-            5 bis 15 der mit dem Auto Pendelnden vom Umstieg aufs Rad
+            5 bis 15% der mit dem Auto Pendelnden vom Umstieg aufs Rad
           </LinkExternal>{' '}
           überzeugen. Wenn wir das auch beim RS 8 erreichen, ist viel für die
           Entlastung der Straßen getan.

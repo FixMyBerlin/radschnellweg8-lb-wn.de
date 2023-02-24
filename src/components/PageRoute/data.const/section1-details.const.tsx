@@ -114,9 +114,9 @@ export const section1Details: TSectionDetails[] = [
         <p>
           Im Sportpark Ost soll der Radschnellweg die heute bereits stark
           befahrene Hauptradroute in seiner Qualität steigern. Die Fußwege
-          sollen ausgebaut werden und der Radweg verbreitert werden. In der
-          Oststraße und im Grünen Ring zwischen Sportpark und Oßweil werden
-          wichtige Hauptradrouten und Hauptwegeverbindungen angebunden.
+          sollen ausgebaut und der Radweg verbreitert werden. In der Oststraße
+          und im Grünen Ring zwischen Sportpark und Oßweil werden wichtige
+          Hauptradrouten und Hauptwegeverbindungen angebunden.
         </p>
         <p>
           Die Herausforderung ist der Schutz der geschützten alten Baumbestände
