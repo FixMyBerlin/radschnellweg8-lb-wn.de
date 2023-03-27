@@ -15,7 +15,7 @@ type Props = {
 export const Layout: React.FC<Props> = ({ className, location, children }) => {
   const isHome = location.pathname === '/'
   const isBeteiligung = location.pathname === '/route/'
-  // TODO Update pathname /beteiligung/
+  // TODO Update pathname /beteiligung/ and Link in Hero
 
   return (
     <div className="flex h-full flex-col text-[#1e293b]">

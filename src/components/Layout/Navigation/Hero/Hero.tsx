@@ -10,7 +10,6 @@ type Props = {
 
 const Dot = () => <span className="my-1 ml-5 h-2 w-2 rounded-full bg-white" />
 export const Hero: React.FC<Props> = ({ ctaSection }) => {
-  console.log(ctaSection)
   return (
     <div className="relative h-[600px] w-full">
       <StaticImage
@@ -51,7 +50,7 @@ export const Hero: React.FC<Props> = ({ ctaSection }) => {
             </div>
             <Link
               button
-              className="rounded-lg bg-rs8-pink text-sm font-normal text-white"
+              className="z-20 rounded-lg bg-rs8-pink text-sm font-normal text-white"
               to="https://trassenscout.de/rs-8/beteiligung"
             >
               Jetzt mitmachen
