@@ -51,7 +51,7 @@ export const Hero: React.FC<Props> = ({ ctaSection }) => {
             <Link
               button
               className="z-20 rounded-lg bg-rs8-pink text-sm font-normal text-white"
-              to="https://trassenscout.de/rs-8/beteiligung"
+              to="/beteiligung"
             >
               Jetzt mitmachen
             </Link>
