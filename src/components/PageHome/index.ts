@@ -1,6 +1,5 @@
 export * from './PageHomeFacts'
 export * from './PageHomeFaqs'
-export * from './PageHomeFunding'
 export * from './PageHomeIntro'
 export * from './PageHomeLocation'
 export * from './PageHomeMilestones'

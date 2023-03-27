@@ -6,7 +6,7 @@ import RadschnellwegeLogo from '../../images/bw-radschnellweg-logo.svg'
 import BmdvFoerderungLogo from '../../images/bmdv-foerderung-logo.svg'
 import { LinkExternal } from '../Link'
 
-export const PageHomeFunding: React.FC = () => {
+export const FundingFooter: React.FC = () => {
   return (
     <Section className="pb-12">
       <H2 className="mt-[150px] mb-5 text-center !text-base !font-normal text-[#959595]">
