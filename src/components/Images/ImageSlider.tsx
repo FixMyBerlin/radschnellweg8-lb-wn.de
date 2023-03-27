@@ -6,10 +6,10 @@ import {
 } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
 import React, { useEffect, useState } from 'react'
-import { ImageWithCaption } from './ImageSlide'
+import { CaptionImage } from './ImageSlide'
 
 type Props = {
-  items: ImageWithCaption[]
+  items: CaptionImage[]
 }
 
 export const ImageSlider: React.FC<Props> = ({ items }) => {

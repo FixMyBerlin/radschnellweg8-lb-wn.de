@@ -1,14 +1,14 @@
 import { StaticImage } from 'gatsby-plugin-image'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Section } from '../Layout'
 import { ImageSlider } from './ImageSlider'
 
-export type ImageWithCaption = {
+export type CaptionImage = {
   image: React.ReactNode
   caption: string
 }
 
-const images: ImageWithCaption[] = [
+const images: CaptionImage[] = [
   {
     image: (
       <StaticImage
