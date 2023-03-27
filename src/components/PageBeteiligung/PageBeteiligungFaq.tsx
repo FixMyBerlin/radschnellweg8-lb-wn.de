@@ -9,7 +9,7 @@ import { YouTubePreview } from '../YouTubePreview'
 
 export const PageBeteiligungFaq: React.FC = () => {
   return (
-    <Section className="bg-rs8-blue py-12 text-white">
+    <Section className="">
       <H2 className="text-center">Häufig gestellte Fragen</H2>
 
       <FAQ>
