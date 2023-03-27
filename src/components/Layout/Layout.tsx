@@ -22,7 +22,8 @@ export const Layout: React.FC<Props> = ({ className, location, children }) => {
       <Navigation location={location} />
       <ScrollTopLink />
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
-        <Hero ctaSection={isBeteiligung} />
+        {isBeteiligung && <Hero ctaSection={isBeteiligung} />}
+        {isHome && <Hero />}
         <LogoHomeLink isHome={isHome} />
         {children}
       </main>
