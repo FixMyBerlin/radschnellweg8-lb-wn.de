@@ -29,7 +29,7 @@ export const PageBeteiligungIntro: React.FC = () => {
         dauert ca. 5-10 Minuten.
       </P>
 
-      <div className="flex justify-center py-10">
+      <div className="my-12 flex justify-center">
         <Link button to="/beteiligung">
           Beteiligung starten
         </Link>
@@ -42,17 +42,19 @@ export const PageBeteiligungIntro: React.FC = () => {
         Streckenführung noch einmal anschauen.
       </P>
 
-      <Image
-        image={
-          <StaticImage
-            src="../../images/rs8_map.jpg"
-            alt="Gesamtstrecke von Ludwigsburg nach Waiblingen auf einer Karte"
-          />
-        }
-      />
+      <div className="my-12">
+        <Image
+          image={
+            <StaticImage
+              src="../../images/rs8_map.jpg"
+              alt="Gesamtstrecke von Ludwigsburg nach Waiblingen auf einer Karte"
+            />
+          }
+        />
+      </div>
 
       <H2>So funktioniert die Bürgerbeteiligung</H2>
-      <ol className="list-inside list-decimal marker:font-bold">
+      <ol className="list-inside list-decimal space-y-6 marker:font-bold">
         <li>
           <strong>Sie sagen uns Ihre Meinung.</strong>
           <br />
@@ -81,7 +83,7 @@ export const PageBeteiligungIntro: React.FC = () => {
         </li>
       </ol>
 
-      <div className="flex justify-center py-10">
+      <div className="my-12 flex justify-center">
         <Link button to="/beteiligung">
           Beteiligung starten
         </Link>

@@ -9,7 +9,7 @@ import { LinkExternal } from '../Link'
 export const FundingFooter: React.FC = () => {
   return (
     <Section className="pb-12">
-      <H2 className="mt-[150px] mb-5 text-center !text-base !font-normal text-[#959595]">
+      <H2 className="mt-12 mb-5 text-center !text-base !font-normal text-[#959595]">
         Gefördert durch:
       </H2>
 

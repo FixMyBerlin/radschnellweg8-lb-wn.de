@@ -72,9 +72,5 @@ const images: CaptionImage[] = [
 ]
 
 export const ImageSlide: React.FC = () => {
-  return (
-    <Section>
-      <ImageSlider items={images} />
-    </Section>
-  )
+  return <ImageSlider items={images} />
 }
