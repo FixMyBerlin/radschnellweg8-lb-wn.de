@@ -15,14 +15,14 @@ type Props = {
 export const Layout: React.FC<Props> = ({ className, location, children }) => {
   const isHome = location.pathname === '/'
   const isBeteiligung = location.pathname === '/route/'
-  // TODO Update before merge - Hero only on '/' - maybe move out of layout and update Link in Hero
+  // TODO Update before merge - Hero only on '/'
 
   return (
     <div className="flex h-full flex-col text-[#1e293b]">
       <Navigation location={location} />
       <ScrollTopLink />
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
-        {isBeteiligung && <Hero ctaSection={isBeteiligung} />}
+        {isBeteiligung && <Hero participation={isBeteiligung} />}
         {isHome && <Hero />}
         <LogoHomeLink isHome={isHome} />
         {children}
