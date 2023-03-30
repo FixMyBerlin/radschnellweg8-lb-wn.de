@@ -5,8 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'rs8-blue': '#2c62a9',
-        'rs8-pink': '#d22d7c',
+        'rs8-blue': '#2C62A9',
+        'rs8-pink': '#E5007D',
       },
     },
     fontFamily: { sans: ['OverpassVariable', 'sans-serif'] },
