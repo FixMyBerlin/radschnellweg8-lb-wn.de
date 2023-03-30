@@ -1,5 +1,5 @@
 import { StaticImage } from 'gatsby-plugin-image'
-import { ImageWithCaption } from '../ImageWIthCaption'
+import { ImageWithCaption } from '../../Images'
 import { TSectionDetails } from './types'
 
 export const section1Details: TSectionDetails[] = [
