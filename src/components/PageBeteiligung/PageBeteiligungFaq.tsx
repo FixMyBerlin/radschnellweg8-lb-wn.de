@@ -29,7 +29,7 @@ export const PageBeteiligungFaq: React.FC = () => {
             link="https://www.youtube.com/watch?v=t9GxxxYse_8"
             image={
               <StaticImage
-                src="./assets/youtube-preview-radschnellwege.jpeg"
+                src="./../PageHome/assets/youtube-preview-radschnellwege.jpeg"
                 alt="Vorschau YouTube Video 'Radschnellwege in Baden-Württemberg: direkt – schnell – sicher'"
               />
             }
