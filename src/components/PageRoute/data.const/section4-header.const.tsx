@@ -1,4 +1,4 @@
-import Teilstrecke4Img from '../assets/Teilstrecke4.svg'
+import { StaticImage } from 'gatsby-plugin-image'
 import { TSectionHeader } from './types'
 
 export const section4Header: TSectionHeader = {
@@ -15,5 +15,11 @@ export const section4Header: TSectionHeader = {
       Richtung Bahnhof.
     </>
   ),
-  image: <Teilstrecke4Img className="h-auto w-full" />,
+  image: (
+    <StaticImage
+      className="h-auto w-full"
+      src="../assets/Bilder_Strecken/Teilstrecke4.2.jpg"
+      alt="Teilstrecke 4"
+    />
+  ),
 }

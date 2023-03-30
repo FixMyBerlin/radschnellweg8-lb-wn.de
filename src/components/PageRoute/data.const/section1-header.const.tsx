@@ -1,4 +1,4 @@
-import Teilstrecke1Img from '../assets/Teilstrecke1.svg'
+import { StaticImage } from 'gatsby-plugin-image'
 import { TSectionHeader } from './types'
 
 export const section1Header: TSectionHeader = {
@@ -24,5 +24,11 @@ export const section1Header: TSectionHeader = {
       8 an den Abschnitt des Landkreises an.
     </>
   ),
-  image: <Teilstrecke1Img className="h-auto w-full" />,
+  image: (
+    <StaticImage
+      className="h-auto w-full"
+      src="../assets/Bilder_Strecken/Teilstrecke1.jpg"
+      alt="Teilstrecke 1"
+    />
+  ),
 }

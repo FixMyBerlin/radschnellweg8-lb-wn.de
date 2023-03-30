@@ -1,4 +1,5 @@
 import { PageProps } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { LayoutArticle } from '~/components/Layout'
 import { Link } from '~/components/Link'
@@ -17,7 +18,6 @@ import {
 import { Lightbox } from '~/components/PageRoute/Lightbox'
 import { Section } from '~/components/PageRoute/Section'
 import { HeadingContentPage } from '~/components/Text'
-import GesamtstreckeImg from '../components/PageRoute/assets/Gesamtstrecke.svg'
 
 export const Head = () => <MetaTags />
 
@@ -30,13 +30,25 @@ const Route: React.FC<PageProps> = ({ location }) => {
 
       <PageRouteIntro />
       <div className="hidden lg:block">
-        <Lightbox image={<GesamtstreckeImg className="h-auto w-full" />}>
+        <Lightbox
+          image={
+            <StaticImage
+              className="h-auto w-full"
+              src="../components/PageRoute/assets/Bilder_Strecken/Strecke_RS8.jpg"
+              alt="Radschnellweg RS 8: Gesamtstrecke"
+            />
+          }
+        >
           Radschnellweg RS 8: Gesamtstrecke
         </Lightbox>
       </div>
 
       <div className="my-10 lg:hidden">
-        <GesamtstreckeImg className="h-auto w-full" />,
+        <StaticImage
+          className="h-auto w-full"
+          src="../components/PageRoute/assets/Bilder_Strecken/Strecke_RS8.jpg"
+          alt="Radschnellweg RS 8: Gesamtstrecke"
+        />
       </div>
 
       <ul className="marker:text-rs8-pink">
