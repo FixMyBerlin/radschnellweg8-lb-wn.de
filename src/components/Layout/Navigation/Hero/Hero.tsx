@@ -2,13 +2,14 @@ import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Link } from '~/components/Link'
 import Pin from './assets/pin.svg'
-import PinkBanner from './assets/pink-banner.svg'
 
 type Props = {
   participation?: boolean
 }
 
-const Dot = () => <span className="my-1 ml-5 h-2 w-2 rounded-full bg-white" />
+const Dot = () => (
+  <span className="my-0.5 ml-[21px] h-2 w-2 rounded-full bg-white" />
+)
 export const Hero: React.FC<Props> = ({ participation }) => {
   return (
     <div className="relative h-[400px] w-full md:h-[500px]">
@@ -44,14 +45,14 @@ export const Hero: React.FC<Props> = ({ participation }) => {
           <div className="mx-auto flex flex-col items-start">
             <div className="flex flex-row items-center gap-6">
               <Pin width={50} />
-              <p className="text-[20px] md:text-[32px]">Waiblingen</p>
+              <p className="text-[20px] md:text-[32px]">Ludwigsburg</p>
             </div>
             <Dot />
             <Dot />
             <Dot />
             <div className="flex flex-row items-center gap-6">
               <Pin width={50} />
-              <p className="text-[20px] md:text-[32px]">Ludwigsburg</p>
+              <p className="text-[20px] md:text-[32px]">Waiblingen</p>
             </div>
           </div>
         )}
