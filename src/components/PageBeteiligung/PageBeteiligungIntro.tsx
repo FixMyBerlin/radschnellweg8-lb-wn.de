@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import { Section } from '../Layout'
 import { ImageSlide } from '../Images'
 import { H2, P } from '../Text'
-import { Link } from '../Link'
+import { Link, LinkExternal } from '../Link'
 import { Image } from '../Images/Image'
 
 export const PageBeteiligungIntro: React.FC = () => {
@@ -84,9 +84,12 @@ export const PageBeteiligungIntro: React.FC = () => {
       </ol>
 
       <div className="my-12 flex justify-center">
-        <Link button to="/beteiligung">
+        <LinkExternal
+          button
+          href="https://tinkering.trassenscout.de/rs8-beteiligung"
+        >
           Beteiligung starten
-        </Link>
+        </LinkExternal>
       </div>
     </Section>
   )
