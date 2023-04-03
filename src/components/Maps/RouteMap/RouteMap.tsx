@@ -48,16 +48,25 @@ export const RouteMap: React.FC<Props> = ({
     ? sectionBoundsArray[highlightedSection]
     : BOUNDS_RS8
 
+  let hiddenLayerSearchterms: string[]
   // filter layer ids of highlighting section layers to get an array of layer ids which should be hidden
-  const hiddenLayerSearchterms = highlightedLayerIds.filter(
-    (section) => !section.includes(highlightedSection)
-  )
+  if (highlightedSection) {
+    hiddenLayerSearchterms = highlightedLayerIds.filter(
+      (section) => !section.includes(highlightedSection)
+    )
+  } else {
+    // add ids of pink dot layers to the array of hidden layers in case no section is highlighted
+    hiddenLayerSearchterms = [
+      'RS8--streckeninfosRS8',
+      'RS8--streckeninfosRS8-txt',
+    ].concat(highlightedLayerIds)
+  }
 
   return (
     <div
       className={classnames(
         classNames,
-        'relative h-[350px] w-full sm:h-[68px] '
+        'relative h-[350px] w-full sm:h-[680px] '
       )}
     >
       <MapProvider>
