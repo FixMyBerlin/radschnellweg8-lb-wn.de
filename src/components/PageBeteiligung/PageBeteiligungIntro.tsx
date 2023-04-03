@@ -30,7 +30,7 @@ export const PageBeteiligungIntro: React.FC = () => {
       </P>
 
       <div className="my-12 flex justify-center">
-        <Link button to="/beteiligung">
+        <Link button to="https://staging.trassenscout.de/rs8-beteiligung">
           Beteiligung starten
         </Link>
       </div>
