@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+import { RouteMap } from '~/components/Maps/RouteMap/RouteMap'
 import { TSectionHeader } from './types'
 
 export const section1Header: TSectionHeader = {
@@ -24,11 +24,5 @@ export const section1Header: TSectionHeader = {
       8 an den Abschnitt des Landkreises an.
     </>
   ),
-  image: (
-    <StaticImage
-      className="h-auto w-full"
-      src="../assets/Bilder_Strecken/Teilstrecke1.jpg"
-      alt="Teilstrecke 1"
-    />
-  ),
+  image: <RouteMap highlightedSection="section1" />,
 }

@@ -1,8 +1,7 @@
-import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
 import { Section } from '../Layout'
 import { Link, LinkExternal, LinkMail } from '../Link'
-import { Lightbox } from '../PageRoute/Lightbox'
+import { RouteMap } from '../Maps/RouteMap/RouteMap'
 import { H2, P } from '../Text'
 
 export const PageHomeLocation: React.FC = () => {
@@ -33,26 +32,7 @@ export const PageHomeLocation: React.FC = () => {
         Umweltschutzes sowie die Kosten.
       </P>
 
-      <div className="hidden lg:block">
-        <Lightbox
-          image={
-            <StaticImage
-              className="h-auto w-full"
-              src="../PageRoute/assets/Bilder_Strecken/Strecke_RS8.jpg"
-              alt="Radschnellweg RS 8: Gesamtstrecke"
-            />
-          }
-        >
-          Radschnellweg RS 8: Gesamtstrecke
-        </Lightbox>
-      </div>
-      <div className="lg:hidden">
-        <StaticImage
-          className="h-auto w-full"
-          src="../PageRoute/assets/Bilder_Strecken/Strecke_RS8.jpg"
-          alt="Radschnellweg RS 8: Gesamtstrecke"
-        />
-      </div>
+      <RouteMap />
 
       <P>
         Die auf dieser Website gezeigte Vorplanung wurde bereits in den

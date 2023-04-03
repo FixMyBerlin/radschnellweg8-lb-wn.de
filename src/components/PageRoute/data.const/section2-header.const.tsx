@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+import { RouteMap } from '~/components/Maps/RouteMap/RouteMap'
 import { TSectionHeader } from './types'
 
 export const section2Header: TSectionHeader = {
@@ -25,11 +25,5 @@ export const section2Header: TSectionHeader = {
       Kreisgrenze in Richtung Waiblingen-Hegnach.
     </>
   ),
-  image: (
-    <StaticImage
-      className="h-auto w-full"
-      src="../assets/Bilder_Strecken/Teilstrecke2.jpg"
-      alt="Teilstrecke 2"
-    />
-  ),
+  image: <RouteMap highlightedSection="section2" />,
 }

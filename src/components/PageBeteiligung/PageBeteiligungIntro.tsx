@@ -1,10 +1,9 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
-import { Section } from '../Layout'
 import { ImageSlide } from '../Images'
+import { Section } from '../Layout'
+import { Link } from '../Link'
+import { RouteMap } from '../Maps/RouteMap/RouteMap'
 import { H2, P } from '../Text'
-import { Link, LinkExternal } from '../Link'
-import { Image } from '../Images/Image'
 
 export const PageBeteiligungIntro: React.FC = () => {
   return (
@@ -43,14 +42,7 @@ export const PageBeteiligungIntro: React.FC = () => {
       </P>
 
       <div className="my-12">
-        <Image
-          image={
-            <StaticImage
-              src="../../images/rs8_map.jpg"
-              alt="Gesamtstrecke von Ludwigsburg nach Waiblingen auf einer Karte"
-            />
-          }
-        />
+        <RouteMap />
       </div>
 
       <H2>So funktioniert die Bürgerbeteiligung</H2>

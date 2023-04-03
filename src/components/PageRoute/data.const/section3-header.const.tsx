@@ -1,4 +1,4 @@
-import { StaticImage } from 'gatsby-plugin-image'
+import { RouteMap } from '~/components/Maps/RouteMap/RouteMap'
 import { TSectionHeader } from './types'
 
 export const section3Header: TSectionHeader = {
@@ -18,11 +18,5 @@ export const section3Header: TSectionHeader = {
       Waiblingen.
     </>
   ),
-  image: (
-    <StaticImage
-      className="h-auto w-full"
-      src="../assets/Bilder_Strecken/Teilstrecke3.2.jpg"
-      alt="Teilstrecke 3"
-    />
-  ),
+  image: <RouteMap highlightedSection="section3" />,
 }
