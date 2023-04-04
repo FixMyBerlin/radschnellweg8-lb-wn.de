@@ -7,7 +7,7 @@ export const Logo: React.VFC<{
 }> = ({ className }) => {
   return (
     <img
-      className={classNames('h-12 w-auto md:h-[140px]', className)}
+      className={classNames('h-12 w-auto', className)}
       src={RsvLogo}
       alt="Radschnellweg 8 Logo"
     />

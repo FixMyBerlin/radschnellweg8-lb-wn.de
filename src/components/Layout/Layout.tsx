@@ -2,7 +2,6 @@ import classNames from 'classnames'
 import React from 'react'
 import { ScrollTopLink } from './ScrollTopLink'
 import { Footer } from './Footer'
-import { LogoHomeLink } from './LogoHomeLink'
 import { Navigation } from './Navigation'
 import { Hero } from './Navigation/Hero/Hero'
 
@@ -22,7 +21,6 @@ export const Layout: React.FC<Props> = ({ className, location, children }) => {
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
         {/* wenn die Beteiligungsphase beginnt, braucht der Hero das prop 'participation */}
         {isHome && <Hero />}
-        <LogoHomeLink isHome={isHome} />
         {children}
       </main>
       <Footer />
