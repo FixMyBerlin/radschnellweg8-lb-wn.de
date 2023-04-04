@@ -1,6 +1,6 @@
 import maplibregl, { LngLatLike } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   FullscreenControl,
   Map as ReactMapGl,
@@ -32,6 +32,18 @@ export const MapView: React.FC<MapViewProps> = ({
   maxZoom,
   fullscreenOption = true,
 }) => {
+  const [isMediumScreen, setIsMediumScreen] = useState(false)
+  useEffect(() => {
+    const lgMediaQuery = window.matchMedia('(min-width: 768px)')
+    function onMediaQueryChange({ matches }) {
+      setIsMediumScreen(matches)
+    }
+    onMediaQueryChange(lgMediaQuery)
+    lgMediaQuery.addEventListener('change', onMediaQueryChange)
+    return () => {
+      lgMediaQuery.removeEventListener('change', onMediaQueryChange)
+    }
+  }, [])
   const handleLoad = (event: any) => {
     if (additionalLayerSearchterms) {
       const map = event.target
@@ -62,8 +74,10 @@ export const MapView: React.FC<MapViewProps> = ({
       {...({ minZoom } || {})}
       {...({ maxZoom } || {})}
     >
-      <NavigationControl position="bottom-right" showCompass={false} />
-      {fullscreenOption && <FullscreenControl />}
+      {isMediumScreen && (
+        <NavigationControl position="bottom-right" showCompass={false} />
+      )}
+      {fullscreenOption && isMediumScreen && <FullscreenControl />}
     </ReactMapGl>
   )
 }
