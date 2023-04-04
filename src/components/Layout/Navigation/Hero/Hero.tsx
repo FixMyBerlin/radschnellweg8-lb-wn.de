@@ -21,10 +21,10 @@ export const Hero: React.FC<Props> = ({ participation }) => {
       <div className="absolute inset-0 flex w-full flex-col justify-center gap-3 bg-rs8-blue/50 font-bold text-white md:gap-6">
         <div className="flex flex-col gap-2">
           <span className="mx-auto bg-rs8-pink p-3 text-center text-[28px] md:text-[42px]">
-            Der RS8.
+            Der RS 8
           </span>
           <span className="mx-auto bg-rs8-pink p-2 text-center text-[20px] md:text-[32px] ">
-            Eine neue Radschnellverbindung
+            Ein neuer Radschnellweg
           </span>
         </div>
 
