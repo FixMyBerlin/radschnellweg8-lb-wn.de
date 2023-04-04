@@ -6,7 +6,6 @@ import {
   Map as ReactMapGl,
   NavigationControl,
   PaddingOptions,
-  useMap,
   ViewState,
 } from 'react-map-gl'
 
@@ -15,7 +14,7 @@ export type MapViewProps = {
     bounds?: LngLatLike[]
     zoomDiff?: number
   }
-  hiddenLayerSearchterms?: string[]
+  additionalLayerSearchterms?: string[]
   boundsPadding?: number | PaddingOptions
   minZoom?: number
   maxZoom?: number
@@ -27,21 +26,19 @@ const MAPLIBRE_MAP_STYLE =
 
 export const MapView: React.FC<MapViewProps> = ({
   config,
-  hiddenLayerSearchterms,
+  additionalLayerSearchterms,
   boundsPadding,
   minZoom,
   maxZoom,
   fullscreenOption = true,
 }) => {
-  const { mainMap } = useMap()
-
   const handleLoad = (event: any) => {
-    if (hiddenLayerSearchterms) {
+    if (additionalLayerSearchterms) {
       const map = event.target
-      const mapLayers = mainMap.getStyle().layers
+      const mapLayers = map.getStyle().layers
       mapLayers
-        .filter((l) => hiddenLayerSearchterms.includes(l.id))
-        .map((l) => map.setLayoutProperty(l.id, 'visibility', 'none'))
+        .filter((l) => additionalLayerSearchterms.includes(l.id))
+        .map((l) => map.setLayoutProperty(l.id, 'visibility', 'visible'))
     }
   }
 
