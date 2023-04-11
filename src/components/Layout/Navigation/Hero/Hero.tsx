@@ -57,6 +57,12 @@ export const Hero: React.FC<Props> = ({ participation }) => {
           </div>
         )}
       </div>
+      <div className="absolute inset-x-0 bottom-1 px-2">
+        <p className="text-[0.85rem] italic leading-5 text-white/60">
+          Beispieldarstellung eines Radschnellwegs © Ministerium für Verkehr
+          Baden-Württemberg
+        </p>
+      </div>
     </div>
   )
 }
