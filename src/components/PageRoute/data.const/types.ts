@@ -10,4 +10,5 @@ export type TSectionDetails = {
   id: string
   title: string
   body: React.ReactNode
+  no: number
 }

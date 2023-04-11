@@ -5,6 +5,7 @@ import { TSectionDetails } from './types'
 export const section1Details: TSectionDetails[] = [
   {
     id: 'durchgehende-fahrradstraße',
+    no: 1,
     title: 'Durchgehende Fahrradstraße',
     body: (
       <>
@@ -41,6 +42,7 @@ export const section1Details: TSectionDetails[] = [
   },
   {
     id: 'anschluss-nord-sued-hauptroute',
+    no: 2,
     title: 'Anschluss an die Nord-Süd-Hauptradroute',
     body: (
       <>
@@ -72,6 +74,7 @@ export const section1Details: TSectionDetails[] = [
   },
   {
     id: 'neues-gruenquartier',
+    no: 3,
     title: 'Neues Grünquartier',
     body: (
       <>
@@ -109,6 +112,7 @@ export const section1Details: TSectionDetails[] = [
   {
     id: 'anbindung-fuchshof',
     title: 'Anbindung der Sportvereine & Fuchshof',
+    no: 4,
     body: (
       <>
         <p>
@@ -144,6 +148,7 @@ export const section1Details: TSectionDetails[] = [
   },
   {
     id: 'anbindung-gewerbegebiet',
+    no: 5,
     title: 'Anbindung von Wohn- und Gewerbegebieten',
     body: (
       <>
