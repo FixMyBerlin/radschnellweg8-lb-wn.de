@@ -6,6 +6,7 @@ import { TSectionDetails } from './types'
 export const section2Details: TSectionDetails[] = [
   {
     id: 'gespraeche-mit-bauern',
+    no: 6,
     title: 'Gespräche mit Bauern und ADFC Kreisverband',
     body: (
       <p>
@@ -27,6 +28,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'ausgleichsmassnahmen',
+    no: 7,
     title: 'Ausgleichsmaßnahmen',
     body: (
       <>
@@ -66,6 +68,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'pruefung-mehrerer-varianten-der-linienfuehrung',
+    no: 8,
     title: 'Prüfung mehrerer Varianten der Linienführung',
     body: (
       <>
@@ -94,6 +97,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'neues-unterfuehrungsbauwerk',
+    no: 9,
     title: '(Neues) Unterführungsbauwerk',
     body: (
       <>
@@ -141,6 +145,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'neue-mitteremseck',
+    no: 10,
     title: 'Neue Mitte Remseck',
     body: (
       <>
@@ -176,6 +181,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'provisorische-fuehrung',
+    no: 11,
     title: 'Provisorische Führung',
     body: (
       <>
@@ -212,6 +218,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'tragbauwerke',
+    no: 12,
     title: 'Tragbauwerke (Auskragung)',
     body: (
       <>
@@ -244,6 +251,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'fahrradspur-mit-linienverkehr-frei',
+    no: 13,
     title: 'Fahrradspur mit „Linienverkehr frei“',
     body: (
       <>

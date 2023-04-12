@@ -12,8 +12,8 @@ export const SectionDetails: React.FC<Props> = ({ details }) => {
       <h3 className="mt-14 mb-8 text-center text-[32px] font-bold text-sky-700">
         Detailinfos
       </h3>
-      {details.map((detail, index) => {
-        return <SectionDetailsItem detail={detail} mapNumber={index + 1} />
+      {details.map((detail) => {
+        return <SectionDetailsItem detail={detail} />
       })}
     </div>
   )
