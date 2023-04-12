@@ -1,5 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import { ImageWithCaption } from '../../Images'
+import { Lightbox } from '../Lightbox'
 import { TSectionDetails } from './types'
 
 export const section1Details: TSectionDetails[] = [
@@ -59,16 +60,30 @@ export const section1Details: TSectionDetails[] = [
           Verbänden. Der Abschnitt hat die höchste Priorität und soll so rasch
           wie möglich gebaut werden.
         </p>
-        <ImageWithCaption
-          image={
-            <StaticImage
-              src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
-              alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
-            />
-          }
-        >
-          Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
-        </ImageWithCaption>
+        <div className="hidden lg:block">
+          <Lightbox
+            image={
+              <StaticImage
+                src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
+                alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
+              />
+            }
+          >
+            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+          </Lightbox>
+        </div>
+        <div className="lg:hidden">
+          <ImageWithCaption
+            image={
+              <StaticImage
+                src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
+                alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
+              />
+            }
+          >
+            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+          </ImageWithCaption>
+        </div>
       </>
     ),
   },
