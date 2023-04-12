@@ -30,7 +30,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
       <PageRouteIntro />
 
       <div className="my-10">
-        <RouteMap />
+        <RouteMap sectionNumbers />
       </div>
 
       <ul className="marker:text-rs8-pink">

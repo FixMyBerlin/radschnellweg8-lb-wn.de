@@ -4,6 +4,7 @@ import { MapProvider } from 'react-map-gl'
 import { MapView } from '../Map/MapView'
 
 type Props = {
+  sectionNumbers?: boolean
   highlightedSection?: 'section1' | 'section2' | 'section3' | 'section4'
   classNames?: string
 }
@@ -20,7 +21,12 @@ const highlightedLayerIds = [
   'RS8--section3',
   'RS8--section4',
 ]
+const sectionNumbersLayerIds = [
+  'RS8--teilstreckenNR',
+  'RS8--TeilstreckenNR-txt',
+]
 
+// pink dot layers
 const infoDotLayerNames = ['RS8--streckeninfosRS8', 'RS8--streckeninfosRS8-txt']
 
 const sectionBoundsArray = {
@@ -43,6 +49,7 @@ const sectionBoundsArray = {
 }
 
 export const RouteMap: React.FC<Props> = ({
+  sectionNumbers = false,
   highlightedSection,
   classNames,
 }) => {
@@ -50,12 +57,19 @@ export const RouteMap: React.FC<Props> = ({
     ? sectionBoundsArray[highlightedSection]
     : BOUNDS_RS8
 
-  let additionalLayerSearchterms: string[]
+  let additionalLayerSearchterms: string[] = []
   // filter layer ids of highlighting section layers to get an array of layer ids which should be hidden
   if (highlightedSection) {
     additionalLayerSearchterms = highlightedLayerIds
       .filter((section) => section.includes(highlightedSection))
+      // concat pink dot layers
       .concat(infoDotLayerNames)
+  }
+  if (sectionNumbers) {
+    // convat section / "Teilstrecken" dots and names
+    additionalLayerSearchterms = additionalLayerSearchterms.concat(
+      sectionNumbersLayerIds
+    )
   }
 
   return (
