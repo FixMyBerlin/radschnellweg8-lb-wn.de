@@ -14,7 +14,7 @@ export const H1: React.FC<Props & { showTopline?: boolean }> = ({
   children,
 }) => {
   return (
-    <Section className="mt-16 w-full pl-[40px] md:pl-[140px] lg:pl-[180px] xl:pl-0">
+    <Section className="mt-16 w-full">
       {showTopline && (
         <p className="mt-0 mb-4 text-neutral-400">
           Radschnellweg zwischen Ludwigsburg und Waiblingen
