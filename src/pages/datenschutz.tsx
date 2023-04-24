@@ -14,10 +14,21 @@ Links
 
 export const Head = () => <MetaTags noindex title="Datenschutz" />
 
+const MatomoIframe = () => {
+  return (
+    <iframe
+      title="Matomo Opt Out Tracking"
+      className="h-52 w-full border bg-gray-200 p-2"
+      src="https://s.fixmycity.de/index.php?module=CoreAdminHome&action=optOut&language=de&backgroundColor=E5E7EB&fontColor=1e293b&fontSize=16px&fontFamily=Arial"
+    />
+  )
+}
+
 const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
   const tocItems: TocHashLink = [
     ['#responsible', 'Verantwortlichkeit'],
     ['#hosting', 'Bereitstellung'],
+    ['#analytics', 'Webanalyse'],
     ['#contact', 'Kontaktmöglichkeit'],
     ['#rights', 'Ihre Rechte'],
     ['#updates', 'Aktualität und Änderungen'],
@@ -148,21 +159,57 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
         </thead>
         <tbody>
           <tr>
-            <td>Netlify, Inc.</td>
+            <th className="align-text-top">Netlify, Inc.</th>
             <td>2325 3rd Street, Suite 215, San Francisco, 94107 CA</td>
             <td>USA</td>
             <td>Standarddatenschutzklauseln</td>
             <td>Hosting der Website und Bereitstellung der Inhalte</td>
           </tr>
           <tr>
-            <td>Amazon Web Services EMEA SARL</td>
+            <th className="align-text-top">Amazon Web Services EMEA SARL</th>
             <td>38 Avenue John F. Kennedy, L-1855 Luxembourg</td>
             <td>Luxemburg</td>
             <td>Standarddatenschutzklauseln</td>
             <td>Hosting der Website und Bereitstellung der Inhalte</td>
           </tr>
+          <tr>
+            <th className="align-text-top">SCALEWAY</th>
+            <td>
+              8 rue de la Ville l&lsquo;Ev&ecirc;que, 75008 Paris, Frankreich
+            </td>
+            <td>-</td>
+            <td>-</td>
+            <td>Backup</td>
+          </tr>
         </tbody>
       </table>
+      <h2 id="analytics">Webanalyse</h2>
+      <p>
+        Zusätzlich zu den oben genannten Datenverarbeitungen nutzen wir ein
+        Statistiksystem, das <strong>keine personenbezogenen Daten</strong>{' '}
+        verarbeitet. Aus Fairness- und Transparenzgründen haben wir uns dennoch
+        entschieden, die entsprechenden Details dazu offenzulegen:
+      </p>
+      <p>
+        Wir nutzen Matomo für statistische Zwecke, zur Verbesserung unserer
+        Seite und zur Erkennung und Unterbindung von Missbrauch. Das Hosting für
+        das Tool übernehmen wir selbst. Matomo ist so konfiguriert, dass nur die
+        folgenden technische Daten erfasst werden: Die Website, von der aus Sie
+        uns besuchen, die Seiten unserer Website, die Sie besuchen, das Datum
+        und die Dauer Ihres Besuchs, Ihre anonymisierte (also gekürzte)
+        IP-Adresse und einzelne Informationen über das von Ihnen verwendete
+        Endgeräte (Gerätetyp, Betriebssystem, Bildschirmauflösung, Sprache,
+        Land, in dem Sie sich befinden, und Webbrowser-Typ). Der Datensatz,
+        anhand dessen zusammengehörige Seitenaufrufe anonymisiert gruppiert
+        werden, wird 30 Minuten nach Ende des Besuchs gelöscht.
+      </p>
+      <p>
+        Die Kombination der oben aufgeführten Datenpunkte dürfte nicht genügen,
+        um einen eindeutigen Bezug zu einer bestimmten Person herzustellen. Sie
+        können trotzdem die Verwendung von Matomo während Ihres Besuchs durch
+        Abwahl des folgenden Hakens unterbinden:
+      </p>
+      <MatomoIframe />
 
       <h2 id="contact">Kontaktmöglichkeiten</h2>
 
