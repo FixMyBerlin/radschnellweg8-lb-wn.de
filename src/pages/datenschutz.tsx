@@ -347,7 +347,7 @@ const DatenschutzPage: React.FC<PageProps> = ({ location }) => {
       <h2 id="updates">Aktualität und Änderungen der Datenschutzhinweise</h2>
       <p>
         Diese Datenschutzhinweise sind aktuell gültig und hat den folgenden
-        Stand: November 2022.
+        Stand: Mai 2023.
       </p>
       <p>
         Wenn wir unsere Website und unsere Angebote weiterentwickeln oder sich
