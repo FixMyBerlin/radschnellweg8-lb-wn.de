@@ -33,7 +33,7 @@ export const Navigation = ({ location }) => {
             <NavigationMobileMenuButton open={open} />
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <nav className="space-y-1 pt-2 pb-3">
               {navigationLinks.map((link) => (
                 <NavigationMenuItemMobile
