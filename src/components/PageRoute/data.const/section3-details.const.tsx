@@ -117,7 +117,9 @@ export const section3Details: TSectionDetails[] = [
         <ImageWithCaption
           image={
             <StaticImage
-              src="../assets/TS3Detailpkt3-Vorhandener-Weg-Waiblingen_LRA-RMK.png"
+              className="w-full"
+              imgClassName="w-full object-cover"
+              src="../assets/TS3Detailpkt3-Vorhandener-Weg-Waiblingen_LRA-RMK_crop.jpg"
               alt=""
             />
           }
