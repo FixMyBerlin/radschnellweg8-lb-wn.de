@@ -9,7 +9,7 @@ export const PageRouteIntro: React.FC = () => (
       Waiblingen. Auf diesen Seiten erhalten Sie Information zu Anforderungen,
       Planungsstand und Beteiligungsmöglichkeiten dieses Gemeinschaftsprojekts
       des Rems-Murr-Kreises mit dem Landkreis Ludwigsburg, der Stadt
-      Ludwigsburg, der Stadt Waiblingen und der Stadt Remseck am Neckar.
+      Ludwigsburg, der Stadt Remseck am Neckar und der Stadt Waiblingen.
     </P>
     <P>
       Unten finden Sie jeweils eine Beschreibung der aktuell geplanten
