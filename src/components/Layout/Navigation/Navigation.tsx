@@ -6,6 +6,7 @@ import {
 } from '.'
 import { LogoBar } from './LogoBar'
 import { navigationLinks } from './navigationLinks.const'
+import { Logo } from '../Logo'
 
 export const Navigation = ({ location }) => {
   return (
@@ -14,11 +15,10 @@ export const Navigation = ({ location }) => {
       {({ open }) => (
         <>
           <div className="flex h-24 justify-between py-2">
+            <Logo className="my-3 mx-6 h-16 lg:hidden" />
             <nav className="flex w-full items-center justify-between">
-              <div className="flex flex-shrink-0 items-center">
-                <LogoBar />
-              </div>
-              <div className="hidden pr-8 md:flex md:space-x-10">
+              <div className="hidden pr-8 lg:flex lg:space-x-10">
+                <Logo className="ml-6 h-16" />
                 {navigationLinks.map((link) => (
                   <NavigationMenuItemDesktop
                     name={link.name}
@@ -28,12 +28,15 @@ export const Navigation = ({ location }) => {
                   />
                 ))}
               </div>
+              <div className="ml-6 hidden flex-shrink-0 items-center lg:flex">
+                <LogoBar />
+              </div>
             </nav>
 
             <NavigationMobileMenuButton open={open} />
           </div>
 
-          <Disclosure.Panel className="md:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <nav className="space-y-1 pt-2 pb-3">
               {navigationLinks.map((link) => (
                 <NavigationMenuItemMobile
@@ -43,6 +46,7 @@ export const Navigation = ({ location }) => {
                   key={link.to}
                 />
               ))}
+              <LogoBar />
             </nav>
           </Disclosure.Panel>
         </>
