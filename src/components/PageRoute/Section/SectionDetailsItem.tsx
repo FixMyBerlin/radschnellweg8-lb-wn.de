@@ -6,17 +6,16 @@ import { TSectionDetails } from '../data.const/types'
 
 type Props = {
   detail: TSectionDetails
-  mapNumber: number
 }
 
-export const SectionDetailsItem: React.FC<Props> = ({ detail, mapNumber }) => {
+export const SectionDetailsItem: React.FC<Props> = ({ detail }) => {
   return (
     <Disclosure as="article" key={detail.id} id={detail.id} className="pt-6">
       {({ open }) => (
         <>
           <Disclosure.Button className="flex w-full items-center justify-start gap-4 text-left text-lg text-gray-400">
             <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-rs8-pink pt-1 text-white shadow-lg">
-              {mapNumber}
+              {detail.no}
             </span>
             <span className="flex w-full items-center justify-between">
               <h4 className="m-0 p-0 text-base font-medium leading-tight text-gray-900">

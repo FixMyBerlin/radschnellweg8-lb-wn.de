@@ -36,7 +36,7 @@ const quotes: Quote[] = [
     ),
     source: 'Foto: © Rems-Murr-Kreis',
     quote:
-      'Radschnellverbindungen ebnen den Weg für nachhaltige Mobilität und können gerade beim RS8 die Hauptverkehrsachsen zwischen unseren beiden Landkreisen entlasten.',
+      'Radschnellverbindungen ebnen den Weg für nachhaltige Mobilität und können gerade beim RS 8 die Hauptverkehrsachsen zwischen unseren beiden Landkreisen entlasten.',
     person: 'Dr. Richard Sigel',
     position: 'Landrat Rems-Murr-Kreis',
   },
@@ -50,7 +50,7 @@ const quotes: Quote[] = [
     ),
     source: 'Foto: © Landkreis Ludwigsburg',
     quote:
-      'Wir freuen uns, dass wir gemeinsam an der Realisierung einer der ersten Radschnellwege im Land beteiligt sind.',
+      'Wir freuen uns, dass wir an der Realisierung einer der ersten Radschnellwege im Land beteiligt sind. Das ist ein wichtiger Beitrag zur Verkehrswende, gerade in unserer dicht besiedelten Region.',
     person: 'Dietmar Allgaier',
     position: 'Landrat Kreis Ludwigsburg',
   },
@@ -85,7 +85,7 @@ const quotes: Quote[] = [
   {
     image: (
       <StaticImage
-        src="./assets/portraits/schoenberger.jpg"
+        src="./assets/portraits/schoenberger_crop.jpg"
         alt="Dirk Schönberger"
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
@@ -104,7 +104,7 @@ const quotes: Quote[] = [
         className="h-[130px] w-[130px] overflow-hidden rounded-full lg:h-[320px] lg:w-[320px]"
       />
     ),
-    source: 'Foto: © Regierungspräsidium Stuttgart',
+    source: 'Foto: © Regierungspräsidium Stuttgart (Jan Potente)',
     quote:
       'Zeitgemäß, klimafreundlich und für alle nutzbar – diese Ziele für die Mobilität stehen auch beim RS 8 im Fokus unserer Arbeit. Denn: Radschnellwege sind ein zentrales Element der Verkehrswende. Ich freue mich, dass wir den Rems-Murr-Kreis, den Kreis Ludwigsburg sowie alle daran beteiligten Kommunen dabei unterstützen können.',
     person: 'Susanne Bay',

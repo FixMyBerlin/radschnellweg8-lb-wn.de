@@ -56,7 +56,7 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
         >
           <div className="flex flex-col justify-between space-y-6">
             {item.image}
-            <p className="max-w-[300px] text-center text-[16px] leading-5 text-gray-400">
+            <p className="max-w-[300px] text-[16px] leading-5 text-gray-400 lg:text-center">
               {item.source}
             </p>
           </div>

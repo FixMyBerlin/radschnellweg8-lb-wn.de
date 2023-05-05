@@ -1,10 +1,12 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import { ImageWithCaption } from '../../Images'
+import { Lightbox } from '../Lightbox'
 import { TSectionDetails } from './types'
 
 export const section1Details: TSectionDetails[] = [
   {
     id: 'durchgehende-fahrradstraße',
+    no: 1,
     title: 'Durchgehende Fahrradstraße',
     body: (
       <>
@@ -41,6 +43,7 @@ export const section1Details: TSectionDetails[] = [
   },
   {
     id: 'anschluss-nord-sued-hauptroute',
+    no: 2,
     title: 'Anschluss an die Nord-Süd-Hauptradroute',
     body: (
       <>
@@ -57,21 +60,36 @@ export const section1Details: TSectionDetails[] = [
           Verbänden. Der Abschnitt hat die höchste Priorität und soll so rasch
           wie möglich gebaut werden.
         </p>
-        <ImageWithCaption
-          image={
-            <StaticImage
-              src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
-              alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
-            />
-          }
-        >
-          Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
-        </ImageWithCaption>
+        <div className="hidden lg:block">
+          <Lightbox
+            image={
+              <StaticImage
+                src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
+                alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
+              />
+            }
+          >
+            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+          </Lightbox>
+        </div>
+        <div className="lg:hidden">
+          <ImageWithCaption
+            image={
+              <StaticImage
+                src="../assets/TS1Detailpkt2-Radroutennetz-LB.PNG"
+                alt="Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg"
+              />
+            }
+          >
+            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+          </ImageWithCaption>
+        </div>
       </>
     ),
   },
   {
     id: 'neues-gruenquartier',
+    no: 3,
     title: 'Neues Grünquartier',
     body: (
       <>
@@ -109,6 +127,7 @@ export const section1Details: TSectionDetails[] = [
   {
     id: 'anbindung-fuchshof',
     title: 'Anbindung der Sportvereine & Fuchshof',
+    no: 4,
     body: (
       <>
         <p>
@@ -144,6 +163,7 @@ export const section1Details: TSectionDetails[] = [
   },
   {
     id: 'anbindung-gewerbegebiet',
+    no: 5,
     title: 'Anbindung von Wohn- und Gewerbegebieten',
     body: (
       <>

@@ -5,6 +5,7 @@ import { TSectionDetails } from './types'
 export const section3Details: TSectionDetails[] = [
   {
     id: 'fuehrung-durch-hegnach',
+    no: 14,
     title: 'Führung durch Hegnach',
     body: (
       <>
@@ -61,6 +62,7 @@ export const section3Details: TSectionDetails[] = [
   },
   {
     id: 'kreuzungsfreie-fuehrung',
+    no: 15,
     title: 'Kreuzungsfreie und vom Kfz-Verkehr getrennte Führung',
     body: (
       <>
@@ -93,6 +95,7 @@ export const section3Details: TSectionDetails[] = [
   },
   {
     id: 'neubau-am-suedlichen-ortsrand',
+    no: 16,
     title: 'Neubau am südlichen Ortsrand von Hegnach',
     body: (
       <>
@@ -114,7 +117,9 @@ export const section3Details: TSectionDetails[] = [
         <ImageWithCaption
           image={
             <StaticImage
-              src="../assets/TS3Detailpkt3-Vorhandener-Weg-Waiblingen_LRA-RMK.png"
+              className="w-full"
+              imgClassName="w-full object-cover"
+              src="../assets/TS3Detailpkt3-Vorhandener-Weg-Waiblingen_LRA-RMK_crop.jpg"
               alt=""
             />
           }
@@ -127,6 +132,7 @@ export const section3Details: TSectionDetails[] = [
   },
   {
     id: 'planfreie-querungsmöglichkeit',
+    no: 17,
     title: 'Planfreie Querungsmöglichkeit',
     body: (
       <>
