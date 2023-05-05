@@ -98,17 +98,18 @@ export const section2Details: TSectionDetails[] = [
   {
     id: 'neues-unterfuehrungsbauwerk',
     no: 9,
-    title: '(Neues) Unterführungsbauwerk',
+    title: 'Neues Unterführungsbauwerk',
     body: (
       <>
         <p>
           Ein wichtiges Qualitätsmerkmal von Radschnellwegen ist das schnelle
           Vorankommen. Um Wartezeiten an Kreuzungen zu verringern sind dafür im
           Idealfall sogenannte planfreie Knotenpunkte zu nutzen. Wir planen
-          einen solchen zur Unterquerung der Kreisstraße 1666
-          („Soldatensträßle“). <strong>Ein neues Unterführungsbauwerk</strong>{' '}
-          sorgt dafür, dass Radfahrende hier schnell, bequem und konfliktfrei
-          auf die andere Seite der Straße gelangen.
+          einen solchen zur Unterquerung der Kreisstraße 1666 (Besser bekannt
+          als „Soldatensträßle“).{' '}
+          <strong>Ein neues Unterführungsbauwerk</strong> sorgt dafür, dass
+          Radfahrende hier schnell, bequem und konfliktfrei auf die andere Seite
+          der Straße gelangen.
         </p>
         <ImageWithCaption
           image={
@@ -121,6 +122,15 @@ export const section2Details: TSectionDetails[] = [
           Aus den Vorplanungs-Unterlagen: Unterführung K 1666. © KMB /
           Landratsamt Ludwigsburg
         </ImageWithCaption>
+      </>
+    ),
+  },
+  {
+    id: 'querung-landstraße',
+    no: 10,
+    title: 'Querung der Landstraße',
+    body: (
+      <>
         <p>
           Im Verlauf der Strecke wird der neue Radschnellweg auch die
           Landesstraße 1140 queren müssen. Dort gibt es bereits eine
@@ -145,7 +155,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'neue-mitteremseck',
-    no: 10,
+    no: 11,
     title: 'Neue Mitte Remseck',
     body: (
       <>
@@ -181,7 +191,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'provisorische-fuehrung',
-    no: 11,
+    no: 12,
     title: 'Provisorische Führung',
     body: (
       <>
@@ -218,7 +228,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'tragbauwerke',
-    no: 12,
+    no: 13,
     title: 'Tragbauwerke (Auskragung)',
     body: (
       <>
@@ -251,7 +261,7 @@ export const section2Details: TSectionDetails[] = [
   },
   {
     id: 'fahrradspur-mit-linienverkehr-frei',
-    no: 13,
+    no: 14,
     title: 'Fahrradspur mit „Linienverkehr frei“',
     body: (
       <>

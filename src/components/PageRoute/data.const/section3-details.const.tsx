@@ -5,7 +5,7 @@ import { TSectionDetails } from './types'
 export const section3Details: TSectionDetails[] = [
   {
     id: 'fuehrung-durch-hegnach',
-    no: 14,
+    no: 15,
     title: 'Führung durch Hegnach',
     body: (
       <>
@@ -62,7 +62,7 @@ export const section3Details: TSectionDetails[] = [
   },
   {
     id: 'kreuzungsfreie-fuehrung',
-    no: 15,
+    no: 16,
     title: 'Kreuzungsfreie und vom Kfz-Verkehr getrennte Führung',
     body: (
       <>
@@ -95,7 +95,7 @@ export const section3Details: TSectionDetails[] = [
   },
   {
     id: 'neubau-am-suedlichen-ortsrand',
-    no: 16,
+    no: 17,
     title: 'Neubau am südlichen Ortsrand von Hegnach',
     body: (
       <>
@@ -132,7 +132,7 @@ export const section3Details: TSectionDetails[] = [
   },
   {
     id: 'planfreie-querungsmöglichkeit',
-    no: 17,
+    no: 18,
     title: 'Planfreie Querungsmöglichkeit',
     body: (
       <>

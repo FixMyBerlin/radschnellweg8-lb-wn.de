@@ -5,7 +5,7 @@ import { TSectionDetails } from './types'
 export const section4Details: TSectionDetails[] = [
   {
     id: 'fahrradbruecke',
-    no: 18,
+    no: 19,
     title: 'Fahrradbrücke parallel zur Bahnlinie',
     body: (
       <>
@@ -33,7 +33,7 @@ export const section4Details: TSectionDetails[] = [
   },
   {
     id: 'Ausbau-bestehender-wirtschaftsweg',
-    no: 19,
+    no: 20,
     title: 'Ausbau bestehender Wirtschaftsweg',
     body: (
       <p>
@@ -47,7 +47,7 @@ export const section4Details: TSectionDetails[] = [
   },
   {
     id: 'abstimmungen-mit-der-deutschen-bahn',
-    no: 20,
+    no: 21,
     title: 'Abstimmungen mit der Deutschen Bahn',
     body: (
       <>
@@ -74,7 +74,7 @@ export const section4Details: TSectionDetails[] = [
   },
   {
     id: 'ausbau-zum-radschnellweg',
-    no: 21,
+    no: 22,
     title: 'Ausbau zum Radschnellweg',
     body: (
       <p>
