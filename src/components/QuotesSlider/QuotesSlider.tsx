@@ -3,7 +3,7 @@ import {
   ArrowRightCircleIcon,
 } from '@heroicons/react/24/outline'
 import classNames from 'classnames'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Quote } from '../PageHome'
 import QuoteIcon from './assets/quote-icon.svg'
 
@@ -13,6 +13,17 @@ type Props = {
 
 export const QuotesSlider: React.FC<Props> = ({ items }) => {
   const [active, setActive] = useState<number>(0)
+  const [manualMode, setManualMode] = useState<boolean>(false)
+
+  useEffect(() => {
+    const imageInterval = setInterval(() => {
+      if (!manualMode) {
+        setActive((active + 1) % items.length)
+      }
+    }, 12000)
+
+    return () => clearInterval(imageInterval)
+  }, [active])
 
   const arrow = (icon, right = false) => {
     if ((right && active === items.length - 1) || (!right && active === 0)) {
@@ -24,6 +35,7 @@ export const QuotesSlider: React.FC<Props> = ({ items }) => {
         type="button"
         onClick={(e) => {
           e.preventDefault()
+          setManualMode(true)
           setActive(
             Math.min(items.length - 1, Math.max(0, active + (right ? 1 : -1)))
           )
