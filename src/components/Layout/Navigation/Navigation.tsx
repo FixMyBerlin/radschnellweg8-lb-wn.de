@@ -46,7 +46,7 @@ export const Navigation = ({ location }) => {
                   key={link.to}
                 />
               ))}
-              <LogoBar />
+              <LogoBar lazyLoad />
             </nav>
           </Disclosure.Panel>
         </>
