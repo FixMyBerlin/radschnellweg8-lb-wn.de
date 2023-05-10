@@ -20,9 +20,8 @@ export const QuotesSlider: React.FC<Props> = ({ items, length }) => {
     const imageInterval = setInterval(() => {
       if (!manualMode) {
         setActive((active + 1) % length)
-        console.warn('bla')
       }
-    }, 6000)
+    }, 12000)
 
     return () => clearInterval(imageInterval)
   }, [active])
