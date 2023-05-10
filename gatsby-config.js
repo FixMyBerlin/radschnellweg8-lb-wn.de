@@ -22,7 +22,7 @@ module.exports = {
       // https://radschnellweg8-lb-wb.de/sitemap-0.xml // content
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        excludes: ['/impressum/', '/datenschutz/'],
+        excludes: ['/impressum/', '/datenschutz/', '/beteiligung/'],
       },
     },
     {
