@@ -47,7 +47,7 @@ export const section2Details: TSectionDetails[] = [
           notwendigen Radschnellwegsbreite müssen einzelne Wege verbreitert
           werden. Diesen Eingriff in die Natur (Neuversiegelung) kompensieren
           wir wie nach Bundesnaturschutzgesetz vorgesehen durch{' '}
-          <strong>Ausgleichsmaßnahmen</strong> . Als Ausgleich für den RS 8
+          <strong>Ausgleichsmaßnahmen</strong>. Als Ausgleich für den RS 8
           sollen streifenförmige Blühstreifen entlang des Radschnellweges
           und/oder zwischen Ackerflächen angelegt werden.
         </p>
@@ -105,7 +105,7 @@ export const section2Details: TSectionDetails[] = [
           Ein wichtiges Qualitätsmerkmal von Radschnellwegen ist das schnelle
           Vorankommen. Um Wartezeiten an Kreuzungen zu verringern sind dafür im
           Idealfall sogenannte planfreie Knotenpunkte zu nutzen. Wir planen
-          einen solchen zur Unterquerung der Kreisstraße 1666 (Besser bekannt
+          einen solchen zur Unterquerung der Kreisstraße 1666 (besser bekannt
           als „Soldatensträßle“).{' '}
           <strong>Ein neues Unterführungsbauwerk</strong> sorgt dafür, dass
           Radfahrende hier schnell, bequem und konfliktfrei auf die andere Seite
@@ -200,17 +200,17 @@ export const section2Details: TSectionDetails[] = [
           Mitte“ komplett umgestaltet. Hier haben wir im Vorfeld zahlreiche
           Varianten einer möglichen Querung bis zur Realisierung des
           Städtebauprojekts überlegt und gegeneinander abgewogen. Letztendlich
-          hat sich aber die kürzeste Version, mit „Variante 1.0“ gekennzeichnet,
-          als die beste und kostengünstigste Möglichkeit für die{' '}
-          <strong>provisorische Führung</strong> erwiesen. Nach dem Busbahnhof /
-          Endhaltestelle entsteht eine planerische Lücke für die Führung des
-          Radschnellwegs durch Neckargröningen/Neckarrems. Radfahrer haben die
-          Möglichkeit, auf den bisher bekannten Wegführungen über den Neckarsteg
-          am Rathaus vorbei die Innenstadt zu durchqueren. Auf der Remstalstraße
-          wird dann wieder nach Radschnellwegstandards ausgebaut. Auch hierbei
-          handelt es sich um eine vorläufige Lösung, mit dem Bau der „Neuen
-          Mitte“ soll der Radschnellweg perspektivisch über die Neckarbrücke
-          (derzeit L 1140) geführt werden.
+          hat sich aber die kürzeste Version („Variante 1.0“ in Kombination mit
+          „Variante 1.9”) als die beste und kostengünstigste Möglichkeit für die
+          provisorische Führung erwiesen. Nach dem Busbahnhof / Endhaltestelle
+          entsteht eine planerische Lücke für die Führung des Radschnellwegs
+          durch Neckargröningen/Neckarrems. Radfahrer haben die Möglichkeit, auf
+          den bisher bekannten Wegführungen über den Neckarsteg am Rathaus
+          vorbei die Innenstadt zu durchqueren. Auf der Remstalstraße wird dann
+          wieder nach Radschnellwegstandards ausgebaut. Auch hierbei handelt es
+          sich um eine vorläufige Lösung, mit dem Bau der „Neuen Mitte“ soll der
+          Radschnellweg perspektivisch über die Neckarbrücke (derzeit L 1140)
+          geführt werden.
         </p>
         <ImageWithCaption
           image={

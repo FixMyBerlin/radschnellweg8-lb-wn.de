@@ -32,7 +32,7 @@ export const PageHomeFacts: React.FC = () => {
       value: 'Bis zu 90 %',
       description: 'Förderung von Bund und Land',
       longDescription:
-        'Radschnellwege werden Radschnellwege werden als besonders positives Infrastrukturelement finanziell gefördert. Für die Planung gibt es eine Förderung in Höhe von 87,5 % der Kosten, beim Bau sind es je nach Einhaltung der Qualitätsstandards sogar bis zu 90 %.',
+        'Radschnellwege werden als besonders positives Infrastrukturelement finanziell gefördert. Für die Planung gibt es eine Förderung in Höhe von 87,5 % der Kosten, beim Bau sind es je nach Einhaltung der Qualitätsstandards sogar bis zu 90 %.',
     },
     {
       value: '1,9',
