@@ -45,9 +45,14 @@ export const MapView: React.FC<MapViewProps> = ({
     }
   }, [])
   const handleLoad = (event: any) => {
+    const map = event.target
+    const mapLayers = map.getStyle().layers
+    // make all custom fmc RS8-- layers invisible
+    mapLayers
+      .filter((l) => l.id.startsWith('RS8--'))
+      .map((l) => map.setLayoutProperty(l.id, 'visibility', 'none'))
+    // make additional layers visible
     if (additionalLayerSearchterms) {
-      const map = event.target
-      const mapLayers = map.getStyle().layers
       mapLayers
         .filter((l) => additionalLayerSearchterms.includes(l.id))
         .map((l) => map.setLayoutProperty(l.id, 'visibility', 'visible'))

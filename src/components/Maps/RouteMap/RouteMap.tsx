@@ -25,6 +25,8 @@ const sectionNumbersLayerIds = [
   'RS8--teilstreckenNR',
   'RS8--TeilstreckenNR-txt',
 ]
+// Gesamtstrecke (gelb) plus Lücke
+const rs8TotalRouteIds = ['RS8--allsections-luecke-copy', 'RS8--allsections']
 
 // pink dot layers
 const infoDotLayerNames = ['RS8--streckeninfosRS8', 'RS8--streckeninfosRS8-txt']
@@ -57,16 +59,21 @@ export const RouteMap: React.FC<Props> = ({
     ? sectionBoundsArray[highlightedSection]
     : BOUNDS_RS8
 
-  let additionalLayerSearchterms: string[] = []
+  // default: rs8 Gesamtstrecke layers
+  let additionalLayerSearchterms = rs8TotalRouteIds
   // filter layer ids of highlighting section layers to get an array of layer ids which should be hidden
   if (highlightedSection) {
-    additionalLayerSearchterms = highlightedLayerIds
-      .filter((section) => section.includes(highlightedSection))
+    additionalLayerSearchterms = additionalLayerSearchterms
+      .concat(
+        highlightedLayerIds.filter((section) =>
+          section.includes(highlightedSection)
+        )
+      )
       // concat pink dot layers
       .concat(infoDotLayerNames)
   }
   if (sectionNumbers) {
-    // convat section / "Teilstrecken" dots and names
+    // concat section / "Teilstrecken" dots and names
     additionalLayerSearchterms = additionalLayerSearchterms.concat(
       sectionNumbersLayerIds
     )
