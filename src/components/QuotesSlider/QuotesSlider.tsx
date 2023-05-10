@@ -9,18 +9,20 @@ import QuoteIcon from './assets/quote-icon.svg'
 
 type Props = {
   items: Quote[]
+  length: number
 }
 
-export const QuotesSlider: React.FC<Props> = ({ items }) => {
+export const QuotesSlider: React.FC<Props> = ({ items, length }) => {
   const [active, setActive] = useState<number>(0)
   const [manualMode, setManualMode] = useState<boolean>(false)
 
   useEffect(() => {
     const imageInterval = setInterval(() => {
       if (!manualMode) {
-        setActive((active + 1) % items.length)
+        setActive((active + 1) % length)
+        console.warn('bla')
       }
-    }, 12000)
+    }, 6000)
 
     return () => clearInterval(imageInterval)
   }, [active])

@@ -139,7 +139,7 @@ export const PageHomeQuotes: React.FC = () => {
 
   return (
     <Section>
-      <QuotesSlider items={items} />
+      <QuotesSlider items={items} length={quotes.length} />
     </Section>
   )
 }
