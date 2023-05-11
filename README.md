@@ -25,3 +25,7 @@ Test: Check the JSON for updates to arrive.
 - Style: Same as above
   (Last folder "RS8" at the bottom of the folder list.)
 - Data and style match on "marker-color" property
+
+## Map Style Maptiler
+
+- 'RS8--' layers: all should be invisible per default except for: 'RS8--allsections-luecke-copy' and 'RS8--allsections' (Gesamtstrecke)
