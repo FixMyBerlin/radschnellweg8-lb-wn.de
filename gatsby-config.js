@@ -2,7 +2,7 @@ module.exports = {
   // Required by 'gatsby-plugin-sitemap' Plugin
   siteMetadata: {
     title: 'Radschnellweg 8 | Ludwigsburg - Waiblingen',
-    siteUrl: 'https://radschnellweg8-lb-wb.de',
+    siteUrl: 'https://radschnellweg8-lb-wn.de',
   },
 
   // https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v4-to-v5/#trailingslash-is-set-to-always
@@ -18,8 +18,8 @@ module.exports = {
     // TailwindCSS needs PostCSS, https://tailwindcss.com/docs/guides/gatsby
     {
       // Docs https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/
-      // https://radschnellweg8-lb-wb.de/sitemap-index.xml // only links
-      // https://radschnellweg8-lb-wb.de/sitemap-0.xml // content
+      // https://radschnellweg8-lb-wn.de/sitemap-index.xml // only links
+      // https://radschnellweg8-lb-wn.de/sitemap-0.xml // content
       resolve: 'gatsby-plugin-sitemap',
       options: {
         excludes: ['/impressum/', '/datenschutz/', '/beteiligung/'],
