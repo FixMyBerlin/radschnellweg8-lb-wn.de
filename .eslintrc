@@ -72,13 +72,14 @@
       },
       "plugins": ["@typescript-eslint/eslint-plugin"],
       "extends": [
-        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/eslint-recommended", // React Runtime: See also https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md but we need to use the rule-"off" below
         "plugin:@typescript-eslint/recommended",
         "prettier",
         // Keep it last
         "plugin:prettier/recommended"
       ],
       "rules": {
+        "react/react-in-jsx-scope": "off", // React Runtime: Required so we don't need to import React
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-var-requires": "off",

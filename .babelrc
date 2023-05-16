@@ -1,0 +1,11 @@
+// Source https://github.com/gatsbyjs/gatsby/pull/27615#issuecomment-845682575
+{
+  "presets": [
+    [
+      "babel-preset-gatsby",
+      {
+        "reactRuntime": "automatic"
+      }
+    ]
+  ]
+}
