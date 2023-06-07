@@ -7,7 +7,7 @@ import { PageBeteiligungFaq } from '~/components/PageBeteiligung'
 import { PageBeteiligungIntro } from '~/components/PageBeteiligung/PageBeteiligungIntro'
 import { H1 } from '~/components/Text'
 
-export const Head = () => <MetaTags noindex />
+export const Head = () => <MetaTags />
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
