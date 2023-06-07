@@ -37,13 +37,13 @@ export const PageHomeLocation: React.FC = () => {
       <P>
         Die auf dieser Website gezeigte Vorplanung wurde bereits in den
         Gemeinderäten der beteiligten Städte präsentiert – die Streckenführung
-        dort aber noch nicht beschlossen. Parallel wurden auch schon erste
-        Interessengruppen eingebunden, so z. B. ansässige landwirtschaftlichen
-        Betriebe, die teilweise Flächen für den Radschnellweg bereitstellen und
-        später die Wege mit Radfahrenden teilen werden, sowie die
-        „Alltagsexperten“ lokaler Radverkehrsverbände, die gut abschätzen
-        können, wo Wege lang führen und wie sie beschaffen sein müssen, damit
-        sie von Radfahrenden gut angenommen werden.
+        dort aber noch nicht abschließend festgelegt. Parallel wurden auch schon
+        erste Interessengruppen eingebunden, so z. B. ansässige
+        landwirtschaftlichen Betriebe, die teilweise Flächen für den
+        Radschnellweg bereitstellen und später die Wege mit Radfahrenden teilen
+        werden, sowie die „Alltagsexperten“ lokaler Radverkehrsverbände, die gut
+        abschätzen können, wo Wege lang führen und wie sie beschaffen sein
+        müssen, damit sie von Radfahrenden gut angenommen werden.
       </P>
 
       <P>
