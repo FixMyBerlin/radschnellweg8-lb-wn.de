@@ -20,7 +20,7 @@ export const Layout: React.FC<Props> = ({ className, location, children }) => {
       <ScrollTopLink />
       <main className={classNames(className, 'z-0 flex-grow bg-white')}>
         {/* wenn die Beteiligungsphase beginnt, braucht der Hero das prop 'participation */}
-        {isHome && <Hero />}
+        {isHome && <Hero participation />}
         {children}
       </main>
       <Footer />
