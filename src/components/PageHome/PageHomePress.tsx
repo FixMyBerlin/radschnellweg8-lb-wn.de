@@ -11,6 +11,14 @@ export const PageHomePress: React.FC = () => {
       <ul className="space-y-1">
         <li className="flex">
           <strong className="mr-2 block min-w-[7rem] border-r">
+            25.05.2023
+          </strong>
+          <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/landratsamt-landkreis/aktuelles/pressemitteilungen/detail/neue-website-zu-radschnellweg-ist-online/">
+            Neue Website zu Radschnellweg ist online
+          </LinkExternal>
+        </li>
+        <li className="flex">
+          <strong className="mr-2 block min-w-[7rem] border-r">
             25.05.2020
           </strong>
           <LinkExternal href="https://www.landkreis-ludwigsburg.de/de/landratsamt-landkreis/aktuelles/pressemitteilungen/detail/nachhaltige-mobilitaet-zwischen-den-landkreisen/">
