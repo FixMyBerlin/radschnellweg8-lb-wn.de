@@ -46,7 +46,6 @@ export const MetaTags: React.FC<SeoProps> = ({
   return (
     <>
       <title>{seo.title}</title>
-      <link rel="canonical" href="https://radschnellweg8-lb-wn.de/" />
       <meta property="og:title" content={seo.title} />
       <meta name="twitter:title" content={seo.title} />
 
