@@ -83,7 +83,7 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
         <p>
           Sofern Sie Bugs oder Verbesserungsvorschläge haben, geben Sie uns
           gerne{' '}
-          <LinkExternal href="https://github.com/FixMyBerlin/fixmy.rsv/issues/new/choose">
+          <LinkExternal href="https://github.com/FixMyBerlin/radschnellweg8-lb-wn.de">
             Feedback auf GitHub
           </LinkExternal>
           .
@@ -91,7 +91,7 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
         <h2>Urheberrechte Fotos</h2>
         Wenn nicht anders angegeben, stehen die auf dieser Website verwendeten
         Fotos unter{' '}
-        <LinkExternal href="https://creativecommons.org/licenses/by-nc/4.0/deed.de">
+        <LinkExternal href="https://creativecommons.org/licenses/by-nc/4.0">
           Creative Commons-Lizenz BY-NC 4.0
         </LinkExternal>
         .
