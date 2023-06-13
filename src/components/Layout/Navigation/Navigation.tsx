@@ -15,7 +15,7 @@ export const Navigation = ({ location }) => {
       {({ open }) => (
         <>
           <div className="flex h-24 justify-between py-2">
-            <Logo className="my-3 mx-6 h-16 lg:hidden" />
+            <Logo className="mx-6 my-3 h-16 lg:hidden" />
             <nav className="flex w-full items-center justify-between">
               <div className="hidden pr-8 lg:flex lg:space-x-10">
                 <Logo className="ml-6 h-16" />
@@ -37,7 +37,7 @@ export const Navigation = ({ location }) => {
           </div>
 
           <Disclosure.Panel className="lg:hidden">
-            <nav className="space-y-1 pt-2 pb-3">
+            <nav className="space-y-1 pb-3 pt-2">
               {navigationLinks.map((link) => (
                 <NavigationMenuItemMobile
                   name={link.name}

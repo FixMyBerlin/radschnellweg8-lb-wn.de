@@ -24,7 +24,7 @@ const NotFound: React.FC<PageProps> = ({ location }) => {
           </div>
           <div className="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
             <Link
-              className="rounded-full border border-rs8-pink px-6 pt-3 pb-2.5 no-underline hover:bg-gray-100"
+              className="rounded-full border border-rs8-pink px-6 pb-2.5 pt-3 no-underline hover:bg-gray-100"
               to="/"
             >
               Zur Startseite

@@ -5,7 +5,7 @@ type Props = { lazyLoad?: boolean }
 
 export const LogoBar: React.FC<Props> = ({ lazyLoad }: Props) => {
   return (
-    <div className="z-[1] w-full py-4 px-2 sm:p-8">
+    <div className="z-[1] w-full px-2 py-4 sm:p-8">
       <span className="sr-only">Projektpartner:</span>
       <div className="overflow-scoll flex flex-wrap gap-x-4 sm:justify-center sm:gap-x-8">
         <LinkExternal href="https://www.rems-murr-kreis.de/">

@@ -24,7 +24,7 @@ export const Lightbox: React.FC<Props> = ({ image, children }) => {
       <div className="group relative text-gray-500">
         <button type="button" onClick={openModal} className="">
           {image}
-          <span className="absolute top-3 left-3 rounded-lg bg-white px-4 pb-2 pt-3 opacity-0 focus:outline-none group-hover:opacity-80">
+          <span className="absolute left-3 top-3 rounded-lg bg-white px-4 pb-2 pt-3 opacity-0 focus:outline-none group-hover:opacity-80">
             Vergrößern
           </span>
 
