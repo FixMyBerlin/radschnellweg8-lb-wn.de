@@ -57,14 +57,20 @@ export const PageHomeLocation: React.FC = () => {
         Welche Anmerkungen haben Sie zur vorgeschlagenen Route, wo sehen Sie
         Potenziale, wo eventuell noch Verbesserungsbedarf?
       </P>
-
       <P>
-        Sobald die Bürgerbeteiligung startet, finden Sie hier auf dieser Seite
-        eine digitale Karte, auf der Sie Hinweise eintragen können. Der Start
-        der Bürgerbeteiligung ist in Kürze geplant. Melden Sie sich unter{' '}
-        <LinkMail>info@radschnellweg8-lb-wn.de</LinkMail>, dann informieren wir
-        Sie per Mail, sobald es losgeht. Wir freuen uns auf Ihr Mitwirken!
+        Bis zum 20.08. haben Sie noch die Möglichkeit, sich digital zu
+        beteiligen.
       </P>
+      <P>
+        <Link
+          button
+          className="z-20 rounded-lg bg-rs8-pink text-sm font-normal text-white"
+          to="/beteiligung"
+        >
+          Zur Beteiligung
+        </Link>{' '}
+      </P>
+      <P>Wir freuen uns auf Ihr Mitwirken!</P>
     </Section>
   )
 }
