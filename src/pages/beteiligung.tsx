@@ -7,7 +7,7 @@ import { PageBeteiligungFaq } from '~/components/PageBeteiligung'
 import { PageBeteiligungIntro } from '~/components/PageBeteiligung/PageBeteiligungIntro'
 import { H1 } from '~/components/Text'
 
-export const Head = () => <MetaTags />
+export const Head = () => <MetaTags title="RS 8: Ihre Meinung ist gefragt" />
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
