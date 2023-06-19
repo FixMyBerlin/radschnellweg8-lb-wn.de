@@ -16,7 +16,7 @@ export const H1: React.FC<Props & { showTopline?: boolean }> = ({
   return (
     <Section className="mt-16 w-full">
       {showTopline && (
-        <p className="mt-0 mb-4 text-neutral-400">
+        <p className="mb-4 mt-0 text-neutral-400">
           Radschnellweg zwischen Ludwigsburg und Waiblingen
         </p>
       )}
@@ -36,7 +36,7 @@ export const H2: React.FC<Props> = ({ className, children }) => {
   return (
     <h2
       className={classNames(
-        'font-serif text-dark-gray lg:leading-40 mt-16 mb-10 text-lg font-extrabold  lg:text-[36px]',
+        'font-serif text-dark-gray lg:leading-40 mb-10 mt-16 text-lg font-extrabold  lg:text-[36px]',
         className
       )}
     >

@@ -24,12 +24,12 @@ export const PageBeteiligungIntro: React.FC = () => {
         machen!
       </P>
       <P>
-        Die Bürgerbeteiligung läuft noch bis zum X.X.2023. Die Beantwortung
-        dauert ca. 5-10 Minuten.
+        Die Bürgerbeteiligung läuft noch bis zum 20. August 2023. Die
+        Beantwortung dauert ca. 5-10 Minuten.
       </P>
 
       <div className="my-12 flex justify-center">
-        <Link button to="https://staging.trassenscout.de/rs8-beteiligung">
+        <Link button to="https://trassenscout.de/beteiligung/rs8">
           Beteiligung starten
         </Link>
       </div>
@@ -66,7 +66,7 @@ export const PageBeteiligungIntro: React.FC = () => {
             Ihr Feedback wird bei der weiteren Planung berücksichtigt.
           </strong>
           <br />
-          Nach Abschluss der Beteiligung (X.X.2023) werden die eingegangenen
+          Nach Abschluss der Beteiligung (20.08.2023) werden die eingegangenen
           Anregungen vom Planungsteam ausgewertet und geprüft, ob und inwieweit
           sie in die weitere Entwurfsplanung einfließen können. Wir bitten im
           Vorhinein um Verständnis, dass wir nicht jeden Hinweis kommentieren
@@ -76,7 +76,7 @@ export const PageBeteiligungIntro: React.FC = () => {
       </ol>
 
       <div className="my-12 flex justify-center">
-        <Link button to="https://staging.trassenscout.de/rs8-beteiligung">
+        <Link button to="https://trassenscout.de/beteiligung/rs8">
           Beteiligung starten
         </Link>
       </div>

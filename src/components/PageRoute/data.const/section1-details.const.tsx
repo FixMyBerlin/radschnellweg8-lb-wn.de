@@ -56,9 +56,13 @@ export const section1Details: TSectionDetails[] = [
           im Forum ist die Planung nicht einfach.
         </p>
         <p>
-          Die Planung befindet sich in einer engen Abstimmung mit Politik und
-          Verbänden. Der Abschnitt hat die höchste Priorität und soll so rasch
-          wie möglich gebaut werden.
+          Der Abschnitt vor dem Forum hat die höchste Priorität und soll so
+          rasch wie möglich gebaut werden. Es gibt hier bereits einen
+          Vorentwurf, der im Gemeinderat beschlossen wurde. Vorab hat die
+          Verwaltung sich mit der Radinitiative und dem ADFC Ludwigsburg
+          abgestimmt. Momentan wird an der Entwurfsplanung gearbeitet. Aus
+          diesem Grund können Kommentare zu diesem Abschnitt nur eingeschränkt
+          berücksichtigt werden.
         </p>
         <div className="hidden lg:block">
           <Lightbox

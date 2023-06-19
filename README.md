@@ -1,16 +1,17 @@
 # Radschnellweg 8 Ludwigsburg - Waiblingen
 
-> Public page for Radschnellweg 8 between Ludwigsburg and Waiblingen
+> Public webpage for Radschnellweg 8 between Ludwigsburg and Waiblingen
+> 
 > https://radschnellweg8-lb-wn.de/
 
 ## How to update the map data
 
 ### Process
 
-1. Update data, then save, then publish
-2. Update style, then save, then publish
+1. Update data in Maptiler, then save, then publish
+2. Update style in Maptiler, then save, then publish
 
-Test: Check the JSON for updates to arrive.
+Test: Check the data JSON below for updates to arrive.
 
 ### Line data
 
@@ -26,6 +27,6 @@ Test: Check the JSON for updates to arrive.
   (Last folder "RS8" at the bottom of the folder list.)
 - Data and style match on "marker-color" property
 
-## Map Style Maptiler
+## Map style
 
 - 'RS8--' layers: all should be invisible per default except for: 'RS8--allsections-luecke-copy' and 'RS8--allsections' (Gesamtstrecke)

@@ -18,7 +18,7 @@ export const Facts: React.FC<Props> = ({ items }) => {
           className="my-14 items-center justify-between first:mt-0 last:mb-0 md:flex"
           key={item.value}
         >
-          <div className="rounded-md bg-white py-4 px-6 text-center shadow-lg md:w-[35%]">
+          <div className="rounded-md bg-white px-6 py-4 text-center shadow-lg md:w-[35%]">
             <div className="font-extrabold text-rs8-pink lg:text-[32px] lg:leading-[48px]">
               {item.value}
             </div>

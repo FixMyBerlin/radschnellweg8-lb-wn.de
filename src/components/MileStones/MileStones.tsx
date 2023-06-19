@@ -17,7 +17,7 @@ export const MileStones: React.FC<Props> = ({ items }) => {
         <div key={item.name} className="group relative pl-[54px]">
           <div className={item.comingUp ? 'text-gray-400' : 'text-rs8-blue'}>
             <div
-              className={`absolute left-[17px] top-0 bottom-0 w-1 border-l-2 group-last:hidden ${
+              className={`absolute bottom-0 left-[17px] top-0 w-1 border-l-2 group-last:hidden ${
                 item.comingUp
                   ? 'border-dashed border-[#f2f2f2] '
                   : 'border-rs8-pink'
