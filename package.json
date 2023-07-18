@@ -21,7 +21,7 @@
     "check": "npm run type-check && npm run lint && npm run format"
   },
   "dependencies": {
-    "@fontsource/overpass": "^5.0.5",
+    "@fontsource-variable/overpass": "^5.0.6",
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.4",
