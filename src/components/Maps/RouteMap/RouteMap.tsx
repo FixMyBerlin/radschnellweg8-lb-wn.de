@@ -66,8 +66,8 @@ export const RouteMap: React.FC<Props> = ({
     additionalLayerSearchterms = additionalLayerSearchterms
       .concat(
         highlightedLayerIds.filter((section) =>
-          section.includes(highlightedSection)
-        )
+          section.includes(highlightedSection),
+        ),
       )
       // concat pink dot layers
       .concat(infoDotLayerNames)
@@ -75,7 +75,7 @@ export const RouteMap: React.FC<Props> = ({
   if (sectionNumbers) {
     // concat section / "Teilstrecken" dots and names
     additionalLayerSearchterms = additionalLayerSearchterms.concat(
-      sectionNumbersLayerIds
+      sectionNumbersLayerIds,
     )
   }
 
@@ -83,7 +83,7 @@ export const RouteMap: React.FC<Props> = ({
     <div
       className={classnames(
         classNames,
-        'relative h-[350px] w-full sm:h-[680px] '
+        'relative h-[350px] w-full sm:h-[680px] ',
       )}
     >
       <MapProvider>

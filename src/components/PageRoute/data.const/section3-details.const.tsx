@@ -87,8 +87,8 @@ export const section3Details: TSectionDetails[] = [
             />
           }
         >
-          Beispiel für eine Radwegeunterführung. © Pixabay, PublicDomainPictures
-          / 17901 Bilder
+          Beispiel für eine Radwegeunterführung. © Pixabay,
+          PublicDomainPictures / 17901 Bilder
         </ImageWithCaption>
       </>
     ),

@@ -73,7 +73,8 @@ export const section1Details: TSectionDetails[] = [
               />
             }
           >
-            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt
+            Ludwigsburg
           </Lightbox>
         </div>
         <div className="lg:hidden">
@@ -85,7 +86,8 @@ export const section1Details: TSectionDetails[] = [
               />
             }
           >
-            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt Ludwigsburg
+            Bestehendes Radroutennetz der Stadt Ludwigsburg. © Stadt
+            Ludwigsburg
           </ImageWithCaption>
         </div>
       </>

@@ -38,7 +38,7 @@ export const QuotesSlider: React.FC<Props> = ({ items, length }) => {
           e.preventDefault()
           setManualMode(true)
           setActive(
-            Math.min(items.length - 1, Math.max(0, active + (right ? 1 : -1)))
+            Math.min(items.length - 1, Math.max(0, active + (right ? 1 : -1))),
           )
         }}
         className={classNames(
@@ -46,7 +46,7 @@ export const QuotesSlider: React.FC<Props> = ({ items, length }) => {
           {
             'right-[60px] lg:left-0': !right,
             'right-0': right,
-          }
+          },
         )}
       >
         {icon}

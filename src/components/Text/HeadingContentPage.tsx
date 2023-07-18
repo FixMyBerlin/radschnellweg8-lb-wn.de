@@ -20,7 +20,7 @@ export const HeadingContentPage: React.FC<Props> = ({
       <h1
         className={classNames(
           'font-serif mb-10 text-[60px] font-extrabold lg:leading-[66px]',
-          className
+          className,
         )}
       >
         {children}
