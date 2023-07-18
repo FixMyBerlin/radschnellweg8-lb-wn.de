@@ -16,7 +16,8 @@
     "type-check": "tsc --noEmit",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
-    "release": "gh pr create --base main --head develop --title \"Release $(date '+%Y-%m-%d')\" --body \"\"",
+    "updatePackages": "npx taze major --write",
+    "release": "gh pr create --base main --head develop --title \"Release $(date '+%Y-%m-%d') [skip ci]\" --body \"\"",
     "check": "npm run type-check && npm run lint && npm run format"
   },
   "dependencies": {
