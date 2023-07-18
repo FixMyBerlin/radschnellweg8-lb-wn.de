@@ -1,13 +1,13 @@
-import maplibregl, { LngLatLike } from 'maplibre-gl'
+import type { LngLatLike } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import React, { useEffect, useState } from 'react'
 import {
   FullscreenControl,
-  Map as ReactMapGl,
   NavigationControl,
   PaddingOptions,
+  Map as ReactMapGl,
   ViewState,
-} from 'react-map-gl'
+} from 'react-map-gl/maplibre'
 
 export type MapViewProps = {
   config: Partial<Pick<ViewState, 'longitude' | 'latitude' | 'zoom'>> & {
@@ -33,6 +33,7 @@ export const MapView: React.FC<MapViewProps> = ({
   fullscreenOption = true,
 }) => {
   const [isMediumScreen, setIsMediumScreen] = useState(false)
+
   useEffect(() => {
     const lgMediaQuery = window.matchMedia('(min-width: 768px)')
     function onMediaQueryChange({ matches }) {
@@ -40,14 +41,15 @@ export const MapView: React.FC<MapViewProps> = ({
     }
     onMediaQueryChange(lgMediaQuery)
     lgMediaQuery.addEventListener('change', onMediaQueryChange)
-    return () => {
-      lgMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
+
+    return () => lgMediaQuery.removeEventListener('change', onMediaQueryChange)
   }, [])
+
   const handleLoad = (event: any) => {
     const map = event.target
     const mapLayers = map.getStyle().layers
-    // make all custom fmc RS8-- layers invisible
+
+    // make all custom fmc `RS8--` layers invisible
     mapLayers
       .filter((l) => l.id.startsWith('RS8--'))
       .map((l) => map.setLayoutProperty(l.id, 'visibility', 'none'))
@@ -62,12 +64,11 @@ export const MapView: React.FC<MapViewProps> = ({
   return (
     <ReactMapGl
       id="mainMap"
-      mapLib={maplibregl}
       mapStyle={MAPLIBRE_MAP_STYLE}
       initialViewState={{
         zoom: config.zoom,
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
+        // @ts-expect-error
         bounds: config.bounds,
         fitBoundsOptions: {
           padding: boundsPadding,

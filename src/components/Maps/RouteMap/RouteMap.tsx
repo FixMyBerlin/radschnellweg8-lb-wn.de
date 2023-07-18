@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 import React from 'react'
-import { MapProvider } from 'react-map-gl'
+import { MapProvider } from 'react-map-gl/maplibre'
 import { MapView } from '../Map/MapView'
 
 type Props = {
