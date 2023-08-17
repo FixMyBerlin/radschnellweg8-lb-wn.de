@@ -1,15 +1,58 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
+
 import { FundingFooter } from '~/components/Funding'
 import { ImageSlide } from '~/components/Images'
 import { Layout, Section } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { PageBeteiligungFacts } from '~/components/PageBeteiligung/PageBeteiligungFacts'
+import { BarChart } from '~/components/PageHome/BarChart'
 import { H1, H2, P } from '~/components/Text'
 
 export const Head = () => (
   <MetaTags title="RS 8: Auswertung der Bürgerbeteiligung" />
 )
+
+const allData = [
+  {
+    questionLabel: 'Würden Sie den RS 8 nutzen?',
+    data: [
+      { name: 'Ja', value: 9 },
+      { name: 'Nein', value: 88 },
+      {
+        name: 'Ich bin ohnehin nicht zwischen Ludwigsburg und Waiblingen unterwegs.',
+        value: 31,
+      },
+    ],
+  },
+  {
+    questionLabel: 'Wie häufig würden Sie den RS 8 nutzen?',
+    data: [
+      { name: 'Täglich', value: 39 },
+      { name: 'Mehrmals pro Woche', value: 10 },
+      { name: 'Mehrmals im Monat', value: 14 },
+      { name: 'Seltener oder Nie', value: 15 },
+    ],
+  },
+  {
+    questionLabel: 'Für welche Zwecke würden Sie den RS 8 nutzen?',
+    data: [
+      { name: 'Einkaufen', value: 57 },
+      { name: 'Zur Arbeit/Schule pendeln', value: 110 },
+      { name: 'Sport/Freizeit', value: 30 },
+      { name: 'Anderes', value: 15 },
+    ],
+  },
+  {
+    questionLabel: 'Würden Sie durch den RS 8 häufiger aufs Auto verzichten?',
+    data: [
+      { name: 'Ja', value: 185 },
+      { name: 'Nein', value: 16 },
+      { name: 'Ich verzichte bereits aufs Auto.', value: 28 },
+      { name: 'Weiß nicht / Keine Angabe', value: 32 },
+    ],
+  },
+]
 
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
@@ -49,9 +92,18 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
 
       <Section>
         <H2>Ergebnisse der Umfrage</H2>
-        <P>
-          <em>Folgt in Kürze…</em>
-        </P>
+        <div className="space-y-4">
+          {allData.map((r) => (
+            <div className="border rounded pt-2 pb-3.5">
+              <P className="border-b pb-2 px-3.5 font-bold">
+                {r.questionLabel}
+              </P>
+              <div className="h-[350px] px-3.5">
+                <BarChart data={r.data} />
+              </div>
+            </div>
+          ))}
+        </div>
       </Section>
 
       <Section className="mb-40">
