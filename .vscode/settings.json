@@ -16,6 +16,5 @@
   },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "exportall.config.folderListener": ["/src/components/PageHome"]
+  }
 }
