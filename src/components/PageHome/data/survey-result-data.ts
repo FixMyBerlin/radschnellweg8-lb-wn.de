@@ -2,39 +2,114 @@ export const surveyResultData = [
   {
     questionLabel: 'Würden Sie den RS 8 nutzen?',
     data: [
-      { name: 'Ja', value: 9 },
-      { name: 'Nein', value: 88 },
+      { name: 'Ja', value: 358 },
+      { name: 'Nein', value: 83 },
       {
         name: 'Ich bin ohnehin nicht zwischen Ludwigsburg und Waiblingen unterwegs.',
-        value: 31,
+        value: 41,
       },
     ],
   },
   {
     questionLabel: 'Wie häufig würden Sie den RS 8 nutzen?',
     data: [
-      { name: 'Täglich', value: 39 },
-      { name: 'Mehrmals pro Woche', value: 10 },
-      { name: 'Mehrmals im Monat', value: 14 },
-      { name: 'Seltener oder Nie', value: 15 },
+      { name: 'Täglich', value: 37 },
+      { name: 'Mehrmals pro Woche', value: 101 },
+      { name: 'Mehrmals im Monat', value: 165 },
+      { name: 'Seltener oder Nie', value: 179 },
     ],
   },
   {
     questionLabel: 'Für welche Zwecke würden Sie den RS 8 nutzen?',
     data: [
-      { name: 'Einkaufen', value: 57 },
-      { name: 'Zur Arbeit/Schule pendeln', value: 110 },
-      { name: 'Sport/Freizeit', value: 30 },
-      { name: 'Anderes', value: 15 },
+      { name: 'Einkaufen', value: 75 },
+      { name: 'Zur Arbeit/Schule pendeln', value: 141 },
+      { name: 'Sport/Freizeit', value: 311 },
+      { name: 'Anderes', value: 138 },
     ],
   },
   {
     questionLabel: 'Würden Sie durch den RS 8 häufiger aufs Auto verzichten?',
     data: [
-      { name: 'Ja', value: 185 },
-      { name: 'Nein', value: 16 },
-      { name: 'Ich verzichte bereits aufs Auto.', value: 28 },
-      { name: 'Weiß nicht / Keine Angabe', value: 32 },
+      { name: 'Ja', value: 195 },
+      { name: 'Nein', value: 120 },
+      { name: 'Ich verzichte bereits aufs Auto.', value: 128 },
+      { name: 'Weiß nicht / Keine Angabe', value: 39 },
+    ],
+  },
+  {
+    questionLabel:
+      'Glauben Sie, dass andere durch den RS 8 häufiger aufs Auto verzichten würden?',
+    data: [
+      { name: 'Ja', value: 298 },
+      { name: 'Nein', value: 106 },
+      { name: 'Weiß nicht / Keine Angabe', value: 78 },
+    ],
+  },
+  {
+    questionLabel: 'Wie wichtig ist Ihnen die Beleuchtung des RS 8?',
+    data: [
+      { name: 'Eher wichtig', value: 209 },
+      { name: 'Weniger wichtig', value: 246 },
+      { name: 'Weiß nicht', value: 27 },
+    ],
+  },
+  {
+    questionLabel:
+      'Wie wichtig sind Ihnen Rastmöglichkeiten entlang der Strecke?',
+    data: [
+      { name: 'Eher wichtig', value: 120 },
+      { name: 'Weniger wichtig', value: 346 },
+      { name: 'Weiß nicht', value: 16 },
+    ],
+  },
+  {
+    questionLabel:
+      'Wie wichtig sind Ihnen Reparatursäulen (Luftpumpe, Werkzeug) entlang der Strecke?',
+    data: [
+      { name: 'Eher wichtig', value: 232 },
+      { name: 'Weniger wichtig', value: 222 },
+      { name: 'Weiß nicht', value: 28 },
+    ],
+  },
+  {
+    questionLabel:
+      'Einen Weg, auf dem auch Fußverkehr zugelassen ist, würde ich …',
+    data: [
+      { name: 'ohne Einschränkung mit dem Rad nutzen.', value: 205 },
+      { name: 'eher selten mit dem Rad nutzen.', value: 212 },
+      { name: 'nie mit dem Rad nutzen.', value: 50 },
+      { name: 'Weiß ich nicht.', value: 15 },
+    ],
+  },
+  {
+    questionLabel:
+      'Eine Fahrradstraße, die auch von Kfz befahren werden darf, würde ich …',
+    data: [
+      { name: 'ohne Einschränkung mit dem Rad nutzen.', value: 147 },
+      { name: 'eher selten mit dem Rad nutzen.', value: 239 },
+      { name: 'nie mit dem Rad nutzen.', value: 85 },
+      { name: 'Weiß ich nicht.', value: 11 },
+    ],
+  },
+  {
+    questionLabel:
+      'Einen Radweg, der auch von landwirtschaftlichen Fahrzeugen befahren werden darf, würde ich …',
+    data: [
+      { name: 'ohne Einschränkung mit dem Rad nutzen.', value: 342 },
+      { name: 'eher selten mit dem Rad nutzen.', value: 96 },
+      { name: 'nie mit dem Rad nutzen.', value: 33 },
+      { name: 'Weiß ich nicht.', value: 11 },
+    ],
+  },
+  {
+    questionLabel:
+      'Einen Radweg, der auch von Bussen befahren werden darf, würde ich …',
+    data: [
+      { name: 'ohne Einschränkung mit dem Rad nutzen.', value: 166 },
+      { name: 'eher selten mit dem Rad nutzen.', value: 219 },
+      { name: 'nie mit dem Rad nutzen.', value: 84 },
+      { name: 'Weiß ich nicht.', value: 13 },
     ],
   },
 ]
