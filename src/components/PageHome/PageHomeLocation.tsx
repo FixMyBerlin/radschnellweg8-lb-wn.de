@@ -46,7 +46,7 @@ export const PageHomeLocation: React.FC = () => {
       </P>
       <H2>Beteiligung abgeschlossen!</H2>
       <P>
-        Vom 19.6. bis 20.8.2023 fand eine Online Bürgerbeteiligung statt, in der
+        Vom 20.6. bis 20.8.2023 fand eine Online Bürgerbeteiligung statt, in der
         viele Hinweise und Fragen gesammelt wurden, die Ergebnisse und Antworten
         werden hier in den nächsten Monaten veröffentlicht.
       </P>
