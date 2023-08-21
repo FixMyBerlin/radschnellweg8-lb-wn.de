@@ -22,6 +22,8 @@ export const ImageSlider: React.FC<Props> = ({ items }) => {
     <div className="relative my-12">
       {items.map((item, index) => (
         <figure
+          // eslint-disable-next-line react/no-array-index-key -- index OK here sine array ist stagic
+          key={index}
           className={`transition-opacity duration-500 ${
             index === active ? 'visible opacity-100' : 'hidden opacity-0'
           }`}

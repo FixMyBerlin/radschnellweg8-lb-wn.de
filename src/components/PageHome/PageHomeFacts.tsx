@@ -1,5 +1,5 @@
 import React from 'react'
-import { Facts } from '../Facts'
+import { FactColumns } from '../Facts/FactColumns'
 import { Section } from '../Layout'
 
 export const PageHomeFacts: React.FC = () => {
@@ -44,7 +44,7 @@ export const PageHomeFacts: React.FC = () => {
 
   return (
     <Section className="bg-rs8-blue py-12 text-white">
-      <Facts items={facts} />
+      <FactColumns items={facts} />
     </Section>
   )
 }

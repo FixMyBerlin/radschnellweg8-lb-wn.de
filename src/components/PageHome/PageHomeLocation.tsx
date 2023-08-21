@@ -44,24 +44,19 @@ export const PageHomeLocation: React.FC = () => {
       <P>
         <Link to="/route">Details zur geplanten Streckenführung.</Link>
       </P>
-      <H2>Herzliche Einladung zur Beteiligung!</H2>
+      <H2>Beteiligung abgeschlossen!</H2>
       <P>
-        Im nächsten Schritt sind nun Sie, die Bürgerinnen und Bürger gefragt:
-        Welche Anmerkungen haben Sie zur vorgeschlagenen Route, wo sehen Sie
-        Potenziale, wo eventuell noch Verbesserungsbedarf?
-      </P>
-      <P className="mb-12">
-        Bis zum 20.08. haben Sie noch die Möglichkeit, sich digital zu
-        beteiligen.
+        Vom 19.6. bis 20.8.2023 fand eine Online Bürgerbeteiligung statt, in der
+        viele Hinweise und Fragen gesammelt wurden, die Ergebnisse und Antworten
+        werden hier in den nächsten Monaten veröffentlicht.
       </P>
       <Link
         button
         className="rounded-lg bg-rs8-pink text-sm font-normal text-white"
         to="/beteiligung"
       >
-        Zur Beteiligung
-      </Link>{' '}
-      <P className="mt-12">Wir freuen uns auf Ihr Mitwirken!</P>
+        Zu den Ergebnissen
+      </Link>
     </Section>
   )
 }

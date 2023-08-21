@@ -31,14 +31,14 @@ export const Hero: React.FC<Props> = ({ participation }) => {
         {participation ? (
           <div className="flex flex-col items-center gap-2">
             <div className="p-4 text-center text-[20px] md:text-[32px] md:leading-10">
-              Ihre Meinung ist gefragt: <br /> Bürgerbeteiligung bis 20.08.2023
+              Bürgerbeteiligung abgeschlossen
             </div>
             <Link
               button
               className="z-20 rounded-lg bg-rs8-pink text-sm font-normal text-white"
               to="/beteiligung"
             >
-              Jetzt mitmachen
+              Zu den Ergebnissen
             </Link>
           </div>
         ) : (

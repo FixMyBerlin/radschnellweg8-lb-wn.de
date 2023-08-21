@@ -22,7 +22,7 @@ export const NavigationMenuItemMobile: React.FC<Props> = ({
           'border-transparent text-slate-500 hover:border-gray-300 hover:bg-gray-50 hover:text-slate-700':
             !active,
         },
-        'block border-l-4 py-2 pl-3 pr-4 text-base font-medium'
+        'block border-l-4 py-2 pl-3 pr-4 text-base font-medium',
       )}
     >
       {name}

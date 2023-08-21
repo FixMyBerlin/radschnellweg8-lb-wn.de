@@ -1,7 +1,7 @@
 # Radschnellweg 8 Ludwigsburg - Waiblingen
 
 > Public webpage for Radschnellweg 8 between Ludwigsburg and Waiblingen
-> 
+>
 > https://radschnellweg8-lb-wn.de/
 
 ## How to update the map data
@@ -30,3 +30,7 @@ Test: Check the data JSON below for updates to arrive.
 ## Map style
 
 - 'RS8--' layers: all should be invisible per default except for: 'RS8--allsections-luecke-copy' and 'RS8--allsections' (Gesamtstrecke)
+
+## Data Survey Results on /beteiligung
+
+- See [documentation](src/components/PageHome/data/README.md)

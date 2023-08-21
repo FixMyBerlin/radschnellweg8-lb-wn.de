@@ -9,7 +9,7 @@ module.exports = {
         'rs8-pink': '#E5007D',
       },
     },
-    fontFamily: { sans: ['OverpassVariable', 'sans-serif'] },
+    fontFamily: { sans: ['Overpass Variable', 'sans-serif'] },
     fontSize: {
       sm: ['14px', '20px'],
       base: ['18px', '32px'],

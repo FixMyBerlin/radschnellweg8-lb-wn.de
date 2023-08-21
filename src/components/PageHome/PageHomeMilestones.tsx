@@ -1,6 +1,6 @@
 import React from 'react'
 import { Section } from '../Layout'
-import { LinkExternal } from '../Link'
+import { Link, LinkExternal } from '../Link'
 import { MileStones } from '../MileStones'
 import { H2 } from '../Text'
 
@@ -51,8 +51,12 @@ export const PageHomeMilestones: React.FC = () => {
     },
     {
       name: 'Bürgerbeteiligung',
-      description: '(geplant Q2 2023)',
-      comingUp: true,
+      description: (
+        <>
+          Die Beteiligung zum RS8 fand vom 20.06 bis 20.08.2023 statt.{' '}
+          <Link to="/beteiligung">Zu den Ergebnissen</Link>
+        </>
+      ),
     },
     {
       name: 'Entwurfsplanung',
