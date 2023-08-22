@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
     <Layout location={location}>
       <H1>Auswertung der Bürgerbeteiligung</H1>
       <Section>
-        <P>Die Beteiligung zum RS8 fand vom 20.06 bis 20.08.2023 statt</P>
+        <P>Die Beteiligung zum RS 8 fand vom 20.06 bis 20.08.2023 statt</P>
         <H2 className="leading-snug">
           Was wurde in der Beteiligung gemeldet und wie geht es jetzt weiter?
         </H2>
@@ -27,7 +27,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           Vom 20.06. bis 20.08.2023 konnten Bürgerinnen und Bürger in einer
           Online-Beteiligung Meinungen, Hinweise und Anregungen zur Planung des
           Radschnellweges von Ludwigsburg nach Waiblingen geben. Dabei wurden
-          über 450 Teilnahmen an der Umfrage und in vielen Beiträgen konkrete
+          über 482 Teilnahmen an der Umfrage und in vielen Beiträgen konkrete
           Fragen, Hinweise und Wünsche gesammelt. Die Hinweise betreffen unter
           anderem die Linienführung, den Betrieb (z.B. Grünschnitt,
           Winterdienst, Beleuchtung etc.) sowie die Bereiche Landwirtschaft und
@@ -48,10 +48,8 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <ImageSlide />
       </Section>
 
-      <PageBeteiligungFacts />
-
       <Section>
-        <H2>Ergebnisse der Umfrage</H2>
+        <H2>Ergebnisse der Umfrage (482 Teilnahmen)</H2>
         <div className="space-y-4">
           {surveyResultData.map((r) => (
             <div className="border rounded pt-2 pb-3.5">
