@@ -27,14 +27,14 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           Vom 20.06. bis 20.08.2023 konnten Bürgerinnen und Bürger in einer
           Online-Beteiligung Meinungen, Hinweise und Anregungen zur Planung des
           Radschnellweges von Ludwigsburg nach Waiblingen geben. Dabei wurden
-          482 Teilnahmen an der Umfrage und in vielen Beiträgen konkrete
-          Fragen, Hinweise und Wünsche gesammelt. Die Hinweise betreffen unter
-          anderem die Linienführung, den Betrieb (z. B. Grünschnitt,
-          Winterdienst, Beleuchtung etc.) sowie die Bereiche Landwirtschaft und
-          Umwelt. Bei den allgemeineren Hinweisen ging es vor allem um die
-          künftige Nutzung des Radschnellweges sowie favorisierte Führungsarten,
-          aber auch um die weitere Ausstattung, z. B. ob Reparatursäulen oder
-          Rastplätze gewünscht werden. <br />
+          482 Teilnahmen an der Umfrage und in vielen Beiträgen konkrete Fragen,
+          Hinweise und Wünsche gesammelt. Die Hinweise betreffen unter anderem
+          die Linienführung, den Betrieb (z. B. Grünschnitt, Winterdienst,
+          Beleuchtung etc.) sowie die Bereiche Landwirtschaft und Umwelt. Bei
+          den allgemeineren Hinweisen ging es vor allem um die künftige Nutzung
+          des Radschnellweges sowie favorisierte Führungsarten, aber auch um die
+          weitere Ausstattung, z. B. ob Reparatursäulen oder Rastplätze
+          gewünscht werden. <br />
           Alle Rückmeldungen werden nun im nächsten Schritt geprüft und
           ausgewertet und, wenn möglich, in die bestehenden Planungen
           eingearbeitet. Es werden zu den einzelnen Themenfeldern häufige Fragen
@@ -67,9 +67,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <H2>Beantwortung der Hinweise</H2>
         <P>
           In der Onlinebeteiligung, sowie bei den Ortsbegehungen wurden in Summe
-          über 500 inhaltliche Hinweise aufgenommen. Alle diese Hinweise sind derzeit in
-          Bearbeitung. Die Antworten dazu werden bis spätestens Ende des Jahres hier
-          veröffentlicht.
+          über 500 inhaltliche Hinweise aufgenommen. Alle diese Hinweise sind
+          derzeit in Bearbeitung. Die Antworten dazu werden bis spätestens Ende
+          des Jahres hier veröffentlicht.
         </P>
       </Section>
       <FundingFooter />
