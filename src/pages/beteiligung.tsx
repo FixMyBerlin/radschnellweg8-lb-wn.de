@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
     <Layout location={location}>
       <H1>Auswertung der Bürgerbeteiligung</H1>
       <Section>
-        <P>Die Beteiligung zum RS8 fand vom 20.06 bis 20.08.2023 statt</P>
+        <P>Die Beteiligung zum RS 8 fand vom 20.06 bis 20.08.2023 statt</P>
         <H2 className="leading-snug">
           Was wurde in der Beteiligung gemeldet und wie geht es jetzt weiter?
         </H2>
@@ -27,14 +27,14 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           Vom 20.06. bis 20.08.2023 konnten Bürgerinnen und Bürger in einer
           Online-Beteiligung Meinungen, Hinweise und Anregungen zur Planung des
           Radschnellweges von Ludwigsburg nach Waiblingen geben. Dabei wurden
-          über 450 Teilnahmen an der Umfrage und in vielen Beiträgen konkrete
-          Fragen, Hinweise und Wünsche gesammelt. Die Hinweise betreffen unter
-          anderem die Linienführung, den Betrieb (z.B. Grünschnitt,
-          Winterdienst, Beleuchtung etc.) sowie die Bereiche Landwirtschaft und
-          Umwelt. Bei den allgemeineren Hinweisen ging es vor allem um die
-          künftige Nutzung des Radschnellweges sowie favorisierte Führungsarten,
-          aber auch um die weitere Ausstattung, z.B. ob Reparatursäulen oder
-          Rastplätze gewünscht werden. <br />
+          482 Teilnahmen an der Umfrage und in vielen Beiträgen konkrete Fragen,
+          Hinweise und Wünsche gesammelt. Die Hinweise betreffen unter anderem
+          die Linienführung, den Betrieb (z. B. Grünschnitt, Winterdienst,
+          Beleuchtung etc.) sowie die Bereiche Landwirtschaft und Umwelt. Bei
+          den allgemeineren Hinweisen ging es vor allem um die künftige Nutzung
+          des Radschnellweges sowie favorisierte Führungsarten, aber auch um die
+          weitere Ausstattung, z. B. ob Reparatursäulen oder Rastplätze
+          gewünscht werden. <br />
           Alle Rückmeldungen werden nun im nächsten Schritt geprüft und
           ausgewertet und, wenn möglich, in die bestehenden Planungen
           eingearbeitet. Es werden zu den einzelnen Themenfeldern häufige Fragen
@@ -44,14 +44,11 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           Die Auswertung und Aufbereitung ist bis Ende des Jahres 2023 geplant.
           Die Ergebnisse werden dann auf dieser Website veröffentlicht.
         </P>
-
         <ImageSlide />
       </Section>
 
-      <PageBeteiligungFacts />
-
       <Section>
-        <H2>Ergebnisse der Umfrage</H2>
+        <H2>Ergebnisse der Umfrage (482 Teilnahmen)</H2>
         <div className="space-y-4">
           {surveyResultData.map((r) => (
             <div className="border rounded pt-2 pb-3.5">
@@ -70,9 +67,9 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <H2>Beantwortung der Hinweise</H2>
         <P>
           In der Onlinebeteiligung, sowie bei den Ortsbegehungen wurden in Summe
-          über 500 Hinweise aufgenommen. Alle Beiträge sind derzeit in
-          Bearbeitung, alle Antworten werden bis spätestens Ende des Jahres hier
-          veröffentlicht.
+          über 500 inhaltliche Hinweise aufgenommen. Alle diese Hinweise sind
+          derzeit in Bearbeitung. Die Antworten dazu werden bis spätestens Ende
+          des Jahres hier veröffentlicht.
         </P>
       </Section>
       <FundingFooter />

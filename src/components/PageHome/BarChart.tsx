@@ -55,7 +55,7 @@ export const BarChart: React.FC<Props> = ({ data }) => {
         <Bar
           barSize={32}
           background={false}
-          fill="#EAB308"
+          fill="#E5007D"
           dataKey="value"
           label={<CustomizedLabel />}
           // disabling the animation: quick fix for labels/labellist that sometimes are not shown
