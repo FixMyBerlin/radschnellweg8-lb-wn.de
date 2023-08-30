@@ -50,11 +50,7 @@ export const PageHomeLocation: React.FC = () => {
         viele Hinweise und Fragen gesammelt wurden, die Ergebnisse und Antworten
         werden hier in den nächsten Monaten veröffentlicht.
       </P>
-      <Link
-        button
-        className="rounded-lg bg-rs8-pink text-sm font-normal text-white"
-        to="/beteiligung"
-      >
+      <Link button className="mt-2" to="/beteiligung">
         Zu den Ergebnissen
       </Link>
     </Section>
