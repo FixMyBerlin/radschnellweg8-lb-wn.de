@@ -22,7 +22,7 @@ export const H1: React.FC<Props & { showTopline?: boolean }> = ({
       )}
       <h1
         className={classNames(
-          'mb-10 text-4xl font-extrabold md:text-6xl md:leading-normal leading-normal',
+          'mb-10 text-4xl font-extrabold md:text-6xl md:leading-snug leading-snug',
           className,
         )}
       >
