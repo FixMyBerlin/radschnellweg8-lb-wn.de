@@ -7,7 +7,7 @@ import { Layout, Section } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { BarChart } from '~/components/PageHome/BarChart'
 import { surveyResultData } from '~/components/PageHome/data/survey-result-data'
-import { H1, H2, P } from '~/components/Text'
+import { H2, HeadingContentPage, P } from '~/components/Text'
 
 export const Head = () => (
   <MetaTags title="RS 8: Auswertung der Bürgerbeteiligung" />
@@ -16,10 +16,10 @@ export const Head = () => (
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location}>
-      <H1>Auswertung der Bürgerbeteiligung</H1>
+      <HeadingContentPage>Auswertung der Bürgerbeteiligung</HeadingContentPage>
       <Section>
         <P>Die Beteiligung zum RS 8 fand vom 20.06 bis 20.08.2023 statt</P>
-        <H2 className="leading-snug">
+        <H2>
           Was wurde in der Beteiligung gemeldet und wie geht es jetzt weiter?
         </H2>
         <P>
