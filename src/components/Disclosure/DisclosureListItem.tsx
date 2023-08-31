@@ -39,10 +39,23 @@ export const DisclosureListItem: React.FC<Props> = ({
               </span>
             </Disclosure.Button>
           </dt>
-          <Disclosure.Panel as="dd" className="mt-2 lg:pr-12">
-            <p className="text-[16px] leading-[24px] text-gray-500">
-              {children}
-            </p>
+          <Disclosure.Panel
+            as="dd"
+            className={classNames(
+              'mt-3 lg:pr-12',
+              'text-gray-500',
+              'prose-strong:text-gray-500',
+              'max-w-full',
+              'prose-div:max-w-full',
+              'text-sm md:text-[16px]',
+              'prose-h1:text-base md:prose-h1:text-lg', // h1 size
+              'prose-h2:text-sm md:prose-h2:text-[16px]', // h2 size
+              'prose-h3:text-sm md:prose-h3:text-[16px]', // h3 size
+              'leading-normal md:leading-normal prose-p:leading-normal md:prose-p:leading-normal prose-li:leading-relaxed md:prose-li:leading-relaxed',
+              'prose-ul:list-disc prose-ul:my-6 prose-li:text-gray-500 prose-ul:ml-4',
+            )}
+          >
+            {children}
           </Disclosure.Panel>
         </>
       )}
