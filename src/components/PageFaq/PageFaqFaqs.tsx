@@ -1,5 +1,8 @@
 import React from 'react'
-import { FAQ, FAQItem } from '../FAQ'
+
+import { DisclosureList } from '../Disclosure/DisclosureList'
+import { DisclosureListItem } from '../Disclosure/DisclosureListItem'
+import { H2 } from '../Text'
 import { categoizedFaqs } from './categoizedFaqs.const'
 
 export const PageFaqFaqs: React.FC = () => {
@@ -8,12 +11,16 @@ export const PageFaqFaqs: React.FC = () => {
       {Object.entries(categoizedFaqs).map(([categoryTitle, categoryFaqs]) => {
         return (
           <section className="m-auto mb-24">
-            <h2 className="text-sky-700">{categoryTitle}</h2>
-            <FAQ>
+            <H2>{categoryTitle}</H2>
+            <DisclosureList>
               {Object.entries(categoryFaqs).map(([faqTitle, faqBody]) => {
-                return <FAQItem title={faqTitle}>{faqBody}</FAQItem>
+                return (
+                  <DisclosureListItem title={faqTitle}>
+                    {faqBody}
+                  </DisclosureListItem>
+                )
               })}
-            </FAQ>
+            </DisclosureList>
           </section>
         )
       })}

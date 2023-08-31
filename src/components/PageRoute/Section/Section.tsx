@@ -10,9 +10,9 @@ type Props = {
 
 export const Section: React.FC<Props> = ({ header, details }) => {
   return (
-    <>
+    <div>
       <SectionHeader header={header} />
       <SectionDetails details={details} />
-    </>
+    </div>
   )
 }

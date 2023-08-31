@@ -6,17 +6,29 @@ import React from 'react'
 type Props = {
   title: string
   children: React.ReactNode
+  no?: number
 }
 
-export const FAQItem: React.FC<Props> = ({ title, children }) => {
+export const DisclosureListItem: React.FC<Props> = ({
+  title,
+  children,
+  no,
+}) => {
   return (
     <Disclosure as="div" key={title} className="pt-6">
       {({ open }) => (
         <>
           <dt className="text-lg">
-            <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-400">
-              <span className="font-medium text-gray-900">{title}</span>
-              <span className="ml-6 flex h-7 items-center">
+            <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-400 gap-2">
+              <div className="flex gap-6 items-center">
+                {no && (
+                  <span className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-rs8-pink pt-1 text-white shadow-lg">
+                    {no}
+                  </span>
+                )}
+                <span className="font-medium text-gray-900">{title}</span>
+              </div>
+              <span className="flex h-7 items-center">
                 <ChevronDownIcon
                   className={classNames(
                     open ? '-rotate-180' : 'rotate-0',
