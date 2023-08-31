@@ -1,6 +1,6 @@
 import { PageProps } from 'gatsby'
 import React from 'react'
-import { LayoutArticle } from '~/components/Layout'
+import { Layout } from '~/components/Layout'
 import { Link } from '~/components/Link'
 import { RouteMap } from '~/components/Maps/RouteMap/RouteMap'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
@@ -24,7 +24,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
   const menu = [section1Header, section2Header, section3Header, section4Header]
 
   return (
-    <LayoutArticle location={location}>
+    <Layout className="mx-auto max-w-[950px] px-3 pt-10" location={location}>
       <HeadingContentPage>Route</HeadingContentPage>
 
       <PageRouteIntro />
@@ -46,7 +46,7 @@ const Route: React.FC<PageProps> = ({ location }) => {
       <Section header={section2Header} details={section2Details} />
       <Section header={section3Header} details={section3Details} />
       <Section header={section4Header} details={section4Details} />
-    </LayoutArticle>
+    </Layout>
   )
 }
 
