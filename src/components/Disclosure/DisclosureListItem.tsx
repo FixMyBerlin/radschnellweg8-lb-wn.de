@@ -42,7 +42,7 @@ export const DisclosureListItem: React.FC<Props> = ({
           <Disclosure.Panel
             as="dd"
             className={classNames(
-              'mt-3 lg:pr-12',
+              'mt-3 lg:pr-12 prose',
               'text-gray-500',
               'prose-strong:text-gray-500',
               'max-w-full',
