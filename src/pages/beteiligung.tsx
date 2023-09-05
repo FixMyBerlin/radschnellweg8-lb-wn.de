@@ -18,7 +18,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
     <Layout location={location}>
       <HeadingContentPage>Auswertung der Bürgerbeteiligung</HeadingContentPage>
       <Section>
-        <P>Die Beteiligung zum RS 8 fand vom 20.06 bis 20.08.2023 statt</P>
+        <P>Die Beteiligung zum RS 8 fand vom 20.06. bis 20.08.2023 statt</P>
         <H2>
           Was wurde in der Beteiligung gemeldet und wie geht es jetzt weiter?
         </H2>
