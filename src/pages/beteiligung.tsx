@@ -50,7 +50,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <H2>Ergebnisse der Umfrage (482 Teilnahmen)</H2>
         <div className="space-y-4">
           {surveyResultData.map((r) => (
-            <div className="border rounded pt-2 pb-3.5">
+            <div key={r.questionLabel} className="border rounded pt-2 pb-3.5">
               <P className="border-b pb-2 px-3.5 font-bold">
                 {r.questionLabel}
               </P>

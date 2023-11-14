@@ -11,12 +11,12 @@ export const PageFaqFaqs: React.FC = () => {
     <Section>
       {Object.entries(categoizedFaqs).map(([categoryTitle, categoryFaqs]) => {
         return (
-          <section className="m-auto mb-24">
+          <section key={categoryTitle} className="m-auto mb-24">
             <H2>{categoryTitle}</H2>
             <DisclosureList>
               {Object.entries(categoryFaqs).map(([faqTitle, faqBody]) => {
                 return (
-                  <DisclosureListItem title={faqTitle}>
+                  <DisclosureListItem key={faqTitle} title={faqTitle}>
                     {faqBody}
                   </DisclosureListItem>
                 )
