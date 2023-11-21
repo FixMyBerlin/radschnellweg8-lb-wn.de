@@ -24,7 +24,7 @@ const CustomizedLabel: ImplicitLabelType = (props) => {
     <svg xmlns="http://www.w3.org/2000/svg">
       <switch>
         <foreignObject x={x + 4} y={y - 96} width="70vw" height="150">
-          <div className="flex flex-col justify-end h-24 leading-tight">
+          <div className="flex flex-col justify-end h-24 leading-tight fixed">
             <p className="text-sm"> {props.name}</p>
           </div>
         </foreignObject>
