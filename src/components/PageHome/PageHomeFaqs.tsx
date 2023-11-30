@@ -1,6 +1,8 @@
 import { StaticImage } from 'gatsby-plugin-image'
 import React from 'react'
-import { FAQ, FAQItem } from '../FAQ'
+
+import { DisclosureList } from '../Disclosure/DisclosureList'
+import { DisclosureListItem } from '../Disclosure/DisclosureListItem'
 import { Section } from '../Layout'
 import { Link, LinkExternal } from '../Link'
 import { Lightbox } from '../PageRoute/Lightbox'
@@ -10,10 +12,10 @@ import { YouTubePreview } from '../YouTubePreview'
 export const PageHomeFaqs: React.FC = () => {
   return (
     <Section>
-      <H2 className="text-center">Häufig gestellte Fragen</H2>
+      <H2>Häufig gestellte Fragen</H2>
 
-      <FAQ>
-        <FAQItem title="Was ist ein Radschnellweg?">
+      <DisclosureList>
+        <DisclosureListItem title="Was ist ein Radschnellweg?">
           <P>
             Radschnellwege sind extrabreite, direkte und möglichst
             kreuzungsfreie Wege, auf denen Radfahrerinnen und Radfahrer jeden
@@ -34,8 +36,8 @@ export const PageHomeFaqs: React.FC = () => {
               />
             }
           />
-        </FAQItem>
-        <FAQItem title="Was zeichnet einen Radschnellweg aus?">
+        </DisclosureListItem>
+        <DisclosureListItem title="Was zeichnet einen Radschnellweg aus?">
           <ul className="list-disc pl-5">
             <li>Gesamtstrecke mindestens fünf Kilometer</li>
             <li>Potenzial von mindestens 2.000 Fahrradfahrten täglich</li>
@@ -58,8 +60,8 @@ export const PageHomeFaqs: React.FC = () => {
             werden für unterschiedliche Führungsformen verbindliche Standards
             festgelegt.
           </P>
-        </FAQItem>
-        <FAQItem title="Was kosten Radschnellwege?">
+        </DisclosureListItem>
+        <DisclosureListItem title="Was kosten Radschnellwege?">
           <P>
             Die Kosten für einen Radschnellweg sind abhängig von seiner Länge,
             den verschiedenen Umbaumaßnahmen im Straßenkörper sowie der Menge an
@@ -103,8 +105,8 @@ export const PageHomeFaqs: React.FC = () => {
               alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
             />
           </div>
-        </FAQItem>
-        <FAQItem title="Wie viele Radfahrende fahren denn da später?">
+        </DisclosureListItem>
+        <DisclosureListItem title="Wie viele Radfahrende fahren denn da später?">
           <P>
             Wie kann man sich so einen Radschnellweg eigentlich vorstellen? Wie
             viele Leute fahren denn da, kommt man da zu Fuß überhaupt noch
@@ -132,8 +134,8 @@ export const PageHomeFaqs: React.FC = () => {
               }
             />
           </P>
-        </FAQItem>
-      </FAQ>
+        </DisclosureListItem>
+      </DisclosureList>
       <div className="mt-10 text-center">
         <Link button to="/faq">
           Mehr unter FAQs

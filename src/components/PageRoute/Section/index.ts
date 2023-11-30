@@ -1,4 +1,4 @@
-export * from './Section'
+export * from './PageRouteSection'
 export * from './SectionDetails'
 export * from './SectionDetailsItem'
 export * from './SectionHeader'

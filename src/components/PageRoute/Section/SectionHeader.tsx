@@ -1,4 +1,5 @@
 import React from 'react'
+import { H2, P } from '~/components/Text'
 import { TSectionHeader } from '../data.const/types'
 
 type Props = {
@@ -8,9 +9,9 @@ type Props = {
 export const SectionHeader: React.FC<Props> = ({ header }) => {
   return (
     <header id={header.id} className="mb-11 scroll-m-8">
-      <h2>{header.title}</h2>
-      <p>{header.owner}</p>
-      <p className="mb-11">{header.intro}</p>
+      <H2>{header.title}</H2>
+      <P>{header.owner}</P>
+      <P className="mb-11">{header.intro}</P>
       <div>{header.image}</div>
     </header>
   )

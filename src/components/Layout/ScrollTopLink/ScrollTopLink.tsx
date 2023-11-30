@@ -27,6 +27,7 @@ export const ScrollTopLink: React.FC = () => {
         type="button"
         onClick={() => window.scrollTo(0, 0)}
         className="mt-10 flex no-underline"
+        aria-label="Zum Seitenanfang springen"
       >
         <ArrowUpCircleIcon className="fixed bottom-16 right-8 z-40 w-14 rounded-full bg-white text-rs8-pink hover:text-rs8-pink" />
       </button>

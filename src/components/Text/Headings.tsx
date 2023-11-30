@@ -22,7 +22,7 @@ export const H1: React.FC<Props & { showTopline?: boolean }> = ({
       )}
       <h1
         className={classNames(
-          'font-serif mb-10 text-xl font-extrabold lg:text-[60px] lg:leading-[66px]',
+          'mb-10 text-4xl font-extrabold md:text-6xl md:leading-snug leading-snug',
           className,
         )}
       >
@@ -36,11 +36,23 @@ export const H2: React.FC<Props> = ({ className, children }) => {
   return (
     <h2
       className={classNames(
-        'font-serif text-dark-gray lg:leading-40 mb-10 mt-16 text-lg font-extrabold  lg:text-[36px]',
+        'text-dark-gray mb-10 mt-16 text-2xl font-extrabold md:leading-normal md:text-3xl leading-normal',
         className,
       )}
     >
       {children}
     </h2>
+  )
+}
+export const H3: React.FC<Props> = ({ className, children }) => {
+  return (
+    <h3
+      className={classNames(
+        'text-dark-gray mb-5 mt-8 text-lg font-semibold md:text-xl leading-normal md:leading-normal',
+        className,
+      )}
+    >
+      {children}
+    </h3>
   )
 }

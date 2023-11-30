@@ -13,13 +13,13 @@ export const HeadingContentPage: React.FC<Props> = ({
   children,
 }) => {
   return (
-    <Section className="mt-8 w-full md:mt-5">
+    <Section className="mt-8 pt-4 w-full md:mt-5">
       <p className="mb-4 mt-0 text-neutral-400">
         Radschnellweg zwischen Ludwigsburg und Waiblingen
       </p>
       <h1
         className={classNames(
-          'font-serif mb-10 text-[60px] font-extrabold lg:leading-[66px]',
+          'mb-10 text-4xl font-extrabold md:text-6xl md:leading-snug leading-snug',
           className,
         )}
       >

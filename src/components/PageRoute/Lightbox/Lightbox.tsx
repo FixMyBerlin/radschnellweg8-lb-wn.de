@@ -22,7 +22,7 @@ export const Lightbox: React.FC<Props> = ({ image, children }) => {
   return (
     <>
       <div className="group relative text-gray-500">
-        <button type="button" onClick={openModal} className="">
+        <button type="button" onClick={openModal}>
           {image}
           <span className="absolute left-3 top-3 rounded-lg bg-white px-4 pb-2 pt-3 opacity-0 focus:outline-none group-hover:opacity-80">
             Vergrößern
@@ -56,7 +56,11 @@ export const Lightbox: React.FC<Props> = ({ image, children }) => {
                   {image}
                   <div className="mt-2 flex items-center justify-between space-x-4 leading-5">
                     <p className="text-[0.85rem] italic">{children}</p>
-                    <button type="button" className="" onClick={closeModal}>
+                    <button
+                      type="button"
+                      onClick={closeModal}
+                      aria-label="Schließen"
+                    >
                       <XMarkIcon className="w-8" />
                     </button>
                   </div>

@@ -5,10 +5,9 @@ import { FundingFooter } from '~/components/Funding'
 import { ImageSlide } from '~/components/Images'
 import { Layout, Section } from '~/components/Layout'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
-import { PageBeteiligungFacts } from '~/components/PageBeteiligung/PageBeteiligungFacts'
 import { BarChart } from '~/components/PageHome/BarChart'
 import { surveyResultData } from '~/components/PageHome/data/survey-result-data'
-import { H1, H2, P } from '~/components/Text'
+import { H2, HeadingContentPage, P } from '~/components/Text'
 
 export const Head = () => (
   <MetaTags title="RS 8: Auswertung der Bürgerbeteiligung" />
@@ -17,10 +16,10 @@ export const Head = () => (
 const IndexPage: React.FC<PageProps> = ({ location }) => {
   return (
     <Layout location={location}>
-      <H1>Auswertung der Bürgerbeteiligung</H1>
+      <HeadingContentPage>Auswertung der Bürgerbeteiligung</HeadingContentPage>
       <Section>
-        <P>Die Beteiligung zum RS 8 fand vom 20.06 bis 20.08.2023 statt</P>
-        <H2 className="leading-snug">
+        <P>Die Beteiligung zum RS 8 fand vom 20.06. bis 20.08.2023 statt</P>
+        <H2>
           Was wurde in der Beteiligung gemeldet und wie geht es jetzt weiter?
         </H2>
         <P>
@@ -51,7 +50,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <H2>Ergebnisse der Umfrage (482 Teilnahmen)</H2>
         <div className="space-y-4">
           {surveyResultData.map((r) => (
-            <div className="border rounded pt-2 pb-3.5">
+            <div key={r.questionLabel} className="border rounded pt-2 pb-3.5">
               <P className="border-b pb-2 px-3.5 font-bold">
                 {r.questionLabel}
               </P>

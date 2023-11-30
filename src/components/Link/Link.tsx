@@ -4,7 +4,7 @@ import { Link as GatsbyLink } from 'gatsby'
 
 const baseStyles = 'text-rs8-pink hover:text-rs8-blue'
 export const linkStyles = `${baseStyles} underline`
-export const buttonStyles = `${baseStyles} rounded-full border border-rs8-pink px-6 pt-4 pb-3`
+export const buttonStyles = `${baseStyles} rounded-lg bg-rs8-pink active:ring active:bg-rs8-pink active:ring-[#1E293B] text-white hover:text-white hover:bg-[#1E293B] px-6 pt-4 pb-3 font-normal inline-block`
 
 type Props = {
   to: string

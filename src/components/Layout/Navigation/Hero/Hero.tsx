@@ -33,11 +33,7 @@ export const Hero: React.FC<Props> = ({ participation }) => {
             <div className="p-4 text-center text-[20px] md:text-[32px] md:leading-10">
               Bürgerbeteiligung abgeschlossen
             </div>
-            <Link
-              button
-              className="z-20 rounded-lg bg-rs8-pink text-sm font-normal text-white"
-              to="/beteiligung"
-            >
+            <Link button className="z-20" to="/beteiligung">
               Zu den Ergebnissen
             </Link>
           </div>
