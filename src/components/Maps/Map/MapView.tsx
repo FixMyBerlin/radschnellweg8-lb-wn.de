@@ -79,6 +79,8 @@ export const MapView: React.FC<MapViewProps> = ({
       scrollZoom={false}
       {...({ minZoom } || {})}
       {...({ maxZoom } || {})}
+      // See https://github.com/visgl/react-map-gl/issues/2310
+      RTLTextPlugin={null}
     >
       {isMediumScreen && (
         <NavigationControl position="bottom-right" showCompass={false} />
