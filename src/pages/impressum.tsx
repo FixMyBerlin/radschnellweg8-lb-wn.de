@@ -54,8 +54,8 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
         <h2>Verantwortlich für technische Umsetzung</h2>
         <p>
           <strong>FixMyCity GmbH</strong> <br />
-          Karlsgartenstraße 12 <br />
-          12049 Berlin <br />
+          Oberlandstraße 26-35 <br />
+          12099 Berlin <br />
           <LinkMail>hello@fixmycity.de</LinkMail> <br />
           Telefon: 030 / 549 08 665
         </p>
