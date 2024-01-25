@@ -671,13 +671,12 @@ export const categoizedFaqs = {
             Machbarkeitsstudie
           </LinkExternal>{' '}
           wurden das jeweils mögliche Radverkehrsaufkommen prognostiziert,
-          TrassenvariantenBeschluss der politischen Entscheidungsträger
-          untersucht und – in enger Abstimmung mit den beteiligten Kommunen –
-          eine sogenannte Vorzugsvariante definiert. In die Bewertung der
-          Trassenführung flossen unterschiedliche Kriterien ein. Neben
-          infrastrukturellen Gesichtspunkten wurden auch ökologische Aspekte
-          sowie die Betrachtung des jeweiligen Zusammenspiels zwischen den
-          unterschiedlichen Verkehrsteilnehmern berücksichtigt.
+          Trassenvarianten untersucht und – in enger Abstimmung mit den
+          beteiligten Kommunen – eine sogenannte Vorzugsvariante definiert. In
+          die Bewertung der Trassenführung flossen unterschiedliche Kriterien
+          ein. Neben infrastrukturellen Gesichtspunkten wurden auch ökologische
+          Aspekte sowie die Betrachtung des jeweiligen Zusammenspiels zwischen
+          den unterschiedlichen Verkehrsteilnehmern berücksichtigt.
         </p>
 
         <p>
