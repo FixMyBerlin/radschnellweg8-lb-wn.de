@@ -4,9 +4,10 @@ import React from 'react'
 import { FundingFooter } from '~/components/Funding'
 import { ImageSlide } from '~/components/Images'
 import { Layout, Section } from '~/components/Layout'
+import { buttonStyles } from '~/components/Link'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { BarChart } from '~/components/PageHome/BarChart'
-import { surveyResultData } from '~/components/PageHome/data/survey-result-data'
+import { surveyResultDataCharts } from '~/components/PageHome/data/survey-result-data'
 import { H2, HeadingContentPage, P } from '~/components/Text'
 
 export const Head = () => (
@@ -49,7 +50,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
       <Section>
         <H2>Ergebnisse der Umfrage (482 Teilnahmen)</H2>
         <div className="space-y-4">
-          {surveyResultData.map((r) => (
+          {surveyResultDataCharts.map((r) => (
             <div key={r.questionLabel} className="border rounded pt-2 pb-3.5">
               <P className="border-b pb-2 px-3.5 font-bold">
                 {r.questionLabel}
@@ -60,6 +61,19 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
             </div>
           ))}
         </div>
+        <H2>Rohdaten der Beteiligung herunterladen</H2>
+        <P>
+          Daten stehen als Open Data unter der{' '}
+          <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a> Lizenz
+          zur weiteren Auswertung zur Verfügung.
+        </P>
+        <a
+          href="/survey-results-2024-04-11.xlsx"
+          download="Export-RS8-Beteiligungsergebnisse-2024-04-11.xlsx"
+          className={buttonStyles}
+        >
+          XLSX herunterladen
+        </a>
       </Section>
 
       <Section className="mb-40">
