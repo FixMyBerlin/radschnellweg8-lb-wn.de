@@ -4,7 +4,7 @@ import React from 'react'
 import { FundingFooter } from '~/components/Funding'
 import { ImageSlide } from '~/components/Images'
 import { Layout, Section } from '~/components/Layout'
-import { buttonStyles } from '~/components/Link'
+import { LinkExternal, buttonStyles } from '~/components/Link'
 import { MetaTags } from '~/components/MetaTags/MetaTags'
 import { BarChart } from '~/components/PageHome/BarChart'
 import { surveyResultDataCharts } from '~/components/PageHome/data/survey-result-data'
@@ -64,8 +64,10 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
         <H2>Rohdaten der Beteiligung herunterladen</H2>
         <P>
           Daten stehen als Open Data unter der{' '}
-          <a href="https://opendatacommons.org/licenses/odbl/">ODbL</a> Lizenz
-          zur weiteren Auswertung zur Verfügung.
+          <LinkExternal href="https://opendatacommons.org/licenses/odbl/">
+            ODbL
+          </LinkExternal>{' '}
+          Lizenz zur weiteren Auswertung zur Verfügung.
         </P>
         <a
           href="/survey-results-2024-04-11.xlsx"
