@@ -70,8 +70,10 @@ const IndexPage: React.FC<PageProps> = ({ location }) => {
           Lizenz zur weiteren Auswertung zur Verfügung.
         </P>
         <a
-          href="/survey-results-2024-04-11.xlsx"
-          download="Export-RS8-Beteiligungsergebnisse-2024-04-11.xlsx"
+          href="/survey-results.xlsx"
+          download={`Export-RS8-Beteiligungsergebnisse-${new Date().toLocaleDateString(
+            'de-DE',
+          )}.xlsx`}
           className={buttonStyles}
         >
           XLSX herunterladen

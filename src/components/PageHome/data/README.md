@@ -38,4 +38,4 @@ OR
 
 - Find buttons at the bottom of the page to download CSVs
 - manually export an xlsx file with three sheets (each CSV)
-- replace the file in public dir and change the path/file name manually on /beteiligung
+- replace the file in public dir
