@@ -1,4 +1,4 @@
-export const surveyResultData = [
+export const surveyResultDataCharts = [
   {
     questionLabel: 'Würden Sie den RS 8 nutzen?',
     data: [
