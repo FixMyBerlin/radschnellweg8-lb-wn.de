@@ -20,7 +20,7 @@ OR
 
   _only users with status ADMIN can copy data_
 
-- replace the data hold by surveyResultData in src/components/PageHome/data/survey-result-data.ts
+- replace the data hold by surveyResultDataCharts in src/components/PageHome/data/survey-result-data.ts
 
 ## Data update XLSX
 
