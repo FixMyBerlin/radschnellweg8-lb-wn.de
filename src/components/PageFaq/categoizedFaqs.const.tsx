@@ -593,12 +593,16 @@ export const categoizedFaqs = {
           Da unterscheiden die Vorgaben zwischen innerorts und außerorts.{' '}
           <strong>Innerorts soll der Weg beleuchtet</strong> sein – das ist
           meist durch die vorhandene Straßenbeleuchtung schon gegeben.{' '}
-          <strong>Außerorts</strong>
-          ist Beleuchtung aus naturschutzrechtlichen und wirtschaftlichen
-          Gründen <strong>nur an Problem- und Gefahrenstellen</strong>, wie
-          Engstellen, bei Hindernissen, an Kreuzungen oder Unterführungen
-          vorgesehen. Wenn Beleuchtung erfolgt, soll diese möglichst
-          insektenfreundlich gestaltet sein.
+          <strong>Außerorts</strong> ist Beleuchtung aus naturschutzrechtlichen
+          und wirtschaftlichen Gründen{' '}
+          <strong>nur an Problem- und Gefahrenstellen</strong>, wie Engstellen,
+          bei Hindernissen, an Kreuzungen oder Unterführungen vorgesehen. Wenn
+          Beleuchtung erfolgt, soll diese möglichst insektenfreundlich gestaltet
+          sein. Generell gilt dabei zu beachten, dass mit der Umsetzung einer
+          Radschnellverbindung keine neuen Angsträume geschaffen und/oder
+          vorhandene ausgeräumt werden. Dabei kann eine durchgehende Beleuchtung
+          auch außerorts beitragen. Das Thema wird in jedem Planungsabschnitt
+          von den jeweiligen Planungsträgern berücksichtigt.
         </p>
         <p>
           An allen anderen Stellen sorgt{' '}
@@ -653,7 +657,8 @@ export const categoizedFaqs = {
         06.00 und 22.00 Uhr stets gewährleistet sein. Zudem sollen auf
         Radschnellwegen keine Schneemassen abgelagert werden. Hierzu gehört auch
         die <strong>ganzjährige Reinigung</strong>, was beispielsweise im Herbst
-        sehr wichtig ist.
+        sehr wichtig ist, wenn das herabgefallene Laub die Wege gefährlich
+        macht.
       </p>
     ),
   },
@@ -720,6 +725,35 @@ export const categoizedFaqs = {
         </p>
       </>
     ),
+    'Wie werden Radschnellwege beschildert?': (
+      <>
+        <p>
+          Die Radschnellwege werden mit zwei unterschiedlichen Beschilderungen
+          versehen sein. Zun Einen mit der StVO-Beschilderung, die den
+          Radschnellweg auch als solche ausweist, inklusive weiterer
+          Beschilderung, z.B. Vorfahrt achten oder berechtigt. Zum Anderen mit
+          der wegweisenden Beschilderung, die keine Verpflichtungen vorgibt, wie
+          z.B. eine Benutzungspflicht, sondern die nächsten wichtigen Punkte
+          oder Ziele auf der Strecke angeben.
+        </p>
+        <StaticImage
+          src="./assets/zeichen-radschnellweg.jpg"
+          alt="StVO-Zeichen Radschnellweg"
+          width="250"
+        />
+        <p>
+          <i>StVO-Zeichen Radschnellweg</i>
+        </p>
+        <StaticImage
+          src="./assets/wegweiser-radschnellweg.png"
+          alt="Wegweiser Radschnellweg"
+          width="250"
+        />
+        <p>
+          <i>Wegweiser Radschnellweg</i>
+        </p>
+      </>
+    ),
     'Wie komme ich überhaupt auf den Radschnellweg?': (
       <>
         <p>
@@ -757,9 +791,11 @@ export const categoizedFaqs = {
             vernetzt, sodass sich auch vom Start- bzw. Endpunkt unserer
             Radschnellwege weitere Ziele erreichen lassen. Teilweise sind das
             anschließende Radschnellwege oder andere hochwertige
-            Radinfrastruktur.
+            Radinfrastruktur. Die Radschnellverbindung wird in Zukunft immer
+            weiter mit anderen Radverkehrsinfrastrukturen verknüpft, so, dass
+            auch weitere Punkte in den einzelnen Städten angeschlossen werden
+            und ein engmaschiges Netz entsteht.
           </p>
-
           <p>
             Der RS 8 wird über Waiblingen hinaus nach <strong>Backnang</strong>{' '}
             sowie <strong>Schorndorf</strong> und <strong>Fellbach</strong> (RS
