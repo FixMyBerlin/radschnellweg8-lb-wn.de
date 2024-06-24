@@ -413,6 +413,7 @@ export const categoizedFaqs = {
           <Lightbox
             image={
               <StaticImage
+                imgStyle={{ objectFit: 'contain' }}
                 className="mt-4"
                 src="../../images/baukosten-radverkehrsanlagen.jpg"
                 alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
@@ -425,6 +426,7 @@ export const categoizedFaqs = {
         <div className="lg:hidden">
           <StaticImage
             className="mt-4"
+            imgStyle={{ objectFit: 'contain' }}
             src="../../images/baukosten-radverkehrsanlagen.jpg"
             alt="Für ca. 10 Mio. Euro können 0,5 km Autobahn, 2,5 km Hauptverkehrsstraße und 11,1 km Radschnellweg gebaut werden."
           />
@@ -713,6 +715,7 @@ export const categoizedFaqs = {
           Erkennbarkeit der Wege.
         </p>
         <StaticImage
+          imgStyle={{ objectFit: 'contain' }}
           src="./assets/demonstrations-teilstueck.jpg"
           alt="Das bereits fertiggestellte Teilstück des RS4 im Filstal demonstriert, wie Radschnellwege später aussehen werden. Foto: Christian Kuhn"
         />
@@ -736,22 +739,29 @@ export const categoizedFaqs = {
           z.B. eine Benutzungspflicht, sondern die nächsten wichtigen Punkte
           oder Ziele auf der Strecke angeben.
         </p>
-        <StaticImage
-          src="./assets/zeichen-radschnellweg.jpg"
-          alt="StVO-Zeichen Radschnellweg"
-          width="250"
-        />
-        <p>
-          <i>StVO-Zeichen Radschnellweg</i>
-        </p>
-        <StaticImage
-          src="./assets/wegweiser-radschnellweg.png"
-          alt="Wegweiser Radschnellweg"
-          width="250"
-        />
-        <p>
-          <i>Wegweiser Radschnellweg</i>
-        </p>
+        <div>
+          <StaticImage
+            src="./assets/zeichen-radschnellweg.jpg"
+            alt="StVO-Zeichen Radschnellweg"
+            layout="constrained"
+            className="max-w-[300px] flex"
+            imgStyle={{ objectFit: 'contain' }}
+          />
+          <p>
+            <i>StVO-Zeichen Radschnellweg</i>
+          </p>
+        </div>
+        <div>
+          <StaticImage
+            src="./assets/wegweiser-radschnellweg.png"
+            alt="Wegweiser Radschnellweg"
+            className="max-w-[300px] flex"
+            imgStyle={{ objectFit: 'contain' }}
+          />
+          <p>
+            <i>Wegweiser Radschnellweg</i>
+          </p>
+        </div>
       </>
     ),
     'Wie komme ich überhaupt auf den Radschnellweg?': (
@@ -811,6 +821,8 @@ export const categoizedFaqs = {
             <StaticImage
               src="./assets/BaWue_Ausbaustand_der_Radschnellwege_Stand_Mai_2022.jpg"
               alt="Karte der Radschnellwege"
+              imgStyle={{ objectFit: 'contain' }}
+              quality={100}
             />
           </LinkExternal>
         </>
