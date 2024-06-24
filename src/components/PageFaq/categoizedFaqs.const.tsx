@@ -745,6 +745,8 @@ export const categoizedFaqs = {
             alt="StVO-Zeichen Radschnellweg"
             layout="constrained"
             className="max-w-[300px] flex"
+            width={500}
+            quality={100}
             imgStyle={{ objectFit: 'contain' }}
           />
           <p>
@@ -756,6 +758,8 @@ export const categoizedFaqs = {
             src="./assets/wegweiser-radschnellweg.png"
             alt="Wegweiser Radschnellweg"
             className="max-w-[300px] flex"
+            width={500}
+            quality={100}
             imgStyle={{ objectFit: 'contain' }}
           />
           <p>
