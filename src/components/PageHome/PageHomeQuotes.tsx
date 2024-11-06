@@ -108,7 +108,7 @@ const quotes: Quote[] = [
     quote:
       'Zeitgemäß, klimafreundlich und für alle nutzbar – diese Ziele für die Mobilität stehen auch beim RS 8 im Fokus unserer Arbeit. Denn: Radschnellwege sind ein zentrales Element der Verkehrswende. Ich freue mich, dass wir den Rems-Murr-Kreis, den Kreis Ludwigsburg sowie alle daran beteiligten Kommunen dabei unterstützen können.',
     person: 'Susanne Bay',
-    position: 'Regierungspräsidentin Stuttgart',
+    position: 'Regierungspräsidentin des Regierungsbezirks Stuttgart',
   },
 ]
 
