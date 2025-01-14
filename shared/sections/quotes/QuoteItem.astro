@@ -1,0 +1,39 @@
+---
+import { COLORSCLASSES } from '@config/styles'
+import { Picture } from 'astro:assets'
+import type { CollectionEntry } from 'astro:content'
+import { clsx } from 'clsx'
+
+type Props = { quote: CollectionEntry<'homepageQuotes'>['data'] }
+
+const { quote, name, position, image, imageCopyright } = Astro.props.quote
+---
+
+<figure class="transition-opacity duration-500 lg:flex">
+  <div class="flex flex-none flex-col justify-between space-y-6 lg:justify-start">
+    <Picture
+      src={image}
+      alt=""
+      widths={[130, 320, 600]}
+      formats={['jpg', 'avif']}
+      class="h-[130px] w-[130px] overflow-hidden rounded-full object-cover lg:h-[320px] lg:w-[320px]"
+      pictureAttributes={{ class: 'not-prose' }}
+    />
+    <p class="max-w-[300px] text-[16px] leading-5 text-gray-400 lg:text-center">
+      {imageCopyright}
+    </p>
+  </div>
+  <div class="pl-10 pt-6 lg:pt-12">
+    <blockquote class="text-xl font-medium">
+      {quote}
+    </blockquote>
+    <figcaption class="text-[16px] leading-[24px]">
+      <strong class={clsx(COLORSCLASSES.quotesPersonName, 'mt-8 block font-extrabold')}>
+        {name}
+      </strong>
+      <div class={clsx(COLORSCLASSES.quotesPersonPosition)}>
+        {position}
+      </div>
+    </figcaption>
+  </div>
+</figure>

@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content'
+import RoutespageRoutesegmentsSegment from './RoutespageRoutesegmentsSegment.astro'
+
+const segments = await getCollection('routesegments')
+export type Segment = (typeof segments)[number]
+---
+
+{
+  segments.map((route) => {
+    return <RoutespageRoutesegmentsSegment route={route} />
+  })
+}

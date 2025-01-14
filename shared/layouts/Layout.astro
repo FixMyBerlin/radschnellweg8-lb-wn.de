@@ -1,0 +1,105 @@
+---
+import { META } from '@config/config'
+import { ClientRouter } from 'astro:transitions'
+import '../../config/fonts'
+import PngSocialSharingFallback from '../../public/social-sharing/social-default.jpg'
+import { buildNavigation } from './buildNavigation'
+import Footer from './Footer.astro'
+import LogosPartners from './LogosPartners.astro'
+import LogoWebsite from './LogoWebsite.astro'
+import { Navigation } from './Navigation'
+import { ScrollTopLink } from './ScrollTopLink'
+import { TailwindResponsiveHelper } from './TailwindResponsiveHelper'
+
+type Props = { title?: string; description?: string; noindex?: boolean; image?: string | null }
+const { title, description, noindex = false, image }: Props = Astro.props
+
+const seo = {
+  title: title ? `${title} | ${META.title}` : META.title,
+  description: description || META.description,
+  image: image || `${Astro.site!.origin}${PngSocialSharingFallback.src}`,
+}
+
+const navigation = await buildNavigation()
+---
+
+<!doctype html>
+<html lang="de" class="h-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    {noindex && <meta name="robots" content="noindex" />}
+
+    <title>{seo.title}</title>
+    <meta property="og:title" content={seo.title} />
+    <meta name="twitter:title" content={seo.title} />
+
+    <meta name="description" content={seo.description} />
+    <meta property="og:description" content={seo.description} />
+    <meta name="twitter:description" content={seo.description} />
+
+    <meta name="image" content={seo.image} />
+    <meta property="og:image" content={seo.image} />
+    <meta name="twitter:image" content={seo.image} />
+
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Your Site's Title" // LATER: Extend homepage schema to add rss title
+      href={new URL('rss.xml', Astro.site)}
+    /> -->
+
+    <ClientRouter />
+    <script>
+      // Matomo: Track page views with ClientRouter active
+      // https://github.com/felix-berlin/astro-matomo/issues/42
+      import { USE_MATOMO } from '@config/config'
+      if (USE_MATOMO === true) {
+        document.addEventListener('astro:page-load', () => {
+          window._paq = window._paq || []
+          window._paq.push(['setDocumentTitle', document.title])
+          window._paq.push(['trackPageView'])
+        })
+      }
+    </script>
+
+    <script>
+      // Manually redirect some URLs:
+      // See `astro.config.mjs` on redirects for more.
+      // We could use this lookup to add <link rel="canonical" href="..."> tags.
+      // However, I still hope for a solution in Astro to handle this automatically.
+      // And in our case the SEO case should be a minor issue.
+      const redirects = new Map([
+        ['/beteiligung/', '/beteiligung'],
+        ['/datenschutz/', '/datenschutz'],
+        ['/faq/', '/faq'],
+        ['/impressum/', '/impressum'],
+        ['/leichte-sprache/', '/leichte-sprache'],
+        ['/route/', '/route'],
+      ])
+      const currentPath = window.location.pathname
+      const newPath = redirects.get(currentPath)
+      if (newPath) {
+        console.log(`Redirecting from ${currentPath} to ${newPath}`)
+        window.location.replace(newPath)
+      }
+    </script>
+  </head>
+  <body class="flex h-full flex-col text-base text-[#111827]">
+    <Navigation client:load navigation={navigation} pathname={Astro.url.pathname}>
+      <LogosPartners slot="slotPartnerLogos" />
+      <LogoWebsite slot="slotWebsiteLogo" />
+    </Navigation>
+    <main class="z-0 flex-grow bg-white">
+      <slot />
+    </main>
+    <Footer />
+    <TailwindResponsiveHelper />
+    <ScrollTopLink client:idle />
+  </body>
+</html>

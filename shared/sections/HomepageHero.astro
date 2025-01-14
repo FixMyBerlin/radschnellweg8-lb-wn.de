@@ -1,0 +1,77 @@
+---
+import { COLORS, COLORSCLASSES } from '@config/styles'
+import { IconPin } from '@shared/icons/IconPin'
+import { Link } from '@shared/links/Link'
+import { Picture } from 'astro:assets'
+import { getEntry } from 'astro:content'
+import { clsx } from 'clsx'
+
+const homepageHero = await getEntry('homepageHero', 'index')
+if (homepageHero === undefined) return Astro.redirect('/404')
+
+const { participation, title1, title2, waypoints, image, imageCopyright } = homepageHero.data
+---
+
+<header class="relative h-[400px] w-full md:h-[500px]">
+  <Picture
+    src={image}
+    widths={[390, 1300, image.width]}
+    formats={['jpg', 'avif']}
+    alt=""
+    class="h-full w-full object-cover"
+    pictureAttributes={{ class: 'not-prose w-full' }}
+    loading="eager"
+  />
+  <div
+    class={clsx(
+      COLORSCLASSES.heroImageOverlay,
+      'absolute inset-0 flex w-full flex-col justify-center gap-3 font-bold text-white md:gap-6',
+    )}
+  >
+    <h1 class="flex flex-col items-center justify-center gap-2 leading-8">
+      <span class={clsx(COLORSCLASSES.heroTextBg, 'p-3 pb-[5px] text-[28px] md:text-[42px]')}>
+        {title1}
+      </span>
+      <span class={clsx(COLORSCLASSES.heroTextBg, 'p-2 pb-[5px] text-[20px] md:text-[32px]')}>
+        {title2}
+      </span>
+    </h1>
+
+    {
+      participation.discriminant === true ? (
+        <div class="flex flex-col items-center gap-2">
+          <div class="p-4 text-center text-[20px] md:text-[32px] md:leading-10">
+            {participation.value.participationText}
+          </div>
+          <Link button classes="z-20" href={participation.value.participationHref}>
+            Jetzt mitmachen
+          </Link>
+        </div>
+      ) : (
+        <div class="mx-auto flex flex-col items-start leading-10">
+          {waypoints.map((waypoint, index) => {
+            const last = waypoints.length - 1 === index
+            return (
+              <>
+                <div class="flex flex-row items-center gap-6">
+                  <IconPin color={COLORS.heroPin} className="w-7" />
+                  <p class="text-[20px] md:text-[32px]">{waypoint}</p>
+                </div>
+                {last ? null : (
+                  <>
+                    <span class="my-0.5 ml-3 h-1 w-1 rounded-full bg-white" />
+                    <span class="my-0.5 ml-3 h-1 w-1 rounded-full bg-white" />
+                    <span class="my-0.5 ml-3 h-1 w-1 rounded-full bg-white" />
+                  </>
+                )}
+              </>
+            )
+          })}
+        </div>
+      )
+    }
+  </div>
+  <div class="absolute inset-x-0 bottom-1 px-2" aria-hidden={true}>
+    <p class="text-[0.85rem] italic leading-5 text-white/60">{imageCopyright}</p>
+  </div>
+</header>

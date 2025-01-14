@@ -1,0 +1,34 @@
+---
+import { Section } from '@shared/layouts/Section'
+import { Link } from '@shared/links/Link'
+import { markdownProseClasses } from '@shared/text/proseClasses'
+import { getCollection, type InferEntrySchema } from 'astro:content'
+import Faqs from './faqs/Faqs.astro'
+
+type Props = {
+  filter: NonNullable<InferEntrySchema<'faqs'>['highlight']>[number]
+}
+const { filter } = Astro.props
+
+const faqsCollection = await getCollection('faqs', (faqEntry) =>
+  faqEntry.data.highlight?.includes(filter),
+)
+---
+
+{
+  faqsCollection.length > 0 && (
+    <Section>
+      <header class={markdownProseClasses}>
+        <h2 class="text-dark-gray mb-4 mt-16 text-2xl font-extrabold leading-normal md:text-3xl md:leading-normal">
+          Häufig gestellte Fragen
+        </h2>
+      </header>
+
+      <Faqs faqs={faqsCollection} />
+
+      <Link button href="/faq" classes="mt-8">
+        Mehr unter FAQs
+      </Link>
+    </Section>
+  )
+}

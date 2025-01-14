@@ -1,0 +1,35 @@
+---
+import { Picture } from 'astro:assets'
+import { getImage } from '../utils/getImage'
+import type { ImageSingleVerticalType } from './keystatic.ImageSingleVertical.config'
+
+type Props = ImageSingleVerticalType
+const { src, alt, caption, imageConfig } = Astro.props
+
+const image = getImage(src)
+const width = imageConfig.discriminant
+const position = 'value' in imageConfig ? imageConfig.value : undefined
+---
+
+<div
+  class:list={[
+    position === 'center' && 'justify-center',
+    position === 'right' && 'justify-end',
+    'my-8 flex w-full',
+    'not-prose',
+  ]}
+>
+  <figure class:list={[width === 'half' ? 'w-full md:w-1/2' : 'w-full']}>
+    <Picture
+      class="h-full w-full overflow-hidden object-cover"
+      pictureAttributes={{ class: 'not-prose w-full aspect-[3/4]' }}
+      src={image}
+      alt={alt || ''}
+      loading="lazy"
+      width={width === 'half' ? 960 / 2 : 960}
+      formats={['jpg', 'avif']}
+      densities={[1.5, 2]}
+    />
+    <figcaption class="mt-2 text-xs md:text-sm">{caption}</figcaption>
+  </figure>
+</div>
