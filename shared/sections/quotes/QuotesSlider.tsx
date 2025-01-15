@@ -12,11 +12,13 @@ type Props = {
   quote3?: React.ReactNode
   quote4?: React.ReactNode
   quote5?: React.ReactNode
+  quote6?: React.ReactNode
+  quote7?: React.ReactNode
 }
 
-export const QuotesSlider = ({ quote1, quote2, quote3, quote4, quote5 }: Props) => {
-  const initialQuotes = [quote1, quote2, quote3, quote4, quote5]
-    // 1. We have 5 slots of quotes and pass the Quote as Astro component
+export const QuotesSlider = ({ quote1, quote2, quote3, quote4, quote5, quote6, quote7 }: Props) => {
+  const initialQuotes = [quote1, quote2, quote3, quote4, quote5, quote6, quote7]
+    // 1. We have 7 slots of quotes and pass the Quote as Astro component
     // We have to filter the empty quotes…
     .filter((q) =>
       // @ts-expect-error we look at internal astro structure
