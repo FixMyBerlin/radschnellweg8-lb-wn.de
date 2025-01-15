@@ -4,6 +4,7 @@ export const keystaticLogosPartnersConfig = collection({
   label: 'Partner Logos',
   path: 'src/content/logosPartners/*',
   slugField: 'imageAlt',
+  columns: ['position'],
   schema: {
     position: fields.number({ label: 'Reihenfolge', validation: { isRequired: true } }),
     imageAlt: fields.slug({ name: { label: 'Bild Alt Attribut' } }),
