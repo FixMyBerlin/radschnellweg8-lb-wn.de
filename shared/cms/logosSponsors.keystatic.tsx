@@ -4,6 +4,7 @@ export const keystaticLogosSponsorsConfig = collection({
   label: 'Förderer Logos',
   path: 'src/content/logosSponsors/*',
   slugField: 'imageAlt',
+  columns: ['position'],
   schema: {
     position: fields.number({ label: 'Reihenfolge', validation: { isRequired: true } }),
     imageAlt: fields.slug({ name: { label: 'Bild Alt Attribut' } }),
