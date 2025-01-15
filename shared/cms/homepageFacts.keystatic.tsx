@@ -4,6 +4,7 @@ export const keystaticHomepageFactsConfig = collection({
   label: 'Startseite Fakten-Boxen',
   path: 'src/content/homepageFacts/*',
   slugField: 'fact',
+  columns: ['position'],
   schema: {
     position: fields.number({ label: 'Reihenfolge', validation: { isRequired: true } }),
     fact: fields.slug({ name: { label: 'Fakt' } }),
