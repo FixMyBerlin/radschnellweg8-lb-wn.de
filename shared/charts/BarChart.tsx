@@ -1,3 +1,4 @@
+import { COLORSCLASSES } from '@config/styles'
 import {
   Bar,
   CartesianGrid,
@@ -55,7 +56,7 @@ export const BarChart = ({ data }: Props) => {
         <Bar
           barSize={32}
           background={false}
-          fill="#d60f3d"
+          className={COLORSCLASSES.barChartFill}
           dataKey="value"
           label={<CustomizedLabel />}
           // NOTE: disabling the animation is a quick fix for labels/labellist that sometimes are not shown

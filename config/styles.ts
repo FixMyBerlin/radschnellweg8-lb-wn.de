@@ -22,6 +22,7 @@ export const COLORSCLASSES = {
   quotesPersonPosition: 'text-[#E5007D]',
   pageNoteFoundTitle: 'text-[#E5007D]',
   routesListMarker: 'marker:text-[#E5007D]',
+  barChartFill: 'fill-[#E5007D]',
 }
 
 export const COLORS = {
