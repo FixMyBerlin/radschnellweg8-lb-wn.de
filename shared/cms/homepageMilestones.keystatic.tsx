@@ -5,6 +5,7 @@ export const keystaticHomepageMilestonesConfig = collection({
   path: 'src/content/homepageMilestones/*',
   slugField: 'title',
   format: { contentField: 'description' },
+  columns: ['position'],
   schema: {
     position: fields.number({ label: 'Reihenfolge', validation: { isRequired: true } }),
     status: fields.select({
