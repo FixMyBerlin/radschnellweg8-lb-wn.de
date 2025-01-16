@@ -25,11 +25,13 @@ export type Segmentdetail = (typeof routesegmentdetails)[number]
   <h3>Detailinfos</h3>
   <ol class="not-prose divide-y divide-gray-200 border-y">
     {
-      routesegmentdetails.map((detail) => (
-        <li>
-          <RoutespageRoutesegmentDetail detail={detail} />
-        </li>
-      ))
+      routesegmentdetails
+        .filter((detail) => detail.data.route === route.slug)
+        .map((detail) => (
+          <li>
+            <RoutespageRoutesegmentDetail detail={detail} />
+          </li>
+        ))
     }
   </ol>
 </Section>
