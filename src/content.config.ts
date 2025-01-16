@@ -12,6 +12,7 @@ import { astroLogoWebsiteDefinition } from '@shared/cms/logoWebsite.astro'
 import { astroMapsDefinition } from '@shared/cms/maps.astro'
 import { astroPrivacypolicypageDefinition } from '@shared/cms/privacypolicypage.astro'
 import { astroRoutepageDefinition } from '@shared/cms/routepage.astro'
+import { astroRoutesegmentdetailsDefinition } from '@shared/cms/routesegmentdetails.astro'
 import { astroRoutesegmentsDefinition } from '@shared/cms/routesegments.astro'
 import { astroSimplifiedlanguagepageDefinition } from '@shared/cms/simplifiedlanguagepage.astro'
 import { astroSurveyresultsDefinition } from '@shared/cms/surveyresults.astro'
@@ -37,5 +38,6 @@ export const collections = {
   logosPartners: astroLogosPartnersDefinition,
   maps: astroMapsDefinition,
   routesegments: astroRoutesegmentsDefinition,
+  routesegmentdetails: astroRoutesegmentdetailsDefinition,
   faqs: astroFaqsDefinition,
 }

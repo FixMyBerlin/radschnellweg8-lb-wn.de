@@ -1,14 +1,16 @@
 import { collection, fields } from '@keystatic/core'
 import { mdxComponentsKeystatic } from './components/mdxComponentsKeystatic'
 
-export const keystaticRoutesegmentsConfig = collection({
-  label: 'Routen',
-  path: 'src/content/routesegments/*',
+export const keystaticRoutesegmentdetailsConfig = collection({
+  label: 'Routendetails',
+  path: 'src/content/routesegmentdetails/*',
   slugField: 'title',
   format: { contentField: 'body' },
+  columns: ['route', 'position'],
   schema: {
     title: fields.slug({ name: { label: 'Titel' } }),
-    operator: fields.text({ label: 'Baulastträger' }),
+    route: fields.relationship({ label: 'Route', collection: 'routesegments' }),
+    position: fields.number({ label: 'Position', validation: { isRequired: true } }),
     body: fields.mdx({
       label: 'Text',
       components: mdxComponentsKeystatic('routesegments'),
