@@ -27,6 +27,7 @@ export const zodCOLORSCLASSES = z
     quotesPersonPosition: z.string(),
     pageNoteFoundTitle: z.string(),
     routesListMarker: z.string(),
+    barChartFill: z.string(),
   })
   .strict()
 
