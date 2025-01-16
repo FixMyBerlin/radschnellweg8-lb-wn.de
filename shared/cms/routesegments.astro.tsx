@@ -6,5 +6,6 @@ export const astroRoutesegmentsDefinition = defineCollection({
     z.object({
       title: z.string(),
       operator: z.string(),
+      position: z.number(),
     }),
 })

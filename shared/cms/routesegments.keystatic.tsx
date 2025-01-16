@@ -5,10 +5,12 @@ export const keystaticRoutesegmentsConfig = collection({
   label: 'Routen',
   path: 'src/content/routesegments/*',
   slugField: 'title',
+  columns: ['position'],
   format: { contentField: 'body' },
   schema: {
     title: fields.slug({ name: { label: 'Titel' } }),
     operator: fields.text({ label: 'Baulastträger' }),
+    position: fields.number({ label: 'Position' }),
     body: fields.mdx({
       label: 'Text',
       components: mdxComponentsKeystatic('routesegments'),
