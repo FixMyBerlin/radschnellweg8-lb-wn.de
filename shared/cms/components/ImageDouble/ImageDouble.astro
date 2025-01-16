@@ -41,7 +41,9 @@ const ratio = 'value' in imageConfig ? imageConfig.value : undefined
             formats={['jpg', 'avif']}
           />
         </div>
-        {image.caption && <figcaption class="mt-2 text-xs md:text-sm">{image.caption}</figcaption>}
+        {image.caption && (
+          <figcaption class="mt-2 text-xs text-gray-500 md:text-sm">{image.caption}</figcaption>
+        )}
       </figure>
     ))
   }
