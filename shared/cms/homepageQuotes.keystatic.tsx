@@ -5,7 +5,12 @@ export const keystaticHomepageQuotesConfig = collection({
   path: 'src/content/homepageQuotes/*',
   slugField: 'name',
   schema: {
-    quote: fields.text({ label: 'Zitat', multiline: true, validation: { isRequired: true } }),
+    quote: fields.text({
+      label: 'Zitat',
+      description: 'Empfohlen sind 100-200 Zeichen. Maximal 500 Zeichen',
+      multiline: true,
+      validation: { isRequired: true, length: { max: 500 } },
+    }),
     name: fields.slug({ name: { label: 'Name' } }),
     position: fields.text({ label: 'Rolle', validation: { isRequired: false } }),
     image: fields.image({
