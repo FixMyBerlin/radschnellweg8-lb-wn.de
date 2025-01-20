@@ -14,9 +14,19 @@ type Props = {
   quote5?: React.ReactNode
   quote6?: React.ReactNode
   quote7?: React.ReactNode
+  increaseContainerHeight: boolean
 }
 
-export const QuotesSlider = ({ quote1, quote2, quote3, quote4, quote5, quote6, quote7 }: Props) => {
+export const QuotesSlider = ({
+  quote1,
+  quote2,
+  quote3,
+  quote4,
+  quote5,
+  quote6,
+  quote7,
+  increaseContainerHeight,
+}: Props) => {
   const initialQuotes = [quote1, quote2, quote3, quote4, quote5, quote6, quote7]
     // 1. We have 7 slots of quotes and pass the Quote as Astro component
     // We have to filter the empty quotes…
@@ -29,6 +39,8 @@ export const QuotesSlider = ({ quote1, quote2, quote3, quote4, quote5, quote6, q
   const [quotes] = useState<React.ReactNode[]>(initialQuotes)
   const [active, setActive] = useState<number>(0)
   const [manualMode, setManualMode] = useState<boolean>(false)
+
+  const containerHeightClass = increaseContainerHeight ? 'lg:h-[32em]' : 'lg:h-[25em]'
 
   useEffect(() => {
     const imageInterval = setInterval(() => {
@@ -62,7 +74,7 @@ export const QuotesSlider = ({ quote1, quote2, quote3, quote4, quote5, quote6, q
   }
 
   return (
-    <div className="relative mt-20 lg:h-[32em] lg:px-[70px]">
+    <div className={clsx(containerHeightClass, 'relative mt-20 lg:px-[70px]')}>
       <IconQuote className="absolute left-2 top-[8.25rem] w-10 stroke-[6px] object-cover text-slate-400 lg:-top-10 lg:left-[24.5rem] lg:w-40 lg:stroke-2" />
 
       <div className="grid grid-cols-1 grid-rows-1">
