@@ -20,19 +20,16 @@ const position = 'value' in imageConfig ? imageConfig.value : undefined
   ]}
 >
   <figure class:list={[width === 'half' ? 'w-full md:w-1/2' : 'w-full']}>
-    <div class="aspect-square">
-      <!-- We might want object-cover here, but that will cut pictures off. -->
-      <Picture
-        class="h-full w-full overflow-hidden object-contain"
-        pictureAttributes={{ class: 'not-prose w-full' }}
-        src={image}
-        alt={alt || ''}
-        loading="lazy"
-        width={width === 'half' ? 960 / 2 : 960}
-        densities={[1.5, 2]}
-        formats={['jpg', 'avif']}
-      />
-    </div>
+    <Picture
+      class="aspect-square w-full overflow-hidden rounded object-cover"
+      pictureAttributes={{ class: 'not-prose' }}
+      src={image}
+      alt={alt || ''}
+      loading="lazy"
+      width={width === 'half' ? 960 / 2 : 960}
+      densities={[1.5, 2]}
+      formats={['jpg', 'avif']}
+    />
     {caption && <figcaption class="mt-2 text-xs text-gray-500 md:text-sm">{caption}</figcaption>}
   </figure>
 </div>
