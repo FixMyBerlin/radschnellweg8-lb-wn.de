@@ -10,6 +10,9 @@ const { route } = Astro.props
 const { Content } = await route.render()
 const routesegmentdetails = await getCollection('routesegmentdetails')
 export type Segmentdetail = (typeof routesegmentdetails)[number]
+const filteredAndSortedDetails = routesegmentdetails
+  .filter((detail) => detail.data.route === route.slug)
+  .sort((a, b) => a.data.position - b.data.position)
 ---
 
 <Section prose>
@@ -22,16 +25,18 @@ export type Segmentdetail = (typeof routesegmentdetails)[number]
     <Content components={mdxComponentsAstro} />
   </article>
 
-  <h3>Detailinfos</h3>
-  <ol class="not-prose divide-y divide-gray-200 border-y">
-    {
-      routesegmentdetails
-        .filter((detail) => detail.data.route === route.slug)
-        .map((detail) => (
-          <li>
-            <RoutespageRoutesegmentDetail detail={detail} />
-          </li>
-        ))
-    }
-  </ol>
+  {
+    filteredAndSortedDetails.length > 0 ? (
+      <>
+        <h3>Detailinfos</h3>
+        <ol class="not-prose divide-y divide-gray-200 border-y">
+          {filteredAndSortedDetails.map((detail) => (
+            <li>
+              <RoutespageRoutesegmentDetail detail={detail} />
+            </li>
+          ))}
+        </ol>
+      </>
+    ) : null
+  }
 </Section>
