@@ -1,7 +1,12 @@
+import { FONTNAME } from './config/config'
+
 /** @type {import('tailwindcss').Config} */
-/* eslint-disable global-require */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx,svg}'],
+  content: [
+    './src/**/*.{ts,tsx,svg,astro}',
+    './config/**/*.{ts,tsx,svg,astro}',
+    './shared/**/*.{ts,tsx,svg,astro}',
+  ],
   theme: {
     extend: {
       fontSize: {
@@ -10,12 +15,8 @@ module.exports = {
         lg: ['20px', '28px'],
         xl: ['24px', '32px'],
       },
-      colors: {
-        'rs8-blue': '#2C62A9',
-        'rs8-pink': '#E5007D',
-      },
     },
-    fontFamily: { sans: ['Overpass Variable', 'sans-serif'] },
+    fontFamily: { sans: [FONTNAME, 'sans-serif'] },
   },
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/typography')],
 }

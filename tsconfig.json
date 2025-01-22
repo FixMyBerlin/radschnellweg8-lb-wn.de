@@ -1,24 +1,23 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "plugins": [
+      {
+        // https://docs.astro.build/en/guides/typescript/#setup
+        "name": "@astrojs/ts-plugin"
+      }
+    ],
+    "verbatimModuleSyntax": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"],
-      "~/static/*": ["./static/*"]
-    }
+      "@shared/*": ["shared/*"],
+      "@config/*": ["config/*"],
+      "@src/*": ["src/*"]
+    },
+    "noErrorTruncation": true // https://stackoverflow.com/a/53131824
   },
-  "exclude": ["node_modules"],
-  "include": ["./src/**/*", "./__helpers__/*"]
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"]
 }

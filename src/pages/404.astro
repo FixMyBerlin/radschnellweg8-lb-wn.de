@@ -1,0 +1,35 @@
+---
+import { COLORSCLASSES, LINKCLASSES } from '@config/styles'
+import LayoutArticle from '@shared/layouts/LayoutArticle.astro'
+import { clsx } from 'clsx'
+---
+
+<LayoutArticle noindex title="Seite nicht gefunden (404)">
+  <div class="justify-start sm:flex">
+    <p class={clsx(COLORSCLASSES.pageNoteFoundTitle, 'my-0 font-extrabold sm:text-5xl')}>404</p>
+    <div class="sm:ml-6">
+      <div class="sm:border-l sm:border-gray-200 sm:pl-6">
+        <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+          Diese Seite gibt es nicht
+        </h1>
+        <p class="mt-1 text-base text-slate-500">Vielleicht ist ein Fehler in der URL?</p>
+      </div>
+      <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
+        <a class={LINKCLASSES.button} href="/">Zur Startseite</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Matomo: Track 404s
+    // https://matomo.org/faq/how-to/faq_60/
+    import { USE_MATOMO } from '@config/config'
+    if (USE_MATOMO === true) {
+      window._paq = window._paq || []
+      window._paq.push([
+        'setDocumentTitle',
+        `404/URL = ${encodeURIComponent(document.location.pathname + document.location.search)} /From = ${encodeURIComponent(document.referrer)}`,
+      ])
+    }
+  </script>
+</LayoutArticle>

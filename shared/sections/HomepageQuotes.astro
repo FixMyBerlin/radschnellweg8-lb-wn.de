@@ -1,0 +1,22 @@
+---
+import Section from '@shared/layouts/Section.astro'
+import { getCollection } from 'astro:content'
+import QuoteItem from './quotes/QuoteItem.astro'
+import { QuotesSlider } from './quotes/QuotesSlider'
+
+const homepageQuotes = await getCollection('homepageQuotes')
+// Check if any quote has more than 350 characters to optionally increase height to the slider component
+const isQuoteLengthMoreThan350 = homepageQuotes.some((quote) => quote.data.quote.length > 350)
+---
+
+<Section>
+  <QuotesSlider increaseContainerHeight={isQuoteLengthMoreThan350} client:visible>
+    {homepageQuotes[0] ? <QuoteItem slot="quote1" quote={homepageQuotes[0].data} /> : null}
+    {homepageQuotes[1] ? <QuoteItem slot="quote2" quote={homepageQuotes[1].data} /> : null}
+    {homepageQuotes[2] ? <QuoteItem slot="quote3" quote={homepageQuotes[2].data} /> : null}
+    {homepageQuotes[3] ? <QuoteItem slot="quote4" quote={homepageQuotes[3].data} /> : null}
+    {homepageQuotes[4] ? <QuoteItem slot="quote5" quote={homepageQuotes[4].data} /> : null}
+    {homepageQuotes[5] ? <QuoteItem slot="quote6" quote={homepageQuotes[5].data} /> : null}
+    {homepageQuotes[6] ? <QuoteItem slot="quote7" quote={homepageQuotes[6].data} /> : null}
+  </QuotesSlider>
+</Section>

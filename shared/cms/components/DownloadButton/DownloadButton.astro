@@ -1,0 +1,18 @@
+---
+import { LINKCLASSES } from '@config/styles'
+import { ArrowDownTrayIcon } from '@heroicons/react/16/solid'
+import { clsx } from 'clsx'
+
+const { label, file, filename } = Astro.props
+---
+
+<p>
+  <a
+    download={filename}
+    class={clsx(LINKCLASSES.button, 'inline-flex items-center gap-1 !no-underline')}
+    href={file}
+  >
+    <ArrowDownTrayIcon className="size-4" />
+    {label}
+  </a>
+</p>

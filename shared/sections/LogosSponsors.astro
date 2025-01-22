@@ -1,0 +1,37 @@
+---
+import Section from '@shared/layouts/Section.astro'
+import { LinkExternal } from '@shared/links/LinkExternal'
+import { Picture } from 'astro:assets'
+import { getCollection } from 'astro:content'
+
+const logos = await getCollection('logosSponsors')
+---
+
+<Section classes="pb-12">
+  <h2 class="mb-4 mt-16 text-center text-base font-normal leading-normal text-[#959595]">
+    Gefördert und unterstützt durch
+  </h2>
+
+  <div class="flex flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-12">
+    {
+      logos
+        .sort((a, b) => a.data.position - b.data.position)
+        .map((item) => {
+          const logo = item.data
+          return (
+            <LinkExternal className="w-40 lg:w-full" href={logo.href}>
+              <Picture
+                src={logo.image}
+                alt={logo.imageAlt}
+                class="w-40 lg:h-full"
+                pictureAttributes={{ class: 'not-prose w-full' }}
+                width={160}
+                densities={[1.5, 2]}
+                formats={['png', 'avif']}
+              />
+            </LinkExternal>
+          )
+        })
+    }
+  </div>
+</Section>

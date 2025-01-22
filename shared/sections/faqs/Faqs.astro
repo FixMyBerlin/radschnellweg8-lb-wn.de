@@ -1,0 +1,33 @@
+---
+import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
+import { render } from 'astro:content'
+import { FaqItem } from './FaqItem'
+import type { FaqCollection } from './type'
+
+type Props = {
+  faqs: FaqCollection
+}
+
+const { faqs } = Astro.props
+
+// Sort by `order` and `title`
+const sortedFaqs = faqs.sort((a, b) => {
+  if (a.data.order === b.data.order) {
+    return a.data.title.localeCompare(b.data.title)
+  }
+  return a.data.order - b.data.order
+})
+---
+
+<div class="-mx-2 border-t border-gray-200 px-2">
+  {
+    sortedFaqs.map(async (faq) => {
+      const { Content } = await render(faq)
+      return (
+        <FaqItem client:visible title={faq.data.title}>
+          <Content components={mdxComponentsAstro} />
+        </FaqItem>
+      )
+    })
+  }
+</div>

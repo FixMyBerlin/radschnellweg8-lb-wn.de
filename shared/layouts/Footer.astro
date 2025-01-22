@@ -1,0 +1,18 @@
+---
+import { FOOTER_LINKS } from '@config/links'
+---
+
+<footer class="bg-white">
+  <nav
+    class="-my-2 mx-auto flex max-w-7xl flex-wrap justify-center gap-10 px-4 py-12 sm:px-6 lg:px-8"
+    aria-label="Footer"
+  >
+    {
+      FOOTER_LINKS.map((item) => (
+        <a href={item.href} class="text-gray-500 hover:text-gray-900">
+          {item.name}
+        </a>
+      ))
+    }
+  </nav>
+</footer>

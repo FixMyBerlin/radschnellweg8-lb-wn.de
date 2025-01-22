@@ -1,0 +1,23 @@
+---
+import { COLORSCLASSES } from '@config/styles'
+import Section from '@shared/layouts/Section.astro'
+import { Link } from '@shared/links/Link'
+import { getCollection } from 'astro:content'
+
+const unsortedSegments = await getCollection('routesegments')
+const segments = unsortedSegments.sort((a, b) => a.data.position - b.data.position)
+---
+
+<Section>
+  <ul class={COLORSCLASSES.routesListMarker}>
+    {
+      segments.map((item) => {
+        return (
+          <li>
+            <Link href={`#${item.slug}`}>{item.data.title}</Link>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Section>

@@ -1,7 +1,0 @@
-export * from './PageHomeFacts'
-export * from './PageHomeFaqs'
-export * from './PageHomeIntro'
-export * from './PageHomeLocation'
-export * from './PageHomeMilestones'
-export * from './PageHomePress'
-export * from './PageHomeQuotes'
