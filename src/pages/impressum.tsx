@@ -61,10 +61,6 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
         </p>
         <p>
           Du findest uns auch auf{' '}
-          <LinkExternal href="https://twitter.com/fixmyberlin">
-            Twitter
-          </LinkExternal>{' '}
-          und{' '}
           <LinkExternal href="https://www.linkedin.com/company/fixmycity">
             LinkedIn
           </LinkExternal>
