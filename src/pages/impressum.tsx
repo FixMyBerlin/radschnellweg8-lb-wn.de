@@ -60,10 +60,11 @@ const Impressum: React.FC<PageProps> = ({ location }) => {
           Telefon: 030 / 549 08 665
         </p>
         <p>
-          Du findest uns auch auf{' '}
+          Sie finden uns auch auf{' '}
           <LinkExternal href="https://www.linkedin.com/company/fixmycity">
             LinkedIn
           </LinkExternal>
+          .
         </p>
         <h2>Feedback</h2>
         <p>
