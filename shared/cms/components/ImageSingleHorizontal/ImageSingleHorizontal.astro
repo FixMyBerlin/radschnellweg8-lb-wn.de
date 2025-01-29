@@ -1,5 +1,6 @@
 ---
 import { Picture } from 'astro:assets'
+import ImageFigcaption from '../ImageFigcaption.astro'
 import { getImage } from '../utils/getImage'
 import type { ImageSingleHorizontal } from './keystatic.ImageSingleHorizontal.config'
 
@@ -37,6 +38,6 @@ const position =
       densities={[1.5, 2]}
       formats={['jpg', 'avif']}
     />
-    {caption && <figcaption class="mt-2 text-xs text-gray-500 md:text-sm">{caption}</figcaption>}
+    {caption && <ImageFigcaption>{caption}</ImageFigcaption>}
   </figure>
 </div>

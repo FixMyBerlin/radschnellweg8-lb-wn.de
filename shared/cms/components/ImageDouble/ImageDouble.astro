@@ -1,5 +1,6 @@
 ---
 import { Picture } from 'astro:assets'
+import ImageFigcaption from '../ImageFigcaption.astro'
 import { getImage } from '../utils/getImage'
 import type { ImageDoubleType } from './keystatic.ImageDouble.config'
 
@@ -38,9 +39,7 @@ const ratio = 'value' in imageConfig ? imageConfig.value : undefined
           densities={[1.5, 2]}
           formats={['jpg', 'avif']}
         />
-        {image.caption && (
-          <figcaption class="mt-2 text-xs text-gray-500 md:text-sm">{image.caption}</figcaption>
-        )}
+        {image.caption && <ImageFigcaption>{caption}</ImageFigcaption>}
       </figure>
     ))
   }

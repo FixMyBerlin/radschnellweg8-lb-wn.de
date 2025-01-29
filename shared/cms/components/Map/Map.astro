@@ -1,6 +1,7 @@
 ---
 import { Picture } from 'astro:assets'
 import { getEntry, type InferEntrySchema } from 'astro:content'
+import ImageFigcaption from '../ImageFigcaption.astro'
 import { customIcons } from './customIcons'
 
 const { relationship } = Astro.props
@@ -48,9 +49,7 @@ const { legend, image, imageAlt, imageCopyright } = map.data as InferEntrySchema
             )
           })}
         {imageCopyright && (
-          <figcaption class="-mb-2 text-right text-xs text-gray-400 md:text-sm">
-            {imageCopyright}
-          </figcaption>
+          <ImageFigcaption className="text-right">{imageCopyright}</ImageFigcaption>
         )}
       </div>
     )

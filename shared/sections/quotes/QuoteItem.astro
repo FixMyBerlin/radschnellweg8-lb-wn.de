@@ -1,5 +1,6 @@
 ---
 import { COLORSCLASSES } from '@config/styles'
+import ImageFigcaption from '@shared/cms/components/ImageFigcaption.astro'
 import { Picture } from 'astro:assets'
 import type { CollectionEntry } from 'astro:content'
 import { clsx } from 'clsx'
@@ -19,8 +20,8 @@ const { quote, name, position, image, imageCopyright } = Astro.props.quote
       class="h-[130px] w-[130px] overflow-hidden rounded-full object-cover lg:h-[320px] lg:w-[320px]"
       pictureAttributes={{ class: 'not-prose' }}
     />
-    <p class="max-w-[300px] text-[16px] leading-5 text-gray-400 lg:text-center">
-      {imageCopyright}
+    <p>
+      <ImageFigcaption className="max-w-[300px] lg:text-center"> {imageCopyright}</ImageFigcaption>
     </p>
   </div>
   <div class="pl-10 pt-6 lg:pt-12">
