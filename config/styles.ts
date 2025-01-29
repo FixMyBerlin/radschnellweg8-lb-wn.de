@@ -27,5 +27,5 @@ export const COLORSCLASSES = {
 
 export const COLORS = {
   heroPin: '#E5007D',
-  milestoneDone: '#E5007D',
+  milestoneDone: '#2C62A9',
 }

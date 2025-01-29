@@ -22,43 +22,41 @@ for (const milestone of homepageMilestones) {
     Content: Content,
   })
 }
+const sortedMilestones = milestones.sort((a, b) => a.position - b.position)
+const lastMilestoneDone = sortedMilestones.filter((m) => m.status !== 'comingUp').length - 1
 ---
 
 <Section prose>
   <h2>{homepage.data.titleMilestones}</h2>
-
   {
-    milestones
-      .sort((a, b) => a.position - b.position)
-      .map(({ status, title, Content }) => {
-        const commingUp = status === 'comingUp'
-
-        return (
-          <article class="group relative hyphens-auto text-balance pl-14">
-            <header class="not-prose">
-              <h3 class={commingUp ? 'text-gray-400' : COLORSCLASSES.milestoneHeadline}>
-                <div
-                  class={clsx(
-                    'absolute bottom-0 left-4 top-0 w-1 border-l-2 group-last:hidden',
-                    commingUp ? 'border-dashed' : '',
-                  )}
-                  style={{ borderColor: commingUp ? '#f2f2f2' : COLORS.milestoneDone }}
-                  aria-hidden="true"
-                />
-                <div
-                  class="absolute left-0 size-9 rounded-full"
-                  style={{ backgroundColor: commingUp ? '#f2f2f2' : COLORS.milestoneDone }}
-                  aria-hidden="true"
-                />
-                <div class="pt-0.5">{title}</div>
-              </h3>
-            </header>
-            <div class={clsx('pb-10 prose-p:my-0', commingUp ? 'text-gray-400' : 'inherit')}>
-              <Content components={mdxComponentsAstro} />
+    sortedMilestones.map(({ status, title, Content }, i) => {
+      const commingUp = status === 'comingUp'
+      return (
+        <article class="group relative hyphens-auto text-balance pl-14">
+          <header class="not-prose">
+            <div class={commingUp ? 'text-gray-900' : COLORSCLASSES.milestoneHeadline}>
+              <div
+                class={clsx(
+                  'absolute bottom-0 left-4 top-0 w-1 border-l-2 group-last:hidden',
+                  commingUp || i === lastMilestoneDone ? 'border-dashed' : ''
+                )}
+                style={{ borderColor: commingUp ? '#9CA3AF' : COLORS.milestoneDone }}
+                aria-hidden="true"
+              />
+              <div
+                class="absolute left-0 size-9 rounded-full"
+                style={{ backgroundColor: commingUp ? '#9CA3AF' : COLORS.milestoneDone }}
+                aria-hidden="true"
+              />
+              <p class="pt-0.5">{title}</p>
             </div>
-          </article>
-        )
-      })
+          </header>
+          <div class={clsx('inherit pb-10 prose-p:my-0')}>
+            <Content components={mdxComponentsAstro} />
+          </div>
+        </article>
+      )
+    })
   }
 
   <ContentAfterMilestones components={mdxComponentsAstro} />
