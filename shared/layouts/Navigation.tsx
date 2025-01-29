@@ -35,7 +35,7 @@ export const Navigation = ({
             {/* DESKTOP */}
             <nav className="hidden w-full items-center justify-between md:flex md:flex-wrap">
               <div className="flex items-center gap-10 pr-6">
-                <a href="/" className="h-full shrink-0 pl-6" aria-current={pathname === '/'}>
+                <a href="/" className="h-full shrink-0 py-1 pl-6" aria-current={pathname === '/'}>
                   {slotWebsiteLogo}
                 </a>
                 {navigation.map((link) => (

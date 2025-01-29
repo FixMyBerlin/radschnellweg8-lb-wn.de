@@ -7,11 +7,11 @@ if (logo === undefined) return Astro.redirect('/404')
 ---
 
 <Picture
-  class="h-16 w-auto"
+  class="h-14 w-auto"
   pictureAttributes={{ class: 'not-prose' }}
   src={logo.data.image}
   alt={logo.data.imageAlt}
-  height={64}
+  height={56}
   densities={[1.5, 2]}
   formats={['png', 'avif']}
 />
