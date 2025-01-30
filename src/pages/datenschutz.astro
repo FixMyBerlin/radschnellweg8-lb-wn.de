@@ -15,7 +15,7 @@ const { title, subtitle } = page.data
 <Layout title={title} noindex>
   <PageHeadline title={title} subtitle={subtitle} />
 
-  <Section prose>
+  <Section prose className="prose-td:break-all">
     <Content components={mdxComponentsAstro} />
   </Section>
 </Layout>
