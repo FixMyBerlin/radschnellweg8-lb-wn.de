@@ -7,7 +7,7 @@ export const markdownProseClasses = clsx(
   'max-w-full', // We always wrap Prose in Section containers, which bring their own max-width
   'text-gray-900',
   // HEADLINES ALL
-  'prose-headings:hyphens-auto prose-headings:text-balance prose-headings:font-extrabold prose-headings:text-gray-800',
+  'prose-headings:text-balance prose-headings:font-extrabold prose-headings:text-gray-800',
   'prose-headings:mb-2 prose-headings:mt-1',
   // HEADLINEs h1
   'prose-h1:mb-5 prose-h1:text-3xl prose-h1:leading-snug prose-h1:md:text-5xl prose-h1:md:leading-snug',
