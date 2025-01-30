@@ -12,20 +12,20 @@ const logos = await getCollection('logosSponsors')
     Gefördert und unterstützt durch:
   </h2>
 
-  <div class="flex flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-12">
+  <div class="flex flex-col items-center gap-5 lg:flex-row lg:gap-10">
     {
       logos
         .sort((a, b) => a.data.position - b.data.position)
         .map((item) => {
           const logo = item.data
           return (
-            <LinkExternal className="w-40 lg:w-full" href={logo.href}>
+            <LinkExternal className="w-48" href={logo.href}>
               <Picture
                 src={logo.image}
                 alt={logo.imageAlt}
-                class="w-40 lg:h-full"
+                class="w-48 lg:h-full"
                 pictureAttributes={{ class: 'not-prose w-full' }}
-                width={160}
+                width={192}
                 densities={[1.5, 2]}
                 formats={['png', 'avif']}
               />
