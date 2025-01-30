@@ -10,9 +10,7 @@ const { prose, className } = Astro.props
 ---
 
 <section class={clsx(prose ? markdownProseClasses : '', className)}>
-  <section class={clsx(prose ? markdownProseClasses : '', classes)}>
-    <div class="m-auto max-w-[90%] lg:max-w-[964px]">
-      <slot />
-    </div>
-  </section>
+  <div class="m-auto max-w-[90%] lg:max-w-[964px]">
+    <slot />
+  </div>
 </section>
