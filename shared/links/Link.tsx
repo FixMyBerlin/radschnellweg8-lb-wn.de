@@ -4,7 +4,7 @@ import React from 'react'
 
 type Props = {
   href: string
-  classes?: string
+  className?: string
   /** @default `false` */
   blank?: boolean
   /** @desc Style Link as Button */
@@ -12,12 +12,12 @@ type Props = {
   children: React.ReactNode
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>
 
-export const Link = ({ href, classes, children, blank = false, button, ...props }: Props) => {
+export const Link = ({ href, className, children, blank = false, button, ...props }: Props) => {
   return (
     <a
       href={href}
       {...props}
-      className={clsx(button ? LINKCLASSES.button : LINKCLASSES.link, classes)}
+      className={clsx(button ? LINKCLASSES.button : LINKCLASSES.link, className)}
       {...{ target: blank ? '_blank' : undefined }}
     >
       {children}

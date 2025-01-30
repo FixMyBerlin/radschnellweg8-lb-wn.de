@@ -25,7 +25,7 @@ const { participation, title1, title2, waypoints, image, imageCopyright } = home
   <div
     class={clsx(
       COLORSCLASSES.heroImageOverlay,
-      'absolute inset-0 flex w-full flex-col justify-center gap-3 font-bold text-white md:gap-6',
+      'absolute inset-0 flex w-full flex-col justify-center gap-3 font-bold text-white md:gap-6'
     )}
   >
     <h1 class="flex flex-col items-center justify-center gap-2 leading-8">
@@ -43,7 +43,7 @@ const { participation, title1, title2, waypoints, image, imageCopyright } = home
           <div class="p-4 text-center text-[20px] md:text-[32px] md:leading-10">
             {participation.value.participationText}
           </div>
-          <Link button classes="z-20" href={participation.value.participationHref}>
+          <Link button className="z-20" href={participation.value.participationHref}>
             Jetzt mitmachen
           </Link>
         </div>

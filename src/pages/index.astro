@@ -22,7 +22,7 @@ const { Content: ContentAfterQuotes } = await render(pageAfterQuotes)
 
 <Layout title={pageBeforeQuotes.data.title}>
   <HomepageHero />
-  <Section prose classes="mt-16 ">
+  <Section prose className="mt-16">
     <ContentBeforeQuotes components={mdxComponentsAstro} />
   </Section>
   <HomepageQuotes />

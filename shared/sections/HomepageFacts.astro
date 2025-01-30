@@ -7,7 +7,7 @@ import { clsx } from 'clsx'
 const homepageFacts = await getCollection('homepageFacts')
 ---
 
-<Section classes={clsx(COLORSCLASSES.factsBg, 'mt-20 py-12 text-white')}>
+<Section className={clsx(COLORSCLASSES.factsBg, 'mt-20 py-12 text-white')}>
   <div class="space-y-14">
     {
       homepageFacts

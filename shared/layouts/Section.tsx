@@ -1,11 +1,11 @@
 type Props = {
-  classes?: string
+  className?: string
   children?: React.ReactNode
 }
 
-export const Section = ({ classes, children }: Props) => {
+export const Section = ({ className, children }: Props) => {
   return (
-    <section className={classes}>
+    <section className={className}>
       <div className="m-auto max-w-[90%] lg:max-w-[964px]">{children}</div>
     </section>
   )

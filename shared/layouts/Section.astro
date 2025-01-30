@@ -4,13 +4,15 @@ import { clsx } from 'clsx'
 
 type Props = {
   prose?: boolean
-  classes?: string
+  className?: string
 }
-const { prose, classes } = Astro.props
+const { prose, className } = Astro.props
 ---
 
-<section class={clsx(prose ? markdownProseClasses : '', classes)}>
-  <div class="m-auto max-w-[90%] lg:max-w-[964px]">
-    <slot />
-  </div>
+<section class={clsx(prose ? markdownProseClasses : '', className)}>
+  <section class={clsx(prose ? markdownProseClasses : '', classes)}>
+    <div class="m-auto max-w-[90%] lg:max-w-[964px]">
+      <slot />
+    </div>
+  </section>
 </section>

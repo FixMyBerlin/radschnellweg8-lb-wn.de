@@ -7,7 +7,7 @@ const homepage = await getEntry('homepage', 'index')
 if (homepage === undefined) return Astro.redirect('/404')
 ---
 
-<Section prose classes="prose-ul:pl-0 prose-li:list-none">
+<Section prose className="prose-ul:pl-0 prose-li:list-none">
   <h2>{homepage.data.titleLinks}</h2>
   <ul>
     {
