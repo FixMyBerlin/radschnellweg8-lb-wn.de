@@ -1,6 +1,6 @@
 ---
 export const prerender = true
-import LayoutArticle from '@shared/layouts/LayoutArticle.astro'
+import Layout from '@shared/layouts/Layout.astro'
 import RoutespageRoutesegment from '@shared/sections/RoutespageRoutesegment.astro'
 import { getCollection, type CollectionEntry } from 'astro:content'
 
@@ -23,6 +23,6 @@ export async function getStaticPaths() {
 type Props = Page['props']
 ---
 
-<LayoutArticle>
+<Layout>
   <RoutespageRoutesegment route={Astro.props} />
-</LayoutArticle>
+</Layout>

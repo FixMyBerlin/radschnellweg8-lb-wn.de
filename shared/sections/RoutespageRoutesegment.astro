@@ -15,6 +15,7 @@ export type Segmentdetail = (typeof routesegmentdetails)[number]
 const filteredAndSortedDetails = routesegmentdetails
   .filter((detail) => detail.data.route === route.slug)
   .sort((a, b) => a.data.position - b.data.position)
+console.log({ route })
 ---
 
 <Section prose>
@@ -41,4 +42,47 @@ const filteredAndSortedDetails = routesegmentdetails
       </>
     ) : null
   }
+</Section>
+<Section prose>
+  <div class="prose-ul:pl-0">
+    {
+      Boolean(route.data.documents?.length) && (
+        <>
+          <h3 class="my-8">Download von Unterlagen</h3>
+          <ul class="space-y-8 prose-li:list-none prose-li:pl-0">
+            {route.data.documents!.map((document) => (
+              <li>
+                <p>
+                  <strong>{document.title}</strong>
+                  <br />
+                  {document.description}
+                </p>
+                <a target="_blank" href={document.document}>
+                  Datei herunterladen
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </div>
+  <div class="prose-ul:pl-0">
+    {
+      Boolean(route.data.socials?.length) && (
+        <>
+          <h3 class="my-8">Bilder und aktuelle Nachrichten</h3>
+          <ul class="prose-li:list-none prose-li:pl-0">
+            {route.data.socials!.map((social) => (
+              <li>
+                <a target="_blank" href={social.link}>
+                  {social.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </div>
 </Section>
