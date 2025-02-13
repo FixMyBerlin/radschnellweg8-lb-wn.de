@@ -6,8 +6,10 @@ import RoutespageRoutesegmentDetail from './RoutespageRoutesegmentDetail.astro'
 import type { Segment } from './RoutespageRoutesegments.astro'
 
 type Props = { route: Segment }
+
 const { route } = Astro.props
 const { Content } = await route.render()
+
 const routesegmentdetails = await getCollection('routesegmentdetails')
 export type Segmentdetail = (typeof routesegmentdetails)[number]
 const filteredAndSortedDetails = routesegmentdetails

@@ -12,5 +12,4 @@ export const NAVIGATION_LINKS = [
   { name: 'Route', href: '/route' },
   { name: 'Beteiligung', href: '/beteiligung' },
   { name: 'FAQ', href: '/faq' },
-  { name: 'Leichte Sprache', href: '/leichte-sprache' },
 ] as const satisfies NavigatinItem[]

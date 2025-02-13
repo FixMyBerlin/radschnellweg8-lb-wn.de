@@ -11,7 +11,7 @@ type Props = {
 const { filter } = Astro.props
 
 const faqsCollection = await getCollection('faqs', (faqEntry) =>
-  faqEntry.data.highlight?.includes(filter)
+  faqEntry.data.highlight?.includes(filter),
 )
 ---
 
