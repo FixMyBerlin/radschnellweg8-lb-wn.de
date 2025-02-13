@@ -1,21 +1,21 @@
 ---
 import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
 import Section from '@shared/layouts/Section.astro'
-import { getCollection } from 'astro:content'
+import type { Segment } from '@src/pages/route/[slug].astro'
+import { getCollection, type CollectionEntry } from 'astro:content'
 import RoutespageRoutesegmentDetail from './RoutespageRoutesegmentDetail.astro'
-import type { Segment } from './RoutespageRoutesegments.astro'
 
 type Props = { route: Segment }
 
+export type Segmentdetail = CollectionEntry<'routesegmentdetails'>
+
 const { route } = Astro.props
 const { Content } = await route.render()
+const routesegmentDetails = await getCollection('routesegmentdetails')
 
-const routesegmentdetails = await getCollection('routesegmentdetails')
-export type Segmentdetail = (typeof routesegmentdetails)[number]
-const filteredAndSortedDetails = routesegmentdetails
+const filteredAndSortedDetails = routesegmentDetails
   .filter((detail) => detail.data.route === route.slug)
   .sort((a, b) => a.data.position - b.data.position)
-console.log({ route })
 ---
 
 <Section prose>
@@ -23,7 +23,9 @@ console.log({ route })
     <h2>{route.data.title}</h2>
     <p>Baulastträger/in: {route.data.operator}</p>
   </header>
+</Section>
 
+<Section prose>
   <article>
     <Content components={mdxComponentsAstro} />
   </article>
@@ -43,6 +45,7 @@ console.log({ route })
     ) : null
   }
 </Section>
+
 <Section prose>
   <div class="prose-ul:pl-0">
     {
@@ -74,7 +77,9 @@ console.log({ route })
           <h3 class="my-8">Bilder und aktuelle Nachrichten</h3>
           <ul class="prose-li:list-none prose-li:pl-0">
             {route.data.socials!.map((social) => (
-              <li>
+              <li class="flex items-center gap-4">
+                {/* todo  */}
+                {/* <img src={social.icon} alt="" class="h-4 w-4" /> */}
                 <a target="_blank" href={social.link}>
                   {social.label}
                 </a>

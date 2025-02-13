@@ -11,10 +11,11 @@ import { keystaticImprintpageConfig } from '@shared/cms/imprintpage.keystatic'
 import { keystaticLogosPartnersConfig } from '@shared/cms/logosPartners.keystatic'
 import { keystaticLogosSponsorsConfig } from '@shared/cms/logosSponsors.keystatic'
 import { keystaticLogoWebsiteConfig } from '@shared/cms/logoWebsite.keystatic'
-import { keystaticMapsConfig } from '@shared/cms/maps.keystatic'
+import { keystaticMapImagesConfig } from '@shared/cms/mapImages.keystatic'
 import { keystaticPrivacypolicypageConfig } from '@shared/cms/privacypolicypage.keystatic'
 import { keystaticRoutepageConfig } from '@shared/cms/routepage.keystatic'
 import { keystaticRoutesegmentdetailsConfig } from '@shared/cms/routesegmentdetails.keystatic'
+import { keystaticroutesegmentdetailsUploadConfig } from '@shared/cms/routesegmentdetailsupload.keystatic'
 import { keystaticRoutesegmentsConfig } from '@shared/cms/routesegments.keystatic'
 import { keystaticSimplifiedlanguagepageConfig } from '@shared/cms/simplifiedlanguagepage.keystatic'
 import { keystaticSurveyresultsConfig } from '@shared/cms/surveyresults.keystatic'
@@ -38,9 +39,9 @@ export default config({
     navigation: {
       Start: ['homepageHero', 'homepage', 'homepageQuotes', 'homepageFacts', 'homepageMilestones'],
       Logos: ['logoWebsite', 'logosSponsors', 'logosPartners'],
-      Karten: ['maps'],
+      Kartenbilder: ['mapImages'],
       FAQs: ['faqspage', 'faqs'],
-      Routen: ['routespage', 'routesegments', 'routesegmentdetails'],
+      Routen: ['routespage', 'routesegments', 'routesegmentdetails', 'routesegmentdetailsUpload'],
       Beteiligungsergebnisse: ['surveyresultspage', 'surveyresults'],
       Verschiedenes: ['imprintpage', 'privacypolicypage'],
     },
@@ -56,6 +57,7 @@ export default config({
     imprintpage: keystaticImprintpageConfig,
     privacypolicypage: keystaticPrivacypolicypageConfig,
     logoWebsite: keystaticLogoWebsiteConfig,
+    routesegmentdetailsUpload: keystaticroutesegmentdetailsUploadConfig,
   },
   collections: {
     homepageQuotes: keystaticHomepageQuotesConfig,
@@ -63,7 +65,7 @@ export default config({
     homepageMilestones: keystaticHomepageMilestonesConfig,
     logosSponsors: keystaticLogosSponsorsConfig,
     logosPartners: keystaticLogosPartnersConfig,
-    maps: keystaticMapsConfig,
+    mapImages: keystaticMapImagesConfig,
     routesegments: keystaticRoutesegmentsConfig,
     routesegmentdetails: keystaticRoutesegmentdetailsConfig,
     faqs: keystaticFaqsConfig,

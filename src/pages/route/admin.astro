@@ -1,0 +1,151 @@
+---
+import Layout from '@shared/layouts/Layout.astro'
+import Section from '@shared/layouts/Section.astro'
+import PageHeadline from '@shared/sections/PageHeadline.astro'
+import { getCollection } from 'astro:content'
+import routeSegementsGeoData from 'data/routesegments/geometry.json'
+import routeSegementdetailsGeoData from 'src/content/routesegmentdetailsData/upload.json'
+
+const routeSegments = await getCollection('routesegments')
+const routeSegmentDetails = await getCollection('routesegmentdetails')
+
+const subsectionGeoSlugs = routeSegementsGeoData.features
+  .map((feature) => feature.properties.subsectionSlug)
+  .filter(Boolean)
+const subsectionCmsSlugs = routeSegments.map((segment) => segment.data.tsSlug).filter(Boolean)
+const allSubsectionSlugs = [...new Set([...subsectionGeoSlugs, ...subsectionCmsSlugs])]
+
+const subsectiondetailGeoIds = routeSegementdetailsGeoData.features
+  .map((feature) => feature.properties.detailId)
+  .filter(Boolean)
+const subsectiondetailCmsIds = routeSegmentDetails
+  .map((detail) => detail.data.detailId)
+  .filter(Boolean)
+const allSubsectiondetailIds = [...new Set([...subsectiondetailGeoIds, ...subsectiondetailCmsIds])]
+---
+
+<Layout noindex title="Daten Abgleich für Abschnitte und Detailinfos">
+  <PageHeadline title="Daten Abgleich für Abschnitte und Detailinfos" />
+  <Section prose>
+    <p>
+      Hier werden die Abschnitte und Detailinfos aus dem CMS mit den Geodaten aus dem GeoJSON
+      verglichen. Die Abschnitte und Detailinfos werden anhand der Slug bzw. der ID verglichen.
+    </p>
+    <ul>
+      <li>GRÜN: Abschnitt/Detailinfo ist in CMS und GeoJSON vorhanden.</li>
+      <li>ROT: Abschnitt/Detailinfo ist entweder nur in CMS oder nur in GeoJSON vorhanden.</li>
+      <li>
+        ROTE UMRANDUNG: Abschnitt/Detailinfo ist mehrfach im CMS/Geo JSON vorhanden. Dies führt auf
+        der Website nicht zu einem Fehler, sondern es wird einfach der erste Eintrag genommen.
+      </li>
+    </ul>
+    <p>Ziel: beide Tabellen sind grün und nichts ist rot umrandet.</p>
+    <h2>Abschnitte</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Subsection / TS Slug</th>
+          <th>In CMS</th>
+          <th>In GeoJSON</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          allSubsectionSlugs.map((slug) => (
+            <tr
+              class={
+                subsectionCmsSlugs.includes(slug) && subsectionGeoSlugs.includes(slug!)
+                  ? 'bg-green-200'
+                  : 'bg-red-200'
+              }
+            >
+              <td>{slug}</td>
+              <td
+                class={
+                  routeSegments.filter((s) => s.data.tsSlug === slug).length > 1
+                    ? 'flex flex-col border-2 border-red-600'
+                    : ''
+                }
+              >
+                {subsectionCmsSlugs.includes(slug)
+                  ? routeSegments
+                      .filter((s) => s.data.tsSlug === slug)
+                      .map((segment) => <a href={`/route/${segment.slug}`}>{segment.slug}</a>)
+                  : ''}
+              </td>
+              <td>{subsectionGeoSlugs.includes(slug!) ? 'x' : ''}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+    <h2>Detailinfos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Detail ID</th>
+          <th>In CMS (in Klammern welchem Abschnitt zugeordnet)</th>
+          <th>In Geo JSON</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          allSubsectiondetailIds.map((slug) => (
+            <tr
+              class={
+                subsectiondetailCmsIds.includes(slug) && subsectiondetailGeoIds.includes(slug!)
+                  ? 'bg-green-200'
+                  : 'bg-red-200'
+              }
+            >
+              <td>{slug}</td>
+              <td
+                class={
+                  routeSegmentDetails.filter((s) => s.data.detailId === slug).length > 1
+                    ? 'flex flex-col border-2 border-red-600'
+                    : ''
+                }
+              >
+                {subsectiondetailCmsIds.includes(slug)
+                  ? routeSegmentDetails
+                      .filter((s) => s.data.detailId === slug)
+                      .map((segment) => (
+                        <span>
+                          {segment.slug} ({segment.data.route})
+                        </span>
+                      ))
+                  : ''}
+              </td>
+              {/* <td>{subsectiondetailGeoIds.includes(slug) ? 'x' : ''}</td> */}
+              <td
+                class={
+                  subsectiondetailGeoIds.filter((id) => id === slug).length > 1
+                    ? 'border-2 border-red-500'
+                    : ''
+                }
+              >
+                {subsectiondetailGeoIds
+                  .filter((id) => id === slug)
+                  .map(() => (
+                    <span>x</span>
+                  ))}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+    <h3>Abschnitte Geo data Raw</h3>
+    <pre>
+{JSON.stringify(routeSegementsGeoData, undefined, 2)}
+    </pre>
+    <h3>Detailinfos Geo data Raw</h3>
+    {
+      routeSegementdetailsGeoData ? (
+        <pre>{JSON.stringify(routeSegementdetailsGeoData, undefined, 2)}</pre>
+      ) : (
+        'keine Geodaten für Detailinfos vorhanden - bitte JSON über CMS hochladen.'
+      )
+    }
+  </Section>
+</Layout>

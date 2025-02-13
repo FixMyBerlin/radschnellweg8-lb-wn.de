@@ -7,6 +7,8 @@ export const astroRoutesegmentsDefinition = defineCollection({
       title: z.string(),
       operator: z.string(),
       position: z.number(),
+      markerPositionBottom: z.boolean().optional(),
+      tsSlug: z.string().optional(),
       documents: z
         .array(
           z.object({
@@ -21,6 +23,7 @@ export const astroRoutesegmentsDefinition = defineCollection({
           z.object({
             label: z.string(),
             link: z.string(),
+            type: z.enum(['facebook', 'instagram', 'linkedin', 'tiktok']),
           }),
         )
         .optional(),

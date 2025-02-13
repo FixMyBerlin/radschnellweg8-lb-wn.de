@@ -1,9 +1,9 @@
 import { collection, fields } from '@keystatic/core'
-import { customIcons } from './components/Map/customIcons'
+import { customIcons } from './components/MapImage/customIcons'
 
-export const keystaticMapsConfig = collection({
-  label: 'Karten mit Legenden',
-  path: 'src/content/maps/*',
+export const keystaticMapImagesConfig = collection({
+  label: 'Kartenbilder mit Legenden',
+  path: 'src/content/mapImages/*',
   slugField: 'name',
   schema: {
     name: fields.slug({
@@ -20,8 +20,8 @@ export const keystaticMapsConfig = collection({
     image: fields.image({
       label: 'Karte',
       description: 'Mindestes 960px, besser 1.920px',
-      directory: 'src/content/maps',
-      publicPath: '../../content/maps',
+      directory: 'src/content/mapImages',
+      publicPath: '../../content/mapImages',
       validation: { isRequired: true },
     }),
     imageAlt: fields.text({
