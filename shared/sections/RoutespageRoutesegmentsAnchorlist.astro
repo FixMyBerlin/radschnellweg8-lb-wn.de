@@ -14,7 +14,7 @@ const segments = unsortedSegments.sort((a, b) => a.data.position - b.data.positi
         return (
           <li>
             <a class="text-black" href={`/route/${item.slug}`}>
-              <div class="bg-[#ECF1F9] p-4">
+              <div class="bg-[#ECF1F9] p-4 hover:bg-[#D9E4F2]">
                 <p class="mb-3">{item.data.title}</p>
                 <small class={LINKCLASSES.link}>Weiterlesen</small>
               </div>
