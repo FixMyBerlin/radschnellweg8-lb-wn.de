@@ -3,6 +3,7 @@ import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.as
 import Layout from '@shared/layouts/Layout.astro'
 import Section from '@shared/layouts/Section.astro'
 import PageHeadline from '@shared/sections/PageHeadline.astro'
+import RoutespageRoutesegments from '@shared/sections/RoutespageRoutesegments.astro'
 import RoutespageRouteSegmentsAnchorlist from '@shared/sections/RoutespageRoutesegmentsAnchorlist.astro'
 import { getEntry, render } from 'astro:content'
 
@@ -10,7 +11,7 @@ const page = await getEntry('routepage', 'index')
 if (page === undefined) return Astro.redirect('/404')
 
 const { Content } = await render(page)
-const { title, subtitle } = page.data
+const { title, subtitle, subPagesActive } = page.data
 ---
 
 <Layout title={title}>
@@ -18,7 +19,5 @@ const { title, subtitle } = page.data
   <Section prose>
     <Content components={mdxComponentsAstro} />
   </Section>
-
-  <RoutespageRouteSegmentsAnchorlist />
-  <!-- <RoutespageRoutesegments /> -->
+  {!subPagesActive ? <RoutespageRoutesegments /> : <RoutespageRouteSegmentsAnchorlist />}
 </Layout>

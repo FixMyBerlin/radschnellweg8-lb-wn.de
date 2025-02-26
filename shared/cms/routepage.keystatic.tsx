@@ -9,6 +9,12 @@ export const keystaticRoutepageConfig = singleton({
   schema: {
     title: fields.text({ label: 'Titel', validation: { isRequired: true } }),
     subtitle: fields.text({ label: 'Untertitel' }),
+    subPagesActive: fields.checkbox({
+      label: 'Unterseiten aktivieren',
+      defaultValue: true,
+      description:
+        'Aktiviert die Anzeige der Abschnitte als Unterseiten. Wenn deaktiviert, werden die Abschnitte auf /route untereinander angezeigt.',
+    }),
     body: fields.mdx({
       label: 'Text',
       components: mdxComponentsKeystatic('routepage'),

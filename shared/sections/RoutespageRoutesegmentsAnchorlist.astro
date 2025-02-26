@@ -13,7 +13,6 @@ const segments = unsortedSegments.sort((a, b) => a.data.position - b.data.positi
       segments.map((item) => {
         return (
           <li>
-            {/* todo old route version */}
             <a class="text-black" href={`/route/${item.slug}`}>
               <div class="bg-[#ECF1F9] p-4">
                 <p class="mb-3">{item.data.title}</p>
