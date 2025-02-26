@@ -43,7 +43,7 @@ export const Navigation = ({
                     key={link.href}
                     name={link.name}
                     href={link.href}
-                    active={pathname === link.href}
+                    active={pathname.split('/')[1] === link.href.split('/')[1]}
                   />
                 ))}
               </div>
@@ -62,7 +62,7 @@ export const Navigation = ({
                   key={link.href}
                   name={link.name}
                   href={link.href}
-                  active={pathname === link.href}
+                  active={pathname.split('/')[1] === link.href.split('/')[1]}
                 />
               ))}
               {slotLogos}
