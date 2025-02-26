@@ -26,7 +26,7 @@ Das Update der Linien-Daten, incl. properties "Status", "Datum der Fertigstellun
 
 Das Update der Punkt-Daten (für routesegmentdetails / "Detailinfos") läuft so:
 
-1. Placemark Play aufrufen: https://play.placemark.io/?load=https://raw.githubusercontent.com/FixMyBerlin/TODO
+1. Placemark Play aufrufen: https://play.placemark.io/?load=https://raw.githubusercontent.com/FixMyBerlin/radschnellweg8-lb-wn.de/blob/new-route-pages/src/content/routesegmentdetailsData/upload.json
    - (Und händisch ranzoomen)
 2. Die Daten editieren
    - Es können Punkt-Geometrien bearbeitet, gelöscht oder neu angelegt werden
