@@ -16,12 +16,27 @@ const routesegmentDetails = await getCollection('routesegmentdetails')
 const filteredAndSortedDetails = routesegmentDetails
   .filter((detail) => detail.data.route === route.slug)
   .sort((a, b) => a.data.position - b.data.position)
+
+const { title, operator, contact, documents, socials } = route.data
 ---
 
 <Section prose>
   <header id={route.slug} class="scroll-m-8">
-    <h2>{route.data.title}</h2>
-    <p>Baulastträger/in: {route.data.operator}</p>
+    <h2>{title}</h2>
+    {
+      operator && (
+        <p>
+          <strong>Baulastträger/in:</strong> {operator}
+        </p>
+      )
+    }
+    {
+      contact && (
+        <p>
+          <strong>Ansprechpartner/in:</strong> {contact}
+        </p>
+      )
+    }
   </header>
 </Section>
 

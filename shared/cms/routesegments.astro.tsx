@@ -5,7 +5,8 @@ export const astroRoutesegmentsDefinition = defineCollection({
   schema: () =>
     z.object({
       title: z.string(),
-      operator: z.string(),
+      operator: z.string().optional(),
+      contact: z.string().optional(),
       position: z.number(),
       markerPositionBottom: z.boolean().optional(),
       tsSlug: z.string().optional(),

@@ -15,6 +15,7 @@ export const keystaticRoutesegmentsConfig = collection({
         'Hier den Slug des Planungsabschnittes aus dem TS angeben (im GeoJSON ist es die property `subsectionSlug`), damit dem Abschnitt eine Geometrie zugeordnet werden kann.',
     }),
     operator: fields.text({ label: 'Baulastträger' }),
+    contact: fields.text({ label: 'Ansprechpartner*in' }),
     position: fields.number({ label: 'Position' }),
     markerPositionBottom: fields.checkbox({
       label: 'Tip-Marker in der Karte unten anzeigen',
