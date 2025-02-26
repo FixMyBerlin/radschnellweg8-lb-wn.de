@@ -1,5 +1,3 @@
-import { Section } from '@shared/layouts/Section'
-
 import { along, length, lineString } from '@turf/turf'
 import type { CollectionEntry } from 'astro:content'
 import clsx from 'clsx'
@@ -91,32 +89,27 @@ export const RouteMap = ({ routesegments, focusSegemntId, routesegmentDetailMark
   }
 
   return (
-    <Section className="mb-20">
-      <div className="relative h-[500px] w-full">
-        <BaseMap
-          setSelected={setSelectedSegment}
-          markers={routesegmentDetailMarkers ? [...markers, ...routesegmentDetailMarkers] : markers}
-          geometries={routesegmentFeatures as FeatureCollection}
-          focusSegment={focusSegemntId}
-          handleRouteClick={handleRouteClick}
-          linePaint={getLinePaintRouteMap(focusSegemntId)}
-        />
-        <div className="grid w-full grid-cols-3 gap-3 bg-gray-200 p-2 sm:grid-cols-4 md:grid-cols-5">
-          {Object.entries(routeSegmentStatus).map(([status, { colorClass, icon, label }]) => (
-            <div key={status} className="flex items-center gap-2 pl-4">
-              <div
-                className={clsx(
-                  'flex h-6 w-6 items-center justify-center rounded-full',
-                  colorClass,
-                )}
-              >
-                <img src={icon.src} alt="" className="h-5 w-5" />
-              </div>
-              <span className="text-sm">{label}</span>
+    <div className="relative mb-24 mt-12 h-[500px] w-full">
+      <BaseMap
+        setSelected={setSelectedSegment}
+        markers={routesegmentDetailMarkers ? [...markers, ...routesegmentDetailMarkers] : markers}
+        geometries={routesegmentFeatures as FeatureCollection}
+        focusSegment={focusSegemntId}
+        handleRouteClick={handleRouteClick}
+        linePaint={getLinePaintRouteMap(focusSegemntId)}
+      />
+      <div className="grid w-full grid-cols-3 gap-3 bg-gray-200 p-2 sm:grid-cols-4 md:grid-cols-5">
+        {Object.entries(routeSegmentStatus).map(([status, { colorClass, icon, label }]) => (
+          <div key={status} className="flex items-center gap-2 pl-4">
+            <div
+              className={clsx('flex h-6 w-6 items-center justify-center rounded-full', colorClass)}
+            >
+              <img src={icon.src} alt="" className="h-5 w-5" />
             </div>
-          ))}
-        </div>
+            <span className="text-sm">{label}</span>
+          </div>
+        ))}
       </div>
-    </Section>
+    </div>
   )
 }
