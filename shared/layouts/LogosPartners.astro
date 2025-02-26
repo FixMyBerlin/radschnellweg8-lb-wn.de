@@ -1,0 +1,36 @@
+---
+import { LinkExternal } from '@shared/links/LinkExternal'
+import { Picture } from 'astro:assets'
+import { getCollection } from 'astro:content'
+import { clsx } from 'clsx'
+
+const logos = await getCollection('logosPartners')
+---
+
+{
+  logos.length > 0 && (
+    <div class="grow px-2 py-8 md:flex md:flex-shrink-0 md:items-center md:p-0 md:pr-6">
+      <span class="sr-only">Projektpartner:</span>
+      <div class="flex w-full flex-wrap items-center justify-center gap-4 gap-x-8 md:justify-end">
+        {logos
+          .sort((a, b) => a.data.position - b.data.position)
+          .map(({ data: logo }) => {
+            return (
+              <LinkExternal href={logo.href}>
+                <Picture
+                  class={clsx('max-h-[40px] w-auto', logo.imageHeight ? undefined : 'h-10')}
+                  pictureAttributes={{ class: 'not-prose' }}
+                  src={logo.image}
+                  alt={logo.imageAlt}
+                  style={{ height: logo.imageHeight ? `${logo.imageHeight}px` : undefined }}
+                  height={Math.max(logo.imageHeight || 1, 40)}
+                  densities={[1.5, 2]}
+                  formats={['png', 'avif']}
+                />
+              </LinkExternal>
+            )
+          })}
+      </div>
+    </div>
+  )
+}

@@ -1,0 +1,25 @@
+---
+import Section from '@shared/layouts/Section.astro'
+import { LinkExternal } from '@shared/links/LinkExternal'
+import { getEntry } from 'astro:content'
+
+const homepage = await getEntry('homepage', 'index')
+if (homepage === undefined) return Astro.redirect('/404')
+---
+
+<Section prose className="prose-ul:pl-0 prose-li:list-none">
+  <h2>{homepage.data.titleLinks}</h2>
+  <ul>
+    {
+      (homepage.data.links || []).map((link) => {
+        return (
+          <li>
+            <LinkExternal blank href={link.href}>
+              {link.label}
+            </LinkExternal>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Section>

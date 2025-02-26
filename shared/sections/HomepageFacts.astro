@@ -1,0 +1,41 @@
+---
+import { COLORSCLASSES } from '@config/styles'
+import { Section } from '@shared/layouts/Section'
+import { getCollection } from 'astro:content'
+import { clsx } from 'clsx'
+
+const homepageFacts = await getCollection('homepageFacts')
+---
+
+<Section className={clsx(COLORSCLASSES.factsBg, 'mt-20 py-12 text-white')}>
+  <div class="space-y-14">
+    {
+      homepageFacts
+        .sort((a, b) => a.data.position - b.data.position)
+        .map(({ data }) => {
+          const factItem = data
+
+          return (
+            <div class="items-center justify-between md:flex">
+              <div class="w-full rounded-md bg-white px-6 py-4 text-center shadow-lg md:w-[35%]">
+                <div
+                  class={clsx(
+                    COLORSCLASSES.factNumber,
+                    'font-extrabold lg:text-[32px] lg:leading-[48px]'
+                  )}
+                >
+                  {factItem.fact}
+                </div>
+                <div class={clsx(COLORSCLASSES.factDesc)}>{factItem.subline}</div>
+              </div>
+              {factItem.description && (
+                <div class="mt-8 hyphens-auto text-balance md:mt-0 md:w-[55%]">
+                  {factItem.description}
+                </div>
+              )}
+            </div>
+          )
+        })
+    }
+  </div>
+</Section>

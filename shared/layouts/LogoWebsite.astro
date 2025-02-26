@@ -1,0 +1,17 @@
+---
+import { Picture } from 'astro:assets'
+import { getEntry } from 'astro:content'
+
+const logo = await getEntry('logoWebsite', 'index')
+if (logo === undefined) return Astro.redirect('/404')
+---
+
+<Picture
+  class="h-14 w-auto"
+  pictureAttributes={{ class: 'not-prose' }}
+  src={logo.data.image}
+  alt={logo.data.imageAlt}
+  height={56}
+  densities={[1.5, 2]}
+  formats={['png', 'avif']}
+/>

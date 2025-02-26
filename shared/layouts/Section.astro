@@ -1,0 +1,16 @@
+---
+import { markdownProseClasses } from '@shared/text/proseClasses'
+import { clsx } from 'clsx'
+
+type Props = {
+  prose?: boolean
+  className?: string
+}
+const { prose, className } = Astro.props
+---
+
+<section class={clsx(prose ? markdownProseClasses : '', className)}>
+  <div class="m-auto max-w-[90%] lg:max-w-[796px]">
+    <slot />
+  </div>
+</section>

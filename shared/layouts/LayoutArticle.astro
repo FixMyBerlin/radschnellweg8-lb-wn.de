@@ -1,0 +1,12 @@
+---
+import Layout from './Layout.astro'
+
+type Props = { title?: string; noindex?: boolean }
+const { title, noindex }: Props = Astro.props
+---
+
+<Layout title={title} noindex={noindex}>
+  <article class="prose mx-auto max-w-[796px] px-3 pt-10">
+    <slot />
+  </article>
+</Layout>

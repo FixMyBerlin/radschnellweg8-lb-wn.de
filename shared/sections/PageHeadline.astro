@@ -1,0 +1,10 @@
+---
+import Section from '@shared/layouts/Section.astro'
+
+const { title, subtitle } = Astro.props
+---
+
+<Section prose className="mt-8">
+  {subtitle && <div class="mb-4 mt-0 text-base text-neutral-400">{subtitle}</div>}
+  <h1>{title}</h1>
+</Section>
