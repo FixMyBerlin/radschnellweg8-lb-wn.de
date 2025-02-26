@@ -6,11 +6,12 @@ Das Update der Linien-Daten, incl. properties "Status", "Datum der Fertigstellun
 
 1. Im Trassenscout (TS):
    - die Planungsabschnitte im Projekt anlegen
-   - Die Felder "Status", "Datum der Fertigstellung" und "Baulastträger" angeben
-2. Im CMS https://cms-rs8.netlify.app/keystatic/branch/develop/collection/routesegments:
+   - die Felder "Status", "Datum der Fertigstellung" und "Baulastträger" angeben
+   - den Export auf Projektebene aktivieren
+2. Im CMS `Abschnitte`
    - die Abschnitte anlegen
-   - als `Trassenscout Slug` den Abschnitt des Planungsabschnitts aus dem Trassenscout angeben
-3. Mit dem Script die Daten von TS holen:
+   - als `Trassenscout Slug` den Slug des Planungsabschnitts aus dem Trassenscout angeben
+3. Die Daten von TS holen:
    - update config/map.mjs
    - run `node shared/scripts/updateRoutesegmentsGeometry.mjs`
    - speichert die features als JSON unter `data/routesegments/geometry.json`
@@ -26,21 +27,24 @@ Das Update der Linien-Daten, incl. properties "Status", "Datum der Fertigstellun
 
 Das Update der Punkt-Daten (für routesegmentdetails / "Detailinfos") läuft so:
 
-1. Placemark Play aufrufen: https://play.placemark.io/?load=https://raw.githubusercontent.com/FixMyBerlin/radschnellweg8-lb-wn.de/blob/new-route-pages/src/content/routesegmentdetailsData/upload.json
+1. Im CMS bei `Detailinfos zu Abschnitten`
+   - die Detailinfos anlegen
+   - bei den Detailinfos, die eine Geometrie haben, als `Detail ID` eine beliebige ID angeben
+2. Placemark Play aufrufen: https://play.placemark.io/?load=https://raw.githubusercontent.com/FixMyBerlin/radschnellweg8-lb-wn.de/blob/new-route-pages/src/content/routesegmentdetailsData/upload.json
    - (Und händisch ranzoomen)
-2. Die Daten editieren
+3. Die Daten editieren
    - Es können Punkt-Geometrien bearbeitet, gelöscht oder neu angelegt werden
-   - Jede Geometrie benötigt eine property detailId
-3. Exportieren: File > Export > GeoJSON
+   - Jede Geometrie benötigt eine property detailId des zugehörgen Items aus dem CMS
+4. Exportieren: File > Export > GeoJSON
    - Im Dialog zusätzlich "Intent & format" auswählen
    - Dateinamen ändern in: `geometry.json` (Hinweis: Die Änderung des Suffix von .geojson zu .json ist richtig)
-4. Datei hochladen:
+5. Datei hochladen:
    - im CMS unter `Detailinfos Geo Upload` das neue json hochladen
    - durch speichern werden die Punktdaten `src/content/routesegmentdetailsData/upload.json` ersetzt
    - **alle bisherigen Daten werden überschrieben**
    - 1 Feature entspricht 1 Abschnitt aus `content/routesegmentdetails`
    - Übersicht über die Zurodnung zu CMS Items: `/route/admin`
-5. Neu builden:
+6. Neu builden:
    - nach dem build werden die neuen Geometrien in der Karte (nur bei denen mit Fokus auf Abschnitt) angezeigt
 
 ## Abgleich der CMS items der Abschnitte und Detailinfos mit den Featuren aus den GeoJSONs:
