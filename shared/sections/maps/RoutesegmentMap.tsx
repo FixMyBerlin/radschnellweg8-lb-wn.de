@@ -24,7 +24,7 @@ export const RoutesegmentMap = ({
           key={matchingDetailGeo.properties.detailId}
           longitude={matchingDetailGeo.geometry.coordinates[0] as number}
           latitude={matchingDetailGeo.geometry.coordinates[1] as number}
-          className="flex h-9 w-9 items-center justify-center rounded-full border bg-white shadow-2xl"
+          className="flex h-9 w-9 items-center justify-center rounded-full border bg-white shadow-lg"
         >
           <div className="text-md font-extrabold">{detail?.data.position}</div>
         </Marker>
