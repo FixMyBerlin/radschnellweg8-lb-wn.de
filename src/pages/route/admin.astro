@@ -3,8 +3,8 @@ import Layout from '@shared/layouts/Layout.astro'
 import Section from '@shared/layouts/Section.astro'
 import PageHeadline from '@shared/sections/PageHeadline.astro'
 import { getCollection } from 'astro:content'
-import routeSegementsGeoData from 'data/routesegments/geometry.json'
-import routeSegementdetailsGeoData from 'src/content/routesegmentdetailsData/upload.json'
+import routeSegementdetailsGeoData from 'src/content/routeGeoData/uploadDetails.json'
+import routeSegementsGeoData from 'src/content/routeGeoData/uploadSegements.json'
 
 const routeSegments = await getCollection('routesegments')
 const routeSegmentDetails = await getCollection('routesegmentdetails')

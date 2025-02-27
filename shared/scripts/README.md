@@ -12,14 +12,15 @@ Das Update der Linien-Daten, incl. properties "Status", "Datum der Fertigstellun
    - die Abschnitte anlegen
    - als `Trassenscout Slug` den Slug des Planungsabschnitts aus dem Trassenscout angeben
 3. Die Daten von TS holen:
-   - update config/map.mjs
-   - run `node shared/scripts/updateRoutesegmentsGeometry.mjs`
-   - speichert die features als JSON unter `data/routesegments/geometry.json`
+   - https://staging.trassenscout.de/api/projects/<PROJEKT_SLUG> aufrufen und Datei als .json speichern (Hinweis: das Suffix .json ist richtig)
+4. Datei hochladen:
+   - im CMS unter `Geo Upload` > `Geo Upload Abschnitte` das neue json hochladen
+   - durch Speichern werden die Punktdaten ersetzt
    - **alle bisherigen Daten werden überschrieben**
    - 1 Feature entspricht 1 Abschnitt aus `content/routesegments`
    - fehlende Geometrien zu im CMS angelegten Abschnitten können hier eingesehen werden: `/route/admin`
    - **unter 'Abschnitte' sollten alle Zeilen grün sein**
-4. Neu builden:
+5. Neu builden:
    - nach dem build werden die neuen Geometrien in der Karte angezeigt
    - die Informationen zu "Status", "Datum der Fertigstellung" und "Baulastträger" sind entsprechend des GeoJSONs aktualisiert
 
@@ -39,8 +40,8 @@ Das Update der Punkt-Daten (für routesegmentdetails / "Detailinfos") läuft so:
    - Im Dialog zusätzlich "Intent & format" auswählen
    - Dateinamen ändern in: `geometry.json` (Hinweis: Die Änderung des Suffix von .geojson zu .json ist richtig)
 5. Datei hochladen:
-   - im CMS unter `Detailinfos Geo Upload` das neue json hochladen
-   - durch speichern werden die Punktdaten `src/content/routesegmentdetailsData/upload.json` ersetzt
+   - im CMS unter `Geo Upload` > `Geo Upload Detailinfos` das neue json hochladen
+   - durch Speichern werden die Punktdaten ersetzt
    - **alle bisherigen Daten werden überschrieben**
    - 1 Feature entspricht 1 Abschnitt aus `content/routesegmentdetails`
    - Übersicht über die Zurodnung zu CMS Items: `/route/admin`

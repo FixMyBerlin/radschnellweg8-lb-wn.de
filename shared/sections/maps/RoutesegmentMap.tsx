@@ -1,4 +1,4 @@
-import routesegmentDetailsGeoData from '@src/content/routesegmentdetailsData/upload.json'
+import routesegmentDetailsGeoData from '@src/content/routeGeoData/uploadDetails.json'
 import type { CollectionEntry } from 'astro:content'
 import { Marker } from 'react-map-gl/maplibre'
 import { RouteMap } from './RouteMap'

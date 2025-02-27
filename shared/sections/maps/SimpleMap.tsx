@@ -1,8 +1,8 @@
 import { COLORSCLASSES } from '@config/styles'
 import { Section } from '@shared/layouts/Section'
 import clsx from 'clsx'
-import routesegmentFeatures from 'data/routesegments/geometry.json'
 import type { FeatureCollection } from 'geojson'
+import routesegmentFeatures from 'src/content/routeGeoData/uploadSegements.json'
 import { BaseMap } from './BaseMap'
 import { linePaintSimpleMap } from './statusDefinition'
 type Props = {
