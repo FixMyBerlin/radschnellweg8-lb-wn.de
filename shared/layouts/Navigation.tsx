@@ -56,7 +56,7 @@ export const Navigation = ({
 
           {/* MOBILE */}
           <DisclosurePanel className="md:hidden">
-            <nav className="space-y-1 pb-3 pt-2">
+            <nav className="space-y-1 pt-2 pb-3">
               {navigation.map((link) => (
                 <NavigationMenuItemMobile
                   key={link.href}

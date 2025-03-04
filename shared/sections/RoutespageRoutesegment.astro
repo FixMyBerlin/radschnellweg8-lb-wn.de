@@ -17,7 +17,7 @@ const filteredAndSortedDetails = routesegmentDetails
   .filter((detail) => detail.data.route === route.slug)
   .sort((a, b) => a.data.position - b.data.position)
 
-const { title, operator, contact, documents, socials } = route.data
+const { title, operator, contact } = route.data
 ---
 
 <Section prose>
@@ -70,7 +70,7 @@ const { title, operator, contact, documents, socials } = route.data
       Boolean(route.data.documents?.length) && (
         <>
           <h3 class="my-8">Download von Unterlagen</h3>
-          <ul class="space-y-8 prose-li:list-none prose-li:pl-0">
+          <ul class="prose-li:list-none prose-li:pl-0 space-y-8">
             {route.data.documents!.map((document) => (
               <li>
                 <p>

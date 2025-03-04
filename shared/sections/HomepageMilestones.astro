@@ -32,12 +32,12 @@ const lastMilestoneDone = sortedMilestones.filter((m) => m.status !== 'comingUp'
     sortedMilestones.map(({ status, title, Content }, i) => {
       const commingUp = status === 'comingUp'
       return (
-        <article class="group relative hyphens-auto text-balance pl-14">
+        <article class="group relative pl-14 text-balance hyphens-auto">
           <header class="not-prose">
             <div class={commingUp ? 'text-gray-900' : COLORSCLASSES.milestoneHeadline}>
               <div
                 class={clsx(
-                  'absolute bottom-0 left-4 top-0 w-1 border-l-2 group-last:hidden',
+                  'absolute top-0 bottom-0 left-4 w-1 border-l-2 group-last:hidden',
                   commingUp || i === lastMilestoneDone ? 'border-dashed' : '',
                 )}
                 style={{ borderColor: commingUp ? '#9CA3AF' : COLORS.milestoneDone }}
@@ -51,7 +51,7 @@ const lastMilestoneDone = sortedMilestones.filter((m) => m.status !== 'comingUp'
               <p class="pt-0.5">{title}</p>
             </div>
           </header>
-          <div class={clsx('inherit pb-10 prose-p:my-0')}>
+          <div class={clsx('inherit prose-p:my-0 pb-10')}>
             <Content components={mdxComponentsAstro} />
           </div>
         </article>

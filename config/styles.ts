@@ -1,11 +1,11 @@
 export const LINKCLASSES = {
   link: 'decoration-[#E5007D] hover:text-[#E5007D] underline',
   button:
-    'rounded-lg bg-[#E5007D] active:ring active:bg-[#E5007D] active:ring-[#111827] text-white hover:!text-white hover:bg-[#111827] px-6 pt-[8.5px] pb-[6px] font-normal inline-block text-[16px] leading-[26px] no-underline',
+    'rounded-lg bg-[#E5007D] active:ring-3 active:bg-[#E5007D] active:ring-[#111827] text-white hover:text-white! hover:bg-[#111827] px-6 pt-[8.5px] pb-[6px] font-normal inline-block text-[16px] leading-[26px] no-underline',
 }
 
 export const COLORSCLASSES = {
-  proseLink: 'prose-a:decoration-[#E5007D] hover:prose-a:text-[#E5007D]',
+  proseLink: 'prose-a:decoration-[#E5007D] prose-a:hover:text-[#E5007D]',
   heroTextBg: 'bg-[#E5007D]',
   heroImageOverlay: 'bg-[#2C62A9]/50',
   factsBg: 'bg-[#2C62A9]',

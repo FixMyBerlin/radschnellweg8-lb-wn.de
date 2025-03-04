@@ -36,7 +36,7 @@ export const ScrollTopLink = () => {
         <ArrowUpCircleIcon
           className={clsx(
             COLORSCLASSES.scrollTopLink,
-            'fixed bottom-16 right-8 z-40 w-14 rounded-full bg-white',
+            'fixed right-8 bottom-16 z-40 w-14 rounded-full bg-white',
           )}
         />
       </button>

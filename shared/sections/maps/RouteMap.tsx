@@ -89,7 +89,7 @@ export const RouteMap = ({ routesegments, focusSegemntId, routesegmentDetailMark
   }
 
   return (
-    <div className="relative mb-24 mt-12 h-[500px] w-full">
+    <div className="relative mt-12 mb-24 h-[500px] w-full">
       <BaseMap
         setSelected={setSelectedSegment}
         markers={routesegmentDetailMarkers ? [...markers, ...routesegmentDetailMarkers] : markers}

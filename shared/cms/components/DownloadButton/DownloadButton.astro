@@ -9,7 +9,7 @@ const { label, file, filename } = Astro.props
 <p>
   <a
     download={filename}
-    class={clsx(LINKCLASSES.button, 'inline-flex items-center gap-1 !no-underline')}
+    class={clsx(LINKCLASSES.button, 'inline-flex items-center gap-1 no-underline!')}
     href={file}
   >
     <ArrowDownTrayIcon className="size-4" />

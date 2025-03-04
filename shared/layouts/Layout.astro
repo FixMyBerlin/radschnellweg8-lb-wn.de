@@ -2,7 +2,9 @@
 import { META } from '@config/config'
 import { ClientRouter } from 'astro:transitions'
 import '../../config/fonts'
+import '../../config/theme.css'
 import PngSocialSharingFallback from '../../public/social-sharing/social-default.jpg'
+import './base.css'
 import { buildNavigation } from './buildNavigation'
 import Footer from './Footer.astro'
 import LogosPartners from './LogosPartners.astro'
@@ -95,7 +97,7 @@ const navigation = await buildNavigation()
       <LogosPartners slot="slotPartnerLogos" />
       <LogoWebsite slot="slotWebsiteLogo" />
     </Navigation>
-    <main class="z-0 flex-grow bg-white">
+    <main class="z-0 grow bg-white">
       <slot />
     </main>
     <Footer />

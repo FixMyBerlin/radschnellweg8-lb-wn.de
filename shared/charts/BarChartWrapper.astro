@@ -21,7 +21,7 @@ const heightClasses: Record<`l${number}`, string> = {
 const { questionLabel, answersLength } = Astro.props
 ---
 
-<div class="rounded border pb-3.5 pt-2">
+<div class="rounded-sm border pt-2 pb-3.5">
   <p class="my-3 border-b px-3.5 pb-2 font-bold">{questionLabel}</p>
 
   <div class={clsx(heightClasses[`l${answersLength}`] || 'h-[650px]', 'px-3.5')}>

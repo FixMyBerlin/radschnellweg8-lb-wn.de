@@ -20,9 +20,9 @@ const position = 'value' in imageConfig ? imageConfig.value : undefined
     'not-prose',
   ]}
 >
-  <figure class:list={[width === 'half' && 'md:w-1/2', 'not-prose w-full rounded']}>
+  <figure class:list={[width === 'half' && 'md:w-1/2', 'not-prose w-full rounded-sm']}>
     <Picture
-      class="aspect-[3/4] w-full overflow-hidden rounded object-cover"
+      class="aspect-3/4 w-full overflow-hidden rounded-sm object-cover"
       pictureAttributes={{ class: 'not-prose' }}
       src={image}
       alt={alt || ''}

@@ -2,12 +2,13 @@ import mdx from '@astrojs/mdx'
 import netlify from '@astrojs/netlify'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
-import tailwind from '@astrojs/tailwind'
 import keystatic from '@keystatic/astro'
 import matomo from 'astro-matomo'
 import { defineConfig, envField } from 'astro/config'
 import rehypeExternalLinks from 'rehype-external-links'
 import { USE_MATOMO } from './config/config'
+import tailwindcss from "@tailwindcss/vite";
+
 
 // ABOUT:
 // We have to fetch settings from `.env`
@@ -33,7 +34,6 @@ export default defineConfig({
   site: process.env.URL ?? 'https://radschnellweg8-lb-wn.de',
   integrations: [
     ASTRO_OUTPUT_MODE === 'static' ? undefined : keystatic(),
-    tailwind(),
     react(),
     mdx(),
     sitemap(), // We don't exclute inactive pages but rely on the per page `noindex`
@@ -78,6 +78,10 @@ export default defineConfig({
       // Docs: https://github.com/rehypejs/rehype-external-links
       [rehypeExternalLinks, { target: '_blank' }],
     ],
+  },
+
+  vite: {
+    plugins: [tailwindcss()],
   },
 
   env: {

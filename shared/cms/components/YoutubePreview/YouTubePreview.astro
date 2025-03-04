@@ -18,7 +18,7 @@ const image = getImage(previewImage)
   )}
 >
   <div
-    class="flex h-20 w-20 items-center justify-center rounded-full bg-white/70 shadow backdrop-blur-md transition-all duration-300 group-hover:h-24 group-hover:w-24"
+    class="flex h-20 w-20 items-center justify-center rounded-full bg-white/70 shadow-sm backdrop-blur-md transition-all duration-300 group-hover:h-24 group-hover:w-24"
   >
     <PlayIcon class="ml-2 h-14 w-14 transition-all group-hover:h-20 group-hover:w-20" />
   </div>
@@ -26,7 +26,7 @@ const image = getImage(previewImage)
     <Picture
       src={image}
       alt=""
-      class="!mb-0 w-full"
+      class="mb-0! w-full"
       pictureAttributes={{ class: 'not-prose w-full' }}
       width={960}
       densities={[1.5, 2]}

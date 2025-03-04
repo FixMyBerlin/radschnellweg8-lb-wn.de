@@ -75,7 +75,7 @@ export const QuotesSlider = ({
 
   return (
     <div className={clsx(containerHeightClass, 'relative mt-20 lg:px-[70px]')}>
-      <IconQuote className="absolute left-2 top-[8.25rem] w-10 stroke-[6px] object-cover text-slate-400 lg:-top-10 lg:left-[24.5rem] lg:w-40 lg:stroke-2" />
+      <IconQuote className="absolute top-[8.25rem] left-2 w-10 stroke-[6px] object-cover text-slate-400 lg:-top-10 lg:left-[24.5rem] lg:w-40 lg:stroke-2" />
 
       <div className="grid grid-cols-1 grid-rows-1">
         {quotes.map((quote, index) => (
