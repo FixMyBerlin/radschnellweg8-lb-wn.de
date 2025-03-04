@@ -28,6 +28,12 @@ export const zodCOLORSCLASSES = z
     pageNoteFoundTitle: z.string(),
     routesListMarker: z.string(),
     barChartFill: z.string(),
+    mapStatusIdea: z.string(),
+    mapStatusCheck: z.string(),
+    mapStatusPlanning: z.string(),
+    mapStatusInProgress: z.string(),
+    mapStatusDone: z.string(),
+    legendSimpleMap: z.string(),
   })
   .strict()
 
@@ -35,6 +41,12 @@ export const zodCOLORS = z
   .object({
     heroPin: z.string(),
     milestoneDone: z.string(),
+    mapDefault: z.string(),
+    mapStatusIdea: z.string(),
+    mapStatusCheck: z.string(),
+    mapStatusPlanning: z.string(),
+    mapStatusInProgress: z.string(),
+    mapStatusDone: z.string(),
   })
   .strict()
 

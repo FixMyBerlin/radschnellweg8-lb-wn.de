@@ -1,0 +1,111 @@
+---
+import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
+import Section from '@shared/layouts/Section.astro'
+import type { Segment } from '@src/pages/route/[slug].astro'
+import { getCollection, type CollectionEntry } from 'astro:content'
+import RoutespageRoutesegmentDetail from './RoutespageRoutesegmentDetail.astro'
+
+type Props = { route: Segment }
+
+export type Segmentdetail = CollectionEntry<'routesegmentdetails'>
+
+const { route } = Astro.props
+const { Content } = await route.render()
+const routesegmentDetails = await getCollection('routesegmentdetails')
+
+const filteredAndSortedDetails = routesegmentDetails
+  .filter((detail) => detail.data.route === route.slug)
+  .sort((a, b) => a.data.position - b.data.position)
+
+const { title, operator, contact, documents, socials } = route.data
+---
+
+<Section prose>
+  <div class="mt-16">
+    <a href="/route">{'<- Zurück zur Routenübersicht'}</a>
+  </div>
+  <header id={route.slug} class="scroll-m-8">
+    <h2>{title}</h2>
+    {
+      operator && (
+        <p>
+          <strong>Baulastträger/in:</strong> {operator}
+        </p>
+      )
+    }
+    {
+      contact && (
+        <p>
+          <strong>Ansprechpartner/in:</strong> {contact}
+        </p>
+      )
+    }
+  </header>
+</Section>
+
+<Section prose>
+  <article>
+    <Content components={mdxComponentsAstro} />
+  </article>
+
+  {
+    filteredAndSortedDetails.length > 0 ? (
+      <>
+        <h3>Detailinfos</h3>
+        <ol class="not-prose divide-y divide-gray-200 border-y">
+          {filteredAndSortedDetails.map((detail) => (
+            <li>
+              <RoutespageRoutesegmentDetail detail={detail} />
+            </li>
+          ))}
+        </ol>
+      </>
+    ) : null
+  }
+</Section>
+
+<Section prose>
+  <div class="prose-ul:pl-0">
+    {
+      Boolean(route.data.documents?.length) && (
+        <>
+          <h3 class="my-8">Download von Unterlagen</h3>
+          <ul class="space-y-8 prose-li:list-none prose-li:pl-0">
+            {route.data.documents!.map((document) => (
+              <li>
+                <p>
+                  <strong>{document.title}</strong>
+                  <br />
+                  {document.description}
+                </p>
+                <a target="_blank" href={document.document}>
+                  Datei herunterladen
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </div>
+  <div class="prose-ul:pl-0">
+    {
+      Boolean(route.data.socials?.length) && (
+        <>
+          <h3 class="my-8">Bilder und aktuelle Nachrichten</h3>
+          <ul class="prose-li:list-none prose-li:pl-0">
+            {route.data.socials!.map((social) => (
+              <li class="flex items-center gap-4">
+                {/* todo  */}
+                {/* <img src={social.icon} alt="" class="h-4 w-4" /> */}
+                <a target="_blank" href={social.link}>
+                  {social.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
+  </div>
+</Section>

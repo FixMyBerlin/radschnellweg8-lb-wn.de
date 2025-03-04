@@ -23,9 +23,21 @@ export const COLORSCLASSES = {
   pageNoteFoundTitle: 'text-[#E5007D]',
   routesListMarker: 'marker:text-[#E5007D]',
   barChartFill: 'fill-[#E5007D]',
+  mapStatusIdea: `bg-[#FBCFE8]`,
+  mapStatusCheck: `bg-[#F9A8D4]`,
+  mapStatusPlanning: `bg-[#F472B6]`,
+  mapStatusInProgress: `bg-[#DB2777]`,
+  mapStatusDone: `bg-[#9D174D]`,
+  legendSimpleMap: `bg-[#E5007D]`,
 }
 
 export const COLORS = {
   heroPin: '#E5007D',
   milestoneDone: '#2C62A9',
+  mapDefault: '#E5007D',
+  mapStatusIdea: `#FBCFE8`,
+  mapStatusCheck: `#F9A8D4`,
+  mapStatusPlanning: `#F472B6`,
+  mapStatusInProgress: `#DB2777`,
+  mapStatusDone: `#9D174D`,
 }

@@ -6,5 +6,6 @@ export const astroRoutepageDefinition = defineCollection({
     z.object({
       title: z.string(),
       subtitle: z.string().optional(),
+      subPagesActive: z.boolean(),
     }),
 })

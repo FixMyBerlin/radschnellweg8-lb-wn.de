@@ -38,7 +38,7 @@ const lastMilestoneDone = sortedMilestones.filter((m) => m.status !== 'comingUp'
               <div
                 class={clsx(
                   'absolute bottom-0 left-4 top-0 w-1 border-l-2 group-last:hidden',
-                  commingUp || i === lastMilestoneDone ? 'border-dashed' : ''
+                  commingUp || i === lastMilestoneDone ? 'border-dashed' : '',
                 )}
                 style={{ borderColor: commingUp ? '#9CA3AF' : COLORS.milestoneDone }}
                 aria-hidden="true"

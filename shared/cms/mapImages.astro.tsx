@@ -1,6 +1,6 @@
 import { defineCollection, z } from 'astro:content'
 
-export const astroMapsDefinition = defineCollection({
+export const astroMapImagesDefinition = defineCollection({
   type: 'data',
   schema: ({ image }) =>
     z.object({

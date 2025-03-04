@@ -1,9 +1,7 @@
 ---
-import { COLORSCLASSES } from '@config/styles'
 import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
 import Section from '@shared/layouts/Section.astro'
-import { clsx } from 'clsx'
-import type { Segmentdetail } from './RoutespageRoutesegmentsSegment.astro'
+import type { Segmentdetail } from './RoutespageRoutesegment.astro'
 
 type Props = { detail: Segmentdetail }
 const { detail } = Astro.props
@@ -13,10 +11,7 @@ const { Content } = await detail.render()
 <Section prose>
   <div class="flex gap-6 py-5">
     <span
-      class={clsx(
-        COLORSCLASSES.faqNumberBg,
-        'flex h-10 w-10 flex-none items-center justify-center rounded-full pt-1 text-lg text-white shadow-lg'
-      )}
+      class="flex h-10 w-10 flex-none items-center justify-center rounded-full border bg-white pt-1 text-lg font-extrabold text-black shadow-lg"
       aria-hidden="true"
     >
       {detail.data.position}

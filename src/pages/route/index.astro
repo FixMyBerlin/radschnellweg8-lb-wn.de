@@ -11,16 +11,13 @@ const page = await getEntry('routepage', 'index')
 if (page === undefined) return Astro.redirect('/404')
 
 const { Content } = await render(page)
-const { title, subtitle } = page.data
+const { title, subtitle, subPagesActive } = page.data
 ---
 
 <Layout title={title}>
   <PageHeadline title={title} subtitle={subtitle} />
-
   <Section prose>
     <Content components={mdxComponentsAstro} />
   </Section>
-
-  <RoutespageRouteSegmentsAnchorlist />
-  <RoutespageRoutesegments />
+  {!subPagesActive ? <RoutespageRoutesegments /> : <RoutespageRouteSegmentsAnchorlist />}
 </Layout>

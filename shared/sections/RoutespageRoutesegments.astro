@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
-import RoutespageRoutesegmentsSegment from './RoutespageRoutesegmentsSegment.astro'
+import RoutespageRoutesegment from './RoutespageRoutesegment.astro'
 
 const unsortedSegments = await getCollection('routesegments')
 const segments = unsortedSegments.sort((a, b) => a.data.position - b.data.position)
@@ -9,6 +9,6 @@ export type Segment = (typeof unsortedSegments)[number]
 
 {
   segments.map((route) => {
-    return <RoutespageRoutesegmentsSegment route={route} />
+    return <RoutespageRoutesegment route={route} />
   })
 }
