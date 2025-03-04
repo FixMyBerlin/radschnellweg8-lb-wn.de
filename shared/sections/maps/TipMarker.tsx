@@ -1,8 +1,7 @@
 import { clsx } from 'clsx'
+import type { JSX } from 'react'
 
-type Props = React.HTMLAttributes<HTMLDivElement> & {
-  anchor: 'bottom' | 'top'
-}
+type Props = React.HTMLAttributes<HTMLDivElement> & { anchor: 'bottom' | 'top' }
 
 const createSvg = (style: any, rotation: number, path: JSX.Element) => {
   return (
@@ -28,9 +27,7 @@ const tipElements = {
   top: createSvg({ top: 0, left: 5 }, 180, pathSide),
 }
 
-const shadow = {
-  boxShadow: '2px 2px 4px 0px rgba(0, 0, 0, 0.25)',
-}
+const shadow = { boxShadow: '2px 2px 4px 0px rgba(0, 0, 0, 0.25)' }
 const divStyles = {
   bottom: { ...shadow, top: 14, left: 0, transform: 'translateX(-50%)' },
   top: { ...shadow, bottom: 14, left: 0, transform: 'translateX(-50%)' },
