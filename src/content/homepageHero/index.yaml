@@ -1,8 +1,5 @@
 participation:
-  discriminant: true
-  value:
-    participationHref: /imressum
-    participationText: Los geht's
+  discriminant: false
 title1: Der RS 8
 title2: Ein neuer Radschnellweg
 waypoints:
