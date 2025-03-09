@@ -1,12 +1,14 @@
 participation:
-  discriminant: false
+  discriminant: true
+  value:
+    participationHref: /imressum
+    participationText: Los geht's
 title1: Der RS 8
 title2: Ein neuer Radschnellweg
 waypoints:
   - Ludwigsburg
   - Waiblingen
-  - BiBi
 image: ../../content/homepageHero/image.jpg
 imageCopyright: >-
   Beispieldarstellung eines Radschnellwegs © Ministerium für Verkehr
-  Baden-Würtemberg
+  Baden-Württemberg
