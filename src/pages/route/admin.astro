@@ -16,12 +16,14 @@ const subsectionCmsSlugs = routeSegments.map((segment) => segment.data.tsSlug).f
 const allSubsectionSlugs = [...new Set([...subsectionGeoSlugs, ...subsectionCmsSlugs])]
 
 const subsectiondetailGeoIds = routeSegementdetailsGeoData.features
-  .map((feature) => feature.properties.detailId)
+  .map((feature) => String(feature.properties.detailId))
   .filter(Boolean)
 const subsectiondetailCmsIds = routeSegmentDetails
-  .map((detail) => detail.data.detailId)
+  .map((detail) => String(detail.data.detailId))
   .filter(Boolean)
-const allSubsectiondetailIds = [...new Set([...subsectiondetailGeoIds, ...subsectiondetailCmsIds])]
+const allSubsectiondetailIds = [
+  ...new Set([...subsectiondetailGeoIds, ...subsectiondetailCmsIds]),
+].filter(Boolean)
 ---
 
 <Layout noindex title="Daten Abgleich für Abschnitte und Detailinfos">
@@ -54,7 +56,7 @@ const allSubsectiondetailIds = [...new Set([...subsectiondetailGeoIds, ...subsec
           allSubsectionSlugs.map((slug) => (
             <tr
               class={
-                subsectionCmsSlugs.includes(slug) && subsectionGeoSlugs.includes(slug!)
+                subsectionCmsSlugs.includes(slug) && subsectionGeoSlugs.includes(slug)
                   ? 'bg-green-200'
                   : 'bg-red-200'
               }
