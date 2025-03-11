@@ -33,7 +33,7 @@ export const COLORSCLASSES = {
 
 export const COLORS = {
   heroPin: '#E5007D',
-  milestoneDone: '#2C62A9',
+  milestoneDone: '#E5007D',
   mapDefault: '#E5007D',
   mapStatusIdea: `#FBCFE8`,
   mapStatusCheck: `#F9A8D4`,
