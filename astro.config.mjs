@@ -7,7 +7,7 @@ import tailwindcss from '@tailwindcss/vite'
 import matomo from 'astro-matomo'
 import { defineConfig, envField } from 'astro/config'
 import rehypeExternalLinks from 'rehype-external-links'
-import { USE_MATOMO } from './config/config'
+import { BASE_CONFIG, USE_MATOMO } from './config/config'
 
 // ABOUT:
 // We have to fetch settings from `.env`
@@ -36,7 +36,7 @@ export default defineConfig({
   // Take the Netlify Deploy URL or fall back to production (Docs https://docs.netlify.com/configure-builds/environment-variables/#deploy-urls-and-metadata)
   // Used as `Astro.site!.origin` in <Layout>
   // todo migration
-  site: process.env.URL ?? 'https://radschnellweg8-lb-wn.de',
+  site: process.env.URL ?? BASE_CONFIG.PRODUCTION_URL,
   integrations: [
     ASTRO_OUTPUT_MODE === 'static' ? undefined : keystatic(),
     react(),
