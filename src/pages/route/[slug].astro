@@ -4,11 +4,9 @@ import Layout from '@shared/layouts/Layout.astro'
 import RoutespageRoutesegment from '@shared/sections/RoutespageRoutesegment.astro'
 import { getCollection, getEntry, type CollectionEntry } from 'astro:content'
 
-export type Segment = CollectionEntry<'routesegments'>
-
 type Page = {
   params: { slug: string }
-  props: Segment
+  props: CollectionEntry<'routesegments'>
 }
 const page = await getEntry('routepage', 'index')
 if (!page?.data.subPagesActive) return Astro.redirect('/404')
