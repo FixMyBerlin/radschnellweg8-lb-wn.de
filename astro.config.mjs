@@ -1,14 +1,13 @@
 import mdx from '@astrojs/mdx'
-import netlify from '@astrojs/netlify'
+import node from '@astrojs/node'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import keystatic from '@keystatic/astro'
+import tailwindcss from '@tailwindcss/vite'
 import matomo from 'astro-matomo'
 import { defineConfig, envField } from 'astro/config'
 import rehypeExternalLinks from 'rehype-external-links'
 import { USE_MATOMO } from './config/config'
-import tailwindcss from "@tailwindcss/vite";
-
 
 // ABOUT:
 // We have to fetch settings from `.env`
@@ -18,12 +17,18 @@ import tailwindcss from "@tailwindcss/vite";
 // `npm run dev` uses hybrid mode and keystatic()
 // `npm run build` (server) is based on .env and has different settings for Netlify (CMS/Keystatic) vs. IONOS (Static site)
 // `npm run build:local && npm run serve` overwrites the .env settings to have a local test case for what is on IONOS
+// `npm run build:node && npm run serv:node` overwrites the .env settings to have a local test for what netlify looks like for /keystatic
 import { loadEnv } from 'vite'
-const { ASTRO_OUTPUT_MODE, ASTRO_USE_NETLIFY_ADAPTER } = loadEnv(
+const { ASTRO_OUTPUT_MODE, ASTRO_USE_NETLIFY_ADAPTER, ASTRO_USE_NODE_ADAPTER } = loadEnv(
   process.env.NODE_ENV,
   process.cwd(),
   '',
 )
+console.log('astro.config configuration', {
+  ASTRO_OUTPUT_MODE,
+  ASTRO_USE_NETLIFY_ADAPTER,
+  ASTRO_USE_NODE_ADAPTER,
+})
 
 // CONFIG:
 // https://astro.build/config
@@ -48,11 +53,17 @@ export default defineConfig({
         })
       : undefined,
   ],
-  // On Netlify and during development we use `hybrid`, on Github Pages we usd `static`.
+  // On Netlify and during development we use `server`, on Github Pages we usd `static`.
   // Using static makes sure features like Astros redirecting work as expected.
   // Docs https://docs.astro.build/en/basics/rendering-modes/
   output: ASTRO_OUTPUT_MODE,
-  adapter: ASTRO_USE_NETLIFY_ADAPTER === 'true' ? netlify() : undefined,
+  adapter:
+    ASTRO_USE_NODE_ADAPTER === 'true'
+      ? node({ mode: 'standalone' })
+      : ASTRO_USE_NETLIFY_ADAPTER === 'true'
+        ? netlify()
+        : undefined,
+
   redirects: {},
 
   // LATER: Find an elegent way to redirect trailing slashes
@@ -93,6 +104,11 @@ export default defineConfig({
         optional: false,
       }),
       ASTRO_USE_NETLIFY_ADAPTER: envField.boolean({
+        access: 'secret',
+        context: 'server',
+        optional: false,
+      }),
+      ASTRO_USE_NODE_ADAPTER: envField.boolean({
         access: 'secret',
         context: 'server',
         optional: false,
