@@ -3,13 +3,15 @@ import Layout from '@shared/layouts/Layout.astro'
 import Section from '@shared/layouts/Section.astro'
 import PageHeadline from '@shared/sections/PageHeadline.astro'
 import { getCollection } from 'astro:content'
-import routeSegementsGeoData from 'src/content/routeGeoData/uploadSegements.json'
+
+const routeGeometry = await getCollection('routegeometry')
+const subsectionGeoSlugs = routeGeometry
+  .map(({ data: feature }) => feature.properties.subsectionSlug)
+  .filter(Boolean)
 
 const routeSegments = await getCollection('routesegments')
-const subsectionGeoSlugs = routeSegementsGeoData.features
-  .map((feature) => feature.properties.subsectionSlug)
-  .filter(Boolean)
 const subsectionCmsSlugs = routeSegments.map((segment) => segment.data.tsSlug).filter(Boolean)
+
 const allSubsectionSlugs = [...new Set([...subsectionGeoSlugs, ...subsectionCmsSlugs])]
 ---
 
@@ -70,6 +72,6 @@ const allSubsectionSlugs = [...new Set([...subsectionGeoSlugs, ...subsectionCmsS
     </table>
 
     <h3>Abschnitte Geo data Raw</h3>
-    <pre>{JSON.stringify(routeSegementsGeoData, undefined, 2)}</pre>
+    <pre>{JSON.stringify(subsectionGeoSlugs, undefined, 2)}</pre>
   </Section>
 </Layout>

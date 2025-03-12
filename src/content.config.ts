@@ -10,8 +10,8 @@ import { astroLogosPartnersDefinition } from '@shared/cms/logosPartners.astro'
 import { astroLogosSponsorsDefinition } from '@shared/cms/logosSponsors.astro'
 import { astroLogoWebsiteDefinition } from '@shared/cms/logoWebsite.astro'
 import { astroMapImagesDefinition } from '@shared/cms/mapImages.astro'
-
 import { astroPrivacypolicypageDefinition } from '@shared/cms/privacypolicypage.astro'
+import { astroRouteGeometryDefinition } from '@shared/cms/routegeometry.astro'
 import { astroRoutepageDefinition } from '@shared/cms/routepage.astro'
 import { astroRoutesegmentdetailsDefinition } from '@shared/cms/routesegmentdetails.astro'
 import { astroRoutesegmentsDefinition } from '@shared/cms/routesegments.astro'
@@ -37,8 +37,9 @@ export const collections = {
   homepageMilestones: astroHomepageMilestonesDefinition,
   logosSponsors: astroLogosSponsorsDefinition,
   logosPartners: astroLogosPartnersDefinition,
-  maps: astroMapImagesDefinition,
+  mapImages: astroMapImagesDefinition,
   routesegments: astroRoutesegmentsDefinition,
+  routegeometry: astroRouteGeometryDefinition,
   routesegmentdetails: astroRoutesegmentdetailsDefinition,
   faqs: astroFaqsDefinition,
 }

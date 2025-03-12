@@ -1,4 +1,4 @@
-import { GITHUB_REPO_NAME } from '@config/config'
+import { BASE_CONFIG } from '@config/config'
 import { config } from '@keystatic/core'
 import { keystaticFaqsConfig } from '@shared/cms/faqs.keystatic'
 import { keystaticFaqspageConfig } from '@shared/cms/faqspage.keystatic'
@@ -13,7 +13,6 @@ import { keystaticLogosSponsorsConfig } from '@shared/cms/logosSponsors.keystati
 import { keystaticLogoWebsiteConfig } from '@shared/cms/logoWebsite.keystatic'
 import { keystaticMapImagesConfig } from '@shared/cms/mapImages.keystatic'
 import { keystaticPrivacypolicypageConfig } from '@shared/cms/privacypolicypage.keystatic'
-import { keystaticrouteGeoUploadConfig } from '@shared/cms/routegeoupload.keystatic'
 import { keystaticRoutepageConfig } from '@shared/cms/routepage.keystatic'
 import { keystaticRoutesegmentdetailsConfig } from '@shared/cms/routesegmentdetails.keystatic'
 import { keystaticRoutesegmentsConfig } from '@shared/cms/routesegments.keystatic'
@@ -28,12 +27,12 @@ export default config({
     kind: KEYSTATIC_STORAGE_KIND,
     repo: {
       owner: 'FixMyBerlin',
-      name: GITHUB_REPO_NAME,
+      name: BASE_CONFIG.GITHUB_REPO_NAME,
     },
   },
   ui: {
     brand: {
-      name: 'RS8',
+      name: BASE_CONFIG.CMS_NAME,
       mark: () => <img src="/icons/icon-48x48.png" height={27} />,
     },
     navigation: {
@@ -41,7 +40,7 @@ export default config({
       Logos: ['logoWebsite', 'logosSponsors', 'logosPartners'],
       Kartenbilder: ['mapImages'],
       FAQs: ['faqspage', 'faqs'],
-      Routen: ['routespage', 'routesegments', 'routesegmentdetails', 'routeGeoUpload'],
+      Routen: ['routespage', 'routesegments', 'routesegmentdetails'],
       Beteiligungsergebnisse: ['surveyresultspage', 'surveyresults'],
       Verschiedenes: ['imprintpage', 'privacypolicypage'],
     },
@@ -57,7 +56,6 @@ export default config({
     imprintpage: keystaticImprintpageConfig,
     privacypolicypage: keystaticPrivacypolicypageConfig,
     logoWebsite: keystaticLogoWebsiteConfig,
-    routeGeoUpload: keystaticrouteGeoUploadConfig,
   },
   collections: {
     homepageQuotes: keystaticHomepageQuotesConfig,
