@@ -1,4 +1,5 @@
 import mdx from '@astrojs/mdx'
+import netlify from '@astrojs/netlify'
 import node from '@astrojs/node'
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
