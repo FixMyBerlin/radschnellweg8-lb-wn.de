@@ -9,6 +9,7 @@ export const USE_MATOMO: boolean = true
 
 export const BASE_CONFIG = {
   CMS_NAME: 'RS8',
+  CMS_LOGO_PATH: '/icons/icon-48x48.png',
   GITHUB_REPO_NAME: 'radschnellweg8-lb-wn.de',
   PRODUCTION_URL: 'https://radschnellweg8-lb-wn.de',
   META,
