@@ -33,7 +33,7 @@ export default config({
   ui: {
     brand: {
       name: BASE_CONFIG.CMS_NAME,
-      mark: () => <img src="/icons/icon-48x48.png" height={27} />,
+      mark: () => <img src={BASE_CONFIG.CMS_LOGO_PATH} height={27} />,
     },
     navigation: {
       Start: ['homepageHero', 'homepage', 'homepageQuotes', 'homepageFacts', 'homepageMilestones'],

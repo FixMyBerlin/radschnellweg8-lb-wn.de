@@ -13,7 +13,6 @@ export const BASE_CONFIG = {
   GITHUB_REPO_NAME: 'radschnellweg8-lb-wn.de',
   PRODUCTION_URL: 'https://radschnellweg8-lb-wn.de',
   META,
-  FONTNAME: 'Overpass Variable',
   USE_MATOMO,
   TRASSENSCOUT_PROJECT_API_URL: ['https://trassenscout.de/api/projects/rs8'],
 }
