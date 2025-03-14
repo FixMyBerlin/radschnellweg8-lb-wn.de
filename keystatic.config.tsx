@@ -13,6 +13,7 @@ import { keystaticLogosSponsorsConfig } from '@shared/cms/logosSponsors.keystati
 import { keystaticLogoWebsiteConfig } from '@shared/cms/logoWebsite.keystatic'
 import { keystaticMapImagesConfig } from '@shared/cms/mapImages.keystatic'
 import { keystaticPrivacypolicypageConfig } from '@shared/cms/privacypolicypage.keystatic'
+import { keystaticRoutegeometries } from '@shared/cms/routegeometries.keystatic'
 import { keystaticRoutepageConfig } from '@shared/cms/routepage.keystatic'
 import { keystaticRoutesegmentdetailsConfig } from '@shared/cms/routesegmentdetails.keystatic'
 import { keystaticRoutesegmentsConfig } from '@shared/cms/routesegments.keystatic'
@@ -40,7 +41,7 @@ export default config({
       Logos: ['logoWebsite', 'logosSponsors', 'logosPartners'],
       Kartenbilder: ['mapImages'],
       FAQs: ['faqspage', 'faqs'],
-      Routen: ['routespage', 'routesegments', 'routesegmentdetails'],
+      Routen: ['routespage', 'routesegments', 'routesegmentdetails', 'routegeometries'],
       Beteiligungsergebnisse: ['surveyresultspage', 'surveyresults'],
       Verschiedenes: ['imprintpage', 'privacypolicypage'],
     },
@@ -66,6 +67,7 @@ export default config({
     mapImages: keystaticMapImagesConfig,
     routesegments: keystaticRoutesegmentsConfig,
     routesegmentdetails: keystaticRoutesegmentdetailsConfig,
+    routegeometries: keystaticRoutegeometries,
     faqs: keystaticFaqsConfig,
   },
 })

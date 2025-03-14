@@ -4,7 +4,7 @@ import Section from '@shared/layouts/Section.astro'
 import PageHeadline from '@shared/sections/PageHeadline.astro'
 import { getCollection } from 'astro:content'
 
-const routeGeometry = await getCollection('routegeometry')
+const routeGeometry = await getCollection('routegeometries')
 const subsectionGeoSlugs = routeGeometry
   .map(({ data: feature }) => feature.properties.subsectionSlug)
   .filter(Boolean)

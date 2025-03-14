@@ -1,0 +1,24 @@
+{
+  "id": "pa1.3",
+  "type": "Feature",
+  "properties": {
+    "subsectionSlug": "pa1.3",
+    "projectSlug": "rs8",
+    "operator": "Stadt Ludwigsburg",
+    "estimatedCompletionDateString": null,
+    "status": "In Planung"
+  },
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        9.188498197042176,
+        48.89314954857457
+      ],
+      [
+        9.194198571155404,
+        48.89323847985655
+      ]
+    ]
+  }
+}
