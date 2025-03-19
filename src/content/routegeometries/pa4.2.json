@@ -5,7 +5,8 @@
     "subsectionSlug": "pa4.2",
     "projectSlug": "rs8",
     "operator": "Stadt Waiblingen",
-    "estimatedCompletionDateString": null
+    "estimatedCompletionDateString": null,
+    "status": "In Planung"
   },
   "geometry": {
     "type": "LineString",

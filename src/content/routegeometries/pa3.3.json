@@ -5,7 +5,8 @@
     "subsectionSlug": "pa3.3",
     "projectSlug": "rs8",
     "operator": "Rems-Murr-Kreis",
-    "estimatedCompletionDateString": null
+    "estimatedCompletionDateString": null,
+    "status": "In Planung"
   },
   "geometry": {
     "type": "LineString",
@@ -20,7 +21,7 @@
       ],
       [
         9.293172937805403,
-        48.851867947649055
+        48.85186794764905
       ],
       [
         9.29481772244087,

@@ -5,14 +5,15 @@
     "subsectionSlug": "pa1.6",
     "projectSlug": "rs8",
     "operator": "Stadt Ludwigsburg",
-    "estimatedCompletionDateString": null
+    "estimatedCompletionDateString": null,
+    "status": "In Planung"
   },
   "geometry": {
     "type": "LineString",
     "coordinates": [
       [
         9.201401747633652,
-        48.893350856291114
+        48.89335085629111
       ],
       [
         9.204387735380609,
