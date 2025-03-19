@@ -2,7 +2,7 @@ export const LINKCLASSES = {
   link: 'decoration-[#E5007D] hover:text-[#E5007D] underline',
   groupLink: 'decoration-[#E5007D] group-hover:text-[#E5007D] underline',
   button:
-    'rounded-lg bg-[#E5007D] active:ring-3 active:bg-[#E5007D] active:ring-[#111827] text-white hover:text-white! hover:bg-[#111827] px-6 pt-[8.5px] pb-[6px] font-normal inline-block text-[16px] leading-[26px] no-underline',
+    'rounded-lg bg-[#E5007D] active:ring-3 active:bg-[#E5007D] active:ring-[#111827] text-white hover:text-white! hover:bg-[#111827] py-2 px-6 font-normal inline-block text-[16px] leading-[26px] no-underline',
 }
 
 export const COLORSCLASSES = {
