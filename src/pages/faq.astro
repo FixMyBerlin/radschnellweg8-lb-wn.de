@@ -1,0 +1,57 @@
+---
+import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
+import { categoryEnumAndOrder } from '@shared/cms/faqs.keystatic'
+import Layout from '@shared/layouts/Layout.astro'
+import Section from '@shared/layouts/Section.astro'
+import Faqs from '@shared/sections/faqs/Faqs.astro'
+import type { FaqCollection } from '@shared/sections/faqs/type'
+import PageHeadline from '@shared/sections/PageHeadline.astro'
+import { markdownProseClasses } from '@shared/text/proseClasses'
+import { getCollection, getEntry, render, type InferEntrySchema } from 'astro:content'
+
+const page = await getEntry('faqspage', 'index')
+if (page === undefined) return Astro.redirect('/404')
+
+const { Content } = await render(page)
+const { title, subtitle } = page.data
+
+// Docs: https://github.com/withastro/docs/pull/8364/files
+const faqsCollection = await getCollection('faqs')
+
+// Group by `category` and make sure the `category` are using the right order
+// The order of FAQs for one category is defined in <Faqs />
+const faqGroupedBySortedCategories = {} as Record<
+  InferEntrySchema<'faqs'>['category'],
+  FaqCollection
+>
+categoryEnumAndOrder.forEach((category) => {
+  faqGroupedBySortedCategories[category] = []
+})
+faqsCollection.forEach((faq) => {
+  faqGroupedBySortedCategories[faq.data.category].push(faq)
+})
+---
+
+<Layout title={title}>
+  <PageHeadline title={title} subtitle={subtitle} />
+
+  <Section prose>
+    <Content components={mdxComponentsAstro} />
+  </Section>
+
+  {
+    Object.entries(faqGroupedBySortedCategories).map(([category, faqs]) => {
+      return (
+        <Section>
+          <header class={markdownProseClasses}>
+            <h2 class="text-dark-gray mt-16 mb-4 text-2xl leading-normal font-extrabold md:text-3xl md:leading-normal">
+              {category}
+            </h2>
+          </header>
+
+          <Faqs faqs={faqs} />
+        </Section>
+      )
+    })
+  }
+</Layout>

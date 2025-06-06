@@ -1,0 +1,7 @@
+#!/bin/sh
+
+bun ./shared/scripts/pre-push.ts
+
+npm run type-check
+npm run format
+npm run lint

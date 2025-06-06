@@ -1,0 +1,21 @@
+---
+import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
+import Layout from '@shared/layouts/Layout.astro'
+import Section from '@shared/layouts/Section.astro'
+import PageHeadline from '@shared/sections/PageHeadline.astro'
+import { getEntry, render } from 'astro:content'
+
+const page = await getEntry('privacypolicypage', 'index')
+if (page === undefined) return Astro.redirect('/404')
+
+const { Content } = await render(page)
+const { title, subtitle } = page.data
+---
+
+<Layout title={title} noindex>
+  <PageHeadline title={title} subtitle={subtitle} />
+
+  <Section prose className="prose-td:break-all">
+    <Content components={mdxComponentsAstro} />
+  </Section>
+</Layout>

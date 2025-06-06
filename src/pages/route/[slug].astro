@@ -1,0 +1,28 @@
+---
+export const prerender = true
+import Layout from '@shared/layouts/Layout.astro'
+import RoutespageRoutesegment from '@shared/sections/RoutespageRoutesegment.astro'
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content'
+
+type Page = {
+  params: { slug: string }
+  props: CollectionEntry<'routesegments'>
+}
+const page = await getEntry('routepage', 'index')
+if (!page?.data.subPagesActive) return Astro.redirect('/404')
+
+export async function getStaticPaths() {
+  const segments = await getCollection('routesegments')
+  const pages: Page[] = segments.map((segment) => {
+    return {
+      params: { slug: segment.slug },
+      props: segment,
+    }
+  })
+  return pages
+}
+---
+
+<Layout>
+  <RoutespageRoutesegment route={Astro.props} />
+</Layout>

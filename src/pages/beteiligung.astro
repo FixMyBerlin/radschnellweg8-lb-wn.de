@@ -1,0 +1,52 @@
+---
+import { BarChart } from '@shared/charts/BarChart'
+import BarChartWrapper from '@shared/charts/BarChartWrapper.astro'
+import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
+import Layout from '@shared/layouts/Layout.astro'
+import Section from '@shared/layouts/Section.astro'
+import PageHeadline from '@shared/sections/PageHeadline.astro'
+import SectionFaqs from '@shared/sections/SectionFaqs.astro'
+import { getEntry, render } from 'astro:content'
+
+const page = await getEntry('surveyresultspage', 'index')
+if (page === undefined) return Astro.redirect('/404')
+
+const { Content } = await render(page)
+const { title, active, subtitle } = page.data
+
+const pageBodyBelowCharts = await getEntry('surveyresultspage', 'bodybelowcharts')
+if (pageBodyBelowCharts === undefined) return Astro.redirect('/404')
+const { Content: ContentBelowCharts } = await render(pageBodyBelowCharts)
+
+const surveyresults = await getEntry('surveyresults', 'index')
+if (surveyresults === undefined) return Astro.redirect('/404')
+---
+
+<Layout title={title} noindex={!active}>
+  <PageHeadline title={title} subtitle={subtitle} />
+
+  <Section prose>
+    <Content components={mdxComponentsAstro} />
+  </Section>
+
+  <Section>
+    <div class="space-y-4">
+      {
+        surveyresults.data.results.map((result) => (
+          <BarChartWrapper
+            questionLabel={JSON.stringify(result.questionLabel)}
+            answersLength={result.data.length}
+          >
+            <BarChart client:visible data={result.data} />
+          </BarChartWrapper>
+        ))
+      }
+    </div>
+  </Section>
+
+  <Section prose className="mt-8">
+    <ContentBelowCharts components={mdxComponentsAstro} />
+  </Section>
+
+  <SectionFaqs filter="beteiligung" />
+</Layout>

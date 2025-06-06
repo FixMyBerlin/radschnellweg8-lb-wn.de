@@ -1,36 +1,28 @@
-# Radschnellweg 8 Ludwigsburg - Waiblingen
+# About rs 8
 
-> Public webpage for Radschnellweg 8 between Ludwigsburg and Waiblingen
->
-> https://radschnellweg8-lb-wn.de/
+- [Website radschnellweg8-lb-wn.de](radschnellweg8-lb-wn.de)
+- [CMS Keystatic at Netlify](https://cms-rs8.netlify.app/keystatic)
 
-## How to update the map data
+# Project structure
 
-### Process
+## `/config`
 
-1. Update data in Maptiler, then save, then publish
-2. Update style in Maptiler, then save, then publish
+Site specific data for styling and content (that is not managed by the CMS).
 
-Test: Check the data JSON below for updates to arrive.
+**Validation:** Those files are [validated using zod](shared/configValidation/) to make sure all other RSV sites have the same config structure so the shared components can rely on them.
 
-### Line data
+## `/shared`
 
-- Data: https://cloud.maptiler.com/data/f7f54b97-58ef-4596-ae39-f9ee79d5d127/
-  - JSON for testing: https://api.maptiler.com/data/f7f54b97-58ef-4596-ae39-f9ee79d5d127/features.json?key=ECOoUBmpqklzSCASXxcu
-- Style: https://cloud.maptiler.com/maps/b09268b1-91d0-42e2-9518-321a1a94738f/
+See https://github.com/FixMyBerlin/rsv-shared
 
-### Point data for labels
+## `/src/content`
 
-- Data: https://cloud.maptiler.com/data/c3cde33a-cc6c-4d55-aae1-1d311d730804/
-  - JSON for testing: https://api.maptiler.com/data/c3cde33a-cc6c-4d55-aae1-1d311d730804/features.json?key=ECOoUBmpqklzSCASXxcu
-- Style: Same as above
-  (Last folder "RS8" at the bottom of the folder list.)
-- Data and style match on "marker-color" property
+Content managed by Keystatic / the CMS. Different for each project of this kind.
 
-## Map style
+## `/src/pages`
 
-- 'RS8--' layers: all should be invisible per default except for: 'RS8--allsections-luecke-copy' and 'RS8--allsections' (Gesamtstrecke)
+Astro Pages taht take content from Keystatic and render it. Those pages should be the same for all sites of this kind.
 
-## Data Survey Results on /beteiligung
+# Notes
 
-- See [documentation](src/components/PageHome/data/README.md)
+- RSS feeds are drafted but not implemented, yet. We should add them once we add a blog to the page.

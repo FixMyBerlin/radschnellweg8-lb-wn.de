@@ -1,0 +1,37 @@
+---
+import { mdxComponentsAstro } from '@shared/cms/components/mdxComponentsAstro.astro'
+import Layout from '@shared/layouts/Layout.astro'
+import Section from '@shared/layouts/Section.astro'
+import HomepageFacts from '@shared/sections/HomepageFacts.astro'
+import HomepageHero from '@shared/sections/HomepageHero.astro'
+import HomepageLinks from '@shared/sections/HomepageLinks.astro'
+import HomepageMilestones from '@shared/sections/HomepageMilestones.astro'
+import HomepageQuotes from '@shared/sections/HomepageQuotes.astro'
+import HomepageLogos from '@shared/sections/LogosSponsors.astro'
+import SectionFaqs from '@shared/sections/SectionFaqs.astro'
+import { getEntry, render } from 'astro:content'
+
+const pageBeforeQuotes = await getEntry('homepage', 'index')
+if (pageBeforeQuotes === undefined) return Astro.redirect('/404')
+const pageAfterQuotes = await getEntry('homepage', 'bodyafterquotes')
+if (pageAfterQuotes === undefined) return Astro.redirect('/404')
+
+const { Content: ContentBeforeQuotes } = await render(pageBeforeQuotes)
+const { Content: ContentAfterQuotes } = await render(pageAfterQuotes)
+---
+
+<Layout title={pageBeforeQuotes.data.title}>
+  <HomepageHero />
+  <Section prose className="mt-16">
+    <ContentBeforeQuotes components={mdxComponentsAstro} />
+  </Section>
+  <HomepageQuotes />
+  <Section prose>
+    <ContentAfterQuotes components={mdxComponentsAstro} />
+  </Section>
+  <HomepageFacts />
+  <HomepageMilestones />
+  <SectionFaqs filter="homepage" />
+  <HomepageLinks />
+  <HomepageLogos />
+</Layout>
