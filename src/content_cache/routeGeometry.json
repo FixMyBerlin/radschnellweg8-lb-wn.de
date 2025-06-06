@@ -2062,6 +2062,182 @@
       }
     },
     {
+      "id": "pa1.6",
+      "type": "Feature",
+      "properties": {
+        "subsectionSlug": "pa1.6",
+        "projectSlug": "rs8",
+        "operator": "Stadt Ludwigsburg",
+        "estimatedCompletionDateString": null,
+        "status": "In Planung"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.201401747633652,
+            48.89335085629111
+          ],
+          [
+            9.204387735380609,
+            48.89339744055261
+          ],
+          [
+            9.20694002110566,
+            48.89293285756324
+          ],
+          [
+            9.207089426219461,
+            48.89288556047439
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pa1.8",
+      "type": "Feature",
+      "properties": {
+        "subsectionSlug": "pa1.8",
+        "projectSlug": "rs8",
+        "operator": "Stadt Ludwigsburg",
+        "estimatedCompletionDateString": null,
+        "status": "In Planung"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.213406897875132,
+            48.8913234449409
+          ],
+          [
+            9.214959358675657,
+            48.89112633673523
+          ],
+          [
+            9.215124815329835,
+            48.89110532952899
+          ],
+          [
+            9.215157030644356,
+            48.89110123931116
+          ],
+          [
+            9.215175577768182,
+            48.89109883454495
+          ],
+          [
+            9.215175577768182,
+            48.89109883454495
+          ],
+          [
+            9.21777246704113,
+            48.89076212942371
+          ],
+          [
+            9.217984901994779,
+            48.8900998799216
+          ],
+          [
+            9.220693032567235,
+            48.89033461732208
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pa1.7",
+      "type": "Feature",
+      "properties": {
+        "subsectionSlug": "pa1.7",
+        "projectSlug": "rs8",
+        "operator": "Stadt Ludwigsburg",
+        "estimatedCompletionDateString": null,
+        "status": "In Planung"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.207089426219461,
+            48.89288556047439
+          ],
+          [
+            9.207345779514661,
+            48.89280440686277
+          ],
+          [
+            9.207572799399408,
+            48.89252716981017
+          ],
+          [
+            9.209643275997573,
+            48.89222252372953
+          ],
+          [
+            9.209518854604504,
+            48.89187111206734
+          ],
+          [
+            9.21130210605646,
+            48.89154431843531
+          ],
+          [
+            9.213306318590726,
+            48.89133621499105
+          ],
+          [
+            9.213406897875132,
+            48.8913234449409
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pa3.3",
+      "type": "Feature",
+      "properties": {
+        "subsectionSlug": "pa3.3",
+        "projectSlug": "rs8",
+        "operator": "Rems-Murr-Kreis",
+        "estimatedCompletionDateString": null,
+        "status": "In Planung"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.291121288024184,
+            48.85261011783567
+          ],
+          [
+            9.291121288024184,
+            48.85261011783567
+          ],
+          [
+            9.293172937805403,
+            48.85186794764905
+          ],
+          [
+            9.29481772244087,
+            48.8512813014032
+          ],
+          [
+            9.298633026147165,
+            48.85097943094427
+          ],
+          [
+            9.298644963774867,
+            48.85096615878514
+          ],
+          [
+            9.298644963774867,
+            48.85096615878514
+          ]
+        ]
+      }
+    },
+    {
       "id": "pa1.1",
       "type": "Feature",
       "properties": {
@@ -2137,182 +2313,6 @@
           [
             9.198099998924823,
             48.89329934585696
-          ]
-        ]
-      }
-    },
-    {
-      "id": "pa1.6",
-      "type": "Feature",
-      "properties": {
-        "subsectionSlug": "pa1.6",
-        "projectSlug": "rs8",
-        "operator": "Stadt Ludwigsburg",
-        "estimatedCompletionDateString": null,
-        "status": "In Planung"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            9.201401747633652,
-            48.89335085629111
-          ],
-          [
-            9.204387735380609,
-            48.89339744055261
-          ],
-          [
-            9.20694002110566,
-            48.89293285756324
-          ],
-          [
-            9.207089426219461,
-            48.89288556047439
-          ]
-        ]
-      }
-    },
-    {
-      "id": "pa1.7",
-      "type": "Feature",
-      "properties": {
-        "subsectionSlug": "pa1.7",
-        "projectSlug": "rs8",
-        "operator": "Stadt Ludwigsburg",
-        "estimatedCompletionDateString": null,
-        "status": "In Planung"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            9.207089426219461,
-            48.89288556047439
-          ],
-          [
-            9.207345779514661,
-            48.89280440686277
-          ],
-          [
-            9.207572799399408,
-            48.89252716981017
-          ],
-          [
-            9.209643275997573,
-            48.89222252372953
-          ],
-          [
-            9.209518854604504,
-            48.89187111206734
-          ],
-          [
-            9.21130210605646,
-            48.89154431843531
-          ],
-          [
-            9.213306318590726,
-            48.89133621499105
-          ],
-          [
-            9.213406897875132,
-            48.8913234449409
-          ]
-        ]
-      }
-    },
-    {
-      "id": "pa1.8",
-      "type": "Feature",
-      "properties": {
-        "subsectionSlug": "pa1.8",
-        "projectSlug": "rs8",
-        "operator": "Stadt Ludwigsburg",
-        "estimatedCompletionDateString": null,
-        "status": "In Planung"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            9.213406897875132,
-            48.8913234449409
-          ],
-          [
-            9.214959358675657,
-            48.89112633673523
-          ],
-          [
-            9.215124815329835,
-            48.89110532952899
-          ],
-          [
-            9.215157030644356,
-            48.89110123931116
-          ],
-          [
-            9.215175577768182,
-            48.89109883454495
-          ],
-          [
-            9.215175577768182,
-            48.89109883454495
-          ],
-          [
-            9.21777246704113,
-            48.89076212942371
-          ],
-          [
-            9.217984901994779,
-            48.8900998799216
-          ],
-          [
-            9.220693032567235,
-            48.89033461732208
-          ]
-        ]
-      }
-    },
-    {
-      "id": "pa3.3",
-      "type": "Feature",
-      "properties": {
-        "subsectionSlug": "pa3.3",
-        "projectSlug": "rs8",
-        "operator": "Rems-Murr-Kreis",
-        "estimatedCompletionDateString": null,
-        "status": "In Planung"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            9.291121288024184,
-            48.85261011783567
-          ],
-          [
-            9.291121288024184,
-            48.85261011783567
-          ],
-          [
-            9.293172937805403,
-            48.85186794764905
-          ],
-          [
-            9.29481772244087,
-            48.8512813014032
-          ],
-          [
-            9.298633026147165,
-            48.85097943094427
-          ],
-          [
-            9.298644963774867,
-            48.85096615878514
-          ],
-          [
-            9.298644963774867,
-            48.85096615878514
           ]
         ]
       }
@@ -2637,30 +2637,6 @@
           [
             9.302877559746676,
             48.82967606209235
-          ]
-        ]
-      }
-    },
-    {
-      "id": "pa1.2",
-      "type": "Feature",
-      "properties": {
-        "subsectionSlug": "pa1.2",
-        "projectSlug": "rs8",
-        "operator": "Stadt Ludwigsburg",
-        "estimatedCompletionDateString": null,
-        "status": "In Planung"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            9.186506649382107,
-            48.89311847852846
-          ],
-          [
-            9.188498197042176,
-            48.89314954857457
           ]
         ]
       }
@@ -2993,6 +2969,30 @@
           [
             9.292426112847444,
             48.85680501296783
+          ]
+        ]
+      }
+    },
+    {
+      "id": "pa1.2",
+      "type": "Feature",
+      "properties": {
+        "subsectionSlug": "pa1.2",
+        "projectSlug": "rs8",
+        "operator": "Stadt Ludwigsburg",
+        "estimatedCompletionDateString": null,
+        "status": "In Planung"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            9.186506649382107,
+            48.89311847852846
+          ],
+          [
+            9.188498197042176,
+            48.89314954857457
           ]
         ]
       }
