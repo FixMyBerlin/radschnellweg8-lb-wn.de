@@ -3,7 +3,7 @@
 # More information under https://docs.ionos.space/docs/github-actions-customization/
 # version: 2022-07-21
 
-name: "Deploy Now: Orchestration"
+name: 'Deploy Now: Orchestration'
 run-name: "Deploy Now: Build radschnellweg8-lb-wn.de · ${{ github.event.head_commit.message || format('Triggered by {0}', github.triggering_actor) }}"
 
 on:
@@ -26,7 +26,6 @@ jobs:
           service-host: api-eu.ionos.space
           project-id: 4ae0413f-3bfd-42ec-8e3e-252a59504ec3
           action: retrieve-info
-
 
   build:
     name: build

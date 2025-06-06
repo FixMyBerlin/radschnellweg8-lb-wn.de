@@ -1,7 +1,7 @@
 # To better understand this file read this:
 # https://docs.ionos.space/docs/github-actions-customization/
 
-name: "Deploy Now: Execute Build"
+name: 'Deploy Now: Execute Build'
 
 on:
   workflow_call:
@@ -17,30 +17,28 @@ env:
   DEPLOYMENT_FOLDER: dist
 
 jobs:
-# Please do not rename this job
+  # Please do not rename this job
   build-project:
     name: build radschnellweg8-lb-wn.de
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
+      - name: Checkout your repository using git
         uses: actions/checkout@v4
-        with:
-          submodules: 'recursive'
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: v22.x
-
-      - name: Build Node assets
+      - name: Install, build, and upload your site output
+        uses: withastro/action@v2
         env:
+          ASTRO_ENV: production
+          ASTRO_OUTPUT_MODE: static
+          ASTRO_USE_NETLIFY_ADAPTER: false
           CI: true
+          KEYSTATIC_STORAGE_KIND: local
           SITE_URL: ${{ inputs.site-url }}
-        run: |
-          npm ci
-          npm run build
+        # with:
+        # path: . # The root location of your Astro project inside the repository. (optional)
+        # node-version: 20 # The specific version of Node that should be used to build your site. Defaults to 18. (optional)
+        # package-manager: pnpm@latest # The Node package manager that should be used to install dependencies and build your site. Automatically detected based on your lockfile. (optional)
 
-# Please do not touch the following action
+      # Please do not touch the following action
       - name: Store deployment content
         uses: ionos-deploy-now/artifact-action@v1
         with:

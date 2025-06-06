@@ -2,7 +2,7 @@
 # More information under https://docs.ionos.space/docs/github-actions-customization/
 # version: 2022-07-21
 
-name: "Deploy Now: Deploy to IONOS"
+name: 'Deploy Now: Deploy to IONOS'
 
 on:
   workflow_dispatch:
@@ -72,7 +72,7 @@ jobs:
         id: template
         with:
           deployment-id: ${{ matrix.deployment-id }}
-          data: "[${{ steps.deployment.outputs.template-variables }}, ${{ toJson(secrets) }}]"
+          data: '[${{ steps.deployment.outputs.template-variables }}, ${{ toJson(secrets) }}]'
           input-directory: deployment
           output-directory: deployment
           intermediate-data-file: deployment/.template-renderer-data
