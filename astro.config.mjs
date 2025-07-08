@@ -87,8 +87,8 @@ export default defineConfig({
   //   '/leichte-sprache/': '/leichte-sprache',
   //   '/route/': '/route',
   // },
-  trailingSlash: 'never',
-  build: { format: 'file' },
+  // trailingSlash: 'never',
+  // build: { format: 'file' },
 
   markdown: {
     rehypePlugins: [
