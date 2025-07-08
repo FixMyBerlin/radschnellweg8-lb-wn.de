@@ -67,6 +67,12 @@ export default defineConfig({
 
   redirects: {},
 
+  // version momentan auf main:
+  // in layout: script mit client router macht manuelle redericts
+  // + config: trailingSlash: ignore - also default / keine redericts
+  //  --> wo ist der Mehrwert gegenüber:
+  // k. manuelles script ?
+
   // LATER: Find an elegent way to redirect trailing slashes
   // Why: We want the site to always use one format (no trailing slashes)
   // to improve SEO but also make "currentPage" checks easier.
@@ -81,8 +87,8 @@ export default defineConfig({
   //   '/leichte-sprache/': '/leichte-sprache',
   //   '/route/': '/route',
   // },
-  // trailingSlash: 'never',
-  // build: { format: 'file' },
+  trailingSlash: 'never',
+  build: { format: 'file' },
 
   markdown: {
     rehypePlugins: [
