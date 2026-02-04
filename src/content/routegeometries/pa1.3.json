@@ -6,7 +6,7 @@
     "projectSlug": "rs8",
     "operator": "Stadt Ludwigsburg",
     "estimatedCompletionDateString": null,
-    "status": "In Planung"
+    "status": "Idee"
   },
   "geometry": {
     "type": "LineString",
@@ -16,8 +16,8 @@
         48.89314954857457
       ],
       [
-        9.194198571155404,
-        48.89323847985655
+        9.190425783641695,
+        48.89317167404742
       ]
     ]
   }
